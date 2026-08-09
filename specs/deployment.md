@@ -4,7 +4,7 @@
 
 The reviewed static devlog bundle is staged under `site/`. GitHub Pages is configured in Actions mode and `.github/workflows/deploy-pages.yml` validates and publishes only that directory to `https://rareskey.github.io/devlog/` on pushes to `main` or manual dispatch.
 
-The initial artifact was built on 2026-08-09 from the private canonical devlog source with `VITE_ENABLE_ADMIN=false` and Vite base `/devlog/`. Automated Raspberry Pi publication to this repository is not implemented yet.
+The current artifact was rebuilt on 2026-08-09 from private canonical source commit `be461f2` with `VITE_ENABLE_ADMIN=false` and Vite base `/devlog/`; it includes the Charge Knights Act II progress entry and its three authored showcase images. The build ran manually against the frozen Raspberry Pi dependency cache. Automated Raspberry Pi publication to this repository is not implemented yet.
 
 ## Public Boundary
 
