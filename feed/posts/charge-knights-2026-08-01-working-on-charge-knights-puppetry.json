@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "charge-knights-2026-08-01-working-on-charge-knights-puppetry",
+  "title": "Working on Charge Knights Puppetry",
+  "project": "charge-knights",
+  "body": "\nI am working on the articulated fighters in Charge Knights, and this puppet alignment lab is the current workbench.\n\nThe lab instantiates the real gameplay hierarchy and edits the same runtime JSONL used by newly spawned units. Red lines expose parent-to-child connections, gold marks the current selection, and cyan shows painted anchors and artwork offsets. I can move a part with its connection, relocate a logical pivot while holding the visible art in place, or tune position, size, rotation, and draw order numerically.\n\nGetting necks, shoulders, hips, and weapon grips onto reliable pivots should make the charge read more cleanly in motion while preserving the physical break-apart behavior when fighters fall.\n\n![The Charge Knights Puppet Alignment Lab showing a side-view peasant rig over parchment, with red hierarchy lines and pivots, cyan painted anchors, a gold torso selection, and runtime JSONL controls beside it.](../media/charge-knights-2026-08-01-working-on-charge-knights-puppetry/puppet-alignment-lab.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "charge-knights",
+    "devlog",
+    "puppetry",
+    "animation",
+    "tooling"
+  ],
+  "createdAt": "2026-08-01T19:23:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-puppet-alignment-lab",
+      "path": "../media/charge-knights-2026-08-01-working-on-charge-knights-puppetry/puppet-alignment-lab.png",
+      "alt": "The Charge Knights Puppet Alignment Lab showing a side-view peasant rig over parchment, with red hierarchy lines and pivots, cyan painted anchors, a gold torso selection, and runtime JSONL controls beside it.",
+      "fileName": "puppet-alignment-lab.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

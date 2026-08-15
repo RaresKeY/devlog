@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-godot-asset-authoring-plugin",
+  "title": "Building a Godot Asset Authoring Plugin",
+  "project": "Godot Asset Authoring",
+  "body": "I am building a Godot editor plugin that turns imported 3D models into reusable, game-ready interactive assets.\n\nThe tool scans the asset catalog, loads a selected GLB/GLTF into an authoring workbench, and lets me fit the model, physics collision box, interaction area, and local orientation axes.\n\nWhen exported, it saves structured authoring data and generates a clean runtime scene the game can instance anywhere.\n\nThe goal is to stop hand-wiring every prop by scene. Once an asset is authored, it carries its visual setup, collision, interaction metadata, and orientation rules with it.",
+  "status": "wip",
+  "tags": [
+    "godot",
+    "editor-plugin",
+    "asset-pipeline",
+    "ko-fi"
+  ],
+  "createdAt": "2026-05-22T08:32:04.000Z",
+  "visibility": "public",
+  "ctaLabel": "View on Ko-fi",
+  "ctaUrl": "https://ko-fi.com/smallloopworks",
+  "images": [
+    {
+      "id": "godot-asset-authoring-plugin-screenshot",
+      "path": "../media/demo-godot-asset-authoring-plugin/screenshotfrom2026-05-2208-32-04.png",
+      "alt": "Building a Godot Asset Authoring Plugin",
+      "fileName": "screenshotfrom2026-05-2208-32-04.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

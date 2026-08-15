@@ -2,13 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="/devlog/favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/devlog/favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="/devlog/favicon-512.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/devlog/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#121018" />
+    <meta name="theme-color" content="#17131d" />
     <meta name="color-scheme" content="light" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; connect-src 'self' https://raw.githubusercontent.com; img-src 'self' data: https://raw.githubusercontent.com; media-src 'self' https://raw.githubusercontent.com; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'"
+    />
     <meta
       name="description"
       content="Small Loop Works devlog: honest build notes, screenshots, prototypes, and milestones from small independent games."
@@ -28,11 +28,103 @@
       name="twitter:description"
       content="Build notes, visual experiments, and milestones from small independent games."
     />
+    <link rel="icon" href="./favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./favicon-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Small games. Honest progress. — Small Loop Works</title>
-    <script type="module" crossorigin src="/devlog/assets/index-Dteeh4JY.js"></script>
-    <link rel="stylesheet" crossorigin href="/devlog/assets/index-B7ikifAu.css">
   </head>
   <body>
-    <div id="root"></div>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Small Loop Works home">
+        <span class="brand-mark" aria-hidden="true">SL</span>
+        <span>Small Loop Works</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#devlog">Devlog</a>
+        <a href="https://github.com/RaresKeY/devlog">Public source</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent games, built in public</p>
+          <h1 id="hero-title">Small games.<br /><em>Honest progress.</em></h1>
+          <p class="hero-intro">
+            A working journal about prototypes, awkward first passes, useful
+            breakthroughs, and the decisions between them.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#devlog">Read the latest</a>
+            <a class="button quiet" href="https://smallloopworks.itch.io/">Play the builds</a>
+          </div>
+          <dl class="hero-metrics" aria-label="Devlog summary">
+            <div><dt id="post-count">—</dt><dd>public updates</dd></div>
+            <div><dt id="project-count">—</dt><dd>projects in motion</dd></div>
+            <div><dt>Open</dt><dd>work in progress</dd></div>
+          </dl>
+        </div>
+        <figure class="hero-art">
+          <img
+            src="./hero.webp"
+            alt="A compact workshop scene for Small Loop Works"
+            width="1152"
+            height="768"
+          />
+          <figcaption>Notes from the workbench</figcaption>
+        </figure>
+      </section>
+
+      <section class="feed" id="devlog" aria-labelledby="feed-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The build journal</p>
+            <h2 id="feed-title">Latest updates</h2>
+          </div>
+          <div class="feed-source">
+            <span class="live-dot" aria-hidden="true"></span>
+            <span id="source-label">Loading public GitHub feed</span>
+          </div>
+        </div>
+
+        <div class="feed-controls" aria-label="Filter updates">
+          <label class="search-control">
+            <span>Search</span>
+            <input id="search" type="search" placeholder="Notes, projects, or tags" />
+          </label>
+          <label class="project-control">
+            <span>Project</span>
+            <select id="project-filter">
+              <option value="all">All projects</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="status-row" id="status-filters" role="group" aria-label="Filter by status"></div>
+        <p class="feed-notice" id="feed-notice" role="status" aria-live="polite"></p>
+        <div class="feed-summary"><strong id="visible-count">0</strong> updates shown</div>
+        <div class="updates-grid" id="updates" aria-busy="true"></div>
+
+        <noscript>
+          <div class="feed-state">JavaScript is required to read the public JSON feed.</div>
+        </noscript>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span class="brand-mark" aria-hidden="true">SL</span>
+      <p><strong>Small Loop Works</strong><br />Build small. Learn loudly. Keep going.</p>
+      <a href="https://github.com/RaresKeY/devlog">Posts and media on GitHub</a>
+    </footer>
+
+    <dialog class="lightbox" id="lightbox">
+      <button class="lightbox-close" type="button" aria-label="Close image">×</button>
+      <img alt="" />
+      <p></p>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
   </body>
 </html>

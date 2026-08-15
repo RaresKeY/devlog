@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "charge-grid-2026-08-01-aligning-the-grid",
+  "title": "Aligning the Grid",
+  "project": "charge-grid",
+  "body": "\nWorking on the isometric grid alignment in Charge Grid.\n\nThe original runtime terrain used one fixed destination rectangle for every square. That was close, but it did not map the painted diamond to the 86×43 gameplay lattice exactly, and taller props such as trees and houses inherited the same grass-sized assumptions.\n\nI measured the top, right, bottom, left, and center control points for all twelve terrain cuts, then mapped those points to the logical grid while preserving each sprite's painted overhang. Terrain, roads, buildings, and trucks now also share one depth-sorted painter sequence, so lower cells consistently draw over higher ones.\n\nThese are the before-and-after grass checks, the complete terrain control-point review, and the atlas crop boxes I used to pin the geometry down.\n\n![Before alignment: one grass square with the old fixed destination rectangle and mapped logical diamond marked in red.](../media/charge-grid-2026-08-01-aligning-the-grid/single-grid-square-before.png)\n\n![After alignment: the same grass square with measured source controls in red and the exact 86 by 43 logical diamond in gold.](../media/charge-grid-2026-08-01-aligning-the-grid/single-grid-square-after.png)\n\n![A twelve-panel terrain review showing measured control diamonds for grass, flowers, field, lake, tree, trunk, boulder, house, resource deposits, and the boundary tile.](../media/charge-grid-2026-08-01-aligning-the-grid/terrain-control-points-after.png)\n\n![The terrain atlas review with red crop boxes around all twelve source assets.](../media/charge-grid-2026-08-01-aligning-the-grid/terrain-atlas-crop-boxes.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "charge-grid",
+    "devlog",
+    "ai-jam",
+    "isometric",
+    "alignment",
+    "terrain"
+  ],
+  "createdAt": "2026-08-01T15:37:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-single-grid-square-before",
+      "path": "../media/charge-grid-2026-08-01-aligning-the-grid/single-grid-square-before.png",
+      "alt": "Before alignment: one grass square with the old fixed destination rectangle and mapped logical diamond marked in red.",
+      "fileName": "single-grid-square-before.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-single-grid-square-after",
+      "path": "../media/charge-grid-2026-08-01-aligning-the-grid/single-grid-square-after.png",
+      "alt": "After alignment: the same grass square with measured source controls in red and the exact 86 by 43 logical diamond in gold.",
+      "fileName": "single-grid-square-after.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "3-terrain-control-points-after",
+      "path": "../media/charge-grid-2026-08-01-aligning-the-grid/terrain-control-points-after.png",
+      "alt": "A twelve-panel terrain review showing measured control diamonds for grass, flowers, field, lake, tree, trunk, boulder, house, resource deposits, and the boundary tile.",
+      "fileName": "terrain-control-points-after.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "4-terrain-atlas-crop-boxes",
+      "path": "../media/charge-grid-2026-08-01-aligning-the-grid/terrain-atlas-crop-boxes.png",
+      "alt": "The terrain atlas review with red crop boxes around all twelve source assets.",
+      "fileName": "terrain-atlas-crop-boxes.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

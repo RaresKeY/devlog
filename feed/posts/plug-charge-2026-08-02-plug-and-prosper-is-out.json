@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "plug-charge-2026-08-02-plug-and-prosper-is-out",
+  "title": "Plug & Prosper Is Out",
+  "project": "plug-charge",
+  "body": "\nPlug & Prosper is out now on itch.io.\n\nI made this cozy plug-and-cable puzzle for the jam, then took my actual entry in another direction. I still liked how it turned out, so I finished and released it anyway.\n\n[video: Plug & Prosper release trailer showing the plug-and-cable puzzle gameplay.](../media/plug-charge-2026-08-02-plug-and-prosper-is-out/plug-and-prosper-trailer-itch.mp4)\n\n[Play Plug & Prosper](https://smallloopworks.itch.io/plug-prosper) · [Watch the trailer](https://youtu.be/Ml5cqs1ab0Y)\n",
+  "status": "milestone",
+  "tags": [
+    "gamedev",
+    "godot",
+    "plug-charge",
+    "devlog",
+    "ai-jam",
+    "release",
+    "puzzle",
+    "cables"
+  ],
+  "createdAt": "2026-08-01T23:55:00.000Z",
+  "visibility": "public",
+  "ctaLabel": "Play Plug & Prosper",
+  "ctaUrl": "https://smallloopworks.itch.io/plug-prosper",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-plug-and-prosper-trailer-itch",
+      "path": "../media/plug-charge-2026-08-02-plug-and-prosper-is-out/plug-and-prosper-trailer-itch.mp4",
+      "caption": "Plug & Prosper release trailer showing the plug-and-cable puzzle gameplay.",
+      "fileName": "plug-and-prosper-trailer-itch.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}

@@ -1,33 +1,44 @@
-# Public Devlog Deployment Contract
+# Public Devlog Source and Deployment Contract
 
 ## Status
 
-The reviewed static devlog bundle is staged under `site/`. GitHub Pages is configured in Actions mode and `.github/workflows/deploy-pages.yml` validates and publishes only that directory to `https://rareskey.github.io/devlog/` on pushes to `main` or manual dispatch.
+`RaresKeY/devlog` is the canonical public source. `site/` contains the directly maintained browser app published at `https://rareskey.github.io/devlog/`. `feed/index.json`, `feed/posts/`, and `feed/media/` contain the deterministic runtime content read from the raw `main` branch.
 
-The current artifact was rebuilt on 2026-08-09 from private canonical source commit `be461f2` with `VITE_ENABLE_ADMIN=false` and Vite base `/devlog/`; it includes the Charge Knights Act II progress entry and its three authored showcase images. The build ran manually against the frozen Raspberry Pi dependency cache. Automated Raspberry Pi publication to this repository is not implemented yet.
+The one-time migration preserves 29 previously public posts and 46 media files. The former private canonical source and Firebase publication route are legacy and are not dependencies of this repository.
 
-## Public Boundary
+## Source Sync
+
+This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/workflows/deploy-pages.yml`, `.github/workflows/validate-feed.yml`, `README.md`, and `AGENTS.md`. Changes to their public-source, runtime, caching, validation, or deployment behavior require a matching update here.
+
+## Behavior
+
+### Public boundary
 
 - The repository and its complete Git history are public.
-- `site/` contains only compiled HTML, CSS, JavaScript, hashed media, icons, and `.nojekyll`.
-- Private TypeScript source, Git history, drafts, credentials, build caches, local paths, and scheduler state remain outside this repository.
-- Repository documentation, specs, validation code, and workflow metadata are public but excluded from the deployed Pages artifact.
-- Every authored update included in a build is public and retrievable from the static bundle.
+- The canonical post order and summary metadata live in `feed/index.json`.
+- Each `feed/posts/<id>.json` is a complete schema-versioned public post. Its ID and summary fields must match the index.
+- Post media lives at `feed/media/<id>/<filename>` and is referenced as `../media/<id>/<filename>` from the post JSON.
+- `site/` contains only the HTML, CSS, JavaScript, local presentation assets, icons, and `.nojekyll` needed by Pages.
+- Private history, drafts, credentials, local paths, build caches, scheduler state, and publisher or cloud configuration are forbidden.
 
-## Deployment
+### Runtime feed
 
-- GitHub Pages uses `build_type=workflow`.
-- The workflow checks out without persisted credentials, validates the bundle, configures Pages, uploads only `site/`, and deploys through the `github-pages` environment.
-- The build job receives only `contents: read`; the deploy job receives only `pages: write` and `id-token: write`.
-- Official GitHub actions are pinned to reviewed commit SHAs.
-- The public URL prefix is `/devlog/`; all local runtime references must resolve beneath it.
+- `site/app.js` fetches `https://raw.githubusercontent.com/RaresKeY/devlog/main/feed/index.json` and every indexed post directly from the same raw branch.
+- Fetches use `cache: no-store` and a per-load cache-busting query so JSON/media-only pushes can appear without a Pages artifact deployment.
+- The app renders only after the complete index and post set validates. It stores that complete set as a last-known-good browser copy.
+- A live-fetch failure uses the saved copy when valid and displays a stale-feed notice. Without a valid copy, the app displays an error state; it never silently presents an empty feed.
+- User-authored text is rendered through DOM text nodes and a small allow-listed Markdown renderer. Post JSON is never injected as HTML.
+
+### Workflows
+
+- GitHub Pages uses Actions mode and publishes only `site/` through the `github-pages` environment.
+- `.github/workflows/deploy-pages.yml` runs for `site/**`, the verifier, or its own workflow changes, plus manual dispatch. It validates before uploading the Pages artifact.
+- `.github/workflows/validate-feed.yml` runs for `feed/**` pushes and pull requests. A feed-only commit does not trigger the Pages workflow.
+- Checkout actions do not persist credentials. Validation has `contents: read`; deployment alone receives `pages: write` and `id-token: write`.
 
 ## Verification
 
-- `python scripts/check_public_bundle.py`
+- `python3 scripts/check_public_bundle.py`
 - `git diff --check`
-- The verifier rejects symlinks, unexpected paths and file types, bundles above 128 MiB, missing local references, external runtime assets, incorrect canonical metadata, credential signatures, private machine context, Firebase origin references, source maps, and public admin markers.
-
-## Planned Publisher Migration
-
-The Raspberry Pi scheduler may later replace `site/` from an exact pinned private-source commit and push the resulting artifact at the scheduled instant. That change requires a repository-specific write credential, atomic replacement and push behavior, a clean scheduler-owned checkout, and updated publisher verification before live activation.
+- The verifier checks site paths and references, raw-feed configuration, canonical metadata, index order and uniqueness, post schemas, exact post/media ownership, MIME/file consistency, symlinks, size limits, credential signatures, private machine context and source-revision fragments, source maps, obsolete compiled assets, and forbidden publisher/admin markers.
+- The feed workflow provides feed-only CI without creating or deploying a Pages artifact. The Pages workflow repeats the full verifier before deployment when the browser or deployment surface changes.

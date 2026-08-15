@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-tiny-service-test",
+  "title": "Tiny Service Test",
+  "project": "Rogue Diner Coop",
+  "body": "Quick WIP peek at Rogue Diner Coop, a couch-coop roguelite cooking game. Tiny kitchen, big chaos. More soon.",
+  "status": "wip",
+  "tags": [
+    "rogue-diner-coop",
+    "couch-coop",
+    "cooking",
+    "ko-fi"
+  ],
+  "createdAt": "2026-05-28T14:20:00.000Z",
+  "visibility": "public",
+  "ctaLabel": "View on Ko-fi",
+  "ctaUrl": "https://ko-fi.com/smallloopworks",
+  "images": [
+    {
+      "id": "tiny-service-test-service",
+      "path": "../media/demo-tiny-service-test/service_1600x900.png",
+      "alt": "Tiny Service Test",
+      "fileName": "service_1600x900.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

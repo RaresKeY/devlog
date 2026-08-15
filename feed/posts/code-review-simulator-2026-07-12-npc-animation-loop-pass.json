@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-12-npc-animation-loop-pass",
+  "title": "NPC Animation Loop Pass",
+  "project": "code-review-simulator",
+  "body": "\nThe current NPC rig is going through a side-by-side animation check. The showcase keeps the supervisor, contractor, and enforcer variants aligned across walk, run, shoot, and bat-hit actions so their timing and silhouettes can be compared under the same camera.\n\nWalk and run stay in continuous loops. Shoot and bat hit play as complete actions, return to a readable rest pose, and then repeat. That makes the loop boundaries, weapon alignment, and full follow-through easier to inspect.\n\nThis is an isolated validation scene rather than a combat pass. The focus is clean motion, grounded feet, readable poses, and consistent results across all three character fits.\n\n[video: Twelve NPC variants arranged in walk, run, shoot, and bat-hit columns for a side-by-side animation loop check.](../media/code-review-simulator-2026-07-12-npc-animation-loop-pass/rightslock-rigging-showcase.mp4)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "npc",
+    "animation",
+    "rigging",
+    "validation"
+  ],
+  "createdAt": "2026-07-12T02:55:22.000Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-rightslock-rigging-showcase",
+      "path": "../media/code-review-simulator-2026-07-12-npc-animation-loop-pass/rightslock-rigging-showcase.mp4",
+      "caption": "Twelve NPC variants arranged in walk, run, shoot, and bat-hit columns for a side-by-side animation loop check.",
+      "fileName": "rightslock-rigging-showcase.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}

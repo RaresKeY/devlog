@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "the-hollow-signal-2026-07-31-building-out-the-world",
+  "title": "Building Out the World",
+  "project": "the-hollow-signal",
+  "body": "\nWorking on the spaces between fights in The Hollow Signal.\n\nThis pass is about keeping the world coherent across three very different areas: dense relay halls, open Hushfall basins, and the exposed signal wastes. The recurring machinery, wiring, and warm relay lamps are doing most of that work.\n\nI also put the current playable cast together in a character sheet to check how their silhouettes and colors sit against the environments.\n\n![A dark switch hall lined with cabinets, insulators, teal repair wire, and one warm relay lamp.](../media/the-hollow-signal-2026-07-31-building-out-the-world/dreaming-relayworks.png)\n\n![A vast Hushfall basin where a broken relay wheel lies half buried beneath a violet sky.](../media/the-hollow-signal-2026-07-31-building-out-the-world/hushfall-basin.png)\n\n![Broken pylons and relay machinery leaning across the signal wastes at dusk.](../media/the-hollow-signal-2026-07-31-building-out-the-world/signal-wastes.png)\n\n![A character sheet for Brother Ash, Ilex, Orin Vale, Tamsin Coil, Nyra Quell, and Sable Nox.](../media/the-hollow-signal-2026-07-31-building-out-the-world/character-sheet.png)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "roguelike",
+    "deckbuilder",
+    "the-hollow-signal",
+    "devlog",
+    "worldbuilding",
+    "environments"
+  ],
+  "createdAt": "2026-07-30T23:54:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-dreaming-relayworks",
+      "path": "../media/the-hollow-signal-2026-07-31-building-out-the-world/dreaming-relayworks.png",
+      "alt": "A dark switch hall lined with cabinets, insulators, teal repair wire, and one warm relay lamp.",
+      "fileName": "dreaming-relayworks.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-hushfall-basin",
+      "path": "../media/the-hollow-signal-2026-07-31-building-out-the-world/hushfall-basin.png",
+      "alt": "A vast Hushfall basin where a broken relay wheel lies half buried beneath a violet sky.",
+      "fileName": "hushfall-basin.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "3-signal-wastes",
+      "path": "../media/the-hollow-signal-2026-07-31-building-out-the-world/signal-wastes.png",
+      "alt": "Broken pylons and relay machinery leaning across the signal wastes at dusk.",
+      "fileName": "signal-wastes.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "4-character-sheet",
+      "path": "../media/the-hollow-signal-2026-07-31-building-out-the-world/character-sheet.png",
+      "alt": "A character sheet for Brother Ash, Ilex, Orin Vale, Tamsin Coil, Nyra Quell, and Sable Nox.",
+      "fileName": "character-sheet.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

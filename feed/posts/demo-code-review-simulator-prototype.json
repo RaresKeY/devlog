@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-code-review-simulator-prototype",
+  "title": "Code Review Simulator WIP: New Prototype",
+  "project": "Code Review Simulator",
+  "body": "Small screenshot update from Code Review Simulator. Home, Shopping Mart, city area, and PR review monitor are coming together. Still rough, but the core loop is starting to feel real\n\n1/4",
+  "status": "wip",
+  "tags": [
+    "code-review-simulator",
+    "prototype",
+    "screenshots",
+    "ko-fi"
+  ],
+  "createdAt": "2026-05-24T12:00:00.000Z",
+  "visibility": "public",
+  "ctaLabel": "View on Ko-fi",
+  "ctaUrl": "https://ko-fi.com/smallloopworks",
+  "images": [
+    {
+      "id": "code-review-simulator-city",
+      "path": "../media/demo-code-review-simulator-prototype/city.png",
+      "alt": "Code Review Simulator city area.",
+      "fileName": "city.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "code-review-simulator-home",
+      "path": "../media/demo-code-review-simulator-prototype/home.png",
+      "alt": "Code Review Simulator home area.",
+      "fileName": "home.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "code-review-simulator-mart",
+      "path": "../media/demo-code-review-simulator-prototype/mart.png",
+      "alt": "Code Review Simulator shopping mart.",
+      "fileName": "mart.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "code-review-simulator-monitor",
+      "path": "../media/demo-code-review-simulator-prototype/monitor.png",
+      "alt": "Code Review Simulator PR review monitor.",
+      "fileName": "monitor.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-12-procedural-prop-check",
+  "title": "Procedural Prop Check",
+  "project": "code-review-simulator",
+  "body": "\nAdded a new procedural prop to the current prototype and put it through a focused validation pass.\n\nThe asset is generated from primitive geometry, driven by a simple Skeleton3D rig, and staged in a small test scene. This pass is mostly about silhouette, scale, and whether it reads cleanly under the current lighting.\n\nThe next check is motion and interaction. For now, the shape is staying deliberately simple.\n\n![A dark procedural prop standing above a cyan validation outline in a test scene.](../media/code-review-simulator-2026-07-12-procedural-prop-check/procedural-prop.png)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "procedural",
+    "prop",
+    "validation"
+  ],
+  "createdAt": "2026-07-12T00:00:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-procedural-prop",
+      "path": "../media/code-review-simulator-2026-07-12-procedural-prop-check/procedural-prop.png",
+      "alt": "A dark procedural prop standing above a cyan validation outline in a test scene.",
+      "fileName": "procedural-prop.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-16-under-the-surface",
+  "title": "Under the Surface",
+  "project": "code-review-simulator",
+  "body": "\nSome surfaces are starting to tell a different story.\n\nThe clean version might not be the one that lasts.\n\n![Six-view contact sheet comparing mottled rust coverage on pale metal panels, a wheel rim, and a cylindrical metal sample under different angles and lighting.](../media/code-review-simulator-2026-07-16-under-the-surface/rust-layer-contact-sheet.jpg)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "materials",
+    "rust",
+    "weathering",
+    "validation"
+  ],
+  "createdAt": "2026-07-15T23:13:52.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-rust-layer-contact-sheet",
+      "path": "../media/code-review-simulator-2026-07-16-under-the-surface/rust-layer-contact-sheet.jpg",
+      "alt": "Six-view contact sheet comparing mottled rust coverage on pale metal panels, a wheel rim, and a cylindrical metal sample under different angles and lighting.",
+      "fileName": "rust-layer-contact-sheet.jpg",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "videos": []
+}

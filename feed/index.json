@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "repository": "RaresKeY/devlog",
+  "branch": "main",
+  "posts": [
+    {
+      "id": "charge-knights-2026-08-09-three-new-puppets-for-the-warfront",
+      "path": "posts/charge-knights-2026-08-09-three-new-puppets-for-the-warfront.json",
+      "title": "Three New Puppets for the Warfront",
+      "project": "charge-knights",
+      "status": "build",
+      "createdAt": "2026-08-09T00:32:30.000Z"
+    },
+    {
+      "id": "plug-charge-2026-08-02-plug-and-prosper-is-out",
+      "path": "posts/plug-charge-2026-08-02-plug-and-prosper-is-out.json",
+      "title": "Plug & Prosper Is Out",
+      "project": "plug-charge",
+      "status": "milestone",
+      "createdAt": "2026-08-01T23:55:00.000Z"
+    },
+    {
+      "id": "horizon-charge-2026-08-02-a-run-to-impact",
+      "path": "posts/horizon-charge-2026-08-02-a-run-to-impact.json",
+      "title": "A Run to Impact",
+      "project": "horizon-charge",
+      "status": "build",
+      "createdAt": "2026-08-01T22:25:00.000Z"
+    },
+    {
+      "id": "plug-charge-2026-08-02-opening-the-kiosk",
+      "path": "posts/plug-charge-2026-08-02-opening-the-kiosk.json",
+      "title": "Opening the Kiosk",
+      "project": "plug-charge",
+      "status": "wip",
+      "createdAt": "2026-08-01T22:24:00.000Z"
+    },
+    {
+      "id": "charge-knights-2026-08-01-working-on-charge-knights-puppetry",
+      "path": "posts/charge-knights-2026-08-01-working-on-charge-knights-puppetry.json",
+      "title": "Working on Charge Knights Puppetry",
+      "project": "charge-knights",
+      "status": "wip",
+      "createdAt": "2026-08-01T19:23:00.000Z"
+    },
+    {
+      "id": "plug-charge-2026-08-01-shaping-the-plugs-and-sockets",
+      "path": "posts/plug-charge-2026-08-01-shaping-the-plugs-and-sockets.json",
+      "title": "Shaping the Plugs and Sockets",
+      "project": "plug-charge",
+      "status": "wip",
+      "createdAt": "2026-08-01T19:13:00.000Z"
+    },
+    {
+      "id": "charge-grid-2026-08-01-aligning-the-grid",
+      "path": "posts/charge-grid-2026-08-01-aligning-the-grid.json",
+      "title": "Aligning the Grid",
+      "project": "charge-grid",
+      "status": "wip",
+      "createdAt": "2026-08-01T15:37:00.000Z"
+    },
+    {
+      "id": "charge-grid-2026-08-01-four-directions-for-the-jam",
+      "path": "posts/charge-grid-2026-08-01-four-directions-for-the-jam.json",
+      "title": "Four Directions for the Jam",
+      "project": "charge-grid",
+      "status": "wip",
+      "createdAt": "2026-08-01T15:36:00.000Z"
+    },
+    {
+      "id": "charge-grid-2026-08-01-charge-grid-40-minutes-in",
+      "path": "posts/charge-grid-2026-08-01-charge-grid-40-minutes-in.json",
+      "title": "Charge Grid, 40 Minutes In",
+      "project": "charge-grid",
+      "status": "wip",
+      "createdAt": "2026-08-01T14:30:00.000Z"
+    },
+    {
+      "id": "the-hollow-signal-2026-07-31-building-out-the-world",
+      "path": "posts/the-hollow-signal-2026-07-31-building-out-the-world.json",
+      "title": "Building Out the World",
+      "project": "the-hollow-signal",
+      "status": "build",
+      "createdAt": "2026-07-30T23:54:00.000Z"
+    },
+    {
+      "id": "unnamed-game-2026-07-30-cards-for-a-new-unnamed-game",
+      "path": "posts/unnamed-game-2026-07-30-cards-for-a-new-unnamed-game.json",
+      "title": "Cards for a New, Unnamed Game",
+      "project": "unnamed-game",
+      "status": "wip",
+      "createdAt": "2026-07-29T22:01:07.000Z"
+    },
+    {
+      "id": "hold-the-line-2026-07-29-experimenting-with-stochastic-fun-mechanisms",
+      "path": "posts/hold-the-line-2026-07-29-experimenting-with-stochastic-fun-mechanisms.json",
+      "title": "Experimenting with Stochastic Fun Mechanisms 🎮",
+      "project": "hold-the-line",
+      "status": "build",
+      "createdAt": "2026-07-29T00:08:00.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-18-switching-things-up",
+      "path": "posts/code-review-simulator-2026-07-18-switching-things-up.json",
+      "title": "Switching Things Up",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-18T11:36:56.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-17-generating-materials-in-godot",
+      "path": "posts/code-review-simulator-2026-07-17-generating-materials-in-godot.json",
+      "title": "Generating Materials in Godot",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-17T05:00:55.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-16-needs-another-pass",
+      "path": "posts/code-review-simulator-2026-07-16-needs-another-pass.json",
+      "title": "Needs Another Pass",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-16T08:47:21.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-16-under-the-surface",
+      "path": "posts/code-review-simulator-2026-07-16-under-the-surface.json",
+      "title": "Under the Surface",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-15T23:13:52.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-15-a-few-new-readings",
+      "path": "posts/code-review-simulator-2026-07-15-a-few-new-readings.json",
+      "title": "A Few New Readings",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-15T07:17:37.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-15-from-primitives-to-polished-props",
+      "path": "posts/code-review-simulator-2026-07-15-from-primitives-to-polished-props.json",
+      "title": "Taking Shape",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-15T07:07:22.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-15-four-procedural-tree-profiles",
+      "path": "posts/code-review-simulator-2026-07-15-four-procedural-tree-profiles.json",
+      "title": "Something Is Growing",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-15T00:00:00.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-15-four-fake-os-profiles-side-by-side",
+      "path": "posts/code-review-simulator-2026-07-15-four-fake-os-profiles-side-by-side.json",
+      "title": "Four FakeOS Profiles, Side by Side",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-15T00:00:00.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-12-npc-animation-loop-pass",
+      "path": "posts/code-review-simulator-2026-07-12-npc-animation-loop-pass.json",
+      "title": "NPC Animation Loop Pass",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-12T02:55:22.000Z"
+    },
+    {
+      "id": "code-review-simulator-2026-07-12-procedural-prop-check",
+      "path": "posts/code-review-simulator-2026-07-12-procedural-prop-check.json",
+      "title": "Procedural Prop Check",
+      "project": "code-review-simulator",
+      "status": "build",
+      "createdAt": "2026-07-12T00:00:00.000Z"
+    },
+    {
+      "id": "demo-tiny-service-test",
+      "path": "posts/demo-tiny-service-test.json",
+      "title": "Tiny Service Test",
+      "project": "Rogue Diner Coop",
+      "status": "wip",
+      "createdAt": "2026-05-28T14:20:00.000Z"
+    },
+    {
+      "id": "demo-code-review-simulator-prototype",
+      "path": "posts/demo-code-review-simulator-prototype.json",
+      "title": "Code Review Simulator WIP: New Prototype",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-05-24T12:00:00.000Z"
+    },
+    {
+      "id": "demo-godot-asset-authoring-plugin",
+      "path": "posts/demo-godot-asset-authoring-plugin.json",
+      "title": "Building a Godot Asset Authoring Plugin",
+      "project": "Godot Asset Authoring",
+      "status": "wip",
+      "createdAt": "2026-05-22T08:32:04.000Z"
+    },
+    {
+      "id": "demo-tech-context",
+      "path": "posts/demo-tech-context.json",
+      "title": "Tech Tree: icons in context",
+      "project": "Upgrade Loop",
+      "status": "feedback",
+      "createdAt": "2026-05-21T08:25:43.000Z"
+    },
+    {
+      "id": "demo-upgrade-icons",
+      "path": "posts/demo-upgrade-icons.json",
+      "title": "Upgrade Icons: first visual pass",
+      "project": "Upgrade Loop",
+      "status": "wip",
+      "createdAt": "2026-05-21T06:15:09.000Z"
+    },
+    {
+      "id": "demo-pebble-run",
+      "path": "posts/demo-pebble-run.json",
+      "title": "Pebble Run Prototype",
+      "project": "Pebble Run",
+      "status": "wip",
+      "createdAt": "2026-05-20T16:43:09.000Z"
+    },
+    {
+      "id": "demo-tech-tree",
+      "path": "posts/demo-tech-tree.json",
+      "title": "Tech Tree",
+      "project": "Upgrade Loop",
+      "status": "wip",
+      "createdAt": "2026-05-20T16:40:55.000Z"
+    }
+  ]
+}

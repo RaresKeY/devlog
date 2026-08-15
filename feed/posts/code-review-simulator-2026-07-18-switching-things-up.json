@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-18-switching-things-up",
+  "title": "Switching Things Up",
+  "project": "code-review-simulator",
+  "body": "\nLight-switch and gizmo work has produced two wall-switch variants.\n\nSound is included—unmute the video to hear the clicks.\n\n[video: A ten-second in-engine comparison of center-pivot and one-sided wall-switch variants, with their shared positional clack audio.](../media/code-review-simulator-2026-07-18-switching-things-up/wall-switch-variant-comparison-with-audio.mp4)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "interaction",
+    "controls",
+    "light-switch",
+    "audio"
+  ],
+  "createdAt": "2026-07-18T11:36:56.000Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-wall-switch-variant-comparison-with-audio",
+      "path": "../media/code-review-simulator-2026-07-18-switching-things-up/wall-switch-variant-comparison-with-audio.mp4",
+      "caption": "A ten-second in-engine comparison of center-pivot and one-sided wall-switch variants, with their shared positional clack audio.",
+      "fileName": "wall-switch-variant-comparison-with-audio.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}

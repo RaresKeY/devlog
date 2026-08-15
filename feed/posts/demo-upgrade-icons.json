@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-upgrade-icons",
+  "title": "Upgrade Icons: first visual pass",
+  "project": "Upgrade Loop",
+  "body": "These are early SVG concepts for upgrades like fire rate, power up and rewards scaling. The goal is to make the upgrade layer feel more like part of the game and less like placeholder buttons, while keeping it readable during a run.\n\nStill in progress.",
+  "status": "wip",
+  "tags": [
+    "godot",
+    "icons",
+    "visual-pass",
+    "upgrade-loop",
+    "ko-fi"
+  ],
+  "createdAt": "2026-05-21T06:15:09.000Z",
+  "visibility": "public",
+  "ctaLabel": "View on Ko-fi",
+  "ctaUrl": "https://ko-fi.com/smallloopworks",
+  "images": [
+    {
+      "id": "demo-upgrade-icons-visual",
+      "path": "../media/demo-upgrade-icons/screenshotfrom2026-05-2106-15-09.png",
+      "alt": "Upgrade Icons: first visual pass",
+      "fileName": "screenshotfrom2026-05-2106-15-09.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

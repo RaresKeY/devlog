@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "charge-grid-2026-08-01-charge-grid-40-minutes-in",
+  "title": "Charge Grid, 40 Minutes In",
+  "project": "charge-grid",
+  "body": "\nThis is Charge Grid after its first prompt iteration, about 40 minutes in.\n\nIt is currently my probable entry for [AI Jam 4](https://itch.io/jam/ai-jam-4). The early direction is an isometric power-grid builder about placing generation, balancing civic charge, and mixing energy sources as the grid grows.\n\nI am testing three other project directions for the jam before I commit to one. I will probably share more of those soon.\n\n![An early Charge Grid build showing an isometric grass grid with hand cranks, battery banks, coal, oil, nuclear, and solar power infrastructure, plus resource and civic-charge controls.](../media/charge-grid-2026-08-01-charge-grid-40-minutes-in/charge-grid-40-minutes-in.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "charge-grid",
+    "devlog",
+    "ai-jam",
+    "game-jam",
+    "prototyping"
+  ],
+  "createdAt": "2026-08-01T14:30:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-charge-grid-40-minutes-in",
+      "path": "../media/charge-grid-2026-08-01-charge-grid-40-minutes-in/charge-grid-40-minutes-in.png",
+      "alt": "An early Charge Grid build showing an isometric grass grid with hand cranks, battery banks, coal, oil, nuclear, and solar power infrastructure, plus resource and civic-charge controls.",
+      "fileName": "charge-grid-40-minutes-in.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

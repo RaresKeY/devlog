@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "unnamed-game-2026-07-30-cards-for-a-new-unnamed-game",
+  "title": "Cards for a New, Unnamed Game",
+  "project": "unnamed-game",
+  "body": "\nWorking on cards for a new game. It doesn't have a name yet.\n\n![A fanned hand of illustrated cards from a new, currently unnamed game.](../media/unnamed-game-2026-07-30-cards-for-a-new-unnamed-game/cards.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "deckbuilder",
+    "unnamed-game",
+    "devlog",
+    "cards",
+    "ui"
+  ],
+  "createdAt": "2026-07-29T22:01:07.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-cards",
+      "path": "../media/unnamed-game-2026-07-30-cards-for-a-new-unnamed-game/cards.png",
+      "alt": "A fanned hand of illustrated cards from a new, currently unnamed game.",
+      "fileName": "cards.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

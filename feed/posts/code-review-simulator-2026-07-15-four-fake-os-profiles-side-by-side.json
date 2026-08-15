@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-15-four-fake-os-profiles-side-by-side",
+  "title": "Four FakeOS Profiles, Side by Side",
+  "project": "code-review-simulator",
+  "body": "\nCode Review Simulator now has four distinct in-world computer profiles: the terminal-only QTerm Barebones, preserved QuartzDesk Classic, focused QuartzDesk Air, and automation-heavy Forgebox. This is a live Godot comparison—each panel runs the real monitor UI rather than a mockup.\n\nQuartzDesk Air introduces the generated app-icon family, while monitor objects now expose their OS selection directly in the Godot inspector. The same work also warms city, mart, checkout, and spawnable content at startup, and removes the expensive geometry rebuild that had made rapid mart BUY presses hitch.\n\n![A live four-panel Godot comparison of QTerm Barebones, QuartzDesk Classic, QuartzDesk Air, and Forgebox.](../media/code-review-simulator-2026-07-15-four-fake-os-profiles-side-by-side/fake-os-version-comparison.png)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "fake-os",
+    "ui",
+    "performance"
+  ],
+  "createdAt": "2026-07-15T00:00:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-fake-os-version-comparison",
+      "path": "../media/code-review-simulator-2026-07-15-four-fake-os-profiles-side-by-side/fake-os-version-comparison.png",
+      "alt": "A live four-panel Godot comparison of QTerm Barebones, QuartzDesk Classic, QuartzDesk Air, and Forgebox.",
+      "fileName": "fake-os-version-comparison.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

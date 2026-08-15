@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "plug-charge-2026-08-01-shaping-the-plugs-and-sockets",
+  "title": "Shaping the Plugs and Sockets",
+  "project": "plug-charge",
+  "body": "\nThis is the connection-point atlas behind the plugs, sockets, and stackable adapters in Plug & Prosper.\n\nThe game slices the artwork into twelve exact cells, then anchors every snap point to a visible contact in source pixels. The colored markers separate held-plug contacts, shaped receptacles, round passthroughs, male mounts, and the wall-socket target. Keeping these guides over the source art helps catch a connector that looks centered but would snap, stack, or bend the cable awkwardly once rendered.\n\nThe goal is for six plug shapes and five adapters to read as one friendly family, while the interaction stays precise enough that matching and stacking feels obvious at a glance.\n\n![An annotated 4-by-3 atlas of six cream-bodied plug shapes, five block adapters, and one wall socket on black, with red cell cuts and colored crosshairs marking contacts, receptacles, passthroughs, mounts, and the socket target.](../media/plug-charge-2026-08-01-shaping-the-plugs-and-sockets/connection-points-atlas.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "plug-charge",
+    "devlog",
+    "art-direction",
+    "interaction-design",
+    "tooling"
+  ],
+  "createdAt": "2026-08-01T19:13:00.000Z",
+  "visibility": "public",
+  "ctaLabel": "Play Plug & Prosper",
+  "ctaUrl": "https://smallloopworks.itch.io/plug-prosper",
+  "images": [
+    {
+      "id": "1-connection-points-atlas",
+      "path": "../media/plug-charge-2026-08-01-shaping-the-plugs-and-sockets/connection-points-atlas.png",
+      "alt": "An annotated 4-by-3 atlas of six cream-bodied plug shapes, five block adapters, and one wall socket on black, with red cell cuts and colored crosshairs marking contacts, receptacles, passthroughs, mounts, and the socket target.",
+      "fileName": "connection-points-atlas.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

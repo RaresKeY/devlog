@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "charge-grid-2026-08-01-four-directions-for-the-jam",
+  "title": "Four Directions for the Jam",
+  "project": "charge-grid",
+  "body": "\nI have been pushing “charge” in four different directions before choosing what to carry forward for [AI Jam 4](https://itch.io/jam/ai-jam-4).\n\nHorizon Charge turns it into speed: fly fast enough to sustain an ion craft’s electrical charge while threading authored tower formations. Charge Knights treats it as a battlefield command, with a formation assembled before each wave and surviving fighters carrying forward. Charge Grid explores the infrastructure meaning through fuel routes, generation types, and a civic charge target. Plug & Prosper makes it tactile: drag device cables into matching receptacles, stack adapters, and keep a small charging shop moving.\n\nThe point is not to polish four games in parallel, but to compare four very different loops—speedrunning, formation tactics, infrastructure management, and a hands-on routing puzzle. Charge Grid is still my probable entry, although I am not locking the choice yet.\n\n![A neon ion craft flying along a curved planetary corridor between dark monolithic towers, with charge, distance, and velocity instruments around the screen.](../media/charge-grid-2026-08-01-four-directions-for-the-jam/horizon-charge.png)\n\n![Two opposing medieval formations facing across a storybook battlefield while the player recruits a left flank before sounding the charge.](../media/charge-grid-2026-08-01-four-directions-for-the-jam/charge-knights.png)\n\n![An isometric Charge Grid board with hand-crank, coal, solar, wind, and storage infrastructure arranged among deposits, roads, fields, and houses.](../media/charge-grid-2026-08-01-four-directions-for-the-jam/charge-grid.png)\n\n![A cheerful charging-shop workbench where a Pocket Pal’s cable is connected through a visible stack of shape adapters while its patience and charge rise.](../media/charge-grid-2026-08-01-four-directions-for-the-jam/plug-and-prosper.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "charge-grid",
+    "devlog",
+    "charge",
+    "ai-jam",
+    "game-jam",
+    "prototyping"
+  ],
+  "createdAt": "2026-08-01T15:36:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-horizon-charge",
+      "path": "../media/charge-grid-2026-08-01-four-directions-for-the-jam/horizon-charge.png",
+      "alt": "A neon ion craft flying along a curved planetary corridor between dark monolithic towers, with charge, distance, and velocity instruments around the screen.",
+      "fileName": "horizon-charge.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-charge-knights",
+      "path": "../media/charge-grid-2026-08-01-four-directions-for-the-jam/charge-knights.png",
+      "alt": "Two opposing medieval formations facing across a storybook battlefield while the player recruits a left flank before sounding the charge.",
+      "fileName": "charge-knights.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "3-charge-grid",
+      "path": "../media/charge-grid-2026-08-01-four-directions-for-the-jam/charge-grid.png",
+      "alt": "An isometric Charge Grid board with hand-crank, coal, solar, wind, and storage infrastructure arranged among deposits, roads, fields, and houses.",
+      "fileName": "charge-grid.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "4-plug-and-prosper",
+      "path": "../media/charge-grid-2026-08-01-four-directions-for-the-jam/plug-and-prosper.png",
+      "alt": "A cheerful charging-shop workbench where a Pocket Pal’s cable is connected through a visible stack of shape adapters while its patience and charge rise.",
+      "fileName": "plug-and-prosper.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-15-four-procedural-tree-profiles",
+  "title": "Something Is Growing",
+  "project": "code-review-simulator",
+  "body": "\nA few new silhouettes are growing in the lab. They look different on the surface, but they may have more in common than it seems.\n\nThere is more to them than scenery. That part can wait.\n\n![Four stylized procedural trees—a pine, birch, oak, and dense pale-barked leafy variant—standing side by side on a dark green field.](../media/code-review-simulator-2026-07-15-four-procedural-tree-profiles/procedural-tree-profiles.png)\n\n![A more refined procedural oak tree viewed from the front, with a broad branching trunk and fuller green foliage against a dark background.](../media/code-review-simulator-2026-07-15-four-procedural-tree-profiles/section-oak-front.jpg)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "procedural",
+    "trees",
+    "firewood",
+    "validation"
+  ],
+  "createdAt": "2026-07-15T00:00:00.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-procedural-tree-profiles",
+      "path": "../media/code-review-simulator-2026-07-15-four-procedural-tree-profiles/procedural-tree-profiles.png",
+      "alt": "Four stylized procedural trees—a pine, birch, oak, and dense pale-barked leafy variant—standing side by side on a dark green field.",
+      "fileName": "procedural-tree-profiles.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-section-oak-front",
+      "path": "../media/code-review-simulator-2026-07-15-four-procedural-tree-profiles/section-oak-front.jpg",
+      "alt": "A more refined procedural oak tree viewed from the front, with a broad branching trunk and fuller green foliage against a dark background.",
+      "fileName": "section-oak-front.jpg",
+      "contentType": "image/jpeg"
+    }
+  ],
+  "videos": []
+}

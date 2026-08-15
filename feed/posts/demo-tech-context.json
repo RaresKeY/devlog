@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "demo-tech-context",
+  "title": "Tech Tree: icons in context",
+  "project": "Upgrade Loop",
+  "body": "Testing upgrade icons inside the actual tech tree instead of only as standalone SVG concepts.\n\n- checking whether locked nodes still read as unavailable\n- comparing icon silhouettes at small sizes\n\n**Goal:** make progression clear before the player opens any detail panel.",
+  "status": "feedback",
+  "tags": [
+    "godot",
+    "tech-tree",
+    "icons",
+    "ko-fi"
+  ],
+  "createdAt": "2026-05-21T08:25:43.000Z",
+  "visibility": "public",
+  "ctaLabel": "View on Ko-fi",
+  "ctaUrl": "https://ko-fi.com/smallloopworks",
+  "images": [
+    {
+      "id": "demo-tech-context-visual",
+      "path": "../media/demo-tech-context/screenshotfrom2026-05-2108-25-43.png",
+      "alt": "Tech Tree: icons in context",
+      "fileName": "screenshotfrom2026-05-2108-25-43.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

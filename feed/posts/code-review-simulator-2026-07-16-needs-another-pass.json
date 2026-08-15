@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-16-needs-another-pass",
+  "title": "Needs Another Pass",
+  "project": "code-review-simulator",
+  "body": "\nSome surfaces are going to take a little more work.\n\nOne pass might not be enough.\n\n![A close-up of a suspended blue car door at 54.1% clean, with an abrasive sponge held against the panel and patches of embedded oxide stain still visible.](../media/code-review-simulator-2026-07-16-needs-another-pass/mid-cleaning-scrub.png)\n\n![A dark garage restoration bay with a rusted car door hanging from chains and an abrasive sponge waiting on a workbench beneath the Oxide Bay 07 sign.](../media/code-review-simulator-2026-07-16-needs-another-pass/garage-overview.png)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "restoration",
+    "rust",
+    "interaction",
+    "garage"
+  ],
+  "createdAt": "2026-07-16T08:47:21.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-mid-cleaning-scrub",
+      "path": "../media/code-review-simulator-2026-07-16-needs-another-pass/mid-cleaning-scrub.png",
+      "alt": "A close-up of a suspended blue car door at 54.1% clean, with an abrasive sponge held against the panel and patches of embedded oxide stain still visible.",
+      "fileName": "mid-cleaning-scrub.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-garage-overview",
+      "path": "../media/code-review-simulator-2026-07-16-needs-another-pass/garage-overview.png",
+      "alt": "A dark garage restoration bay with a rusted car door hanging from chains and an abrasive sponge waiting on a workbench beneath the Oxide Bay 07 sign.",
+      "fileName": "garage-overview.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

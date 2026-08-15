@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "horizon-charge-2026-08-02-a-run-to-impact",
+  "title": "A Run to Impact",
+  "project": "horizon-charge",
+  "body": "\nOne Horizon Charge run from low-speed ignition to a pylon impact at 1,686 metres.\n\nSpeed refills charge, steering costs speed, and the towers keep narrowing the route. This run reaches full charge and two near misses, then ends 17 metres short of the current best when I smash into a pylon and lose.\n\n[video: Horizon Charge gameplay from ignition through full speed to a pylon impact at 1,686 metres.](../media/horizon-charge-2026-08-02-a-run-to-impact/horizon-charge-high-speed-run.mp4)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "horizon-charge",
+    "devlog",
+    "ai-jam",
+    "gameplay",
+    "speedrunner",
+    "3d"
+  ],
+  "createdAt": "2026-08-01T22:25:00.000Z",
+  "visibility": "public",
+  "ctaLabel": "Play Horizon Charge",
+  "ctaUrl": "https://smallloopworks.itch.io/horizon-charge",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-horizon-charge-high-speed-run",
+      "path": "../media/horizon-charge-2026-08-02-a-run-to-impact/horizon-charge-high-speed-run.mp4",
+      "caption": "Horizon Charge gameplay from ignition through full speed to a pylon impact at 1,686 metres.",
+      "fileName": "horizon-charge-high-speed-run.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}

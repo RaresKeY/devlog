@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-17-generating-materials-in-godot",
+  "title": "Generating Materials in Godot",
+  "project": "code-review-simulator",
+  "body": "\nWorking on generating materials in Godot.\n\nA few very different surfaces are starting to come together.\n\n![Twelve-panel Godot material contact sheet showing procedural cardboard, denim, nylon, stainless steel, rusted iron, brick, ceramic tile, pine wood, marble, terrazzo, carbon fiber, and a mottled rust layer on consistent test shapes.](../media/code-review-simulator-2026-07-17-generating-materials-in-godot/generated-material-closeups.png)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "materials",
+    "procedural",
+    "shaders",
+    "3d-art"
+  ],
+  "createdAt": "2026-07-17T05:00:55.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-generated-material-closeups",
+      "path": "../media/code-review-simulator-2026-07-17-generating-materials-in-godot/generated-material-closeups.png",
+      "alt": "Twelve-panel Godot material contact sheet showing procedural cardboard, denim, nylon, stainless steel, rusted iron, brick, ceramic tile, pine wood, marble, terrazzo, carbon fiber, and a mottled rust layer on consistent test shapes.",
+      "fileName": "generated-material-closeups.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

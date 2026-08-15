@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-15-a-few-new-readings",
+  "title": "A Few New Readings",
+  "project": "code-review-simulator",
+  "body": "\nA few readings are beginning to settle into place.\n\nWhat they are watching—and where they will end up—can stay unclear for now.\n\n[video: A silent locked-camera showcase of five in-world gauges for vehicle speed, magnetic heading, analog time, fuel level, and heart rate.](../media/code-review-simulator-2026-07-15-a-few-new-readings/gauge-hero-devlog.mp4)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "gauges",
+    "instrumentation",
+    "3d-ui",
+    "validation"
+  ],
+  "createdAt": "2026-07-15T07:17:37.000Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-gauge-hero-devlog",
+      "path": "../media/code-review-simulator-2026-07-15-a-few-new-readings/gauge-hero-devlog.mp4",
+      "caption": "A silent locked-camera showcase of five in-world gauges for vehicle speed, magnetic heading, analog time, fuel level, and heart rate.",
+      "fileName": "gauge-hero-devlog.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}

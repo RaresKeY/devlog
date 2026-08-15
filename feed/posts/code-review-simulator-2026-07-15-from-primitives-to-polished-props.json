@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-07-15-from-primitives-to-polished-props",
+  "title": "Taking Shape",
+  "project": "code-review-simulator",
+  "body": "\nSomething is taking shape in the lab. A few familiar objects are starting to appear, though the path from one to the next is still being worked out.\n\nFor now, this is just a glimpse.\n\n![A Geometry Authoring Lab catalog showing three stages of a brass tuba, followed by a teal rotary phone, coral desk fan, and blue bench vise on labeled pedestals.](../media/code-review-simulator-2026-07-15-from-primitives-to-polished-props/cpu-catalog-overview.png)\n\n![Four brass tuba iterations on dark plinths, progressing from simple primitive construction to swept tubing, added valves, and a more connected final assembly.](../media/code-review-simulator-2026-07-15-from-primitives-to-polished-props/tuba-iteration.png)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "geometry",
+    "asset-authoring",
+    "3d-art",
+    "validation"
+  ],
+  "createdAt": "2026-07-15T07:07:22.000Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-cpu-catalog-overview",
+      "path": "../media/code-review-simulator-2026-07-15-from-primitives-to-polished-props/cpu-catalog-overview.png",
+      "alt": "A Geometry Authoring Lab catalog showing three stages of a brass tuba, followed by a teal rotary phone, coral desk fan, and blue bench vise on labeled pedestals.",
+      "fileName": "cpu-catalog-overview.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-tuba-iteration",
+      "path": "../media/code-review-simulator-2026-07-15-from-primitives-to-polished-props/tuba-iteration.png",
+      "alt": "Four brass tuba iterations on dark plinths, progressing from simple primitive construction to swept tubing, added valves, and a more connected final assembly.",
+      "fileName": "tuba-iteration.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

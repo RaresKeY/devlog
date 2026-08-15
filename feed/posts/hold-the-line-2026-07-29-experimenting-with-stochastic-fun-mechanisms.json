@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "hold-the-line-2026-07-29-experimenting-with-stochastic-fun-mechanisms",
+  "title": "Experimenting with Stochastic Fun Mechanisms 🎮",
+  "project": "hold-the-line",
+  "body": "\nHold the Line is a one-button push-your-luck game: choose a fictional stake, press and hold as the multiplier and pressure rise, then release before the circuit busts.\n\nThe interesting bit is the signal. Pressure is noisy but correlated with the actual tick hazard, so the player gets imperfect information instead of arbitrary warning lights. Generated audio follows the same state, and the whole thing ships as a dependency-free static browser game.\n\n[Play Hold the Line](https://holdbutton.web.app) · [Source on GitHub](https://github.com/RaresKeY/holdbutton)\n\n![Hold the Line after banking a 2.18× round, with its glowing reactor, critical pressure signal, fictional-credit wallet, and recent score history.](../media/hold-the-line-2026-07-29-experimenting-with-stochastic-fun-mechanisms/hold-the-line.png)\n",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "browser-game",
+    "hold-the-line",
+    "devlog",
+    "stochastic-design",
+    "push-your-luck",
+    "deno"
+  ],
+  "createdAt": "2026-07-29T00:08:00.000Z",
+  "visibility": "public",
+  "ctaLabel": "Play Hold the Line",
+  "ctaUrl": "https://holdbutton.web.app",
+  "images": [
+    {
+      "id": "1-hold-the-line",
+      "path": "../media/hold-the-line-2026-07-29-experimenting-with-stochastic-fun-mechanisms/hold-the-line.png",
+      "alt": "Hold the Line after banking a 2.18× round, with its glowing reactor, critical pressure signal, fictional-credit wallet, and recent score history.",
+      "fileName": "hold-the-line.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
