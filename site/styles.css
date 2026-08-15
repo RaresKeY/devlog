@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./fonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./fonts/JetBrainsMono-Italic.woff2") format("woff2");
+  font-display: swap;
+  font-style: italic;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("./fonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+
 :root {
   color: #28222e;
   background: #f6f1e8;
@@ -16,10 +40,20 @@
   --green: #4d806d;
   --line: rgba(58, 46, 61, 0.16);
   --shadow: 0 24px 60px rgba(43, 31, 42, 0.11);
-  --post-content-font-current: Georgia, "Times New Roman", serif;
-  --post-content-font-trial: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
-  /* Font trial: point this token at --post-content-font-current to restore Georgia. */
+  --post-content-font-original: Georgia, "Times New Roman", serif;
+  --post-content-font-previous: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
+  --post-content-font-trial: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --post-content-size-previous: 17px;
+  --post-content-size-trial: 16px;
+  --post-content-line-height-previous: 1.72;
+  --post-content-line-height-trial: 1.78;
+  --post-content-letter-spacing-previous: normal;
+  --post-content-letter-spacing-trial: -0.012em;
+  /* Font trial: point the four active tokens at their -previous values to restore Charter. */
   --post-content-font: var(--post-content-font-trial);
+  --post-content-size: var(--post-content-size-trial);
+  --post-content-line-height: var(--post-content-line-height-trial);
+  --post-content-letter-spacing: var(--post-content-letter-spacing-trial);
   --post-content-link: #9f382b;
   --post-content-link-highlight: rgba(232, 110, 82, 0.16);
 }
@@ -217,6 +251,7 @@ a {
 }
 
 .hero-art {
+  isolation: isolate;
   position: relative;
   width: min(100%, 440px);
   justify-self: end;
@@ -224,7 +259,19 @@ a {
 }
 
 .hero-art::before {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: 4% 0 8%;
+  z-index: -1;
+  border: 1px solid rgba(75, 56, 104, 0.14);
+  border-radius: 32px;
+  background:
+    linear-gradient(rgba(75, 56, 104, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(75, 56, 104, 0.045) 1px, transparent 1px),
+    radial-gradient(circle at 50% 42%, rgba(116, 86, 163, 0.16), rgba(255, 253, 248, 0.36) 70%);
+  background-size: 28px 28px, 28px 28px, auto;
+  box-shadow: 0 28px 60px rgba(64, 45, 91, 0.09);
+  transform: rotate(-1.2deg);
 }
 
 .hero-art img {
@@ -235,12 +282,25 @@ a {
 }
 
 .hero-art figcaption {
-  margin: 10px 2px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  margin: 11px 7px 0;
   color: #665d63;
-  font-family: Georgia, serif;
-  font-size: 13px;
-  font-style: italic;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 750;
+  letter-spacing: 0.09em;
   text-align: right;
+  text-transform: uppercase;
+}
+
+.hero-art figcaption::before {
+  width: 28px;
+  height: 1px;
+  background: rgba(159, 56, 43, 0.5);
+  content: "";
 }
 
 .feed {
@@ -447,8 +507,11 @@ a {
   padding-bottom: 32px;
   color: #514a54;
   font-family: var(--post-content-font);
-  font-size: 17px;
-  line-height: 1.72;
+  font-size: var(--post-content-size);
+  font-weight: 400;
+  letter-spacing: var(--post-content-letter-spacing);
+  line-height: var(--post-content-line-height);
+  font-feature-settings: "calt" 0, "liga" 0;
 }
 
 .update-body p {
@@ -466,6 +529,7 @@ a {
   color: var(--ink);
   font-family: Inter, ui-sans-serif, system-ui, sans-serif;
   font-size: 16px;
+  letter-spacing: normal;
   line-height: 1.35;
 }
 
@@ -513,6 +577,7 @@ a {
   background: var(--paper-deep);
   font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.84em;
+  letter-spacing: normal;
 }
 
 .media-gallery {

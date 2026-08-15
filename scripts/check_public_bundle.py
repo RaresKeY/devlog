@@ -30,13 +30,31 @@ REQUIRED_SITE_FILES = {
     "favicon-32.png",
     "favicon-512.png",
     "favicon.ico",
+    "fonts/JetBrainsMono-Bold.woff2",
+    "fonts/JetBrainsMono-Italic.woff2",
+    "fonts/JetBrainsMono-Regular.woff2",
+    "fonts/OFL.txt",
     "hero.webp",
     "index.html",
     "styles.css",
 }
-ALLOWED_SITE_SUFFIXES = {".css", ".html", ".ico", ".js", ".png", ".webp"}
+REQUIRED_FONT_FILES = {
+    "fonts/JetBrainsMono-Bold.woff2",
+    "fonts/JetBrainsMono-Italic.woff2",
+    "fonts/JetBrainsMono-Regular.woff2",
+}
+ALLOWED_SITE_SUFFIXES = {
+    ".css",
+    ".html",
+    ".ico",
+    ".js",
+    ".png",
+    ".txt",
+    ".webp",
+    ".woff2",
+}
 ALLOWED_MEDIA_SUFFIXES = {".jpg", ".jpeg", ".mp4", ".png", ".webm", ".webp"}
-TEXT_SUFFIXES = {".css", ".html", ".js", ".json", ".md", ".yml", ".yaml"}
+TEXT_SUFFIXES = {".css", ".html", ".js", ".json", ".md", ".txt", ".yml", ".yaml"}
 VALID_STATUSES = {"wip", "feedback", "build", "milestone", "supporter"}
 INDEX_KEYS = {"schemaVersion", "repository", "branch", "posts"}
 INDEX_POST_KEYS = {"id", "path", "title", "project", "status", "createdAt"}
@@ -233,6 +251,24 @@ def validate_site() -> tuple[list[str], int]:
                 failures.append(f"app.js: required runtime behavior is missing: {marker}")
         if "innerHTML" in app:
             failures.append("app.js: public post content must not use innerHTML")
+
+    styles_path = SITE / "styles.css"
+    if styles_path.is_file():
+        styles = styles_path.read_text(encoding="utf-8")
+        for relative_font in sorted(REQUIRED_FONT_FILES):
+            font_path = SITE / relative_font
+            if relative_font not in styles:
+                failures.append(
+                    f"styles.css: required font reference is missing: {relative_font}"
+                )
+            if font_path.is_file() and not font_path.read_bytes().startswith(b"wOF2"):
+                failures.append(f"site/{relative_font}: invalid WOFF2 signature")
+
+    license_path = SITE / "fonts" / "OFL.txt"
+    if license_path.is_file() and "SIL OPEN FONT LICENSE Version 1.1" not in license_path.read_text(
+        encoding="utf-8"
+    ):
+        failures.append("site/fonts/OFL.txt: expected SIL Open Font License marker")
 
     return failures, len(actual_files)
 

@@ -31,9 +31,10 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 
 ### Presentation tokens
 
-- The hero keeps the current page composition but presents its image at its natural aspect ratio without a colored backing card or oversized frame.
+- The hero keeps the current page composition, image size, and natural aspect ratio. A restrained purple blueprint-grid backdrop and compact workbench label give the transparent image visual support without restoring the oversized orange card.
 - Links inside post content use a distinct underlined, highlighted treatment with visible hover and keyboard-focus states; navigation and other link styles are unchanged.
-- Post body copy uses `--post-content-font`, which currently points to `--post-content-font-trial`. Point it to `--post-content-font-current` in `site/styles.css` to restore the previous Georgia stack without changing any other typography.
+- Post body copy uses self-hosted JetBrains Mono 2.304 at prose-oriented size, leading, weight, and tracking. The regular, italic, and bold WOFF2 files and OFL license live in `site/fonts/`; no third-party font request is made at runtime.
+- The preceding Charter treatment is preserved in the `-previous` font, size, line-height, and letter-spacing tokens. Point the four active `--post-content-*` tokens at those values to revert the whole trial without changing other typography; the original Georgia stack remains named separately.
 - `site/index.html` versions the stylesheet URL with a query token. CSS releases bump that token so GitHub Pages' ten-minute asset cache cannot leave an already-open browser on the previous presentation.
 
 ### Workflows
@@ -47,5 +48,5 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 
 - `python3 scripts/check_public_bundle.py`
 - `git diff --check`
-- The verifier checks site paths and references, raw-feed configuration, canonical metadata, index order and uniqueness, post schemas, exact post/media ownership, MIME/file consistency, symlinks, size limits, credential signatures, private machine context and source-revision fragments, source maps, obsolete compiled assets, and forbidden publisher/admin markers.
+- The verifier checks site paths and references, exact self-hosted font files, WOFF2 signatures and the OFL marker, raw-feed configuration, canonical metadata, index order and uniqueness, post schemas, exact post/media ownership, MIME/file consistency, symlinks, size limits, credential signatures, private machine context and source-revision fragments, source maps, obsolete compiled assets, and forbidden publisher/admin markers.
 - The feed workflow provides feed-only CI without creating or deploying a Pages artifact. The Pages workflow repeats the full verifier before deployment when the browser or deployment surface changes.

@@ -30,7 +30,9 @@ All content and complete Git history are public. Do not commit drafts, credentia
 
 ## Presentation tokens
 
-Post content is currently using the `--post-content-font-trial` stack in `site/styles.css`. To restore the previous Georgia stack after reviewing the trial, change `--post-content-font` from `var(--post-content-font-trial)` to `var(--post-content-font-current)`. This token changes post body copy only; the rest of the site's typography is independent.
+Post content is currently trialling the self-hosted JetBrains Mono stack in `site/styles.css`. The preceding Charter treatment remains available through the `-previous` tokens, and the original Georgia stack remains named as `--post-content-font-original`.
+
+To restore the complete Charter treatment after reviewing the trial, point `--post-content-font`, `--post-content-size`, `--post-content-line-height`, and `--post-content-letter-spacing` at their matching `-previous` tokens. These tokens change post body copy only; the rest of the site's typography is independent. The bundled JetBrains Mono files are version 2.304 and retain their OFL license in `site/fonts/OFL.txt`.
 
 When publishing a CSS change, bump the `styles.css` query token in `site/index.html` so existing browsers do not retain GitHub Pages' cached stylesheet.
 
