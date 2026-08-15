@@ -34,6 +34,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - The hero keeps the current page composition but presents its image at its natural aspect ratio without a colored backing card or oversized frame.
 - Links inside post content use a distinct underlined, highlighted treatment with visible hover and keyboard-focus states; navigation and other link styles are unchanged.
 - Post body copy uses `--post-content-font`, which currently points to `--post-content-font-trial`. Point it to `--post-content-font-current` in `site/styles.css` to restore the previous Georgia stack without changing any other typography.
+- `site/index.html` versions the stylesheet URL with a query token. CSS releases bump that token so GitHub Pages' ten-minute asset cache cannot leave an already-open browser on the previous presentation.
 
 ### Workflows
 

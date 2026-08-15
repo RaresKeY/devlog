@@ -32,6 +32,8 @@ All content and complete Git history are public. Do not commit drafts, credentia
 
 Post content is currently using the `--post-content-font-trial` stack in `site/styles.css`. To restore the previous Georgia stack after reviewing the trial, change `--post-content-font` from `var(--post-content-font-trial)` to `var(--post-content-font-current)`. This token changes post body copy only; the rest of the site's typography is independent.
 
+When publishing a CSS change, bump the `styles.css` query token in `site/index.html` so existing browsers do not retain GitHub Pages' cached stylesheet.
+
 ## Verify
 
 ```bash
