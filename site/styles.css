@@ -1,27 +1,3 @@
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("./fonts/JetBrainsMono-Regular.woff2") format("woff2");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("./fonts/JetBrainsMono-Italic.woff2") format("woff2");
-  font-display: swap;
-  font-style: italic;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "JetBrains Mono";
-  src: url("./fonts/JetBrainsMono-Bold.woff2") format("woff2");
-  font-display: swap;
-  font-style: normal;
-  font-weight: 700;
-}
-
 :root {
   color: #28222e;
   background: #f6f1e8;
@@ -40,20 +16,14 @@
   --green: #4d806d;
   --line: rgba(58, 46, 61, 0.16);
   --shadow: 0 24px 60px rgba(43, 31, 42, 0.11);
-  --post-content-font-original: Georgia, "Times New Roman", serif;
-  --post-content-font-previous: Charter, "Bitstream Charter", "Sitka Text", Cambria, serif;
-  --post-content-font-trial: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  --post-content-size-previous: 17px;
-  --post-content-size-trial: 16px;
-  --post-content-line-height-previous: 1.72;
-  --post-content-line-height-trial: 1.78;
-  --post-content-letter-spacing-previous: normal;
-  --post-content-letter-spacing-trial: -0.012em;
-  /* Font trial: point the four active tokens at their -previous values to restore Charter. */
-  --post-content-font: var(--post-content-font-trial);
-  --post-content-size: var(--post-content-size-trial);
-  --post-content-line-height: var(--post-content-line-height-trial);
-  --post-content-letter-spacing: var(--post-content-letter-spacing-trial);
+  --post-content-font-current: Georgia, "Times New Roman", serif;
+  --post-content-size-current: 17px;
+  --post-content-line-height-current: 1.72;
+  --post-content-letter-spacing-current: normal;
+  --post-content-font: var(--post-content-font-current);
+  --post-content-size: var(--post-content-size-current);
+  --post-content-line-height: var(--post-content-line-height-current);
+  --post-content-letter-spacing: var(--post-content-letter-spacing-current);
   --post-content-link: #9f382b;
   --post-content-link-highlight: rgba(232, 110, 82, 0.16);
 }
@@ -511,7 +481,6 @@ a {
   font-weight: 400;
   letter-spacing: var(--post-content-letter-spacing);
   line-height: var(--post-content-line-height);
-  font-feature-settings: "calt" 0, "liga" 0;
 }
 
 .update-body p {
