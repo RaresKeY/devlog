@@ -28,6 +28,10 @@ The Pages app fetches `feed/index.json` and each indexed post from this reposito
 
 All content and complete Git history are public. Do not commit drafts, credentials, private source context, local paths, scheduler state, or publisher configuration.
 
+## Presentation tokens
+
+Post content is currently using the `--post-content-font-trial` stack in `site/styles.css`. To restore the previous Georgia stack after reviewing the trial, change `--post-content-font` from `var(--post-content-font-trial)` to `var(--post-content-font-current)`. This token changes post body copy only; the rest of the site's typography is independent.
+
 ## Verify
 
 ```bash

@@ -29,6 +29,12 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - A live-fetch failure uses the saved copy when valid and displays a stale-feed notice. Without a valid copy, the app displays an error state; it never silently presents an empty feed.
 - User-authored text is rendered through DOM text nodes and a small allow-listed Markdown renderer. Post JSON is never injected as HTML.
 
+### Presentation tokens
+
+- The hero keeps the current page composition but presents its image at its natural aspect ratio without a colored backing card or oversized frame.
+- Links inside post content use a distinct underlined, highlighted treatment with visible hover and keyboard-focus states; navigation and other link styles are unchanged.
+- Post body copy uses `--post-content-font`, which currently points to `--post-content-font-trial`. Point it to `--post-content-font-current` in `site/styles.css` to restore the previous Georgia stack without changing any other typography.
+
 ### Workflows
 
 - GitHub Pages uses Actions mode and publishes only `site/` through the `github-pages` environment.
