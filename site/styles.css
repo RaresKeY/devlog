@@ -64,6 +64,10 @@ a {
   margin-inline: auto;
 }
 
+.hero-viewport {
+  overflow-x: clip;
+}
+
 .site-header {
   min-height: 82px;
   display: flex;
@@ -116,6 +120,8 @@ a {
 }
 
 .hero {
+  isolation: isolate;
+  position: relative;
   min-height: 620px;
   display: grid;
   grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
@@ -221,7 +227,6 @@ a {
 }
 
 .hero-art {
-  isolation: isolate;
   position: relative;
   width: min(100%, 440px);
   justify-self: end;
@@ -231,7 +236,10 @@ a {
 .hero-art::before {
   content: "";
   position: absolute;
-  inset: 4% 0 8%;
+  top: 4%;
+  bottom: 8%;
+  left: 50%;
+  width: 200vw;
   z-index: -1;
   border: 1px solid rgba(75, 56, 104, 0.14);
   border-radius: 32px;
@@ -241,10 +249,12 @@ a {
     radial-gradient(circle at 50% 42%, rgba(116, 86, 163, 0.16), rgba(255, 253, 248, 0.36) 70%);
   background-size: 28px 28px, 28px 28px, auto;
   box-shadow: 0 28px 60px rgba(64, 45, 91, 0.09);
-  transform: rotate(-1.2deg);
+  transform: translateX(-50%) rotate(-1.2deg);
 }
 
 .hero-art img {
+  position: relative;
+  z-index: 1;
   display: block;
   width: 100%;
   height: auto;
@@ -252,6 +262,8 @@ a {
 }
 
 .hero-art figcaption {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: flex-end;

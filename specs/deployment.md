@@ -31,7 +31,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 
 ### Presentation tokens
 
-- The hero keeps the current page composition, image size, and natural aspect ratio. A restrained purple blueprint-grid backdrop and compact workbench label give the transparent image visual support without restoring the oversized orange card.
+- The hero keeps the current page composition, image size, and natural aspect ratio. Its restrained angled purple blueprint-grid backdrop extends beyond both viewport edges as a continuous paper panel, while a dedicated full-width hero wrapper clips it without scrolling and the image remains layered above it. The compact workbench label and the backdrop's existing texture, color, and border accent remain unchanged.
 - Links inside post content use a distinct underlined, highlighted treatment with visible hover and keyboard-focus states; navigation and other link styles are unchanged.
 - Post body copy uses the original Georgia stack through the active `--post-content-*-current` font, size, line-height, and letter-spacing tokens. Former font trials and their runtime assets are not part of the current site.
 - `site/index.html` versions the stylesheet URL with a query token. CSS releases bump that token so GitHub Pages' ten-minute asset cache cannot leave an already-open browser on the previous presentation.
