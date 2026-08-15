@@ -127,7 +127,7 @@ a {
   grid-template-columns: minmax(0, 1.02fr) minmax(360px, 0.98fr);
   align-items: center;
   gap: clamp(44px, 7vw, 92px);
-  padding: 76px 0 96px;
+  padding: 76px 0 42px;
 }
 
 .eyebrow {
@@ -261,33 +261,8 @@ a {
   border-radius: 14px;
 }
 
-.hero-art figcaption {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 9px;
-  margin: 11px 7px 0;
-  color: #665d63;
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 750;
-  letter-spacing: 0.09em;
-  text-align: right;
-  text-transform: uppercase;
-}
-
-.hero-art figcaption::before {
-  width: 28px;
-  height: 1px;
-  background: rgba(159, 56, 43, 0.5);
-  content: "";
-}
-
 .feed {
-  padding: 90px 0 120px;
-  border-top: 1px solid var(--line);
+  padding: 38px 0 120px;
 }
 
 .section-heading {
@@ -805,7 +780,7 @@ a {
   .hero {
     min-height: 0;
     gap: 54px;
-    padding: 42px 0 76px;
+    padding: 42px 0 40px;
   }
 
   .hero h1 {
@@ -821,7 +796,7 @@ a {
   }
 
   .feed {
-    padding: 68px 0 90px;
+    padding: 38px 0 90px;
   }
 
   .section-heading,
