@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "id": "world-state-simulator-2026-08-15-scenario-labs-first-linkedin-post",
+  "title": "I'm building World State Simulator, a real-time grand-strategy game and world simulation in Godot.",
+  "project": "world-state-simulator",
+  "body": "I'm building World State Simulator, a real-time grand-strategy game and world simulation in Godot. One problem I'm exploring is how many military formations can move and fight without turning the simulation into either an unreadable crowd or a set of statistical shortcuts.\nEach formation needs to stay individually tracked and authoritative. At the same time, the system has to handle free movement, region fronts, collisions, avoidance, targeting, and combat in a repeatable way.\nTo explore that, I'm building small playable battle experiments called Scenario Labs. The same setup can run visibly in the game or without graphics for repeatable checks, so I can compare behaviours without creating separate test-only rules.\nThe 5,000-formation lab began as a boundary and learning test. It exposed where the original approach struggled and made the next engineering problem visible.\nThe useful lesson is that a performance experiment should preserve the behaviour being designed, not just produce a larger number. These labs are exploratory and playable, but they turn design questions into concrete, repeatable evidence.\n#GameDev #Godot #Simulation",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "simulation",
+    "world-state-simulator",
+    "scenario-labs"
+  ],
+  "createdAt": "2026-08-15T06:11:35Z",
+  "visibility": "public",
+  "images": [],
+  "videos": []
+}

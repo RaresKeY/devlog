@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "world-state-simulator-2026-08-15-scenario-labs-first-linkedin-post",
+      "path": "posts/world-state-simulator-2026-08-15-scenario-labs-first-linkedin-post.json",
+      "title": "I'm building World State Simulator, a real-time grand-strategy game and world simulation in Godot.",
+      "project": "world-state-simulator",
+      "status": "build",
+      "createdAt": "2026-08-15T06:11:35Z"
+    },
+    {
       "id": "charge-knights-2026-08-09-three-new-puppets-for-the-warfront",
       "path": "posts/charge-knights-2026-08-09-three-new-puppets-for-the-warfront.json",
       "title": "Three New Puppets for the Warfront",
