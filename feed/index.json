@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture",
+      "path": "posts/world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture.json",
+      "title": "When 5,000 formations changed the simulation architecture",
+      "project": "world-state-simulator",
+      "status": "build",
+      "createdAt": "2026-08-16T06:54:03Z"
+    },
+    {
       "id": "world-state-simulator-2026-08-15-scenario-labs-first-linkedin-post",
       "path": "posts/world-state-simulator-2026-08-15-scenario-labs-first-linkedin-post.json",
       "title": "I'm building World State Simulator, a real-time grand-strategy game and world simulation in Godot.",

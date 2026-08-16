@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture",
+  "title": "When 5,000 formations changed the simulation architecture",
+  "project": "world-state-simulator",
+  "body": "World State Simulator's 5,000-formation Scenario Lab started as a scale test. It ended up exposing an architectural ownership boundary.\nOn an Apple M1 running Godot 4.7.1, the synthetic moving workload measured a median of roughly 123.4 ms per logical tick at 5,000 formations in the earlier partially native path. Profiling did not point to one bad loop. The cost accumulated as thousands of dynamic per-formation records remained owned in GDScript and were repeatedly prepared, crossed, traversed, and republished across planning, movement, targeting, history, and presentation boundaries.\nThe redesign moved the high-volume active state into one dense C++ GDExtension owner. Formations still keep individual identities, orders, positions, health, targets, and deterministic consequences. Commands enter at the tick boundary, shared results commit in stable order, and protected fixtures retain parity with the GDScript reference implementation.\nIn the matched local headless matrix on that same Apple M1, the synthetic 5,000-formation moving workload measured roughly 0.993 ms per logical tick. That is a bounded simulation-time result for this build and workload—not a universal capacity claim, a rendering benchmark, or evidence about the attached video's frame pacing.\nThe 18-second muted clip is visual composition and progression evidence only. It combines separate 2v2, 50v50 line-versus-column, and 2,500v2,500 native-core Scenario Labs. It does not prove the benchmark or interactive frame pacing.\nThe useful result was not \"C++ good, GDScript bad.\" The scripted prototype made behavior easy to explore and verify; the Scenario Lab showed when the ownership model, not just an algorithm, had to change.",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "godot",
+    "simulation",
+    "world-state-simulator",
+    "scenario-labs",
+    "performance",
+    "cpp"
+  ],
+  "createdAt": "2026-08-16T06:54:03Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "world-state-simulator-native-ownership-scenario-sequence",
+      "path": "../media/world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture/world-state-small-line-column-scale-sequence-4s-6s-8s-muted.mp4",
+      "fileName": "world-state-small-line-column-scale-sequence-4s-6s-8s-muted.mp4",
+      "contentType": "video/mp4",
+      "caption": "Visual composition/progression evidence only: separate 2v2 (4s), 50v50 line-versus-column (6s), and 2,500v2,500 native-core (8s) Scenario Labs. This muted fixed-offline clip does not prove the benchmark or interactive frame pacing."
+    }
+  ]
+}
