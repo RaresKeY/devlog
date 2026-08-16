@@ -20,7 +20,7 @@ MEDIA = FEED / "media"
 CANONICAL_URL = "https://rareskey.github.io/devlog/"
 RAW_FEED_ROOT = "https://raw.githubusercontent.com/RaresKeY/devlog/main/feed/"
 MAX_PUBLIC_BYTES = 128 * 1024 * 1024
-MAX_FILE_BYTES = 32 * 1024 * 1024
+MAX_FILE_BYTES = 100 * 1024 * 1024
 MAX_BODY_BYTES = 100 * 1024
 
 REQUIRED_SITE_FILES = {
