@@ -20,7 +20,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - Post media lives at `feed/media/<id>/<filename>` and is referenced as `../media/<id>/<filename>` from the post JSON.
 - `site/` contains only the HTML, CSS, JavaScript, local presentation assets, icons, and `.nojekyll` needed by Pages.
 - Private history, drafts, credentials, local paths, build caches, scheduler state, and publisher or cloud configuration are forbidden.
-- Each public file may be at most 100 MiB (104,857,600 bytes), while the complete checked public content remains capped at 128 MiB. All credential, private-context, path, type, ownership, and schema checks still apply independently of file size.
+- Each public file may be at most 100 MiB (104,857,600 bytes), while the complete checked public content remains capped at 150 MiB (157,286,400 bytes). All credential, private-context, path, type, ownership, and schema checks still apply independently of file size.
 
 ### Runtime feed
 
@@ -48,5 +48,5 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 
 - `python3 scripts/check_public_bundle.py`
 - `git diff --check`
-- The verifier checks site paths and references, raw-feed configuration, canonical metadata, index order and uniqueness, post schemas, exact post/media ownership, MIME/file consistency, symlinks, the 100 MiB per-file and 128 MiB aggregate size limits, credential signatures, private machine context and source-revision fragments, source maps, obsolete compiled assets, and forbidden publisher/admin markers.
+- The verifier checks site paths and references, raw-feed configuration, canonical metadata, index order and uniqueness, post schemas, exact post/media ownership, MIME/file consistency, symlinks, the 100 MiB per-file and 150 MiB aggregate size limits, credential signatures, private machine context and source-revision fragments, source maps, obsolete compiled assets, and forbidden publisher/admin markers.
 - The feed workflow provides feed-only CI without creating or deploying a Pages artifact. The Pages workflow repeats the full verifier before deployment when the browser or deployment surface changes.
