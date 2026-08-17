@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "world-state-simulator-2026-08-17-surrounded",
+      "path": "posts/world-state-simulator-2026-08-17-surrounded.json",
+      "title": "Surrounded",
+      "project": "world-state-simulator",
+      "status": "build",
+      "createdAt": "2026-08-17T08:14:00Z"
+    },
+    {
       "id": "world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture",
       "path": "posts/world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture.json",
       "title": "When 5,000 formations changed the simulation architecture",

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "world-state-simulator-2026-08-17-surrounded",
+  "title": "Surrounded",
+  "project": "world-state-simulator",
+  "body": "Surrounded.",
+  "status": "build",
+  "tags": [],
+  "createdAt": "2026-08-17T08:14:00Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "world-state-surrounded-hold-latest-main-4x-8s",
+      "path": "../media/world-state-simulator-2026-08-17-surrounded/world-state-surrounded-hold-latest-main-4x-8s-undecided-muted.mp4",
+      "fileName": "world-state-surrounded-hold-latest-main-4x-8s-undecided-muted.mp4",
+      "contentType": "video/mp4",
+      "caption": "8 seconds, muted, latest main; the outcome is intentionally unresolved."
+    }
+  ]
+}
