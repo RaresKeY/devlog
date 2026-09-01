@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "plug-charge-2026-09-01-the-scope-was-complete",
+  "title": "The Scope Was Complete",
+  "project": "plug-charge",
+  "body": "\n[Plug & Prosper](https://smallloopworks.itch.io/plug-prosper) placed first overall in [AI Browser Game Jam 4](https://itch.io/jam/ai-jam-4/results), which I genuinely did not expect. It also ranked first for Theme, Graphics, Audio, and AI Usage, with Theme receiving its highest score at 4.9. Fun was its lowest placement at #11.\n\nI played 29 of the 126 entries, and many felt more technically ambitious than any of my games. [Strait Across](https://moderndaedalus.itch.io/strait-across) was one of my personal favorites.\n\nI submitted four different games, and their results did not match my expectations:\n\n- **Plug & Prosper:** #1 overall with 10 ratings\n- **Charge Knights:** #22 with 11 ratings\n- **Charge Grid:** #39 with 7 ratings\n- **Horizon Charge:** #79 with 8 ratings\n\nIn an early Discord poll, Charge Grid was the concept people found most interesting. It was also the project I expected to perform best, but it ultimately placed #39. These are small rating samples, so I would not treat the rankings as a universal measure of quality. The contrast is still useful: Plug & Prosper did not receive the most ratings, and the concept that sounded most interesting in advance was not the one that connected most strongly in the finished jam.\n\nPlug & Prosper was the least ambitious of the four by scope, or at least that was how I saw it while working on it. Once I reached the point where I thought, “This game’s scope feels limited,” I mentally discounted it. Looking back, that feeling may actually have meant: **the scope was complete**. The idea was clearly defined, small enough to fully realize, and coherent enough that continuing to add things no longer felt necessary. I had confused “this does not need expansion” with “this lacks potential.”\n\nThere was a related lesson in the AI-assisted workflow. I had a clear picture of how the mechanics, presentation, and theme should fit together, and the project stayed within a technical surface I understood well. That let me direct the coding agents precisely, delegate fewer design decisions, and keep stronger control over the final result.\n\nThe result changes how I want to approach future jams. Technical ambition still matters, but a bounded idea that I understand and can finish coherently may be a better target than a larger system whose most important decisions remain unresolved.\n",
+  "status": "milestone",
+  "tags": [
+    "gamedev",
+    "godot",
+    "plug-charge",
+    "ai-jam",
+    "game-jam",
+    "postmortem",
+    "ai-assisted-development",
+    "devlog"
+  ],
+  "createdAt": "2026-09-01T20:14:00Z",
+  "visibility": "public",
+  "ctaLabel": "Play Plug & Prosper",
+  "ctaUrl": "https://smallloopworks.itch.io/plug-prosper",
+  "images": [],
+  "videos": []
+}

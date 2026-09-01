@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "plug-charge-2026-09-01-the-scope-was-complete",
+      "path": "posts/plug-charge-2026-09-01-the-scope-was-complete.json",
+      "title": "The Scope Was Complete",
+      "project": "plug-charge",
+      "status": "milestone",
+      "createdAt": "2026-09-01T20:14:00Z"
+    },
+    {
       "id": "world-state-simulator-2026-08-17-surrounded",
       "path": "posts/world-state-simulator-2026-08-17-surrounded.json",
       "title": "Surrounded",
