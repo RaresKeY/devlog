@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "plug-charge-2026-09-02-making-the-kiosk-read-more-clearly",
+      "path": "posts/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly.json",
+      "title": "Making the Kiosk Read More Clearly",
+      "project": "plug-charge",
+      "status": "wip",
+      "createdAt": "2026-09-02T20:17:13Z"
+    },
+    {
       "id": "plug-charge-2026-09-02-wip-effects-for-the-next-shift",
       "path": "posts/plug-charge-2026-09-02-wip-effects-for-the-next-shift.json",
       "title": "WIP Effects for the Next Shift",

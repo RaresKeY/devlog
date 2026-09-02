@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "plug-charge-2026-09-02-making-the-kiosk-read-more-clearly",
+  "title": "Making the Kiosk Read More Clearly",
+  "project": "plug-charge",
+  "body": "\nThis pass is about making Plug & Prosper's new hardware feel like it belongs in the same workshop. The Shape Reader now cycles through upcoming connector shapes as square-pixel glyphs. The shift clock, gravity compass, and reader also use the same projected-screen method, so their code-drawn graphics follow the perspective of the painted hardware instead of sitting flat on top.\n\nThe Square Cell received the same attention: its four charge bars now follow all four sides of the angled screen. The last image is the useful stress test—a busy shift with five customer tickets, several plug shapes, the polished gadgets, and the build rail competing for attention at once.\n\nThese are work-in-progress visuals for the upcoming update.\n\n![Six Shape Reader screens arranged in a two-row gallery, showing round, square, triangle, arch, hex, and star connector silhouettes as colored square-pixel glyphs.](../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/shape-reader-pixel-glyph-gallery.png)\n\n![Before-and-after comparison of the Plug & Prosper shift clock, gravity compass, and Shape Reader, showing live graphics aligned to each device's angled screen.](../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/hardware-screen-projection-comparison.png)\n\n![Close-up of the Square Cell's dark blue screen with four mint charge bars projected along its angled face.](../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/square-cell-charge-bars-close-up.png)\n\n![A busy Plug & Prosper workshop shift with five customer tickets, dangling plugs, the shift clock, Square Cell, Shape Reader, and gravity compass visible at once.](../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/busy-workshop-shift.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "plug-charge",
+    "ui-polish",
+    "hardware",
+    "visual-development",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-02T20:17:13Z",
+  "visibility": "public",
+  "ctaLabel": "Play Plug & Prosper",
+  "ctaUrl": "https://smallloopworks.itch.io/plug-prosper",
+  "images": [
+    {
+      "id": "1-shape-reader-pixel-glyph-gallery",
+      "path": "../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/shape-reader-pixel-glyph-gallery.png",
+      "alt": "Six Shape Reader screens arranged in a two-row gallery, showing round, square, triangle, arch, hex, and star connector silhouettes as colored square-pixel glyphs.",
+      "fileName": "shape-reader-pixel-glyph-gallery.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-hardware-screen-projection-comparison",
+      "path": "../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/hardware-screen-projection-comparison.png",
+      "alt": "Before-and-after comparison of the Plug & Prosper shift clock, gravity compass, and Shape Reader, showing live graphics aligned to each device's angled screen.",
+      "fileName": "hardware-screen-projection-comparison.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "3-square-cell-charge-bars-close-up",
+      "path": "../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/square-cell-charge-bars-close-up.png",
+      "alt": "Close-up of the Square Cell's dark blue screen with four mint charge bars projected along its angled face.",
+      "fileName": "square-cell-charge-bars-close-up.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "4-busy-workshop-shift",
+      "path": "../media/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly/busy-workshop-shift.png",
+      "alt": "A busy Plug & Prosper workshop shift with five customer tickets, dangling plugs, the shift clock, Square Cell, Shape Reader, and gravity compass visible at once.",
+      "fileName": "busy-workshop-shift.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
