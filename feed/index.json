@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "plug-charge-2026-09-02-wip-effects-for-the-next-shift",
+      "path": "posts/plug-charge-2026-09-02-wip-effects-for-the-next-shift.json",
+      "title": "WIP Effects for the Next Shift",
+      "project": "plug-charge",
+      "status": "wip",
+      "createdAt": "2026-09-02T19:10:46Z"
+    },
+    {
       "id": "plug-charge-2026-09-01-the-scope-was-complete",
       "path": "posts/plug-charge-2026-09-01-the-scope-was-complete.json",
       "title": "The Scope Was Complete",

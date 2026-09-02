@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "plug-charge-2026-09-02-wip-effects-for-the-next-shift",
+  "title": "WIP Effects for the Next Shift",
+  "project": "plug-charge",
+  "body": "\nAfter Plug & Prosper placed first overall in AI Browser Game Jam 4, I started working on its upcoming update. This work-in-progress motion atlas puts the new kiosk pieces side by side: a blinking Square Cell, a live shift clock, a turning gravity compass, a Shape Reader cycling through connector silhouettes, and an expanded customer cast.\n\nThe hardware uses the game's real Godot display paths. The portrait row is deliberately an effect study: the sleeping cat, golden retriever, grandma, and Steam Frog have working in-game effects, while the other sparkles, pulses, glints, halo, goggle blink, and ghost float are still capture-only concepts. The final update may use, change, or drop them.\n\n[video: A 10-second work-in-progress motion atlas showing the Square Cell, shift clock, gravity compass, Shape Reader, and portrait effect studies for Plug & Prosper.](../media/plug-charge-2026-09-02-wip-effects-for-the-next-shift/motion-atlas-full-hd.mp4)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "plug-charge",
+    "ai-jam",
+    "animation",
+    "effects",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-02T19:10:46Z",
+  "visibility": "public",
+  "ctaLabel": "Play Plug & Prosper",
+  "ctaUrl": "https://smallloopworks.itch.io/plug-prosper",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-motion-atlas-full-hd",
+      "path": "../media/plug-charge-2026-09-02-wip-effects-for-the-next-shift/motion-atlas-full-hd.mp4",
+      "caption": "A 10-second work-in-progress motion atlas showing the Square Cell, shift clock, gravity compass, Shape Reader, and portrait effect studies for Plug & Prosper.",
+      "fileName": "motion-atlas-full-hd.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
