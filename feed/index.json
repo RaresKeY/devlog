@@ -4,14 +4,6 @@
   "branch": "main",
   "posts": [
     {
-      "id": "plug-charge-2026-09-02-steam-frogs-morning-coffee",
-      "path": "posts/plug-charge-2026-09-02-steam-frogs-morning-coffee.json",
-      "title": "Steam Frog's Morning Coffee",
-      "project": "plug-charge",
-      "status": "wip",
-      "createdAt": "2026-09-02T20:17:14Z"
-    },
-    {
       "id": "plug-charge-2026-09-02-making-the-kiosk-read-more-clearly",
       "path": "posts/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly.json",
       "title": "Making the Kiosk Read More Clearly",
