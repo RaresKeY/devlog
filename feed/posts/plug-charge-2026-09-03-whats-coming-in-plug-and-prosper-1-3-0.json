@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "plug-charge-2026-09-03-whats-coming-in-plug-and-prosper-1-3-0",
+  "title": "What's Coming in Plug & Prosper 1.3.0",
+  "project": "plug-charge",
+  "body": "\nChanges include, but are not limited to:\n\n- More customer avatars, with unique personalities and no duplicate active customers.\n- Special customer effects: floating `Zzz`s, `BARF!` jumps, Grandma's cable-pulling cough, robot expressions, lamp glow, inventor glint, ghostly anti-gravity, and coffee steam.\n- New physical workshop devices: a pluggable clock, gravity compass, Shape Reader, and rechargeable batteries.\n- Day events that change gravity and workshop behavior.\n- More customers and pressure as the days progress, balanced with recovery periods.\n- A between-day victory screen with daily and cumulative scores.\n- Persistent progress across days, restarts, and resumed games.\n- Physical plugs, adapters, batteries, and tools that collide, stack, fall, and interact.\n- Sticky boards and additional sockets for organizing increasingly busy layouts.\n- Between-day upgrades—including better cables, longer shifts, calmer customers, cheaper sockets, and bigger payouts.\n- Larger Phone Size mode, improved touch controls, and better mobile-Web support.\n- A cleaner, more readable HUD and Settings screen—still WIP, and suggestions are welcome!\n\n[Play Plug & Prosper](https://smallloopworks.itch.io/plug-prosper) · [AI Browser Game Jam 4 results](https://itch.io/jam/ai-jam-4/results)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "plug-charge",
+    "ai-jam",
+    "update",
+    "1.3.0",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-03T00:55:08Z",
+  "visibility": "public",
+  "ctaLabel": "Play Plug & Prosper",
+  "ctaUrl": "https://smallloopworks.itch.io/plug-prosper",
+  "images": [],
+  "videos": []
+}

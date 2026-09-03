@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "plug-charge-2026-09-03-whats-coming-in-plug-and-prosper-1-3-0",
+      "path": "posts/plug-charge-2026-09-03-whats-coming-in-plug-and-prosper-1-3-0.json",
+      "title": "What's Coming in Plug & Prosper 1.3.0",
+      "project": "plug-charge",
+      "status": "wip",
+      "createdAt": "2026-09-03T00:55:08Z"
+    },
+    {
       "id": "plug-charge-2026-09-02-making-the-kiosk-read-more-clearly",
       "path": "posts/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly.json",
       "title": "Making the Kiosk Read More Clearly",
