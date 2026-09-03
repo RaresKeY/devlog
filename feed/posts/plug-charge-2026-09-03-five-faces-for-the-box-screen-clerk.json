@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk",
+  "title": "Five Faces for the Box-Screen Clerk",
+  "project": "plug-charge",
+  "body": "\nThe Box-Screen Clerk is joining Plug & Prosper's upcoming update with a display that is part portrait and part tiny piece of hardware. Its blank mint monitor now cycles through five code-drawn pixel expressions: friendly, blink, wink, surprised, and content.\n\nEach cell is projected onto the measured corners of the angled glass, using the same screen treatment as the kiosk gadgets. The shell stays still while the expression swaps immediately; Reduced Motion holds the friendly face. This eight-second close-up runs through the live Godot effect.\n\n[video: The Box-Screen Clerk cycles through friendly, blink, wink, surprised, and content pixel expressions on its angled mint monitor.](../media/plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk/box-screen-clerk-expression-cycle.mp4)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "plug-charge",
+    "animation",
+    "character-design",
+    "pixel-art",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-03T16:00:00Z",
+  "visibility": "public",
+  "ctaLabel": "Play Plug & Prosper",
+  "ctaUrl": "https://smallloopworks.itch.io/plug-prosper",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-box-screen-clerk-expression-cycle",
+      "path": "../media/plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk/box-screen-clerk-expression-cycle.mp4",
+      "caption": "The Box-Screen Clerk cycles through friendly, blink, wink, surprised, and content pixel expressions on its angled mint monitor.",
+      "fileName": "box-screen-clerk-expression-cycle.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
