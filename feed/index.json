@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "white-approach-2026-09-06-rope-snow-and-a-longer-climb",
+      "path": "posts/white-approach-2026-09-06-rope-snow-and-a-longer-climb.json",
+      "title": "White Approach: Rope, Snow, and a Longer Climb",
+      "project": "White Approach",
+      "status": "wip",
+      "createdAt": "2026-09-06T03:45:20.000Z"
+    },
+    {
       "id": "plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk",
       "path": "posts/plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk.json",
       "title": "Five Faces for the Box-Screen Clerk",

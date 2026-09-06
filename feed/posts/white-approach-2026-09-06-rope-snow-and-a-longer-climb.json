@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "white-approach-2026-09-06-rope-snow-and-a-longer-climb",
+  "title": "White Approach: Rope, Snow, and a Longer Climb",
+  "project": "White Approach",
+  "body": "White Approach started with a small idea: a bundled-up climber, a snowy mountain, and fog that hides the path ahead. Moving through that landscape should feel physical. Snow slows your steps. A hook travels through the air before it catches. A rope needs tension before it can pull you up a cliff.\n\nThe latest development work builds on that idea while giving the expedition a longer route and a proper summit.\n\n### A rope that follows the rock\n\nThe grappling hook is central to the climb, so a lot of attention has gone into what happens between throwing it and reaching the next ledge.\n\nThe cable now routes around rock corners and rests against terrain. When it tightens, the climber is pulled toward the nearest contact along that route. Catching the hook also preserves the cable already paid out during its flight, leaving slack for you to take up instead of instantly shortening the rope.\n\nThat gives climbing and lowering more distinct movements. Haul yourself toward an anchor, feed out cable to descend, or release and carry your momentum into a swing. The latest animation work ties the mitten movements to the amount of rope actually being handled.\n\nSnow responds to those interactions too: a moving hook or cable can knock loose snow from a cliff edge.\n\n### Leaving a trail\n\nDeep snow remains part of movement, rather than just a white surface to walk over. The climber pushes through it and compresses a trail that is easier to cross again.\n\nThe supporting rock stays fixed underneath. That matters because clearing snow should change the drift, without making the ground or a nearby doorway sink beneath your feet.\n\nThere has also been work on the smaller pieces of the scene: the lantern swinging from the coat, hood cords responding to wind, and snow breaking away from cliff lips. Together, those details support the feeling of a small, heavily dressed character making their way through exposed terrain.\n\n### Beyond the deer trail\n\nThe route in development now spans six chapters, alternating direction through snowy slopes, caves, a descent, and the deer hunt before continuing into **Silent Mechanism** and **White Summit**.\n\nSilent Mechanism gives the bow another use. A wooden beam holds a folded rope ladder above the cave floor. Shoot the beam to break it and release the ladder, then climb to the upper shelf. An icy section rejects the grappling hook, making the ladder part of the route.\n\nThrowable green glowsticks help reveal the nearby cave walls and cut through local fog. They offer a different kind of light from the warm lantern carried on the climber’s coat.\n\nAt the summit, the ending slows down. The thank-you screen appears as the camera begins a long pullback, with the music continuing over the outlook.\n\n### Work beneath the snow\n\nRecent published patches also include Web memory fixes and rendering optimizations. Snow updates now concentrate on the parts of a strip that changed, while some frequently drawn shapes reuse geometry.\n\nProfiling showed lower typical callback costs in the measured runs, but occasional long frame stalls remain. There is still work to do before calling performance settled.\n\nThe public release recorded for this update is **1.2.2**. The expanded route, new rope behavior, and latest cave and presentation changes described here are ongoing development work; several still need gameplay and visual verification before release.\n\n[Play White Approach on itch.io](https://smallloopworks.itch.io/white-approach).",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "white-approach",
+    "climbing",
+    "snow",
+    "rope",
+    "devlog",
+    "wip"
+  ],
+  "createdAt": "2026-09-06T03:45:20.000Z",
+  "visibility": "public",
+  "ctaLabel": "Play White Approach",
+  "ctaUrl": "https://smallloopworks.itch.io/white-approach",
+  "images": [],
+  "videos": []
+}
