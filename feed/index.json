@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "aia-tennis-2026-09-06-training-a-tennis-bot",
+      "path": "posts/aia-tennis-2026-09-06-training-a-tennis-bot.json",
+      "title": "Training a Tennis Bot",
+      "project": "AIA Tennis",
+      "status": "wip",
+      "createdAt": "2026-09-06T08:08:25.000Z"
+    },
+    {
       "id": "white-approach-2026-09-06-rope-snow-and-a-longer-climb",
       "path": "posts/white-approach-2026-09-06-rope-snow-and-a-longer-climb.json",
       "title": "White Approach: Rope, Snow, and a Longer Climb",
