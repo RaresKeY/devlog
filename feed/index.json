@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "material-atlas-2026-09-25-material-maker-ai-workflows",
+      "path": "posts/material-atlas-2026-09-25-material-maker-ai-workflows.json",
+      "title": "Material Maker Experiments and AI Workflows",
+      "project": "material-atlas",
+      "status": "wip",
+      "createdAt": "2026-09-25T21:35:00Z"
+    },
+    {
       "id": "aia-tennis-2026-09-06-training-a-tennis-bot",
       "path": "posts/aia-tennis-2026-09-06-training-a-tennis-bot.json",
       "title": "Training a Tennis Bot",

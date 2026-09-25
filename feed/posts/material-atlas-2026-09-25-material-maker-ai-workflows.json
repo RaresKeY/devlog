@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "material-atlas-2026-09-25-material-maker-ai-workflows",
+  "title": "Material Maker Experiments and AI Workflows",
+  "project": "material-atlas",
+  "body": "\nI've been playing with where AI fits in an art workflow that still leaves room for hands-on craft. This little atlas is a test bed: six procedural materials made in Material Maker, then applied to familiar props so I can compare how each finish reads across different shapes.\n\nIt's a nice way to move between quick visual experiments and the slower work of tuning editable material graphs. Still exploring, but the surfaces are starting to feel like a useful palette for future scenes.\n\n![Six-panel material atlas showing stone, plaster, green and wood finishes on simple game props including spheres, a table, a cabinet, a computer and a stool.](../media/material-atlas-2026-09-25-material-maker-ai-workflows/material-atlas.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "material-atlas",
+    "devlog",
+    "material-maker",
+    "materials",
+    "ai-workflow",
+    "procedural",
+    "3d-art"
+  ],
+  "createdAt": "2026-09-25T21:35:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-material-atlas",
+      "path": "../media/material-atlas-2026-09-25-material-maker-ai-workflows/material-atlas.png",
+      "alt": "Six-panel material atlas showing stone, plaster, green and wood finishes on simple game props including spheres, a table, a cabinet, a computer and a stool.",
+      "fileName": "material-atlas.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
