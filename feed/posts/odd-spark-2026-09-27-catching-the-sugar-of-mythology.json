@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "odd-spark-2026-09-27-catching-the-sugar-of-mythology",
+  "title": "Catching the sugar of mythology",
+  "project": "Odd Spark",
+  "body": "Catching sugar cubes with a coffee cup, against a backdrop of temples above the clouds. A small work-in-progress look at Odd Spark.\n\n[video: Odd Spark gameplay: moving a cup and saucer to catch falling sugar cubes.](../media/odd-spark-2026-09-27-catching-the-sugar-of-mythology/catching-the-sugar-of-mythology.mp4)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "odd-spark",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-26T23:32:53Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-catching-the-sugar-of-mythology",
+      "path": "../media/odd-spark-2026-09-27-catching-the-sugar-of-mythology/catching-the-sugar-of-mythology.mp4",
+      "caption": "Odd Spark gameplay: moving a cup and saucer to catch falling sugar cubes.",
+      "fileName": "catching-the-sugar-of-mythology.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
