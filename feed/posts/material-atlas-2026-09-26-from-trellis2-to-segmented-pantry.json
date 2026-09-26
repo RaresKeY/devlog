@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "material-atlas-2026-09-26-from-trellis2-to-segmented-pantry",
+  "title": "From TRELLIS 2 to a Rebuilt Pantry",
+  "project": "material-atlas",
+  "body": "\nI used a pantry mesh generated with TRELLIS 2 as a visual reference, then rebuilt the shed from scratch as 311 separately named pieces: timber framing, planks, roof boards and shingles, brickwork, shutters and iron hardware.\n\nBlender was one possible route, but I chose a seeded Python/NumPy generator so dimensions, small tile variations and part names stay repeatable. Godot imports and assembles the scene. The existing Material Maker recipes provide the wood, roof, paint, brick and metal finishes; a Python/Pillow baker embeds the PBR textures in a portable GLB.\n\nThe rebuilt mesh has 33,736 triangles, about 58% fewer than the 80,620-triangle reference. The goal was more control over the construction and a model that is easier to inspect and change, not a performance claim.\n\n![Side-by-side render of the original TRELLIS 2 pantry mesh and the rebuilt segmented pantry, showing its timber frame, roof tiles, brick base and iron door hardware.](../media/material-atlas-2026-09-26-from-trellis2-to-segmented-pantry/pantry-remake-pair.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "material-atlas",
+    "devlog",
+    "trellis2",
+    "procedural-geometry",
+    "python",
+    "godot",
+    "material-maker"
+  ],
+  "createdAt": "2026-09-26T14:35:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-pantry-remake-pair",
+      "path": "../media/material-atlas-2026-09-26-from-trellis2-to-segmented-pantry/pantry-remake-pair.png",
+      "alt": "Side-by-side render of the original TRELLIS 2 pantry mesh and the rebuilt segmented pantry, showing its timber frame, roof tiles, brick base and iron door hardware.",
+      "fileName": "pantry-remake-pair.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

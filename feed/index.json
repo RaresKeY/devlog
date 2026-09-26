@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "material-atlas-2026-09-26-from-trellis2-to-segmented-pantry",
+      "path": "posts/material-atlas-2026-09-26-from-trellis2-to-segmented-pantry.json",
+      "title": "From TRELLIS 2 to a Rebuilt Pantry",
+      "project": "material-atlas",
+      "status": "wip",
+      "createdAt": "2026-09-26T14:35:00Z"
+    },
+    {
       "id": "supper-guard-2026-09-26-cooking-meets-tower-defense",
       "path": "posts/supper-guard-2026-09-26-cooking-meets-tower-defense.json",
       "title": "Cooking Meets Tower Defense",
