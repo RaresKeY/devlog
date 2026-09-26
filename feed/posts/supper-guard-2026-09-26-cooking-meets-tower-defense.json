@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "supper-guard-2026-09-26-cooking-meets-tower-defense",
+  "title": "Cooking Meets Tower Defense",
+  "project": "supper-guard",
+  "body": "\nSupper Guard sits somewhere between a cooking game and tower defense. I'm exploring how to make the kitchen feel active inside the game, starting with little moments like this pan waiting over the stove as dinner cooks.\n\nIt's a small animation beat, but it helps sell the idea that food and defenses belong to the same world.\n\n![Supper Guard gameplay showing one dish cooking in a pan beside a wheat field and the research lab.](../media/supper-guard-2026-09-26-cooking-meets-tower-defense/natural-anticipation.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "supper-guard",
+    "devlog",
+    "cooking",
+    "tower-defense",
+    "animation",
+    "game-jam"
+  ],
+  "createdAt": "2026-09-26T09:35:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-natural-anticipation",
+      "path": "../media/supper-guard-2026-09-26-cooking-meets-tower-defense/natural-anticipation.png",
+      "alt": "Supper Guard gameplay showing one dish cooking in a pan beside a wheat field and the research lab.",
+      "fileName": "natural-anticipation.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
