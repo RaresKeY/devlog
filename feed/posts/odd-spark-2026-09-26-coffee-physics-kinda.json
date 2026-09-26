@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "odd-spark-2026-09-26-coffee-physics-kinda",
+  "title": "Coffee physics, kinda",
+  "project": "Odd Spark",
+  "body": "A little coffee physics experiment: tipping the Medusa cup, pouring, and watching the spill. Still a work in progress.\n\n[video: The Medusa cup tipping and pouring coffee across a test surface.](../media/odd-spark-2026-09-26-coffee-physics-kinda/coffee-physics-center-cropped.webm)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "odd-spark",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-26T20:32:53Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-coffee-physics-kinda",
+      "path": "../media/odd-spark-2026-09-26-coffee-physics-kinda/coffee-physics-center-cropped.webm",
+      "caption": "The Medusa cup tipping and pouring coffee across a test surface.",
+      "fileName": "coffee-physics-center-cropped.webm",
+      "contentType": "video/webm"
+    }
+  ]
+}
