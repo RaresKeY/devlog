@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "id": "supper-guard-2026-09-26-astra-articulated-asset-experiment",
+  "title": "Astra and a Quick Pass at Articulated 3D Assets",
+  "project": "supper-guard",
+  "body": "\nI've been trying Astra on a jam prototype as a quick route from rough ideas to articulated 3D asset concepts. These sheets compare some of the prototype art with the 3D passes I'm exploring for Supper Guard: farm buildings, crops, characters and defensive structures.\n\nThe goal is to get a readable little world together quickly, then see which pieces deserve a more careful pass. It's still a playful experiment, but I'm enjoying how the different shapes start to feel like they belong in the same game.\n\n![Supper Guard asset sheet comparing prototype illustrations with 3D versions of a pantry, kitchen stove and research bench.](../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/01-kitchen-and-craft.png)\n\n![Supper Guard asset sheet comparing prototype and 3D versions of a chicken coop, wheat crop and tree.](../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/02-life-on-the-farm.png)\n\n![Supper Guard character sheet comparing prototype illustrations with 3D versions of a hen, fox and worker robot.](../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/03-farm-friends-and-foes.png)\n\n![Supper Guard defense sheet comparing prototype illustrations with 3D versions of an egg launcher, charcoal mortar and kiln.](../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/04-built-to-move.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "supper-guard",
+    "devlog",
+    "ai-jam",
+    "prototyping",
+    "3d-art",
+    "animation"
+  ],
+  "createdAt": "2026-09-26T01:35:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-01-kitchen-and-craft",
+      "path": "../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/01-kitchen-and-craft.png",
+      "alt": "Supper Guard asset sheet comparing prototype illustrations with 3D versions of a pantry, kitchen stove and research bench.",
+      "fileName": "01-kitchen-and-craft.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-02-life-on-the-farm",
+      "path": "../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/02-life-on-the-farm.png",
+      "alt": "Supper Guard asset sheet comparing prototype and 3D versions of a chicken coop, wheat crop and tree.",
+      "fileName": "02-life-on-the-farm.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "3-03-farm-friends-and-foes",
+      "path": "../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/03-farm-friends-and-foes.png",
+      "alt": "Supper Guard character sheet comparing prototype illustrations with 3D versions of a hen, fox and worker robot.",
+      "fileName": "03-farm-friends-and-foes.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "4-04-built-to-move",
+      "path": "../media/supper-guard-2026-09-26-astra-articulated-asset-experiment/04-built-to-move.png",
+      "alt": "Supper Guard defense sheet comparing prototype illustrations with 3D versions of an egg launcher, charcoal mortar and kiln.",
+      "fileName": "04-built-to-move.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

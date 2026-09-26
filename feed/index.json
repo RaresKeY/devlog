@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "supper-guard-2026-09-26-astra-articulated-asset-experiment",
+      "path": "posts/supper-guard-2026-09-26-astra-articulated-asset-experiment.json",
+      "title": "Astra and a Quick Pass at Articulated 3D Assets",
+      "project": "supper-guard",
+      "status": "wip",
+      "createdAt": "2026-09-26T01:35:00Z"
+    },
+    {
       "id": "material-atlas-2026-09-25-material-maker-ai-workflows",
       "path": "posts/material-atlas-2026-09-25-material-maker-ai-workflows.json",
       "title": "Material Maker Experiments and AI Workflows",
