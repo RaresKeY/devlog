@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "odd-spark-2026-09-27-progress-on-coffee-physics",
+      "path": "posts/odd-spark-2026-09-27-progress-on-coffee-physics.json",
+      "title": "Progress on coffee physics",
+      "project": "Odd Spark",
+      "status": "wip",
+      "createdAt": "2026-09-27T02:11:14Z"
+    },
+    {
       "id": "odd-spark-2026-09-27-catching-the-sugar-of-mythology",
       "path": "posts/odd-spark-2026-09-27-catching-the-sugar-of-mythology.json",
       "title": "Catching the sugar of mythology",

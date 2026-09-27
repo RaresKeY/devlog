@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "odd-spark-2026-09-27-progress-on-coffee-physics",
+  "title": "Progress on coffee physics",
+  "project": "Odd Spark",
+  "body": "More progress on coffee physics in Odd Spark. The cup tips and coffee spills as I move the saucer to catch sugar cubes. Still a work in progress.\n\n[video: Odd Spark gameplay showing the cup tipping and spilling coffee while catching sugar cubes.](../media/odd-spark-2026-09-27-progress-on-coffee-physics/progress-on-coffee-physics.mp4)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "odd-spark",
+    "physics",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-27T02:11:14Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-coffee-physics-progress",
+      "path": "../media/odd-spark-2026-09-27-progress-on-coffee-physics/progress-on-coffee-physics.mp4",
+      "caption": "Odd Spark gameplay showing the cup tipping and spilling coffee while catching sugar cubes.",
+      "fileName": "progress-on-coffee-physics.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
