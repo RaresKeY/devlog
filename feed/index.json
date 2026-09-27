@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "odd-spark-2026-09-27-sound-on",
+      "path": "posts/odd-spark-2026-09-27-sound-on.json",
+      "title": "Sound on",
+      "project": "Odd Spark",
+      "status": "wip",
+      "createdAt": "2026-09-27T15:54:08Z"
+    },
+    {
       "id": "odd-spark-2026-09-27-progress-on-coffee-physics",
       "path": "posts/odd-spark-2026-09-27-progress-on-coffee-physics.json",
       "title": "Progress on coffee physics",

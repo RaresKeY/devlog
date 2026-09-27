@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "odd-spark-2026-09-27-sound-on",
+  "title": "Sound on",
+  "project": "Odd Spark",
+  "body": "Sound on for this one. Another look at Odd Spark: catching sugar cubes, tipping the cup, and spilling coffee. Still a work in progress.\n\n[video: Odd Spark gameplay with sound: catching sugar cubes while coffee spills from the cup.](../media/odd-spark-2026-09-27-sound-on/sound_on_spark_compat.mp4)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "odd-spark",
+    "audio",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-09-27T15:54:08Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-sound-on-spark",
+      "path": "../media/odd-spark-2026-09-27-sound-on/sound_on_spark_compat.mp4",
+      "caption": "Odd Spark gameplay with sound: catching sugar cubes while coffee spills from the cup.",
+      "fileName": "sound_on_spark_compat.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
