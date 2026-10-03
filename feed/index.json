@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "wheat-sway-lab-2026-10-03-1024-wheat-stalks",
+      "path": "posts/wheat-sway-lab-2026-10-03-1024-wheat-stalks.json",
+      "title": "1024 wheat stalks swaying",
+      "project": "wheat-sway-lab",
+      "status": "wip",
+      "createdAt": "2026-10-03T05:49:30.479882+00:00"
+    },
+    {
       "id": "odd-spark-2026-09-27-sound-on",
       "path": "posts/odd-spark-2026-09-27-sound-on.json",
       "title": "Sound on",

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "wheat-sway-lab-2026-10-03-1024-wheat-stalks",
+  "title": "1024 wheat stalks swaying",
+  "project": "wheat-sway-lab",
+  "body": "1024 wheat stalks swaying",
+  "status": "wip",
+  "tags": [
+    "experiment",
+    "lab"
+  ],
+  "createdAt": "2026-10-03T05:49:30.479882+00:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "wheat-field-video",
+      "path": "../media/wheat-sway-lab-2026-10-03-1024-wheat-stalks/wheat-field-1080p60.mp4",
+      "fileName": "wheat-field-1080p60.mp4",
+      "contentType": "video/mp4",
+      "caption": "1024 wheat stalks swaying"
+    }
+  ]
+}
