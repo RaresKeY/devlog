@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-03-diegetic-os-light-mode",
+  "title": "Code Review Simulator: Diegetic OS Light Mode",
+  "project": "code-review-simulator",
+  "body": "Working on light mode for Code Review Simulator's diegetic OS.\n\nA look at the terminal, Tetris, E-Shop, and city map on the in-game desktop.\n\n![QTerm showing its command reference above the light-mode desktop taskbar in Code Review Simulator.](../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/qterm-light-mode.png)\n\n![Tetris on the in-game desktop, with a dark playfield, light controls, and the light-mode taskbar.](../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/tetris-light-mode.png)\n\n![The light-mode E-Shop displaying a grid of PC components, prices, and hardware categories.](../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/e-shop-light-mode.png)\n\n![The light-mode city map showing crossroads, Home, Mart, building markers, and navigation controls.](../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/city-map-light-mode.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "code-review-simulator",
+    "devlog",
+    "diegetic-ui",
+    "light-mode"
+  ],
+  "createdAt": "2026-10-03T20:18:21Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-qterm-light-mode",
+      "path": "../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/qterm-light-mode.png",
+      "alt": "QTerm showing its command reference above the light-mode desktop taskbar in Code Review Simulator.",
+      "fileName": "qterm-light-mode.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-tetris-light-mode",
+      "path": "../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/tetris-light-mode.png",
+      "alt": "Tetris on the in-game desktop, with a dark playfield, light controls, and the light-mode taskbar.",
+      "fileName": "tetris-light-mode.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "3-e-shop-light-mode",
+      "path": "../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/e-shop-light-mode.png",
+      "alt": "The light-mode E-Shop displaying a grid of PC components, prices, and hardware categories.",
+      "fileName": "e-shop-light-mode.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "4-city-map-light-mode",
+      "path": "../media/code-review-simulator-2026-10-03-diegetic-os-light-mode/city-map-light-mode.png",
+      "alt": "The light-mode city map showing crossroads, Home, Mart, building markers, and navigation controls.",
+      "fileName": "city-map-light-mode.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

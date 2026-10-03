@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-10-03-diegetic-os-light-mode",
+      "path": "posts/code-review-simulator-2026-10-03-diegetic-os-light-mode.json",
+      "title": "Code Review Simulator: Diegetic OS Light Mode",
+      "project": "code-review-simulator",
+      "status": "wip",
+      "createdAt": "2026-10-03T20:18:21Z"
+    },
+    {
       "id": "code-review-simulator-2026-10-03-work-on-cityscapes",
       "path": "posts/code-review-simulator-2026-10-03-work-on-cityscapes.json",
       "title": "Code Review Simulator: Work on Cityscapes",
