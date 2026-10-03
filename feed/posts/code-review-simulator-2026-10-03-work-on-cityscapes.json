@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-03-work-on-cityscapes",
+  "title": "Code Review Simulator: Work on Cityscapes",
+  "project": "code-review-simulator",
+  "body": "Working on cityscapes for Code Review Simulator.\n\nTrying out a few different layouts, from compact city blocks and riverside streets to harbors, farms, and small villages.\n\n![Eleven stylized 3D environments for Code Review Simulator, showing city blocks, a riverside, farmland, a forest outpost, a harbor, a roadside stop, and alpine, lakeside, and orchard villages.](../media/code-review-simulator-2026-10-03-work-on-cityscapes/cityscapes-contact-sheet.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "code-review-simulator",
+    "devlog",
+    "cityscapes",
+    "3d-art"
+  ],
+  "createdAt": "2026-10-03T19:13:24Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "cityscapes-contact-sheet",
+      "path": "../media/code-review-simulator-2026-10-03-work-on-cityscapes/cityscapes-contact-sheet.png",
+      "alt": "Eleven stylized 3D environments for Code Review Simulator, showing city blocks, a riverside, farmland, a forest outpost, a harbor, a roadside stop, and alpine, lakeside, and orchard villages.",
+      "fileName": "cityscapes-contact-sheet.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
