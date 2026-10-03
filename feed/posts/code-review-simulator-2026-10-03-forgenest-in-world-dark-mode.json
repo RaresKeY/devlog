@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-03-forgenest-in-world-dark-mode",
+  "title": "Code Review Simulator: ForgeNest in Dark Mode",
+  "project": "code-review-simulator",
+  "body": "Working on PR review in ForgeNest, shown on the in-world monitor with the OS in dark mode.\n\nThe file list, diff preview, review comments, and workflow checks are visible together.\n\n![An in-world monitor showing ForgeNest PR review in dark mode, with changed files, a diff preview, review comments, workflow checks, and approval controls.](../media/code-review-simulator-2026-10-03-forgenest-in-world-dark-mode/forgenest-in-world-dark-mode.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "code-review-simulator",
+    "devlog",
+    "diegetic-ui",
+    "dark-mode",
+    "forgenest"
+  ],
+  "createdAt": "2026-10-03T21:18:21Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-forgenest-in-world-dark-mode",
+      "path": "../media/code-review-simulator-2026-10-03-forgenest-in-world-dark-mode/forgenest-in-world-dark-mode.png",
+      "alt": "An in-world monitor showing ForgeNest PR review in dark mode, with changed files, a diff preview, review comments, workflow checks, and approval controls.",
+      "fileName": "forgenest-in-world-dark-mode.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-10-03-forgenest-in-world-dark-mode",
+      "path": "posts/code-review-simulator-2026-10-03-forgenest-in-world-dark-mode.json",
+      "title": "Code Review Simulator: ForgeNest in Dark Mode",
+      "project": "code-review-simulator",
+      "status": "wip",
+      "createdAt": "2026-10-03T21:18:21Z"
+    },
+    {
       "id": "code-review-simulator-2026-10-03-diegetic-os-light-mode",
       "path": "posts/code-review-simulator-2026-10-03-diegetic-os-light-mode.json",
       "title": "Code Review Simulator: Diegetic OS Light Mode",
