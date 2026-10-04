@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "horizon-charge-ii-2026-10-04-prototyping-sunward",
+  "title": "Prototyping Horizon Charge II: Sunward",
+  "project": "Horizon Charge II: Sunward",
+  "body": "A solar craft on a floating neon highway, chasing the last light above an alien cloud sea. Here's a look at the current Solar Dart in flight, its hull, and its glowing twin thrusters. Still a work in progress.\n\n![Horizon Charge II: Sunward flight view with the Solar Dart on a neon highway above clouds, facing the sun.](../media/horizon-charge-ii-2026-10-04-prototyping-sunward/first-light-flight.png)\n\n![Front three-quarter studio view of the Solar Dart, showing its pointed hull, faceted canopy, and cyan guidance strips.](../media/horizon-charge-ii-2026-10-04-prototyping-sunward/studio-front.png)\n\n![Rear three-quarter view of the Solar Dart on the highway, showing twin cyan thrusters and articulated control surfaces.](../media/horizon-charge-ii-2026-10-04-prototyping-sunward/first-light-rear.png)\n\n![Close-up inside a Solar Dart thruster, showing the hollow bore, metal rim, and three glowing cyan field coils.](../media/horizon-charge-ii-2026-10-04-prototyping-sunward/studio-bore.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "horizon-charge-ii",
+    "spaceship",
+    "wip",
+    "devlog"
+  ],
+  "createdAt": "2026-10-04T06:23:12Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "1-first-light-flight",
+      "path": "../media/horizon-charge-ii-2026-10-04-prototyping-sunward/first-light-flight.png",
+      "alt": "Horizon Charge II: Sunward flight view with the Solar Dart on a neon highway above clouds, facing the sun.",
+      "fileName": "first-light-flight.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "2-studio-front",
+      "path": "../media/horizon-charge-ii-2026-10-04-prototyping-sunward/studio-front.png",
+      "alt": "Front three-quarter studio view of the Solar Dart, showing its pointed hull, faceted canopy, and cyan guidance strips.",
+      "fileName": "studio-front.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "3-first-light-rear",
+      "path": "../media/horizon-charge-ii-2026-10-04-prototyping-sunward/first-light-rear.png",
+      "alt": "Rear three-quarter view of the Solar Dart on the highway, showing twin cyan thrusters and articulated control surfaces.",
+      "fileName": "first-light-rear.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "4-studio-bore",
+      "path": "../media/horizon-charge-ii-2026-10-04-prototyping-sunward/studio-bore.png",
+      "alt": "Close-up inside a Solar Dart thruster, showing the hollow bore, metal rim, and three glowing cyan field coils.",
+      "fileName": "studio-bore.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

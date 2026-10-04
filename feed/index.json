@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "horizon-charge-ii-2026-10-04-prototyping-sunward",
+      "path": "posts/horizon-charge-ii-2026-10-04-prototyping-sunward.json",
+      "title": "Prototyping Horizon Charge II: Sunward",
+      "project": "Horizon Charge II: Sunward",
+      "status": "wip",
+      "createdAt": "2026-10-04T06:23:12Z"
+    },
+    {
       "id": "code-review-simulator-2026-10-03-forgenest-in-world-dark-mode",
       "path": "posts/code-review-simulator-2026-10-03-forgenest-in-world-dark-mode.json",
       "title": "Code Review Simulator: ForgeNest in Dark Mode",
