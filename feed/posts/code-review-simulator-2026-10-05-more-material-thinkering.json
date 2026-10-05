@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-05-more-material-thinkering",
+  "title": "more material thinkering",
+  "project": "code-review-simulator",
+  "body": "more material thinkering\n\n![Mottled orange rust on a pale metal panel, with a wheel rim and cylindrical sample at the sides.](../media/code-review-simulator-2026-10-05-more-material-thinkering/rust-medium-bloom.png)\n\n![Matched brushed stainless panels at 0, 35, and 68 degrees under the same lighting.](../media/code-review-simulator-2026-10-05-more-material-thinkering/stainless-raking-angles.png)\n\n![Carbon fiber on a sphere, denim on a tilted cylinder, and blue ceramic tile on a torus.](../media/code-review-simulator-2026-10-05-more-material-thinkering/complex-shape-seams.png)\n\n![Two red fire hydrants shown side by side in a mottled rust overlay material trial.](../media/code-review-simulator-2026-10-05-more-material-thinkering/rust-hydrant-trial.png)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog",
+    "materials"
+  ],
+  "createdAt": "2026-10-05T02:31:59Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "image-1",
+      "path": "../media/code-review-simulator-2026-10-05-more-material-thinkering/rust-medium-bloom.png",
+      "alt": "Mottled orange rust on a pale metal panel, with a wheel rim and cylindrical sample at the sides.",
+      "fileName": "rust-medium-bloom.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "image-2",
+      "path": "../media/code-review-simulator-2026-10-05-more-material-thinkering/stainless-raking-angles.png",
+      "alt": "Matched brushed stainless panels at 0, 35, and 68 degrees under the same lighting.",
+      "fileName": "stainless-raking-angles.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "image-3",
+      "path": "../media/code-review-simulator-2026-10-05-more-material-thinkering/complex-shape-seams.png",
+      "alt": "Carbon fiber on a sphere, denim on a tilted cylinder, and blue ceramic tile on a torus.",
+      "fileName": "complex-shape-seams.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "image-4",
+      "path": "../media/code-review-simulator-2026-10-05-more-material-thinkering/rust-hydrant-trial.png",
+      "alt": "Two red fire hydrants shown side by side in a mottled rust overlay material trial.",
+      "fileName": "rust-hydrant-trial.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

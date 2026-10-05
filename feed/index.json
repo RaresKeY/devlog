@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-10-05-more-material-thinkering",
+      "path": "posts/code-review-simulator-2026-10-05-more-material-thinkering.json",
+      "title": "more material thinkering",
+      "project": "code-review-simulator",
+      "status": "wip",
+      "createdAt": "2026-10-05T02:31:59Z"
+    },
+    {
       "id": "horizon-charge-ii-2026-10-04-prototyping-sunward",
       "path": "posts/horizon-charge-ii-2026-10-04-prototyping-sunward.json",
       "title": "Prototyping Horizon Charge II: Sunward",
