@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-05-components-and-materials",
+  "title": "Components and materials",
+  "project": "Code Review Simulator",
+  "body": "Working on components and materials for Code Review Simulator.",
+  "status": "wip",
+  "tags": [
+    "devlog",
+    "3d",
+    "materials"
+  ],
+  "createdAt": "2026-10-05T05:02:46Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "components-and-materials",
+      "path": "../media/code-review-simulator-2026-10-05-components-and-materials/components-and-materials.png",
+      "alt": "Computer components with work-in-progress materials for Code Review Simulator.",
+      "fileName": "components-and-materials.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

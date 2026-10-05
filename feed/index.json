@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-10-05-components-and-materials",
+      "path": "posts/code-review-simulator-2026-10-05-components-and-materials.json",
+      "title": "Components and materials",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-10-05T05:02:46Z"
+    },
+    {
       "id": "code-review-simulator-2026-10-05-more-material-thinkering",
       "path": "posts/code-review-simulator-2026-10-05-more-material-thinkering.json",
       "title": "more material thinkering",
