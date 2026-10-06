@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-10-06-knobs-and-gizmos",
+      "path": "posts/code-review-simulator-2026-10-06-knobs-and-gizmos.json",
+      "title": "Knobs and Gizmos",
+      "project": "code-review-simulator",
+      "status": "wip",
+      "createdAt": "2026-10-06T01:54:10Z"
+    },
+    {
       "id": "code-review-simulator-2026-10-05-components-and-materials",
       "path": "posts/code-review-simulator-2026-10-05-components-and-materials.json",
       "title": "Components and materials",

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-06-knobs-and-gizmos",
+  "title": "Knobs and Gizmos",
+  "project": "code-review-simulator",
+  "body": "[video: Knobs and Gizmos](../media/code-review-simulator-2026-10-06-knobs-and-gizmos/compact_broll.mp4)\n",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "godot",
+    "code-review-simulator",
+    "devlog"
+  ],
+  "createdAt": "2026-10-06T01:54:10Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "1-compact-broll",
+      "path": "../media/code-review-simulator-2026-10-06-knobs-and-gizmos/compact_broll.mp4",
+      "caption": "Knobs and Gizmos",
+      "fileName": "compact_broll.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
