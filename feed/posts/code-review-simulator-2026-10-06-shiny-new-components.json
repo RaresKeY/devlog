@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-06-shiny-new-components",
+  "title": "Shiny new components",
+  "project": "Code Review Simulator",
+  "body": "A fresh look at the PC components in Code Review Simulator: the case, motherboard, graphics card, processor, memory, cooling, power supply, storage and fans.\n\nThe video takes a tour of the individual parts and brings them together in a complete PC assembly, with fitted proportions, subtle finishes and plenty of small details.",
+  "status": "wip",
+  "tags": [
+    "devlog",
+    "Code Review Simulator",
+    "PC components",
+    "3D"
+  ],
+  "createdAt": "2026-10-06T03:55:07Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "pc-components-video",
+      "path": "../media/code-review-simulator-2026-10-06-shiny-new-components/pc_components_devlog.mp4",
+      "caption": "A tour of the new PC components and the complete assembly in Code Review Simulator.",
+      "fileName": "pc_components_devlog.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
