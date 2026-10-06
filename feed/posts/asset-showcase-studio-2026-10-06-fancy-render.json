@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "asset-showcase-studio-2026-10-06-fancy-render",
+  "title": "Fancy render",
+  "project": "asset-showcase-studio",
+  "body": "Fancy render.",
+  "status": "build",
+  "tags": [
+    "render",
+    "blender"
+  ],
+  "createdAt": "2026-10-06T04:46:52Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "image-1",
+      "path": "../media/asset-showcase-studio-2026-10-06-fancy-render/hero_0040.png",
+      "alt": "A studio render of an open desktop PC case on a circular display pedestal.",
+      "fileName": "hero_0040.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

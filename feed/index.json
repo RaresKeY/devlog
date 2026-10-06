@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "asset-showcase-studio-2026-10-06-fancy-render",
+      "path": "posts/asset-showcase-studio-2026-10-06-fancy-render.json",
+      "title": "Fancy render",
+      "project": "asset-showcase-studio",
+      "status": "build",
+      "createdAt": "2026-10-06T04:46:52Z"
+    },
+    {
       "id": "code-review-simulator-2026-10-06-shiny-new-components",
       "path": "posts/code-review-simulator-2026-10-06-shiny-new-components.json",
       "title": "Shiny new components",
