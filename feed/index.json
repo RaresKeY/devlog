@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "latest-3d-work-2026-10-13",
+      "path": "posts/latest-3d-work-2026-10-13.json",
+      "title": "Latest 3D Work: LLM Iteration and Trellis2 + Deterministic Cleanups",
+      "project": "3d-work",
+      "status": "wip",
+      "createdAt": "2026-10-13T10:43:13Z"
+    },
+    {
       "id": "asset-showcase-studio-2026-10-06-fancy-render",
       "path": "posts/asset-showcase-studio-2026-10-06-fancy-render.json",
       "title": "Fancy render",
