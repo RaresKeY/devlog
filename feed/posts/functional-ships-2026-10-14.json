@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "functional-ships-2026-10-14",
+  "title": "Functional Ships",
+  "project": "conventional-space-fleet",
+  "body": "![Functional Ships](../media/functional-ships-2026-10-14/functional-ships.png)",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-14T10:00:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "functional-ships",
+      "path": "../media/functional-ships-2026-10-14/functional-ships.png",
+      "alt": "Mule, Cistern and Prospector ship models shown from four angles.",
+      "fileName": "functional-ships.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}

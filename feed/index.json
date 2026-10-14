@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "functional-ships-2026-10-14",
+      "path": "posts/functional-ships-2026-10-14.json",
+      "title": "Functional Ships",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-10-14T10:00:00Z"
+    },
+    {
       "id": "conventional-space-fleet-2026-10-14-shields",
       "path": "posts/conventional-space-fleet-2026-10-14-shields.json",
       "title": "Shield response",
