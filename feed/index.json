@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-10-14-hud-ship-data",
+      "path": "posts/fleet-2026-10-14-hud-ship-data.json",
+      "title": "HUD work for ship data",
+      "project": "Conventional Space Fleet",
+      "status": "build",
+      "createdAt": "2026-10-14T04:57:32.161749+00:00"
+    },
+    {
       "id": "latest-3d-work-2026-10-13",
       "path": "posts/latest-3d-work-2026-10-13.json",
       "title": "Latest 3D Work: LLM Iteration and Trellis2 + Deterministic Cleanups",

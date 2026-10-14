@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-14-hud-ship-data",
+  "title": "HUD work for ship data",
+  "project": "Conventional Space Fleet",
+  "body": "Working on the ship-data HUD: energy, heat, propellant and speed across the top, defenses on the left, and crew, reserves and system status on the right. Recent-history graphs sit below the ship view. This screenshot shows the depleted-propellant state.",
+  "status": "build",
+  "tags": [
+    "devlog",
+    "HUD",
+    "UI"
+  ],
+  "createdAt": "2026-10-14T04:57:32.161749+00:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "ship-data-hud",
+      "path": "../media/fleet-2026-10-14-hud-ship-data/depleted-1280.png",
+      "alt": "Ship-status HUD with resource gauges, defenses, crew and system readouts, and recent-history graphs around a ship model.",
+      "fileName": "depleted-1280.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
