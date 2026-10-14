@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "conventional-space-fleet-2026-10-14-shields",
+  "title": "Shield response",
+  "project": "Conventional Space Fleet",
+  "body": "I've been working on the shield visuals for Conventional Space Fleet. Incoming rounds send ripples across the curved surface, with overlapping waves and a faint hexagonal lattice around the ship.\n\nThis short showcase cycles through Ion blue, Violet and Amber, with slow camera moves to show how the field catches each impact.",
+  "status": "wip",
+  "tags": [
+    "devlog",
+    "Godot",
+    "shields",
+    "spacecraft"
+  ],
+  "createdAt": "2026-10-14T08:41:07Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "shield-showcase",
+      "path": "../media/conventional-space-fleet-2026-10-14-shields/shield-showcase.mp4",
+      "caption": "Ion blue, Violet and Amber shield palettes around the Kestrel, with incoming rounds and expanding surface ripples.",
+      "fileName": "shield-showcase.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}

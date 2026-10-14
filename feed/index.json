@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "conventional-space-fleet-2026-10-14-shields",
+      "path": "posts/conventional-space-fleet-2026-10-14-shields.json",
+      "title": "Shield response",
+      "project": "Conventional Space Fleet",
+      "status": "wip",
+      "createdAt": "2026-10-14T08:41:07Z"
+    },
+    {
       "id": "fleet-2026-10-14-hud-ship-data",
       "path": "posts/fleet-2026-10-14-hud-ship-data.json",
       "title": "HUD work for ship data",
