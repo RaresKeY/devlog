@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "conventional-space-fleet-2026-10-14-first-contact-film",
+  "title": "First Contact — fleet orders",
+  "project": "Conventional Space Fleet",
+  "body": "The carriers launch first. From above, successive fighter waves accelerate out of their hangars and curve forward into separate lanes. Each Kestrel starts with its carrier's velocity, then hands over to normal combat AI. The fighters contest the gap before the main batteries open; the wings flank, the reserves advance, and surviving ships cover the withdrawal. The camera moves along independent smooth world-space paths through one chronological battle.\n\nEach fleet owns 500 ships, including eight Ark carriers and 96 embarked fighters. The battle uses armor-piercing rounds, autocannon bursts, high-explosive shells, coilgun penetrators, guided rockets and heavy missiles. Aim spread changes the actual trajectories, so shots can miss. Every ship retains its own finite ammunition, heat, defenses and damage; formation orders coordinate movement without pooling those resources.\n\nThe 4-minute-1-second film comes from the native authored battle scenario, with a starry backdrop, edited playback speed, original procedural music and cinematic sound. This is development footage, delivered in HD at 60 fps. The full 1080p60 movie and master are also retained in the project. The original three-minute movie and its reproduction inputs are preserved locally alongside the new version. Battle, Tactics and Shield labs remain available, with a separate First contact lab for this scene.",
+  "status": "wip",
+  "tags": [
+    "devlog",
+    "Godot",
+    "spacecraft",
+    "combat",
+    "shields",
+    "cinematic"
+  ],
+  "createdAt": "2026-10-14T17:21:07Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "battle-poster",
+      "path": "../media/conventional-space-fleet-2026-10-14-first-contact-film/poster.png",
+      "alt": "Ships and physical rounds crossing blue spherical shield fields in the First Contact battle cinematic.",
+      "fileName": "poster.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": [
+    {
+      "id": "first-contact",
+      "path": "../media/conventional-space-fleet-2026-10-14-first-contact-film/first-contact.mp4",
+      "caption": "First Contact — Fleet Orders: a chronological 4:01 in-engine film with smooth camera rails, overhead carrier deployments, fighter combat, six physical ammunition types, coordinated formations and original shields.",
+      "fileName": "first-contact.mp4",
+      "contentType": "video/mp4"
+    }
+  ]
+}
