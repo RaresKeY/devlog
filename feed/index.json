@@ -12,14 +12,6 @@
       "createdAt": "2026-10-15T00:34:09Z"
     },
     {
-      "id": "conventional-space-fleet-2026-10-14-first-contact-film",
-      "path": "posts/conventional-space-fleet-2026-10-14-first-contact-film.json",
-      "title": "First Contact — fleet orders",
-      "project": "Conventional Space Fleet",
-      "status": "wip",
-      "createdAt": "2026-10-14T17:21:07Z"
-    },
-    {
       "id": "functional-ships-2026-10-14",
       "path": "posts/functional-ships-2026-10-14.json",
       "title": "Functional Ships",
