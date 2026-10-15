@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "conventional-space-fleet-2026-10-15-new-hulls-showcase",
+      "path": "posts/conventional-space-fleet-2026-10-15-new-hulls-showcase.json",
+      "title": "Conventional Fleet — new hulls in motion",
+      "project": "Conventional Space Fleet",
+      "status": "wip",
+      "createdAt": "2026-10-15T10:43:35.777656Z"
+    },
+    {
       "id": "conventional-space-fleet-2026-10-15-conventional-fleet",
       "path": "posts/conventional-space-fleet-2026-10-15-conventional-fleet.json",
       "title": "Conventional Fleet",
