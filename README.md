@@ -28,6 +28,8 @@ The Pages app fetches `feed/index.json` and each indexed post from this reposito
 
 For a post with four images and no videos, put the lead image first in `images`: it appears full-width above the other three square thumbnails, including on phones. Captions and click-to-enlarge remain available. Other galleries retain their existing layout. This uses the existing post schema.
 
+Image `alt` text serves accessibility. Set an image's optional `caption` to `""` when it needs no visible explanation, or supply up to 240 characters for an explicit caption. Omitting `caption` preserves the older alt-text caption behavior. Suppressed captions also stay hidden in the full-image lightbox.
+
 All content and complete Git history are public. Do not commit drafts, credentials, private source context, local paths, scheduler state, or publisher configuration.
 
 ## Presentation tokens

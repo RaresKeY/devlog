@@ -283,7 +283,8 @@ def validate_media_item(
         failures.append(f"{label} entry must be an object")
         return
     expected_keys = IMAGE_KEYS if kind == "image" else VIDEO_KEYS
-    if set(item) != expected_keys:
+    optional_keys = {"caption"} if kind == "image" else set()
+    if not expected_keys.issubset(item) or set(item) - expected_keys - optional_keys:
         failures.append(f"{label} keys do not match the schema: {sorted(item)}")
         return
     filename = item.get("fileName")
@@ -298,6 +299,9 @@ def validate_media_item(
     text_key = "alt" if kind == "image" else "caption"
     if not isinstance(item.get(text_key), str) or not item[text_key].strip():
         failures.append(f"{label} has no {text_key}")
+    if kind == "image" and "caption" in item:
+        if not isinstance(item["caption"], str) or len(item["caption"]) > 240:
+            failures.append(f"{label} caption must be a string of at most 240 characters")
 
     relative_media = f"{post_id}/{filename}"
     path = MEDIA / relative_media

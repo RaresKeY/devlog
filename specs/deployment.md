@@ -29,6 +29,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - The app renders only after the complete index and post set validates. It stores that complete set as a last-known-good browser copy.
 - A live-fetch failure uses the saved copy when valid and displays a stale-feed notice. Without a valid copy, the app displays an error state; it never silently presents an empty feed.
 - User-authored text is rendered through DOM text nodes and a small allow-listed Markdown renderer. Post JSON is never injected as HTML.
+- Each image keeps required non-empty `alt` text and may carry a separate string `caption` of at most 240 characters. An absent caption preserves the legacy visible alt-text caption; an empty or whitespace-only caption suppresses the figure and lightbox description while retaining image alt text and the accessible open-image button. An explicit non-empty caption is rendered as text in both places. Videos retain their existing caption contract. This is an optional field in the existing schema-v1 post.
 
 ### Presentation tokens
 

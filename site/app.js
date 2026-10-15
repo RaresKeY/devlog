@@ -103,6 +103,9 @@ function validateMedia(item, postId, kind) {
   if (kind === "image" && typeof item.alt !== "string") {
     throw new Error(`Missing image alternative text in ${postId}`);
   }
+  if (kind === "image" && "caption" in item && (typeof item.caption !== "string" || Array.from(item.caption).length > 240)) {
+    throw new Error(`Invalid image caption in ${postId}`);
+  }
   if (kind === "video" && typeof item.caption !== "string") {
     throw new Error(`Missing video caption in ${postId}`);
   }
@@ -404,6 +407,7 @@ function createMedia(post) {
     const figure = document.createElement("figure");
     const url = mediaUrl(post.id, item.path);
     if (item.kind === "image") {
+      const caption = item.caption ?? item.alt;
       const button = document.createElement("button");
       button.type = "button";
       button.className = "media-button";
@@ -414,9 +418,9 @@ function createMedia(post) {
       image.loading = "lazy";
       if (/(?:contact|character)[-_ ]sheet/i.test(item.fileName)) image.className = "contain";
       button.append(image);
-      button.addEventListener("click", () => openLightbox(url, item.alt));
+      button.addEventListener("click", () => openLightbox(url, item.alt, caption));
       figure.append(button);
-      if (item.alt) figure.append(makeCaption(item.alt));
+      if (caption.trim()) figure.append(makeCaption(caption));
     } else {
       const video = document.createElement("video");
       video.src = url;
@@ -444,11 +448,13 @@ function makeCaption(text) {
   return caption;
 }
 
-function openLightbox(url, caption) {
+function openLightbox(url, alt, caption) {
   const image = elements.lightbox.querySelector("img");
   image.src = url;
-  image.alt = caption;
-  elements.lightbox.querySelector("p").textContent = caption;
+  image.alt = alt;
+  const description = elements.lightbox.querySelector("p");
+  description.textContent = caption;
+  description.hidden = !caption.trim();
   if (typeof elements.lightbox.showModal === "function") {
     elements.lightbox.showModal();
   } else {
