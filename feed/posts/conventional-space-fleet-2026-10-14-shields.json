@@ -20,7 +20,8 @@
       "path": "../media/conventional-space-fleet-2026-10-14-shields/shield-showcase.mp4",
       "caption": "Ion blue, Violet and Amber shield palettes around the Kestrel, with incoming rounds and expanding surface ripples.",
       "fileName": "shield-showcase.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "poster": "../media/conventional-space-fleet-2026-10-14-shields/shield-showcase-poster.jpg"
     }
   ]
 }
