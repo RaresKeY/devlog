@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-15-sneak-peek",
+  "title": "Sneak Peek",
+  "project": "conventional-space-fleet",
+  "body": "Sneak Peek",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-15T00:34:09Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "image-1",
+      "path": "../media/fleet-2026-10-15-sneak-peek/sneak-peek.png",
+      "alt": "A fleet of spaceships surrounded by blue shields beside a blue planet.",
+      "fileName": "sneak-peek.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
