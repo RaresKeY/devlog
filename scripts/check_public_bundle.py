@@ -283,7 +283,7 @@ def validate_media_item(
         failures.append(f"{label} entry must be an object")
         return
     expected_keys = IMAGE_KEYS if kind == "image" else VIDEO_KEYS
-    optional_keys = {"caption"} if kind == "image" else set()
+    optional_keys = {"caption"} if kind == "image" else {"poster"}
     if not expected_keys.issubset(item) or set(item) - expected_keys - optional_keys:
         failures.append(f"{label} keys do not match the schema: {sorted(item)}")
         return
@@ -302,6 +302,22 @@ def validate_media_item(
     if kind == "image" and "caption" in item:
         if not isinstance(item["caption"], str) or len(item["caption"]) > 240:
             failures.append(f"{label} caption must be a string of at most 240 characters")
+
+    if kind == "video" and "poster" in item:
+        poster = item["poster"]
+        prefix = f"../media/{post_id}/"
+        if (not isinstance(poster, str) or not poster.startswith(prefix)
+                or not SAFE_FILENAME.fullmatch(poster[len(prefix):])
+                or Path(poster).suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}):
+            failures.append(f"{label} poster must reference a safe same-post image")
+        else:
+            poster_relative = f"{post_id}/{poster[len(prefix):]}"
+            expected_media.add(poster_relative)
+            poster_path = MEDIA / poster_relative
+            if not poster_path.is_file():
+                failures.append(f"{label} poster is missing")
+            elif poster_path.stat().st_size > 8 * 1024 * 1024 or not has_expected_signature(poster_path):
+                failures.append(f"{label} poster exceeds the image limit or has an invalid signature")
 
     relative_media = f"{post_id}/{filename}"
     path = MEDIA / relative_media

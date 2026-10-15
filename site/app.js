@@ -106,6 +106,13 @@ function validateMedia(item, postId, kind) {
   if (kind === "image" && "caption" in item && (typeof item.caption !== "string" || Array.from(item.caption).length > 240)) {
     throw new Error(`Invalid image caption in ${postId}`);
   }
+  if (kind === "video" && "poster" in item) {
+    const prefix = `../media/${postId}/`;
+    if (typeof item.poster !== "string" || !item.poster.startsWith(prefix) ||
+        !/^[A-Za-z0-9._-]+\.(?:jpe?g|png|webp)$/i.test(item.poster.slice(prefix.length))) {
+      throw new Error(`Invalid video poster in ${postId}`);
+    }
+  }
   if (kind === "video" && typeof item.caption !== "string") {
     throw new Error(`Missing video caption in ${postId}`);
   }
@@ -427,6 +434,7 @@ function createMedia(post) {
       video.controls = true;
       video.playsInline = true;
       video.preload = "metadata";
+      if (item.poster) video.poster = mediaUrl(post.id, item.poster);
       video.setAttribute("aria-label", item.caption);
       figure.append(video, makeCaption(item.caption));
     }
