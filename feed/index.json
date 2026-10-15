@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-10-15-building-models",
+      "path": "posts/code-review-simulator-2026-10-15-building-models.json",
+      "title": "Building Models",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-10-15T17:07:09.788563+00:00"
+    },
+    {
       "id": "conventional-space-fleet-2026-10-15-new-hulls-showcase",
       "path": "posts/conventional-space-fleet-2026-10-15-new-hulls-showcase.json",
       "title": "Conventional Fleet: New Hulls in Motion",

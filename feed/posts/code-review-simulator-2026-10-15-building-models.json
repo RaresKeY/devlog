@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-10-15-building-models",
+  "title": "Building Models",
+  "project": "Code Review Simulator",
+  "body": "Building models for Code Review Simulator.",
+  "status": "wip",
+  "tags": [
+    "3D",
+    "Buildings"
+  ],
+  "createdAt": "2026-10-15T17:07:09.788563+00:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "building-models",
+      "path": "../media/code-review-simulator-2026-10-15-building-models/building-models.png",
+      "fileName": "building-models.png",
+      "contentType": "image/png",
+      "alt": "Five isometric building models, including brick and blue apartment blocks and three houses with pitched roofs.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
