@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "conventional-space-fleet-2026-10-15-conventional-fleet",
+  "title": "Conventional Fleet",
+  "project": "conventional-space-fleet",
+  "body": "Conventional Fleet",
+  "status": "wip",
+  "tags": [
+    "gamedev",
+    "spaceships",
+    "fleet"
+  ],
+  "createdAt": "2026-10-15T06:25:20Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "image-1",
+      "path": "../media/conventional-space-fleet-2026-10-15-conventional-fleet/01-approach-out.png",
+      "alt": "Fleets approach a blue planet.",
+      "fileName": "01-approach-out.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "image-2",
+      "path": "../media/conventional-space-fleet-2026-10-15-conventional-fleet/01-impact-mid.png",
+      "alt": "Blue shields surround ships in close formation.",
+      "fileName": "01-impact-mid.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "image-3",
+      "path": "../media/conventional-space-fleet-2026-10-15-conventional-fleet/03-approach-in.png",
+      "alt": "Ships gather above the blue planet.",
+      "fileName": "03-approach-in.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "image-4",
+      "path": "../media/conventional-space-fleet-2026-10-15-conventional-fleet/04-twin-sorties-out.png",
+      "alt": "Two fleets launch opposing sorties.",
+      "fileName": "04-twin-sorties-out.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
