@@ -547,6 +547,14 @@ a {
   grid-template-columns: 1fr;
 }
 
+.media-gallery.featured-four {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.media-gallery.featured-four > figure:first-child {
+  grid-column: 1 / -1;
+}
+
 .media-gallery figure {
   min-width: 0;
   margin: 0;
@@ -574,6 +582,15 @@ a {
 
 .media-gallery img.contain {
   object-fit: contain;
+}
+
+.media-gallery.featured-four > figure:first-child img {
+  max-height: none;
+  object-fit: contain;
+}
+
+.media-gallery.featured-four > figure:not(:first-child) img {
+  aspect-ratio: 1;
 }
 
 .media-gallery figcaption {

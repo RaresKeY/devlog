@@ -26,6 +26,8 @@ The Pages app fetches `feed/index.json` and each indexed post from this reposito
 3. Run the verifier and review the diff.
 4. Push the JSON/media commit. No Pages artifact deployment is needed.
 
+For a post with four images and no videos, put the lead image first in `images`: it appears full-width above the other three square thumbnails, including on phones. Captions and click-to-enlarge remain available. Other galleries retain their existing layout. This uses the existing post schema.
+
 All content and complete Git history are public. Do not commit drafts, credentials, private source context, local paths, scheduler state, or publisher configuration.
 
 ## Presentation tokens

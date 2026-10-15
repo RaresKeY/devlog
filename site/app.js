@@ -396,6 +396,9 @@ function createMedia(post) {
 
   const gallery = document.createElement("div");
   gallery.className = `media-gallery count-${Math.min(items.length, 4)}`;
+  if (post.images.length === 4 && post.videos.length === 0) {
+    gallery.classList.add("featured-four");
+  }
   gallery.setAttribute("aria-label", "Update media");
   items.forEach((item) => {
     const figure = document.createElement("figure");
