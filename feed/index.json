@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "3d-work-2026-10-16-more-detailed-houses",
+      "path": "posts/3d-work-2026-10-16-more-detailed-houses.json",
+      "title": "More detailed houses",
+      "project": "3d-work",
+      "status": "wip",
+      "createdAt": "2026-10-16T07:43:16Z"
+    },
+    {
       "id": "code-review-simulator-2026-10-15-building-models",
       "path": "posts/code-review-simulator-2026-10-15-building-models.json",
       "title": "Building Models",

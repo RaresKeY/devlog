@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "3d-work-2026-10-16-more-detailed-houses",
+  "title": "More detailed houses",
+  "project": "3d-work",
+  "body": "More detailed houses.",
+  "status": "wip",
+  "tags": [
+    "devlog",
+    "3d-art"
+  ],
+  "createdAt": "2026-10-16T07:43:16Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "more-detailed-houses",
+      "path": "../media/3d-work-2026-10-16-more-detailed-houses/more-detailed-houses.png",
+      "alt": "Five detailed isometric residential buildings, including brick and blue apartment buildings and three cream houses with pitched roofs and chimneys.",
+      "caption": "",
+      "fileName": "more-detailed-houses.png",
+      "contentType": "image/png"
+    }
+  ],
+  "videos": []
+}
