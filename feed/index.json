@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "jev-2026-10-16-in-action",
+      "path": "posts/jev-2026-10-16-in-action.json",
+      "title": "Jev in action",
+      "project": "Jev",
+      "status": "wip",
+      "createdAt": "2026-10-16T17:40:21.563595Z"
+    },
+    {
       "id": "3d-work-2026-10-16-more-detailed-houses",
       "path": "posts/3d-work-2026-10-16-more-detailed-houses.json",
       "title": "Residential building lineup",

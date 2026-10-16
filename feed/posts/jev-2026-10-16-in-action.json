@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "jev-2026-10-16-in-action",
+  "title": "Jev in action",
+  "project": "Jev",
+  "body": "Jev in two live demos: clearing level one in Supper Guard and browsing a book catalogue from a short chat instruction.\n\nCodex plans the browser task, Jev chooses from filtered controls, and Codex verifies the result. The browser clip shows the chat, live navigation and final price and stock comparison together.",
+  "status": "wip",
+  "tags": [
+    "devlog",
+    "Jev",
+    "AI",
+    "browser automation"
+  ],
+  "createdAt": "2026-10-16T17:40:21.563595Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "jev-game",
+      "path": "../media/jev-2026-10-16-in-action/jev-game.mp4",
+      "caption": "Jev clears level one in Supper Guard. Live gameplay, condensed.",
+      "fileName": "jev-game.mp4",
+      "contentType": "video/mp4",
+      "poster": "../media/jev-2026-10-16-in-action/jev-game.jpg"
+    },
+    {
+      "id": "jev-browser",
+      "path": "../media/jev-2026-10-16-in-action/jev-browser.mp4",
+      "caption": "From a short chat instruction to Jev browsing and the final verified comparison. Continuous live capture.",
+      "fileName": "jev-browser.mp4",
+      "contentType": "video/mp4",
+      "poster": "../media/jev-2026-10-16-in-action/jev-browser.jpg"
+    }
+  ]
+}
