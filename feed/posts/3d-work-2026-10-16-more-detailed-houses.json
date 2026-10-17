@@ -13,13 +13,47 @@
   "visibility": "public",
   "images": [
     {
-      "id": "more-detailed-houses",
-      "path": "../media/3d-work-2026-10-16-more-detailed-houses/more-detailed-houses.png",
-      "alt": "Five detailed isometric residential buildings, including brick and blue apartment buildings and three cream houses with pitched roofs and chimneys.",
+      "id": "scrappy-rowhouse",
+      "path": "../media/3d-work-2026-10-16-more-detailed-houses/scrappy-rowhouse.png",
+      "alt": "Close-up of a three-storey red brick rowhouse with white stone trim, a balcony and a flat slate roof.",
       "caption": "",
-      "fileName": "more-detailed-houses.png",
+      "fileName": "scrappy-rowhouse.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "canal-townhouse",
+      "path": "../media/3d-work-2026-10-16-more-detailed-houses/canal-townhouse.png",
+      "alt": "Close-up of a tall blue canal townhouse with white trim, dark windows and a flat slate roof.",
+      "caption": "",
+      "fileName": "canal-townhouse.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "farmhouse",
+      "path": "../media/3d-work-2026-10-16-more-detailed-houses/farmhouse.png",
+      "alt": "Close-up of a cream farmhouse with red shutters, a pitched slate roof and a brick chimney.",
+      "caption": "",
+      "fileName": "farmhouse.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "alpine-lodge",
+      "path": "../media/3d-work-2026-10-16-more-detailed-houses/alpine-lodge.png",
+      "alt": "Close-up of a cream alpine lodge with a timber gable, dark door, pitched slate roof and brick chimney.",
+      "caption": "",
+      "fileName": "alpine-lodge.png",
+      "contentType": "image/png"
+    },
+    {
+      "id": "orchard-cottage",
+      "path": "../media/3d-work-2026-10-16-more-detailed-houses/orchard-cottage.png",
+      "alt": "Close-up of a cream orchard cottage with green shutters, a green door, pitched slate roof and brick chimney.",
+      "caption": "",
+      "fileName": "orchard-cottage.png",
       "contentType": "image/png"
     }
   ],
-  "videos": []
+  "videos": [],
+  "ctaLabel": "Previous combined lineup",
+  "ctaUrl": "https://raw.githubusercontent.com/RaresKeY/devlog/b3b6e786d98a678dc9d246cc74702135e95311a4/feed/media/3d-work-2026-10-16-more-detailed-houses/more-detailed-houses.png"
 }
