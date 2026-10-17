@@ -17,6 +17,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - The repository and its complete Git history are public.
 - The canonical post order and summary metadata live in `feed/index.json`.
 - Each `feed/posts/<id>.json` is a complete schema-versioned public post. Its ID and summary fields must match the index.
+- Posts accept up to five images and two videos. Existing schema-v1 posts remain valid. Optional `ctaLabel` and `ctaUrl` provide a footer link, including an immutable public link to an earlier combined image; linked historical media does not become another gallery image or an orphan file in the current feed.
 - Post media lives at `feed/media/<id>/<filename>` and is referenced as `../media/<id>/<filename>` from the post JSON.
 - `site/` contains only the HTML, CSS, JavaScript, local presentation assets, icons, and `.nojekyll` needed by Pages.
 - Private history, drafts, credentials, local paths, build caches, scheduler state, and publisher or cloud configuration are forbidden.
@@ -36,7 +37,8 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - The hero keeps the current page composition, image size, and natural aspect ratio. Its restrained angled purple blueprint-grid backdrop extends beyond both viewport edges as a continuous paper panel, while a dedicated full-width hero wrapper clips it without scrolling and the image remains layered above it. The former workbench caption and separator are absent, and reduced hero-bottom/feed-top spacing connects the hero to the feed without a dividing rule; the backdrop's texture, color, angle, and border accent remain unchanged.
 - Links inside post content use a distinct underlined, highlighted treatment with visible hover and keyboard-focus states; navigation and other link styles are unchanged.
 - Post body copy uses the original Georgia stack through the active `--post-content-*-current` font, size, line-height, and letter-spacing tokens. Former font trials and their runtime assets are not part of the current site.
-- Posts with exactly four images and no videos use a featured gallery: the first image spans the full width at 16:9 without cropping, followed by three square thumbnails in declared image order. This arrangement remains three columns on narrow screens. Captions, accessible image buttons, lazy loading, and the full-image lightbox remain available. Other image counts and mixed image/video galleries retain their existing responsive layout; the public schema is unchanged.
+- Posts with exactly four images and no videos use a featured gallery: the first image spans the full width at 16:9 without cropping, followed by three square thumbnails in declared image order. This arrangement remains three columns on narrow screens. Captions, accessible image buttons, lazy loading, and the full-image lightbox remain available. The public schema version is unchanged.
+- Posts with exactly five images and no videos use a two-row lineup: the first two square images share the top row, followed by three square images in the bottom row. All images use `object-fit: contain` to retain the complete render. A six-column grid with spans of three and two preserves the declared order and the two-above-three arrangement at desktop and phone widths. Existing one-to-three-image, featured-four and mixed-media layouts keep their behavior, captions, accessible buttons, lazy loading and lightbox.
 - `site/index.html` versions the stylesheet and app-module URLs with query tokens. Presentation releases bump the changed assets' tokens so a fresh page load requests the matching CSS and JavaScript despite GitHub Pages' ten-minute asset cache. Already-open pages adopt a release on reload.
 
 ### Workflows
@@ -44,6 +46,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - GitHub Pages uses Actions mode and publishes only `site/` through the `github-pages` environment.
 - `.github/workflows/deploy-pages.yml` runs for `site/**`, the verifier, or its own workflow changes, plus manual dispatch. It validates before uploading the Pages artifact.
 - `.github/workflows/validate-feed.yml` runs for `feed/**` pushes and pull requests. A feed-only commit does not trigger the Pages workflow.
+- Deploy and verify new gallery code and versioned assets before publishing feed content that depends on a higher image limit. Publish the post/media update separately after the deployed client accepts it, so the runtime feed remains valid throughout rollout.
 - Checkout actions do not persist credentials. Validation has `contents: read`; deployment alone receives `pages: write` and `id-token: write`.
 
 ## Verification

@@ -555,6 +555,18 @@ a {
   grid-column: 1 / -1;
 }
 
+.media-gallery.lineup-five {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.media-gallery.lineup-five > figure {
+  grid-column: span 2;
+}
+
+.media-gallery.lineup-five > figure:nth-child(-n + 2) {
+  grid-column: span 3;
+}
+
 .media-gallery figure {
   min-width: 0;
   margin: 0;
@@ -591,6 +603,12 @@ a {
 
 .media-gallery.featured-four > figure:not(:first-child) img {
   aspect-ratio: 1;
+}
+
+.media-gallery.lineup-five img {
+  max-height: none;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .media-gallery figcaption {

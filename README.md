@@ -26,7 +26,9 @@ The Pages app fetches `feed/index.json` and each indexed post from this reposito
 3. Run the verifier and review the diff.
 4. Push the JSON/media commit. No Pages artifact deployment is needed.
 
-For a post with four images and no videos, put the lead image first in `images`: it appears full-width above the other three square thumbnails, including on phones. Captions and click-to-enlarge remain available. Other galleries retain their existing layout. This uses the existing post schema.
+Posts support up to five images and two videos. For four images and no videos, put the lead image first in `images`: it appears full-width above the other three square thumbnails, including on phones. Five images and no videos form two square images across the top and three square images below, in declared order, without cropping. That arrangement also stays in two rows on phones. Captions and click-to-enlarge remain available. One-to-three-image and mixed-media galleries retain their existing layouts. This uses the existing post schema.
+
+Deploy a gallery-code change and verify the released asset versions before publishing a post that needs the new layout or image limit. A previous combined image can remain available through the post's optional `ctaLabel` and `ctaUrl`, using its existing immutable public image URL without adding a sixth gallery image.
 
 Image `alt` text serves accessibility. Set an image's optional `caption` to `""` when it needs no visible explanation, or supply up to 240 characters for an explicit caption. Omitting `caption` preserves the older alt-text caption behavior. Suppressed captions also stay hidden in the full-image lightbox.
 
