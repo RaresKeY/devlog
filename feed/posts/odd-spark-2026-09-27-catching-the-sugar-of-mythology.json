@@ -2,14 +2,14 @@
   "schemaVersion": 1,
   "id": "odd-spark-2026-09-27-catching-the-sugar-of-mythology",
   "title": "Catching the sugar of mythology",
-  "project": "Odd Spark",
+  "project": "Who Put Sugar in the Sky?",
   "body": "Catching sugar cubes with a coffee cup, against a backdrop of temples above the clouds. A small work-in-progress look at Odd Spark.\n\n[video: Odd Spark gameplay: moving a cup and saucer to catch falling sugar cubes.](../media/odd-spark-2026-09-27-catching-the-sugar-of-mythology/catching-the-sugar-of-mythology.mp4)\n",
   "status": "wip",
   "tags": [
-    "gamedev",
-    "odd-spark",
-    "wip",
-    "devlog"
+    "godot",
+    "game-jam",
+    "gameplay",
+    "physics"
   ],
   "createdAt": "2026-09-26T23:32:53Z",
   "visibility": "public",

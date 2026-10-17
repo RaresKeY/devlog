@@ -6,9 +6,9 @@
   "body": "Working on the ship-data HUD: energy, heat, propellant and speed across the top, defenses on the left, and crew, reserves and system status on the right. Recent-history graphs sit below the ship view. This screenshot shows the depleted-propellant state.",
   "status": "build",
   "tags": [
-    "devlog",
-    "HUD",
-    "UI"
+    "godot",
+    "spacecraft",
+    "ui"
   ],
   "createdAt": "2026-10-14T04:57:32.161749+00:00",
   "visibility": "public",

@@ -2,12 +2,14 @@
   "schemaVersion": 1,
   "id": "3d-work-2026-10-16-more-detailed-houses",
   "title": "Residential building lineup",
-  "project": "3d-work",
+  "project": "Code Review Simulator",
   "body": "More detailed houses.",
   "status": "wip",
   "tags": [
-    "devlog",
-    "3d-art"
+    "godot",
+    "3d-art",
+    "environments",
+    "materials"
   ],
   "createdAt": "2026-10-16T07:43:16Z",
   "visibility": "public",

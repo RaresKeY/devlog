@@ -6,10 +6,10 @@
   "body": "Small screenshot update from Code Review Simulator. Home, Shopping Mart, city area, and PR review monitor are coming together. Still rough, but the core loop is starting to feel real\n\n1/4",
   "status": "wip",
   "tags": [
-    "code-review-simulator",
-    "prototype",
-    "screenshots",
-    "ko-fi"
+    "godot",
+    "prototyping",
+    "environments",
+    "ui"
   ],
   "createdAt": "2026-05-24T12:00:00.000Z",
   "visibility": "public",

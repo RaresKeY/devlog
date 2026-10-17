@@ -2,14 +2,13 @@
   "schemaVersion": 1,
   "id": "latest-3d-work-2026-10-13",
   "title": "Latest 3D Work: LLM Iteration and Trellis2 + Deterministic Cleanups",
-  "project": "3d-work",
+  "project": "3D Art",
   "body": "Two directions in my latest 3D work: a conventional space fleet built through LLM iteration, and ten Trellis2 models with deterministic geometry and material cleanups. Varied triangle budgets, mostly 2–20k; the egg is about 1k.\n\n![Sovereign](../media/latest-3d-work-2026-10-13/01-sovereign.png)\n\n![Alchemy Workbench](../media/latest-3d-work-2026-10-13/02-alchemy-workbench.png)\n\n![Conventional space fleet catalog](../media/latest-3d-work-2026-10-13/03-fleet-catalog.png)\n\n![Ten Trellis2 models](../media/latest-3d-work-2026-10-13/04-trellis-catalog.png)",
   "status": "wip",
   "tags": [
     "3d-art",
-    "gamedev",
+    "spacecraft",
     "trellis2",
-    "spaceships",
     "ai-workflow"
   ],
   "createdAt": "2026-10-13T10:43:13Z",

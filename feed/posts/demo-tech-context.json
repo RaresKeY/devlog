@@ -2,14 +2,13 @@
   "schemaVersion": 1,
   "id": "demo-tech-context",
   "title": "Tech Tree: icons in context",
-  "project": "Upgrade Loop",
+  "project": "Incremental Framework",
   "body": "Testing upgrade icons inside the actual tech tree instead of only as standalone SVG concepts.\n\n- checking whether locked nodes still read as unavailable\n- comparing icon silhouettes at small sizes\n\n**Goal:** make progression clear before the player opens any detail panel.",
   "status": "feedback",
   "tags": [
     "godot",
     "tech-tree",
-    "icons",
-    "ko-fi"
+    "ui"
   ],
   "createdAt": "2026-05-21T08:25:43.000Z",
   "visibility": "public",

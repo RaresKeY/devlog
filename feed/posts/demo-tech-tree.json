@@ -2,14 +2,13 @@
   "schemaVersion": 1,
   "id": "demo-tech-tree",
   "title": "Tech Tree",
-  "project": "Upgrade Loop",
+  "project": "Incremental Framework",
   "body": "A work-in-progress look at the first upgrade tree.",
   "status": "wip",
   "tags": [
     "godot",
     "tech-tree",
-    "upgrade-loop",
-    "ko-fi"
+    "ui"
   ],
   "createdAt": "2026-05-20T16:40:55.000Z",
   "visibility": "public",

@@ -1,3 +1,5 @@
+import { displayProject, projectKey, projectOptions, projectSearchText } from "./projects.js?v=20261018-1";
+
 const RAW_FEED_ROOT = "https://raw.githubusercontent.com/RaresKeY/devlog/main/feed/";
 const IS_LOCAL_PREVIEW = ["localhost", "127.0.0.1", "::1"].includes(window.location.hostname);
 const FEED_ROOT = IS_LOCAL_PREVIEW ? new URL("../feed/", window.location.href) : new URL(RAW_FEED_ROOT);
@@ -254,20 +256,9 @@ function makeState(title, detail) {
   return container;
 }
 
-function displayProject(project) {
-  if (!project.includes("-")) return project;
-  return project
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
-}
-
 function populateControls() {
-  const projects = [...new Set(state.posts.map((post) => post.project))].sort((a, b) =>
-    displayProject(a).localeCompare(displayProject(b)),
-  );
   elements.project.replaceChildren(new Option("All projects", "all"));
-  projects.forEach((project) => elements.project.add(new Option(displayProject(project), project)));
+  projectOptions(state.posts).forEach(([key, name]) => elements.project.add(new Option(name, key)));
 
   const filters = ["all", ...VALID_STATUSES];
   elements.statuses.replaceChildren(
@@ -285,13 +276,13 @@ function populateControls() {
 }
 
 function postSearchText(post) {
-  return [post.title, post.project, post.body, ...post.tags].join(" ").toLowerCase();
+  return [post.title, post.project, projectSearchText(post.project), post.body, ...post.tags].join(" ").toLowerCase();
 }
 
 function filteredPosts() {
   return state.posts.filter((post) => {
     const matchesStatus = state.status === "all" || post.status === state.status;
-    const matchesProject = state.project === "all" || post.project === state.project;
+    const matchesProject = state.project === "all" || projectKey(post.project) === state.project;
     const matchesQuery = !state.query || postSearchText(post).includes(state.query);
     return matchesStatus && matchesProject && matchesQuery;
   });

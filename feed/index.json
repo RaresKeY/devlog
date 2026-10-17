@@ -23,7 +23,7 @@
       "id": "3d-work-2026-10-16-more-detailed-houses",
       "path": "posts/3d-work-2026-10-16-more-detailed-houses.json",
       "title": "Residential building lineup",
-      "project": "3d-work",
+      "project": "Code Review Simulator",
       "status": "wip",
       "createdAt": "2026-10-16T07:43:16Z"
     },
@@ -47,7 +47,7 @@
       "id": "conventional-space-fleet-2026-10-15-conventional-fleet",
       "path": "posts/conventional-space-fleet-2026-10-15-conventional-fleet.json",
       "title": "Conventional Fleet",
-      "project": "conventional-space-fleet",
+      "project": "Conventional Space Fleet",
       "status": "wip",
       "createdAt": "2026-10-15T06:25:20Z"
     },
@@ -55,7 +55,7 @@
       "id": "fleet-2026-10-15-sneak-peek",
       "path": "posts/fleet-2026-10-15-sneak-peek.json",
       "title": "Sneak Peek",
-      "project": "conventional-space-fleet",
+      "project": "Conventional Space Fleet",
       "status": "wip",
       "createdAt": "2026-10-15T00:34:09Z"
     },
@@ -63,7 +63,7 @@
       "id": "functional-ships-2026-10-14",
       "path": "posts/functional-ships-2026-10-14.json",
       "title": "Functional Ships",
-      "project": "conventional-space-fleet",
+      "project": "Conventional Space Fleet",
       "status": "wip",
       "createdAt": "2026-10-14T10:00:00Z"
     },
@@ -87,7 +87,7 @@
       "id": "latest-3d-work-2026-10-13",
       "path": "posts/latest-3d-work-2026-10-13.json",
       "title": "Latest 3D Work: LLM Iteration and Trellis2 + Deterministic Cleanups",
-      "project": "3d-work",
+      "project": "3D Art",
       "status": "wip",
       "createdAt": "2026-10-13T10:43:13Z"
     },
@@ -95,7 +95,7 @@
       "id": "asset-showcase-studio-2026-10-06-fancy-render",
       "path": "posts/asset-showcase-studio-2026-10-06-fancy-render.json",
       "title": "Fancy render",
-      "project": "asset-showcase-studio",
+      "project": "Asset Showcase Studio",
       "status": "build",
       "createdAt": "2026-10-06T04:46:52Z"
     },
@@ -111,7 +111,7 @@
       "id": "code-review-simulator-2026-10-06-knobs-and-gizmos",
       "path": "posts/code-review-simulator-2026-10-06-knobs-and-gizmos.json",
       "title": "Knobs and Gizmos",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "wip",
       "createdAt": "2026-10-06T01:54:10Z"
     },
@@ -127,7 +127,7 @@
       "id": "code-review-simulator-2026-10-05-more-material-thinkering",
       "path": "posts/code-review-simulator-2026-10-05-more-material-thinkering.json",
       "title": "more material thinkering",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "wip",
       "createdAt": "2026-10-05T02:31:59Z"
     },
@@ -143,7 +143,7 @@
       "id": "code-review-simulator-2026-10-03-forgenest-in-world-dark-mode",
       "path": "posts/code-review-simulator-2026-10-03-forgenest-in-world-dark-mode.json",
       "title": "Code Review Simulator: ForgeNest in Dark Mode",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "wip",
       "createdAt": "2026-10-03T21:18:21Z"
     },
@@ -151,7 +151,7 @@
       "id": "code-review-simulator-2026-10-03-diegetic-os-light-mode",
       "path": "posts/code-review-simulator-2026-10-03-diegetic-os-light-mode.json",
       "title": "Code Review Simulator: Diegetic OS Light Mode",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "wip",
       "createdAt": "2026-10-03T20:18:21Z"
     },
@@ -159,7 +159,7 @@
       "id": "code-review-simulator-2026-10-03-work-on-cityscapes",
       "path": "posts/code-review-simulator-2026-10-03-work-on-cityscapes.json",
       "title": "Code Review Simulator: Work on Cityscapes",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "wip",
       "createdAt": "2026-10-03T19:13:24Z"
     },
@@ -167,7 +167,7 @@
       "id": "wheat-sway-lab-2026-10-03-1024-wheat-stalks",
       "path": "posts/wheat-sway-lab-2026-10-03-1024-wheat-stalks.json",
       "title": "1024 wheat stalks swaying",
-      "project": "wheat-sway-lab",
+      "project": "Wheat Sway Lab",
       "status": "wip",
       "createdAt": "2026-10-03T05:49:30.479882+00:00"
     },
@@ -175,7 +175,7 @@
       "id": "odd-spark-2026-09-27-sound-on",
       "path": "posts/odd-spark-2026-09-27-sound-on.json",
       "title": "Sound on",
-      "project": "Odd Spark",
+      "project": "Who Put Sugar in the Sky?",
       "status": "wip",
       "createdAt": "2026-09-27T15:54:08Z"
     },
@@ -183,7 +183,7 @@
       "id": "odd-spark-2026-09-27-progress-on-coffee-physics",
       "path": "posts/odd-spark-2026-09-27-progress-on-coffee-physics.json",
       "title": "Progress on coffee physics",
-      "project": "Odd Spark",
+      "project": "Who Put Sugar in the Sky?",
       "status": "wip",
       "createdAt": "2026-09-27T02:11:14Z"
     },
@@ -191,7 +191,7 @@
       "id": "odd-spark-2026-09-27-catching-the-sugar-of-mythology",
       "path": "posts/odd-spark-2026-09-27-catching-the-sugar-of-mythology.json",
       "title": "Catching the sugar of mythology",
-      "project": "Odd Spark",
+      "project": "Who Put Sugar in the Sky?",
       "status": "wip",
       "createdAt": "2026-09-26T23:32:53Z"
     },
@@ -199,7 +199,7 @@
       "id": "odd-spark-2026-09-26-coffee-physics-kinda",
       "path": "posts/odd-spark-2026-09-26-coffee-physics-kinda.json",
       "title": "Coffee physics, kinda",
-      "project": "Odd Spark",
+      "project": "Who Put Sugar in the Sky?",
       "status": "wip",
       "createdAt": "2026-09-26T20:32:53Z"
     },
@@ -207,7 +207,7 @@
       "id": "material-atlas-2026-09-26-from-trellis2-to-segmented-pantry",
       "path": "posts/material-atlas-2026-09-26-from-trellis2-to-segmented-pantry.json",
       "title": "From TRELLIS 2 to a Rebuilt Pantry",
-      "project": "material-atlas",
+      "project": "Material Atlas",
       "status": "wip",
       "createdAt": "2026-09-26T14:35:00Z"
     },
@@ -215,7 +215,7 @@
       "id": "supper-guard-2026-09-26-cooking-meets-tower-defense",
       "path": "posts/supper-guard-2026-09-26-cooking-meets-tower-defense.json",
       "title": "Cooking Meets Tower Defense",
-      "project": "supper-guard",
+      "project": "Supper Guard",
       "status": "wip",
       "createdAt": "2026-09-26T09:35:00Z"
     },
@@ -223,7 +223,7 @@
       "id": "supper-guard-2026-09-26-astra-articulated-asset-experiment",
       "path": "posts/supper-guard-2026-09-26-astra-articulated-asset-experiment.json",
       "title": "Astra and a Quick Pass at Articulated 3D Assets",
-      "project": "supper-guard",
+      "project": "Supper Guard",
       "status": "wip",
       "createdAt": "2026-09-26T01:35:00Z"
     },
@@ -231,7 +231,7 @@
       "id": "material-atlas-2026-09-25-material-maker-ai-workflows",
       "path": "posts/material-atlas-2026-09-25-material-maker-ai-workflows.json",
       "title": "Material Maker Experiments and AI Workflows",
-      "project": "material-atlas",
+      "project": "Material Atlas",
       "status": "wip",
       "createdAt": "2026-09-25T21:35:00Z"
     },
@@ -255,7 +255,7 @@
       "id": "plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk",
       "path": "posts/plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk.json",
       "title": "Five Faces for the Box-Screen Clerk",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "wip",
       "createdAt": "2026-09-03T16:00:00Z"
     },
@@ -263,7 +263,7 @@
       "id": "plug-charge-2026-09-03-whats-coming-in-plug-and-prosper-1-3-0",
       "path": "posts/plug-charge-2026-09-03-whats-coming-in-plug-and-prosper-1-3-0.json",
       "title": "What's Coming in Plug & Prosper 1.3.0",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "wip",
       "createdAt": "2026-09-03T00:55:08Z"
     },
@@ -271,7 +271,7 @@
       "id": "plug-charge-2026-09-02-making-the-kiosk-read-more-clearly",
       "path": "posts/plug-charge-2026-09-02-making-the-kiosk-read-more-clearly.json",
       "title": "Making the Kiosk Read More Clearly",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "wip",
       "createdAt": "2026-09-02T20:17:13Z"
     },
@@ -279,7 +279,7 @@
       "id": "plug-charge-2026-09-02-wip-effects-for-the-next-shift",
       "path": "posts/plug-charge-2026-09-02-wip-effects-for-the-next-shift.json",
       "title": "WIP Effects for the Next Shift",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "wip",
       "createdAt": "2026-09-02T19:10:46Z"
     },
@@ -287,7 +287,7 @@
       "id": "plug-charge-2026-09-01-the-scope-was-complete",
       "path": "posts/plug-charge-2026-09-01-the-scope-was-complete.json",
       "title": "The Scope Was Complete",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "milestone",
       "createdAt": "2026-09-01T20:14:00Z"
     },
@@ -295,7 +295,7 @@
       "id": "world-state-simulator-2026-08-17-surrounded",
       "path": "posts/world-state-simulator-2026-08-17-surrounded.json",
       "title": "Surrounded",
-      "project": "world-state-simulator",
+      "project": "World State Simulator",
       "status": "build",
       "createdAt": "2026-08-17T08:14:00Z"
     },
@@ -303,7 +303,7 @@
       "id": "world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture",
       "path": "posts/world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture.json",
       "title": "When 5,000 formations changed the simulation architecture",
-      "project": "world-state-simulator",
+      "project": "World State Simulator",
       "status": "build",
       "createdAt": "2026-08-16T06:54:03Z"
     },
@@ -311,7 +311,7 @@
       "id": "world-state-simulator-2026-08-15-scenario-labs-first-linkedin-post",
       "path": "posts/world-state-simulator-2026-08-15-scenario-labs-first-linkedin-post.json",
       "title": "I'm building World State Simulator, a real-time grand-strategy game and world simulation in Godot.",
-      "project": "world-state-simulator",
+      "project": "World State Simulator",
       "status": "build",
       "createdAt": "2026-08-15T06:11:35Z"
     },
@@ -319,7 +319,7 @@
       "id": "charge-knights-2026-08-09-three-new-puppets-for-the-warfront",
       "path": "posts/charge-knights-2026-08-09-three-new-puppets-for-the-warfront.json",
       "title": "Three New Puppets for the Warfront",
-      "project": "charge-knights",
+      "project": "Charge Knights",
       "status": "build",
       "createdAt": "2026-08-09T00:32:30.000Z"
     },
@@ -327,7 +327,7 @@
       "id": "plug-charge-2026-08-02-plug-and-prosper-is-out",
       "path": "posts/plug-charge-2026-08-02-plug-and-prosper-is-out.json",
       "title": "Plug & Prosper Is Out",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "milestone",
       "createdAt": "2026-08-01T23:55:00.000Z"
     },
@@ -335,7 +335,7 @@
       "id": "horizon-charge-2026-08-02-a-run-to-impact",
       "path": "posts/horizon-charge-2026-08-02-a-run-to-impact.json",
       "title": "A Run to Impact",
-      "project": "horizon-charge",
+      "project": "Horizon Charge",
       "status": "build",
       "createdAt": "2026-08-01T22:25:00.000Z"
     },
@@ -343,7 +343,7 @@
       "id": "plug-charge-2026-08-02-opening-the-kiosk",
       "path": "posts/plug-charge-2026-08-02-opening-the-kiosk.json",
       "title": "Opening the Kiosk",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "wip",
       "createdAt": "2026-08-01T22:24:00.000Z"
     },
@@ -351,7 +351,7 @@
       "id": "charge-knights-2026-08-01-working-on-charge-knights-puppetry",
       "path": "posts/charge-knights-2026-08-01-working-on-charge-knights-puppetry.json",
       "title": "Working on Charge Knights Puppetry",
-      "project": "charge-knights",
+      "project": "Charge Knights",
       "status": "wip",
       "createdAt": "2026-08-01T19:23:00.000Z"
     },
@@ -359,7 +359,7 @@
       "id": "plug-charge-2026-08-01-shaping-the-plugs-and-sockets",
       "path": "posts/plug-charge-2026-08-01-shaping-the-plugs-and-sockets.json",
       "title": "Shaping the Plugs and Sockets",
-      "project": "plug-charge",
+      "project": "Plug & Prosper",
       "status": "wip",
       "createdAt": "2026-08-01T19:13:00.000Z"
     },
@@ -367,7 +367,7 @@
       "id": "charge-grid-2026-08-01-aligning-the-grid",
       "path": "posts/charge-grid-2026-08-01-aligning-the-grid.json",
       "title": "Aligning the Grid",
-      "project": "charge-grid",
+      "project": "Charge Grid",
       "status": "wip",
       "createdAt": "2026-08-01T15:37:00.000Z"
     },
@@ -375,7 +375,7 @@
       "id": "charge-grid-2026-08-01-four-directions-for-the-jam",
       "path": "posts/charge-grid-2026-08-01-four-directions-for-the-jam.json",
       "title": "Four Directions for the Jam",
-      "project": "charge-grid",
+      "project": "Charge Grid",
       "status": "wip",
       "createdAt": "2026-08-01T15:36:00.000Z"
     },
@@ -383,7 +383,7 @@
       "id": "charge-grid-2026-08-01-charge-grid-40-minutes-in",
       "path": "posts/charge-grid-2026-08-01-charge-grid-40-minutes-in.json",
       "title": "Charge Grid, 40 Minutes In",
-      "project": "charge-grid",
+      "project": "Charge Grid",
       "status": "wip",
       "createdAt": "2026-08-01T14:30:00.000Z"
     },
@@ -391,7 +391,7 @@
       "id": "the-hollow-signal-2026-07-31-building-out-the-world",
       "path": "posts/the-hollow-signal-2026-07-31-building-out-the-world.json",
       "title": "Building Out the World",
-      "project": "the-hollow-signal",
+      "project": "The Hollow Signal",
       "status": "build",
       "createdAt": "2026-07-30T23:54:00.000Z"
     },
@@ -399,7 +399,7 @@
       "id": "unnamed-game-2026-07-30-cards-for-a-new-unnamed-game",
       "path": "posts/unnamed-game-2026-07-30-cards-for-a-new-unnamed-game.json",
       "title": "Cards for a New, Unnamed Game",
-      "project": "unnamed-game",
+      "project": "Unnamed Card Game",
       "status": "wip",
       "createdAt": "2026-07-29T22:01:07.000Z"
     },
@@ -407,7 +407,7 @@
       "id": "hold-the-line-2026-07-29-experimenting-with-stochastic-fun-mechanisms",
       "path": "posts/hold-the-line-2026-07-29-experimenting-with-stochastic-fun-mechanisms.json",
       "title": "Experimenting with Stochastic Fun Mechanisms 🎮",
-      "project": "hold-the-line",
+      "project": "Hold the Line",
       "status": "build",
       "createdAt": "2026-07-29T00:08:00.000Z"
     },
@@ -415,7 +415,7 @@
       "id": "code-review-simulator-2026-07-18-switching-things-up",
       "path": "posts/code-review-simulator-2026-07-18-switching-things-up.json",
       "title": "Switching Things Up",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-18T11:36:56.000Z"
     },
@@ -423,7 +423,7 @@
       "id": "code-review-simulator-2026-07-17-generating-materials-in-godot",
       "path": "posts/code-review-simulator-2026-07-17-generating-materials-in-godot.json",
       "title": "Generating Materials in Godot",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-17T05:00:55.000Z"
     },
@@ -431,7 +431,7 @@
       "id": "code-review-simulator-2026-07-16-needs-another-pass",
       "path": "posts/code-review-simulator-2026-07-16-needs-another-pass.json",
       "title": "Needs Another Pass",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-16T08:47:21.000Z"
     },
@@ -439,7 +439,7 @@
       "id": "code-review-simulator-2026-07-16-under-the-surface",
       "path": "posts/code-review-simulator-2026-07-16-under-the-surface.json",
       "title": "Under the Surface",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-15T23:13:52.000Z"
     },
@@ -447,7 +447,7 @@
       "id": "code-review-simulator-2026-07-15-a-few-new-readings",
       "path": "posts/code-review-simulator-2026-07-15-a-few-new-readings.json",
       "title": "A Few New Readings",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-15T07:17:37.000Z"
     },
@@ -455,7 +455,7 @@
       "id": "code-review-simulator-2026-07-15-from-primitives-to-polished-props",
       "path": "posts/code-review-simulator-2026-07-15-from-primitives-to-polished-props.json",
       "title": "Taking Shape",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-15T07:07:22.000Z"
     },
@@ -463,7 +463,7 @@
       "id": "code-review-simulator-2026-07-15-four-procedural-tree-profiles",
       "path": "posts/code-review-simulator-2026-07-15-four-procedural-tree-profiles.json",
       "title": "Something Is Growing",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-15T00:00:00.000Z"
     },
@@ -471,7 +471,7 @@
       "id": "code-review-simulator-2026-07-15-four-fake-os-profiles-side-by-side",
       "path": "posts/code-review-simulator-2026-07-15-four-fake-os-profiles-side-by-side.json",
       "title": "Four FakeOS Profiles, Side by Side",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-15T00:00:00.000Z"
     },
@@ -479,7 +479,7 @@
       "id": "code-review-simulator-2026-07-12-npc-animation-loop-pass",
       "path": "posts/code-review-simulator-2026-07-12-npc-animation-loop-pass.json",
       "title": "NPC Animation Loop Pass",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-12T02:55:22.000Z"
     },
@@ -487,7 +487,7 @@
       "id": "code-review-simulator-2026-07-12-procedural-prop-check",
       "path": "posts/code-review-simulator-2026-07-12-procedural-prop-check.json",
       "title": "Procedural Prop Check",
-      "project": "code-review-simulator",
+      "project": "Code Review Simulator",
       "status": "build",
       "createdAt": "2026-07-12T00:00:00.000Z"
     },
@@ -511,7 +511,7 @@
       "id": "demo-godot-asset-authoring-plugin",
       "path": "posts/demo-godot-asset-authoring-plugin.json",
       "title": "Building a Godot Asset Authoring Plugin",
-      "project": "Godot Asset Authoring",
+      "project": "Code Review Simulator",
       "status": "wip",
       "createdAt": "2026-05-22T08:32:04.000Z"
     },
@@ -519,7 +519,7 @@
       "id": "demo-tech-context",
       "path": "posts/demo-tech-context.json",
       "title": "Tech Tree: icons in context",
-      "project": "Upgrade Loop",
+      "project": "Incremental Framework",
       "status": "feedback",
       "createdAt": "2026-05-21T08:25:43.000Z"
     },
@@ -527,7 +527,7 @@
       "id": "demo-upgrade-icons",
       "path": "posts/demo-upgrade-icons.json",
       "title": "Upgrade Icons: first visual pass",
-      "project": "Upgrade Loop",
+      "project": "Incremental Framework",
       "status": "wip",
       "createdAt": "2026-05-21T06:15:09.000Z"
     },
@@ -535,7 +535,7 @@
       "id": "demo-pebble-run",
       "path": "posts/demo-pebble-run.json",
       "title": "Pebble Run Prototype",
-      "project": "Pebble Run",
+      "project": "Incremental Framework",
       "status": "wip",
       "createdAt": "2026-05-20T16:43:09.000Z"
     },
@@ -543,7 +543,7 @@
       "id": "demo-tech-tree",
       "path": "posts/demo-tech-tree.json",
       "title": "Tech Tree",
-      "project": "Upgrade Loop",
+      "project": "Incremental Framework",
       "status": "wip",
       "createdAt": "2026-05-20T16:40:55.000Z"
     }

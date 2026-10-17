@@ -2,15 +2,13 @@
   "schemaVersion": 1,
   "id": "demo-upgrade-icons",
   "title": "Upgrade Icons: first visual pass",
-  "project": "Upgrade Loop",
+  "project": "Incremental Framework",
   "body": "These are early SVG concepts for upgrades like fire rate, power up and rewards scaling. The goal is to make the upgrade layer feel more like part of the game and less like placeholder buttons, while keeping it readable during a run.\n\nStill in progress.",
   "status": "wip",
   "tags": [
     "godot",
-    "icons",
-    "visual-pass",
-    "upgrade-loop",
-    "ko-fi"
+    "tech-tree",
+    "ui"
   ],
   "createdAt": "2026-05-21T06:15:09.000Z",
   "visibility": "public",

@@ -2,14 +2,13 @@
   "schemaVersion": 1,
   "id": "demo-pebble-run",
   "title": "Pebble Run Prototype",
-  "project": "Pebble Run",
+  "project": "Incremental Framework",
   "body": "Work-in-progress run screen: timed pebble gathering before the upgrade loop.",
   "status": "wip",
   "tags": [
     "godot",
-    "prototype",
-    "run-loop",
-    "ko-fi"
+    "prototyping",
+    "gameplay"
   ],
   "createdAt": "2026-05-20T16:43:09.000Z",
   "visibility": "public",

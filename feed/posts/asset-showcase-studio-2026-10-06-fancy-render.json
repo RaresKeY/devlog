@@ -2,12 +2,13 @@
   "schemaVersion": 1,
   "id": "asset-showcase-studio-2026-10-06-fancy-render",
   "title": "Fancy render",
-  "project": "asset-showcase-studio",
+  "project": "Asset Showcase Studio",
   "body": "Fancy render.",
   "status": "build",
   "tags": [
-    "render",
-    "blender"
+    "3d-art",
+    "blender",
+    "hardware"
   ],
   "createdAt": "2026-10-06T04:46:52Z",
   "visibility": "public",

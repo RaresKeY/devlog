@@ -6,8 +6,9 @@
   "body": "Building models for Code Review Simulator.",
   "status": "wip",
   "tags": [
-    "3D",
-    "Buildings"
+    "godot",
+    "3d-art",
+    "environments"
   ],
   "createdAt": "2026-10-15T17:07:09.788563+00:00",
   "visibility": "public",

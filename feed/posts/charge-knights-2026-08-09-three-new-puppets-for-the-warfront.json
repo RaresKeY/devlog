@@ -2,17 +2,13 @@
   "schemaVersion": 1,
   "id": "charge-knights-2026-08-09-three-new-puppets-for-the-warfront",
   "title": "Three New Puppets for the Warfront",
-  "project": "charge-knights",
+  "project": "Charge Knights",
   "body": "Act II of Charge Knights now has three new articulated fighters: a miner for the gold loop, a crossbowman for deliberate heavy bolts, and a mage for fragile ranged pressure. They are not separate animation tricks; all three use the same runtime puppet hierarchy, alignment data, damage reactions, depth rules, and break-apart behavior as the original battlefield cast.\n\nThese are their exact runtime rest poses, the pivot overlay used to line up heads, shoulders, hands, hips, weapons, and feet, and the source cuts for the pickaxe, crossbow, bolt, and staff. The weapon art carries semantic contact points too, so mining chips can follow the pickaxe head and spell effects can leave from the staff focus instead of from hard-coded offsets.\n\nUnderneath that presentation work, the warfront is growing into a real-time second act with mining, recruitment during combat, selection and formation orders, base upgrades, turrets, and a bounded puppet-detail system for 96-versus-96 battles. It is still a work in progress, but the new roster finally makes that larger direction visible.",
   "status": "build",
   "tags": [
-    "gamedev",
     "godot",
-    "charge-knights",
-    "devlog",
-    "act-ii",
-    "puppetry",
-    "rts"
+    "animation",
+    "rigging"
   ],
   "createdAt": "2026-08-09T00:32:30.000Z",
   "visibility": "public",

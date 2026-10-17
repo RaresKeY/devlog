@@ -2,15 +2,11 @@
   "schemaVersion": 1,
   "id": "unnamed-game-2026-07-30-cards-for-a-new-unnamed-game",
   "title": "Cards for a New, Unnamed Game",
-  "project": "unnamed-game",
+  "project": "Unnamed Card Game",
   "body": "\nWorking on cards for a new game. It doesn't have a name yet.\n\n![A fanned hand of illustrated cards from a new, currently unnamed game.](../media/unnamed-game-2026-07-30-cards-for-a-new-unnamed-game/cards.png)\n",
   "status": "wip",
   "tags": [
-    "gamedev",
     "deckbuilder",
-    "unnamed-game",
-    "devlog",
-    "cards",
     "ui"
   ],
   "createdAt": "2026-07-29T22:01:07.000Z",

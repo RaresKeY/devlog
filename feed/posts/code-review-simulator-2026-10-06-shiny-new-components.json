@@ -6,10 +6,10 @@
   "body": "A fresh look at the PC components in Code Review Simulator: the case, motherboard, graphics card, processor, memory, cooling, power supply, storage and fans.\n\nThe video takes a tour of the individual parts and brings them together in a complete PC assembly, with fitted proportions, subtle finishes and plenty of small details.",
   "status": "wip",
   "tags": [
-    "devlog",
-    "Code Review Simulator",
-    "PC components",
-    "3D"
+    "godot",
+    "3d-art",
+    "hardware",
+    "materials"
   ],
   "createdAt": "2026-10-06T03:55:07Z",
   "visibility": "public",

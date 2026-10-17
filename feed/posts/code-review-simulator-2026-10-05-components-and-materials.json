@@ -6,9 +6,10 @@
   "body": "Working on components and materials for Code Review Simulator.",
   "status": "wip",
   "tags": [
-    "devlog",
-    "3d",
-    "materials"
+    "godot",
+    "3d-art",
+    "materials",
+    "hardware"
   ],
   "createdAt": "2026-10-05T05:02:46Z",
   "visibility": "public",

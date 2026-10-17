@@ -36,6 +36,7 @@ REQUIRED_SITE_FILES = {
     "index.html",
     "music.js",
     "music/index.json",
+    "projects.js",
     "showcase.js",
     "showcase/manifest.json",
     "styles.css",

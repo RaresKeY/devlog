@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "functional-ships-2026-10-14",
   "title": "Functional Ships",
-  "project": "conventional-space-fleet",
+  "project": "Conventional Space Fleet",
   "body": "![Functional Ships](../media/functional-ships-2026-10-14/functional-ships.png)",
   "status": "wip",
   "tags": [
+    "godot",
     "3d-art",
-    "gamedev",
-    "spaceships"
+    "spacecraft"
   ],
   "createdAt": "2026-10-14T10:00:00Z",
   "visibility": "public",

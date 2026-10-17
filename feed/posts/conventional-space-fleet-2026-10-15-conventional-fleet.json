@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "id": "conventional-space-fleet-2026-10-15-conventional-fleet",
   "title": "Conventional Fleet",
-  "project": "conventional-space-fleet",
+  "project": "Conventional Space Fleet",
   "body": "Conventional Fleet",
   "status": "wip",
   "tags": [
-    "gamedev",
-    "spaceships",
-    "fleet"
+    "godot",
+    "3d-art",
+    "spacecraft"
   ],
   "createdAt": "2026-10-15T06:25:20Z",
   "visibility": "public",

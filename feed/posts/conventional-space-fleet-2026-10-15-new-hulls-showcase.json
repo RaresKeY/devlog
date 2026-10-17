@@ -6,11 +6,9 @@
   "body": "A quick look at eighteen rebuilt ships: interceptors, freighters, tankers, mining ships, carriers and heavy warships. The selection includes the newly finished Fortress, Imperator and Leviathan.\n\nOne continuous camera orbit carries through the whole showcase. Each ship replaces the last in the same position and heading, with swaps timed to accents in Void Strategy. The pace builds into a faster sequence before a final look at Leviathan.\n\nThese are the new static art models, shown at normalized display sizes. Captured at 4K and delivered at 1080p60, with 22.5 seconds of clean footage and the fleet’s existing music.",
   "status": "wip",
   "tags": [
-    "devlog",
-    "spacecraft",
-    "3D art",
-    "Godot",
-    "cinematic"
+    "godot",
+    "3d-art",
+    "spacecraft"
   ],
   "createdAt": "2026-10-15T10:43:35.777656Z",
   "visibility": "public",

@@ -6,10 +6,9 @@
   "body": "I've been working on the shield visuals for Conventional Space Fleet. Incoming rounds send ripples across the curved surface, with overlapping waves and a faint hexagonal lattice around the ship.\n\nThis short showcase cycles through Ion blue, Violet and Amber, with slow camera moves to show how the field catches each impact.",
   "status": "wip",
   "tags": [
-    "devlog",
-    "Godot",
-    "shields",
-    "spacecraft"
+    "godot",
+    "spacecraft",
+    "effects"
   ],
   "createdAt": "2026-10-14T08:41:07Z",
   "visibility": "public",

@@ -6,13 +6,9 @@
   "body": "I’m making a fast simulator to train and test a bot for AIA’s Studio Tennis competition, which uses Tennis v0.12 bot saves.\n\n[video: A 21-second capture of the current Tennis bot simulator.](../media/aia-tennis-2026-09-06-training-a-tennis-bot/aia-tennis-bot-simulator.webm)",
   "status": "wip",
   "tags": [
-    "gamedev",
     "ai",
-    "tennis",
-    "aia",
     "simulation",
-    "bot",
-    "devlog"
+    "tennis"
   ],
   "createdAt": "2026-09-06T08:08:25.000Z",
   "visibility": "public",

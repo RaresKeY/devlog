@@ -2,15 +2,12 @@
   "schemaVersion": 1,
   "id": "world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture",
   "title": "When 5,000 formations changed the simulation architecture",
-  "project": "world-state-simulator",
+  "project": "World State Simulator",
   "body": "the 5,000-formation Scenario Lab started as a scale test. it ended up showing where the current ownership model stopped making sense.\n\non the M1 baseline, the moving workload was around 123.4 ms per tick. it was not one bad loop. the same dynamic formation state was getting prepared, crossed, traversed, and republished through planning, movement, targeting, history, and presentation.\n\nso the high-volume active state moved into one dense C++ owner. formations still keep their identities, orders, positions, health, targets, and deterministic consequences. commands still enter on the tick boundary, results still commit in stable order, and the GDScript reference fixtures stay there for parity.\n\nthe matched local headless 5,000-formation moving workload is now around 0.993 ms per tick on that same M1. that is simulation time for this build and workload, not a general capacity claim, rendering benchmark, or proof of the video’s frame pacing.\n\nthe clip is just the scenarios running: 2v2, 50v50 line versus column, then a separate 2,500v2,500 native-core battle.\n\nthe useful result is not “C++ good, GDScript bad.” the prototype made the behavior easy to explore. the scale test showed that the ownership boundary itself needed to change.",
   "status": "build",
   "tags": [
-    "gamedev",
     "godot",
     "simulation",
-    "world-state-simulator",
-    "scenario-labs",
     "performance",
     "cpp"
   ],

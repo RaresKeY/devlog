@@ -2,18 +2,14 @@
   "schemaVersion": 1,
   "id": "plug-charge-2026-08-02-opening-the-kiosk",
   "title": "Opening the Kiosk",
-  "project": "plug-charge",
+  "project": "Plug & Prosper",
   "body": "\nHere is the start of a shift in Plug & Prosper: title screen, first customer, one wrong fit, then the first successful connection.\n\nDrag the dangling cable to the matching receptacle before patience runs out. The cable bends as it moves, and incompatible shapes give immediate feedback.\n\n[video: Plug & Prosper opening gameplay, from the title screen to a successful first connection.](../media/plug-charge-2026-08-02-opening-the-kiosk/plug-and-prosper-first-connection.mp4)\n",
   "status": "wip",
   "tags": [
-    "gamedev",
     "godot",
-    "plug-charge",
-    "devlog",
-    "ai-jam",
+    "game-jam",
     "gameplay",
-    "puzzle",
-    "cables"
+    "puzzle"
   ],
   "createdAt": "2026-08-01T22:24:00.000Z",
   "visibility": "public",

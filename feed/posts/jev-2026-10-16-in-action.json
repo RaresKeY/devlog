@@ -6,10 +6,8 @@
   "body": "Jev in two live demos: clearing level one in Supper Guard and browsing a book catalogue from a short chat instruction.\n\nCodex (Sol) plans the browser task, Jev chooses from filtered controls, and Codex verifies the result. The browser clip shows the chat, live navigation and final price and stock comparison together.",
   "status": "wip",
   "tags": [
-    "devlog",
-    "Jev",
-    "AI",
-    "browser automation"
+    "ai",
+    "browser-automation"
   ],
   "createdAt": "2026-10-16T17:40:21.563595Z",
   "visibility": "public",
