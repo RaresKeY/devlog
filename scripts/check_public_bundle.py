@@ -31,6 +31,7 @@ REQUIRED_SITE_FILES = {
     "apple-touch-icon.png",
     "favicon-32.png",
     "favicon-512.png",
+    "favicon-tab-512.png",
     "favicon.ico",
     "hero.webp",
     "index.html",
