@@ -87,6 +87,36 @@ class MusicCatalogTests(unittest.TestCase):
         self.assertEqual(failures, [])
         self.assertEqual(owned, set())
 
+    def test_optional_shared_artwork_is_owned_once(self):
+        self.track["artwork"] = "btg/cover.webp"
+        cover = self.site / "music" / "btg" / "cover.webp"
+        cover.write_bytes(b"RIFF" + bytes(4) + b"WEBP" + bytes(20))
+        second = copy.deepcopy(self.track)
+        second["id"] = "another-theme"
+        second["path"] = "btg/another.opus"
+        (self.site / "music" / second["path"]).write_bytes(self.audio.read_bytes())
+        failures, owned = self.validate([self.track, second])
+        self.assertEqual(failures, [])
+        self.assertEqual(owned, {"music/btg/01-theme.opus", "music/btg/another.opus", "music/btg/cover.webp"})
+
+    def test_rejects_unsafe_and_non_webp_artwork(self):
+        for path in ("../cover.webp", "btg/../../cover.webp", "https://example.com/cover.webp", "btg/cover.png", "btg/a%2fb.webp", None):
+            with self.subTest(path=path):
+                self.track["artwork"] = path
+                failures, owned = self.validate()
+                self.assertTrue(any("safe album/artwork.webp" in error for error in failures))
+                self.assertEqual(owned, {"music/btg/01-theme.opus"})
+
+    def test_requires_existing_small_webp_artwork(self):
+        self.track["artwork"] = "btg/cover.webp"
+        failures, _ = self.validate()
+        self.assertTrue(any("missing music artwork" in error for error in failures))
+        cover = self.site / "music" / "btg" / "cover.webp"
+        for data in (b"not a webp", b"RIFF" + bytes(4) + b"WEBP" + bytes(128 * 1024)):
+            cover.write_bytes(data)
+            failures, _ = self.validate()
+            self.assertTrue(any("128 KiB or has an invalid WebP" in error for error in failures))
+
 
 if __name__ == "__main__":
     unittest.main()

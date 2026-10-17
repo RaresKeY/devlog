@@ -6,6 +6,9 @@ const toggle = document.querySelector("#music-toggle");
 const expand = document.querySelector("#music-expand");
 const panel = document.querySelector("#music-panel");
 const title = document.querySelector("#music-title");
+const titleText = document.querySelector("#music-title-text");
+const cover = document.querySelector("#music-cover");
+const fallbackCover = new URL(cover.getAttribute("src"), document.baseURI).href;
 const subtitle = document.querySelector("#music-subtitle");
 const seek = document.querySelector("#music-seek");
 const volume = document.querySelector("#music-volume");
@@ -55,6 +58,9 @@ function validateCatalog(catalog) {
         typeof track.sourcePost !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(track.sourcePost)) {
       throw new Error("Invalid music track");
     }
+    if ("artwork" in track && (typeof track.artwork !== "string" || !/^[a-z0-9-]+\/[a-z0-9-]+\.webp$/.test(track.artwork))) {
+      throw new Error("Invalid music artwork");
+    }
     ids.add(track.id);
     paths.add(track.path);
   }
@@ -64,8 +70,26 @@ function validateCatalog(catalog) {
 function setExpanded(open) {
   panel.hidden = !open;
   expand.setAttribute("aria-expanded", String(open));
-  expand.title = open ? "Collapse music player" : "Open music player";
+  const action = `${open ? "Close" : "Open"} music library`;
+  const track = tracks[selected];
+  expand.setAttribute("aria-label", `${action}${track ? `, ${track.title} by ${track.project}` : ""}`);
+  expand.title = track ? `${track.title} · ${track.album}\n${action}` : action;
 }
+
+function updateTitleOverflow() {
+  const overflow = Math.max(0, titleText.scrollWidth - title.clientWidth);
+  title.classList.toggle("is-overflowing", overflow > 2);
+  title.style.setProperty("--title-travel", `${-overflow}px`);
+  title.style.setProperty("--title-duration", `${Math.max(8, Math.min(24, overflow / 15 + 5))}s`);
+}
+
+if ("ResizeObserver" in window) {
+  const titleObserver = new ResizeObserver(updateTitleOverflow);
+  titleObserver.observe(title);
+  titleObserver.observe(titleText);
+}
+
+cover.addEventListener("error", () => { if (cover.src !== fallbackCover) cover.src = fallbackCover; });
 
 function updatePlayback() {
   const playing = !audio.paused && !audio.ended;
@@ -83,6 +107,7 @@ function updateProgress() {
   duration.textContent = formatTime(length);
   seek.max = String(length);
   seek.value = String(Math.min(audio.currentTime, length));
+  seek.style.setProperty("--progress", `${length > 0 ? Math.min(100, audio.currentTime / length * 100) : 0}%`);
   seek.disabled = !Number.isFinite(audio.duration) || audio.readyState < 1;
   seek.setAttribute("aria-valuetext", `${formatTime(audio.currentTime)} of ${formatTime(length)}`);
 }
@@ -94,8 +119,11 @@ function selectTrack(index) {
   audio.pause();
   audio.removeAttribute("src");
   audio.load();
-  title.textContent = track.title;
-  subtitle.textContent = `${track.project} · ${track.album}`;
+  titleText.textContent = track.title;
+  subtitle.textContent = track.project;
+  setExpanded(!panel.hidden);
+  const artwork = track.artwork ? new URL(track.artwork, catalogUrl).href : fallbackCover;
+  if (cover.src !== artwork) cover.src = artwork;
   message.textContent = "";
   list.querySelectorAll("button").forEach((button, i) => {
     if (i === selected) button.setAttribute("aria-current", "true");
@@ -103,9 +131,10 @@ function selectTrack(index) {
   });
   updateProgress();
   updatePlayback();
+  updateTitleOverflow();
   savePreferences();
   if ("mediaSession" in navigator && typeof MediaMetadata === "function") {
-    navigator.mediaSession.metadata = new MediaMetadata({ title: track.title, artist: track.project, album: track.album });
+    navigator.mediaSession.metadata = new MediaMetadata({ title: track.title, artist: track.project, album: track.album, artwork: [{ src: artwork }] });
   }
 }
 
@@ -222,7 +251,7 @@ async function initialize() {
     }
   } catch {
     player.hidden = false;
-    title.textContent = "Music";
+    titleText.textContent = "Music";
     subtitle.textContent = "Unavailable right now";
     message.textContent = "Couldn't load the music library. Reload to try again.";
     toggle.disabled = next.disabled = previous.disabled = true;

@@ -32,7 +32,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png?v=20261017-2" />
     <link rel="icon" type="image/png" sizes="512x512" href="./favicon-512.png?v=20261017-2" />
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=20261017-2" />
-    <link rel="stylesheet" href="./styles.css?v=20261018-1" />
+    <link rel="stylesheet" href="./styles.css?v=20261018-2" />
     <title>Small Loop Works: devlog</title>
   </head>
   <body>
@@ -129,29 +129,39 @@
 
     <aside class="music-player" id="music-player" aria-label="Music player" hidden>
       <div class="music-bar">
-        <button class="music-toggle" id="music-toggle" type="button" aria-label="Play music" title="Play music">
-          <svg class="play-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" /></svg>
-          <svg class="pause-symbol" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M7 5h4v14H7zm6 0h4v14h-4z" /></svg>
-        </button>
-        <button class="music-now" id="music-expand" type="button" aria-expanded="false" aria-controls="music-panel" title="Open music player">
-          <span class="music-title" id="music-title">Music</span>
-          <span class="music-subtitle" id="music-subtitle">Choose a track</span>
-        </button>
-        <button class="music-next" id="music-next" type="button" aria-label="Next track" title="Next track">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 10 7-10 7zm11 0h3v14h-3z" /></svg>
-        </button>
+        <div class="music-row">
+          <button class="music-now" id="music-expand" type="button" aria-expanded="false" aria-controls="music-panel" title="Open music library">
+            <img class="music-cover" id="music-cover" src="./favicon-512.png?v=20261017-2" width="44" height="44" alt="" decoding="async" />
+            <span class="music-info">
+              <span class="music-title" id="music-title"><span id="music-title-text">Music</span></span>
+              <span class="music-subtitle" id="music-subtitle">Choose a track</span>
+            </span>
+          </button>
+          <div class="music-transport" role="group" aria-label="Playback controls">
+            <button class="music-skip" id="music-previous" type="button" aria-label="Previous track" title="Previous track">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14 7-5 5 5 5" /></svg>
+            </button>
+            <button class="music-toggle" id="music-toggle" type="button" aria-label="Play music" title="Play music">
+              <svg class="play-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" /></svg>
+              <svg class="pause-symbol" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M7 5h4v14H7zm6 0h4v14h-4z" /></svg>
+            </button>
+            <button class="music-skip" id="music-next" type="button" aria-label="Next track" title="Next track">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 7 5 5-5 5" /></svg>
+            </button>
+          </div>
+        </div>
+        <div class="music-progress">
+          <span id="music-elapsed">0:00</span>
+          <input id="music-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek in track" disabled />
+          <span id="music-duration">0:00</span>
+        </div>
       </div>
       <div class="music-panel" id="music-panel" hidden>
         <div class="music-panel-heading">
           <h2>Music</h2>
           <button class="music-collapse" id="music-collapse" type="button" aria-label="Collapse music player" title="Collapse music player">×</button>
         </div>
-        <div class="music-progress">
-          <input id="music-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek in track" disabled />
-          <div class="music-times"><span id="music-elapsed">0:00</span><span id="music-duration">0:00</span></div>
-        </div>
         <div class="music-settings">
-          <button id="music-previous" type="button" aria-label="Previous track">Previous</button>
           <label for="music-volume">Volume</label>
           <input id="music-volume" type="range" min="0" max="1" value="0.6" step="0.01" />
         </div>
@@ -162,7 +172,7 @@
     </aside>
 
     <script type="module" src="./app.js?v=20261018-2"></script>
-    <script type="module" src="./music.js?v=20261018-1"></script>
+    <script type="module" src="./music.js?v=20261018-2"></script>
     <script type="module" src="./showcase.js?v=20261018-1"></script>
   </body>
 </html>

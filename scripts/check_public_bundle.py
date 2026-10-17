@@ -207,7 +207,7 @@ def validate_music() -> tuple[list[str], set[str]]:
     keys = {"id", "title", "project", "album", "path", "duration", "contentType", "sourcePost"}
     for index, track in enumerate(catalog["tracks"]):
         label = f"site/music/index.json: tracks[{index}]"
-        if not isinstance(track, dict) or set(track) != keys:
+        if not isinstance(track, dict) or not keys.issubset(track) or set(track) - keys - {"artwork"}:
             failures.append(f"{label}: invalid track schema")
             continue
         track_id = track["id"]
@@ -217,6 +217,17 @@ def validate_music() -> tuple[list[str], set[str]]:
             failures.append(f"{label}: duplicate track ID")
         else:
             ids.add(track_id)
+        if "artwork" in track:
+            artwork = track["artwork"]
+            if not isinstance(artwork, str) or not re.fullmatch(r"[a-z0-9-]+/[a-z0-9-]+\.webp", artwork):
+                failures.append(f"{label}: expected a safe album/artwork.webp path")
+            else:
+                expected_files.add(f"music/{artwork}")
+                cover = SITE / "music" / artwork
+                if not cover.is_file():
+                    failures.append(f"{label}: missing music artwork")
+                elif cover.stat().st_size > 128 * 1024 or not has_expected_signature(cover):
+                    failures.append(f"{label}: music artwork exceeds 128 KiB or has an invalid WebP signature")
         for key in ("title", "project", "album"):
             if not isinstance(track[key], str) or not track[key].strip() or len(track[key]) > 240:
                 failures.append(f"{label}: {key} must be non-empty text of at most 240 characters")
