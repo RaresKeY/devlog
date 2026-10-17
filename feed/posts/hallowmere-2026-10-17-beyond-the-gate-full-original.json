@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "hallowmere-2026-10-17-beyond-the-gate-full-original",
+  "title": "Music: Beyond the Gate - Full Original",
+  "project": "Hallowmere",
+  "body": "The full original soundtrack for Hallowmere: Beyond the Gate, including the intro, exploration, urgent and boss themes.",
+  "status": "milestone",
+  "tags": [
+    "music",
+    "soundtrack",
+    "hallowmere"
+  ],
+  "createdAt": "2026-10-17T20:07:18.698238Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "beyond-the-gate-full-original",
+      "path": "../media/hallowmere-2026-10-17-beyond-the-gate-full-original/beyond-the-gate-full-original.mp4",
+      "fileName": "beyond-the-gate-full-original.mp4",
+      "contentType": "video/mp4",
+      "caption": "Hallowmere: Beyond the Gate - Full Original Soundtrack",
+      "poster": "../media/hallowmere-2026-10-17-beyond-the-gate-full-original/beyond-the-gate-poster.jpg"
+    }
+  ]
+}
