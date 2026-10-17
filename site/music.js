@@ -184,9 +184,13 @@ audio.addEventListener("play", () => {
   document.querySelectorAll("video, audio").forEach((media) => { if (media !== audio) media.pause(); });
   updatePlayback();
 });
-audio.addEventListener("pause", updatePlayback);
+audio.addEventListener("pause", () => {
+  if (message.textContent === "Loading track…") message.textContent = "";
+  updatePlayback();
+});
 audio.addEventListener("ended", () => moveTrack(1, true));
-audio.addEventListener("waiting", () => { message.textContent = "Loading track…"; });
+audio.addEventListener("waiting", () => { if (!audio.paused) message.textContent = "Loading track…"; });
+audio.addEventListener("canplay", () => { if (message.textContent === "Loading track…") message.textContent = ""; });
 audio.addEventListener("playing", () => { message.textContent = ""; });
 audio.addEventListener("error", () => {
   message.textContent = "Couldn't load this track. Try again or choose another.";
