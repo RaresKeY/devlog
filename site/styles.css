@@ -66,21 +66,52 @@ body {
 }
 
 .showcase-background picture,
-.showcase-background img,
-.showcase-background video {
+.showcase-plane {
   position: absolute;
-  inset: 0;
+  left: 50%;
+  top: 50%;
+  width: calc(99.027vw + 13.917vh + 4px);
+  height: calc(13.917vw + 99.027vh + 4px);
+  transform: translate(-50%, -50%) rotate(-8deg);
+}
+
+.showcase-background picture img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.showcase-background video {
-  opacity: 0;
+.showcase-plane {
+  overflow: hidden;
 }
 
-.showcase-background.is-ready video {
+.showcase-board {
+  position: relative;
+  width: 100%;
+}
+
+.showcase-board > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.showcase-slot {
+  position: absolute;
+  overflow: hidden;
+}
+
+.showcase-slot video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 180ms;
+}
+
+.showcase-slot video.is-playing {
   opacity: 1;
 }
 

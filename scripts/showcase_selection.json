@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "postId": "3d-work-2026-10-16-more-detailed-houses",
+      "fileName": "scrappy-rowhouse.png",
+      "kind": "image"
+    },
+    {
+      "postId": "latest-3d-work-2026-10-13",
+      "fileName": "01-sovereign.png",
+      "kind": "image"
+    },
+    {
+      "postId": "latest-3d-work-2026-10-13",
+      "fileName": "02-alchemy-workbench.png",
+      "kind": "image"
+    },
+    {
+      "postId": "conventional-space-fleet-2026-10-15-new-hulls-showcase",
+      "fileName": "fleet-beat-clean.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "conventional-space-fleet-2026-10-14-shields",
+      "fileName": "shield-showcase.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "code-review-simulator-2026-10-06-shiny-new-components",
+      "fileName": "pc_components_devlog.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "odd-spark-2026-09-27-sound-on",
+      "fileName": "sound_on_spark_compat.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "plug-charge-2026-08-02-plug-and-prosper-is-out",
+      "fileName": "plug-and-prosper-trailer-itch.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "horizon-charge-2026-08-02-a-run-to-impact",
+      "fileName": "horizon-charge-high-speed-run.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "white-approach-2026-09-06-rope-snow-and-a-longer-climb",
+      "fileName": "white-approach-climb.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "wheat-sway-lab-2026-10-03-1024-wheat-stalks",
+      "fileName": "wheat-field-1080p60.mp4",
+      "kind": "video",
+      "start": 2
+    },
+    {
+      "postId": "material-atlas-2026-09-26-from-trellis2-to-segmented-pantry",
+      "fileName": "pantry-remake-pair.png",
+      "kind": "image"
+    },
+    {
+      "postId": "the-hollow-signal-2026-07-31-building-out-the-world",
+      "fileName": "dreaming-relayworks.png",
+      "kind": "image"
+    },
+    {
+      "postId": "the-hollow-signal-2026-07-31-building-out-the-world",
+      "fileName": "hushfall-basin.png",
+      "kind": "image"
+    },
+    {
+      "postId": "code-review-simulator-2026-07-15-four-procedural-tree-profiles",
+      "fileName": "section-oak-front.jpg",
+      "kind": "image"
+    },
+    {
+      "postId": "3d-work-2026-10-16-more-detailed-houses",
+      "fileName": "alpine-lodge.png",
+      "kind": "image"
+    }
+  ]
+}

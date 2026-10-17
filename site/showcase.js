@@ -1,24 +1,27 @@
+import { fitPlane, validateManifest } from "./showcase-layout.js?v=20261018-2";
+
 const root = document.querySelector("#showcase-background");
-const video = document.querySelector("#showcase-video");
 const toggle = document.querySelector("#showcase-toggle");
-const manifestUrl = new URL("./showcase/manifest.json", import.meta.url);
-const cacheName = "small-loop-devlog:showcase:v1";
+const manifestUrl = new URL("./showcase/manifest.json?v=20261018-2", import.meta.url);
+const cacheName = "small-loop-devlog:showcase:v2";
 const preferenceKey = "small-loop-devlog:showcase-paused:v1";
-const descriptorKey = "small-loop-devlog:showcase-descriptor:v1";
-const maximumBytes = 8 * 1024 * 1024;
+const descriptorKey = "small-loop-devlog:showcase-descriptor:v2";
 const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
 const portrait = matchMedia("(max-aspect-ratio: 6/5)");
 const connection = navigator.connection;
 let userPaused = false;
 let explicitPlay = false;
 let failed = false;
-let revision = 0;
-let controller = null;
-let pending = false;
-let objectUrl = null;
 let manifest = null;
+let cache = null;
+let controller = null;
+let revision = 0;
+let scene = null;
+let prepared = false;
+let layoutKey = "";
+const ready = new Map();
 
-try { userPaused = localStorage.getItem(preferenceKey) === "true"; } catch { /* Storage is optional. */ }
+try { userPaused = localStorage.getItem(preferenceKey) === "true"; } catch { /* Optional preference. */ }
 
 function wantsMotion() {
   const restricted = reducedMotion.matches || connection?.saveData || ["slow-2g", "2g"].includes(connection?.effectiveType);
@@ -35,150 +38,244 @@ function updateControl() {
   toggle.querySelector(".showcase-play").hidden = active;
 }
 
-function stopPending() {
+function abort() {
   revision++;
   controller?.abort();
   controller = null;
-  pending = false;
+  prepared = false;
 }
 
-function release() {
-  stopPending();
-  video.pause();
-  video.removeAttribute("src");
-  video.load();
-  root.classList.remove("is-ready");
-  if (objectUrl) URL.revokeObjectURL(objectUrl);
-  objectUrl = null;
+function assetUrl(asset) {
+  const url = new URL(asset.path, manifestUrl);
+  url.searchParams.set("v", asset.sha256);
+  return url.href;
 }
 
-function encodingFor(data, name) {
-  const variant = data?.variants?.[name];
-  const encoding = variant?.encodings?.[0];
-  if (data?.schemaVersion !== 1 || data.preview !== false || !variant || !Array.isArray(variant.encodings) || variant.encodings.length !== 1 ||
-      encoding?.codec !== "h264" || encoding.path !== `${name}.mp4` ||
-      !Number.isSafeInteger(encoding.bytes) || encoding.bytes <= 0 || encoding.bytes > maximumBytes ||
-      !/^[0-9a-f]{64}$/.test(encoding.sha256 || "")) {
-    throw new Error("Invalid showcase manifest");
-  }
-  const url = new URL(encoding.path, manifestUrl);
-  url.searchParams.set("v", encoding.sha256);
-  return { ...encoding, url: url.href };
-}
-
-async function readBounded(response, encoding, signal) {
+async function readBounded(response, asset, signal) {
   if (!response.ok) throw new Error("Showcase unavailable");
+  const reader = response.body.getReader();
   const chunks = [];
   let size = 0;
-  const reader = response.body.getReader();
   try {
     while (true) {
       if (signal.aborted) throw new DOMException("Canceled", "AbortError");
       const { value, done } = await reader.read();
       if (done) break;
       size += value.byteLength;
-      if (size > encoding.bytes || size > maximumBytes) throw new Error("Showcase exceeds its limit");
+      if (size > asset.bytes || size > 512 * 1024) throw new Error("Showcase asset exceeds its limit");
       chunks.push(value);
     }
-  } finally {
-    await reader.cancel().catch(() => {});
-  }
-  if (size !== encoding.bytes) throw new Error("Incomplete showcase");
-  const blob = new Blob(chunks, { type: "video/mp4" });
-  const hash = await crypto.subtle.digest("SHA-256", await blob.arrayBuffer());
-  const actual = Array.from(new Uint8Array(hash), (value) => value.toString(16).padStart(2, "0")).join("");
-  if (actual !== encoding.sha256) throw new Error("Showcase identity mismatch");
+  } finally { await reader.cancel().catch(() => {}); }
+  if (size !== asset.bytes) throw new Error("Incomplete showcase asset");
+  const blob = new Blob(chunks, { type: asset.path.endsWith(".webp") ? "image/webp" : "video/mp4" });
+  const digest = await crypto.subtle.digest("SHA-256", await blob.arrayBuffer());
+  const hash = Array.from(new Uint8Array(digest), (value) => value.toString(16).padStart(2, "0")).join("");
+  if (hash !== asset.sha256) throw new Error("Showcase identity mismatch");
   return blob;
 }
 
-async function load(signal) {
+async function loadAsset(asset, signal) {
+  if (ready.has(asset.path)) return ready.get(asset.path);
+  const url = assetUrl(asset);
+  let stored;
+  try { stored = await cache?.match(url); } catch { cache = null; }
+  let blob;
+  try { blob = await readBounded(stored || await fetch(url, { signal, cache: "force-cache" }), asset, signal); }
+  catch (error) {
+    if (stored && error.name !== "AbortError") await cache?.delete(url).catch(() => {});
+    throw error;
+  }
+  if (signal.aborted) throw new DOMException("Canceled", "AbortError");
+  if (!stored && cache) {
+    try { await cache.put(url, new Response(blob, { headers: { "Content-Type": blob.type } })); } catch { /* Bounded memory fallback. */ }
+  }
+  if (signal.aborted) throw new DOMException("Canceled", "AbortError");
+  const value = { url: URL.createObjectURL(blob) };
+  ready.set(asset.path, value);
+  return value;
+}
+
+async function loadManifest(signal) {
   if (!manifest) {
     try {
       const response = await fetch(manifestUrl, { cache: "no-store", signal });
       if (!response.ok) throw new Error("Showcase manifest unavailable");
-      const data = await response.json();
-      encodingFor(data, "landscape");
-      encodingFor(data, "portrait");
-      manifest = data;
-      const descriptor = { schemaVersion: 1, preview: false, variants: Object.fromEntries(
-        ["landscape", "portrait"].map((name) => [name, { encodings: data.variants[name].encodings }]),
-      ) };
-      try { localStorage.setItem(descriptorKey, JSON.stringify(descriptor)); } catch { /* Optional offline metadata. */ }
+      manifest = validateManifest(await response.json());
+      try { localStorage.setItem(descriptorKey, JSON.stringify(manifest)); } catch { /* Optional offline descriptor. */ }
     } catch (error) {
       if (error.name === "AbortError") throw error;
       const stored = localStorage.getItem(descriptorKey);
-      if (!stored || stored.length > 4096) throw error;
-      const data = JSON.parse(stored);
-      encodingFor(data, "landscape");
-      encodingFor(data, "portrait");
-      manifest = data;
+      if (!stored || stored.length > 32768) throw error;
+      manifest = validateManifest(JSON.parse(stored));
     }
   }
-  const encoding = encodingFor(manifest, portrait.matches ? "portrait" : "landscape");
-  let cache = null;
-  try { cache = await caches.open(cacheName); } catch { /* Use a bounded in-memory copy if persistent caching is unavailable. */ }
-  let cached = null;
-  try { cached = await cache?.match(encoding.url); } catch { cache = null; }
-  let blob;
-  try {
-    blob = await readBounded(cached || await fetch(encoding.url, { signal, cache: "force-cache" }), encoding, signal);
-  } catch (error) {
-    if (cached) await cache.delete(encoding.url).catch(() => {});
-    throw error;
-  }
   if (signal.aborted) throw new DOMException("Canceled", "AbortError");
-  if (cache) {
-    try {
-      const current = new Set([encodingFor(manifest, "landscape").url, encodingFor(manifest, "portrait").url]);
-      await Promise.all((await cache.keys()).filter((key) => !current.has(key.url)).map((key) => cache.delete(key)));
-      if (!cached) await cache.put(encoding.url, new Response(blob, { headers: { "Content-Type": "video/mp4" } }));
-    } catch { /* Playback remains available when cache storage is full. */ }
+  try {
+    cache = await caches.open(cacheName);
+    const current = new Set(Object.values(manifest.variants).flatMap((variant) => [variant.atlas, ...variant.clips]).map(assetUrl));
+    await Promise.all((await cache.keys()).filter((key) => !current.has(key.url)).map((key) => cache.delete(key)));
+    await caches.delete("small-loop-devlog:showcase:v1");
+  } catch { cache = null; }
+}
+
+// One image per repeated board; only visible clips acquire a video decoder.
+export function createScene(container, variant, atlasUrl, clipUrl, activeLimit) {
+  const geometry = fitPlane(container.clientWidth, container.clientHeight, variant);
+  const plane = document.createElement("div");
+  plane.className = "showcase-plane";
+  plane.style.width = `${geometry.width}px`;
+  plane.style.height = `${geometry.height}px`;
+  const rail = document.createElement("div");
+  rail.className = "showcase-rail";
+  plane.append(rail);
+  const slots = [];
+  const pool = [];
+  const images = [];
+  const visible = new Map();
+  let running = false;
+  let disposed = false;
+  for (let copy = 0; copy < geometry.copies; copy++) {
+    const board = document.createElement("div");
+    board.className = "showcase-board";
+    board.style.height = `${geometry.boardHeight}px`;
+    const image = document.createElement("img");
+    image.src = atlasUrl;
+    image.alt = "";
+    image.draggable = false;
+    images.push(image);
+    board.append(image);
+    for (const tile of variant.layout.tiles) {
+      const clip = variant.clips.find((item) => item.source === tile.source);
+      if (!clip) continue;
+      const slot = document.createElement("span");
+      slot.className = "showcase-slot";
+      Object.assign(slot.style, { left: `${tile.x / variant.layout.columns * 100}%`, top: `${tile.y / variant.layout.rows * 100}%`,
+        width: `${tile.width / variant.layout.columns * 100}%`, height: `${tile.height / variant.layout.rows * 100}%` });
+      slots.push({ node: slot, clip });
+      board.append(slot);
+    }
+    rail.append(board);
   }
-  return blob;
+  container.append(plane);
+  const animation = rail.animate([{ transform: "translate3d(0, 0, 0)" }, { transform: `translate3d(0, -${geometry.boardHeight}px, 0)` }], {
+    duration: geometry.duration, iterations: Infinity, easing: "linear",
+  });
+  animation.pause();
+
+  function release(player) {
+    player.assignment = null;
+    player.node.pause();
+    player.node.removeAttribute("src");
+    player.node.load();
+    player.node.remove();
+  }
+  function reconcile() {
+    if (disposed || !running) return;
+    for (const player of pool) if (player.assignment && !visible.has(player.assignment)) release(player);
+    const occupied = new Set(pool.map((player) => player.assignment));
+    for (const slot of visible.keys()) {
+      if (occupied.has(slot) || !clipUrl(slot.clip)) continue;
+      let player = pool.find((item) => !item.assignment);
+      if (!player && pool.length < activeLimit) {
+        const node = document.createElement("video");
+        node.muted = true;
+        node.defaultMuted = true;
+        node.loop = true;
+        node.playsInline = true;
+        node.preload = "none";
+        node.disablePictureInPicture = true;
+        node.disableRemotePlayback = true;
+        node.setAttribute("data-background-media", "");
+        player = { node, assignment: null };
+        pool.push(player);
+        const owner = player;
+        node.addEventListener("loadedmetadata", () => {
+          if (owner.assignment) node.currentTime = ((animation.currentTime || 0) / 1000) % owner.assignment.clip.duration;
+        });
+        node.addEventListener("playing", () => node.classList.add("is-playing"));
+        node.addEventListener("error", () => { if (owner.assignment) { visible.delete(owner.assignment); release(owner); } });
+      }
+      if (!player) break;
+      player.assignment = slot;
+      player.node.classList.remove("is-playing");
+      slot.node.append(player.node);
+      player.node.src = clipUrl(slot.clip);
+      player.node.play().catch(() => { if (player.assignment === slot) { visible.delete(slot); release(player); } });
+      occupied.add(slot);
+    }
+  }
+  const observer = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
+    for (const entry of entries) {
+      const slot = slots.find((item) => item.node === entry.target);
+      if (entry.isIntersecting && entry.intersectionRatio > 0.01) visible.set(slot, true);
+      else visible.delete(slot);
+    }
+    reconcile();
+  }, { threshold: [0, 0.01] }) : null;
+  slots.forEach((slot) => observer?.observe(slot.node));
+  return {
+    geometry, animation, reconcile,
+    ready: Promise.all(images.map((image) => image.decode())),
+    play() { running = true; animation.play(); reconcile(); },
+    pause() { running = false; animation.pause(); pool.forEach(release); },
+    destroy() { disposed = true; running = false; observer?.disconnect(); animation.cancel(); pool.forEach(release); plane.remove(); },
+  };
+}
+
+function release() {
+  abort();
+  scene?.destroy();
+  scene = null;
+  layoutKey = "";
+  root.classList.remove("is-ready");
+  for (const value of ready.values()) URL.revokeObjectURL(value.url);
+  ready.clear();
 }
 
 async function refresh() {
   updateControl();
-  if (document.hidden) {
-    video.pause();
-    if (pending) stopPending();
-    return;
-  }
+  if (document.hidden) { abort(); scene?.pause(); return; }
   if (!wantsMotion()) { release(); return; }
-  if (pending) return;
-  if (objectUrl) {
-    try { await video.play(); } catch (error) {
-      if (error.name !== "AbortError" && wantsMotion() && !document.hidden) { failed = true; release(); updateControl(); }
-    }
-    return;
-  }
-  pending = true;
-  const current = ++revision;
-  controller = new AbortController();
+  const name = portrait.matches ? "portrait" : "landscape";
+  const key = `${name}:${root.clientWidth}:${root.clientHeight}`;
+  if (scene && layoutKey === key && prepared) { scene.play(); return; }
+  abort();
+  const current = revision;
+  const owner = new AbortController();
+  controller = owner;
   try {
-    const blob = await load(controller.signal);
+    await loadManifest(owner.signal);
+    const variant = manifest.variants[name];
+    const atlas = await loadAsset(variant.atlas, owner.signal);
     if (current !== revision || !wantsMotion() || document.hidden) return;
-    objectUrl = URL.createObjectURL(blob);
-    video.src = objectUrl;
-    video.muted = true;
-    await video.play();
-  } catch (error) {
-    if (current === revision && error.name !== "AbortError") {
-      failed = true;
-      release();
-      updateControl();
+    if (!scene || layoutKey !== key) {
+      scene?.destroy();
+      for (const [path, value] of ready) if (path !== variant.atlas.path) { URL.revokeObjectURL(value.url); ready.delete(path); }
+      scene = createScene(root, variant, atlas.url, (clip) => ready.get(clip.path)?.url, name === "portrait" ? 1 : 2);
+      layoutKey = key;
     }
-  } finally {
-    if (current === revision) { pending = false; controller = null; }
-  }
+    await scene.ready;
+    if (current !== revision || !wantsMotion() || document.hidden) return;
+    root.classList.add("is-ready");
+    scene.play();
+    // Precache only the selected, bounded set. Two transfers can be in flight.
+    const queue = [...variant.clips];
+    await Promise.all([0, 1].map(async () => {
+      while (queue.length && !owner.signal.aborted) {
+        const asset = queue.shift();
+        await loadAsset(asset, owner.signal);
+        if (current === revision) scene?.reconcile();
+      }
+    }));
+    if (current === revision) prepared = true;
+  } catch (error) {
+    if (current === revision && error.name !== "AbortError") { failed = true; release(); updateControl(); }
+  } finally { if (current === revision) controller = null; }
 }
 
-video.addEventListener("playing", () => root.classList.add("is-ready"));
-video.addEventListener("error", () => { failed = true; release(); updateControl(); });
 toggle.addEventListener("click", () => {
-  const stop = wantsMotion();
-  userPaused = stop;
-  explicitPlay = !stop;
+  userPaused = wantsMotion();
+  explicitPlay = !userPaused;
   failed = false;
   try { localStorage.setItem(preferenceKey, String(userPaused)); } catch { /* Optional preference. */ }
   refresh();
@@ -186,11 +283,13 @@ toggle.addEventListener("click", () => {
 document.addEventListener("visibilitychange", refresh);
 window.addEventListener("pagehide", release);
 window.addEventListener("pageshow", (event) => { if (event.persisted) refresh(); });
-portrait.addEventListener("change", () => { release(); refresh(); });
+portrait.addEventListener("change", refresh);
 reducedMotion.addEventListener("change", () => { explicitPlay = false; refresh(); });
 connection?.addEventListener("change", refresh);
+if ("ResizeObserver" in window) {
+  new ResizeObserver(() => { if (scene) refresh(); }).observe(root);
+} else window.addEventListener("resize", refresh);
 
-// The poster paints immediately; optional background preparation waits for the page.
 function schedule() {
   updateControl();
   if ("requestIdleCallback" in window) requestIdleCallback(refresh, { timeout: 1500 });
