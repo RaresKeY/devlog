@@ -25,12 +25,9 @@ const state = {
 const elements = {
   updates: document.querySelector("#updates"),
   notice: document.querySelector("#feed-notice"),
-  source: document.querySelector("#source-label"),
   search: document.querySelector("#search"),
   project: document.querySelector("#project-filter"),
   statuses: document.querySelector("#status-filters"),
-  postCount: document.querySelector("#post-count"),
-  projectCount: document.querySelector("#project-count"),
   visibleCount: document.querySelector("#visible-count"),
   lightbox: document.querySelector("#lightbox"),
 };
@@ -201,7 +198,6 @@ async function loadFeed() {
     state.posts = posts;
     state.mediaVersion = LOAD_TOKEN;
     saveSnapshot(posts);
-    elements.source.textContent = IS_LOCAL_PREVIEW ? "Local public feed preview" : "Live from public GitHub";
     elements.notice.textContent = "";
     populateControls();
     renderFeed();
@@ -215,7 +211,6 @@ async function loadFeed() {
         dateStyle: "medium",
         timeStyle: "short",
       }).format(new Date(snapshot.savedAt));
-      elements.source.textContent = "Saved public feed";
       elements.notice.textContent = `Live GitHub feed unavailable. Showing the last complete copy saved ${savedDate}.`;
       populateControls();
       renderFeed();
@@ -226,12 +221,11 @@ async function loadFeed() {
 }
 
 function showLoading() {
-  elements.updates.replaceChildren(makeState("Loading updates", "Connecting to the public GitHub feed."));
+  elements.updates.replaceChildren(makeState("Loading updates", "One moment."));
   elements.updates.setAttribute("aria-busy", "true");
 }
 
 function showFailure(error) {
-  elements.source.textContent = "Public feed unavailable";
   elements.notice.textContent = "The live feed could not be loaded and there is no valid saved copy.";
   elements.updates.replaceChildren(
     makeState("Updates are temporarily unavailable", "Please reload in a moment to try the public feed again."),
@@ -279,8 +273,6 @@ function populateControls() {
       return button;
     }),
   );
-  elements.postCount.textContent = String(state.posts.length);
-  elements.projectCount.textContent = String(projects.length);
 }
 
 function postSearchText(post) {

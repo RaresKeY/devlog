@@ -11,39 +11,39 @@
     />
     <meta
       name="description"
-      content="Small Loop Works devlog: honest build notes, screenshots, prototypes, and milestones from small independent games."
+      content="Games, tools, music, and experiments. Updates from whatever I'm working on at Small Loop Works."
     />
     <link rel="canonical" href="https://rareskey.github.io/devlog/" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Small Loop Works" />
-    <meta property="og:title" content="Small games. Honest progress. — Small Loop Works" />
+    <meta property="og:title" content="Small Loop Works: devlog" />
     <meta
       property="og:description"
-      content="A public build journal about prototypes, awkward first passes, useful breakthroughs, and the decisions between them."
+      content="Games, tools, music, and experiments. Updates from whatever I'm working on."
     />
     <meta property="og:url" content="https://rareskey.github.io/devlog/" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Small games. Honest progress. — Small Loop Works" />
+    <meta name="twitter:title" content="Small Loop Works: devlog" />
     <meta
       name="twitter:description"
-      content="Build notes, visual experiments, and milestones from small independent games."
+      content="Games, tools, music, and experiments. Updates from whatever I'm working on."
     />
-    <link rel="icon" href="./favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="512x512" href="./favicon-512.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
-    <link rel="stylesheet" href="./styles.css?v=20261017-1" />
-    <title>Small games. Honest progress. — Small Loop Works</title>
+    <link rel="icon" href="./favicon.ico?v=20261017-2" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png?v=20261017-2" />
+    <link rel="icon" type="image/png" sizes="512x512" href="./favicon-512.png?v=20261017-2" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?v=20261017-2" />
+    <link rel="stylesheet" href="./styles.css?v=20261017-2" />
+    <title>Small Loop Works: devlog</title>
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Small Loop Works home">
-        <span class="brand-mark" aria-hidden="true">SL</span>
+        <img class="brand-mark" src="./favicon-512.png?v=20261017-2" width="38" height="38" alt="" />
         <span>Small Loop Works</span>
       </a>
       <nav aria-label="Primary navigation">
         <a href="#devlog">Devlog</a>
-        <a href="https://github.com/RaresKeY/devlog">Public source</a>
+        <a href="https://github.com/RaresKeY/devlog">GitHub</a>
       </nav>
     </header>
 
@@ -51,26 +51,19 @@
       <div class="hero-viewport">
         <section class="hero" aria-labelledby="hero-title">
           <div class="hero-copy">
-            <p class="eyebrow">Independent games, built in public</p>
-            <h1 id="hero-title">Small games.<br /><em>Honest progress.</em></h1>
+            <h1 id="hero-title">Stuff I'm<br />working on.</h1>
             <p class="hero-intro">
-              A working journal about prototypes, awkward first passes, useful
-              breakthroughs, and the decisions between them.
+              Games, tools, music, and experiments. Updates from whatever I'm working on.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#devlog">Read the latest</a>
-              <a class="button quiet" href="https://smallloopworks.itch.io/">Play the builds</a>
+              <a class="button primary" href="#devlog">Latest updates</a>
+              <a class="button quiet" href="https://smallloopworks.itch.io/">Games on itch.io ↗</a>
             </div>
-            <dl class="hero-metrics" aria-label="Devlog summary">
-              <div><dt id="post-count">—</dt><dd>public updates</dd></div>
-              <div><dt id="project-count">—</dt><dd>projects in motion</dd></div>
-              <div><dt>Open</dt><dd>work in progress</dd></div>
-            </dl>
           </div>
           <figure class="hero-art">
             <img
-              src="./hero.webp"
-              alt="A compact workshop scene for Small Loop Works"
+              src="./hero.webp?v=20261017-2"
+              alt="A little purple game-making machine with a robot on its loop track"
               width="900"
               height="900"
             />
@@ -81,12 +74,7 @@
       <section class="feed" id="devlog" aria-labelledby="feed-title">
         <div class="section-heading">
           <div>
-            <p class="eyebrow">The build journal</p>
             <h2 id="feed-title">Latest updates</h2>
-          </div>
-          <div class="feed-source">
-            <span class="live-dot" aria-hidden="true"></span>
-            <span id="source-label">Loading public GitHub feed</span>
           </div>
         </div>
 
@@ -115,9 +103,9 @@
     </main>
 
     <footer class="site-footer">
-      <span class="brand-mark" aria-hidden="true">SL</span>
-      <p><strong>Small Loop Works</strong><br />Build small. Learn loudly. Keep going.</p>
-      <a href="https://github.com/RaresKeY/devlog">Posts and media on GitHub</a>
+      <img class="brand-mark" src="./favicon-512.png?v=20261017-2" width="38" height="38" alt="" />
+      <p><strong>Small Loop Works</strong><br />Games, tools, and experiments.</p>
+      <a href="https://github.com/RaresKeY/devlog">GitHub ↗</a>
     </footer>
 
     <dialog class="lightbox" id="lightbox">
@@ -126,6 +114,41 @@
       <p></p>
     </dialog>
 
-    <script type="module" src="./app.js?v=20261017-1"></script>
+    <aside class="music-player" id="music-player" aria-label="Music player" hidden>
+      <div class="music-bar">
+        <button class="music-toggle" id="music-toggle" type="button" aria-label="Play music" title="Play music">
+          <svg class="play-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 11 7-11 7z" /></svg>
+          <svg class="pause-symbol" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="M7 5h4v14H7zm6 0h4v14h-4z" /></svg>
+        </button>
+        <button class="music-now" id="music-expand" type="button" aria-expanded="false" aria-controls="music-panel" title="Open music player">
+          <span class="music-title" id="music-title">Music</span>
+          <span class="music-subtitle" id="music-subtitle">Choose a track</span>
+        </button>
+        <button class="music-next" id="music-next" type="button" aria-label="Next track" title="Next track">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 5 10 7-10 7zm11 0h3v14h-3z" /></svg>
+        </button>
+      </div>
+      <div class="music-panel" id="music-panel" hidden>
+        <div class="music-panel-heading">
+          <h2>Music</h2>
+          <button class="music-collapse" id="music-collapse" type="button" aria-label="Collapse music player" title="Collapse music player">×</button>
+        </div>
+        <div class="music-progress">
+          <input id="music-seek" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek in track" disabled />
+          <div class="music-times"><span id="music-elapsed">0:00</span><span id="music-duration">0:00</span></div>
+        </div>
+        <div class="music-settings">
+          <button id="music-previous" type="button" aria-label="Previous track">Previous</button>
+          <label for="music-volume">Volume</label>
+          <input id="music-volume" type="range" min="0" max="1" value="0.6" step="0.01" />
+        </div>
+        <p class="music-message" id="music-message" role="status" aria-live="polite"></p>
+        <ol class="music-tracks" id="music-tracks" aria-label="Music tracks"></ol>
+      </div>
+      <audio id="music-audio" preload="none"></audio>
+    </aside>
+
+    <script type="module" src="./app.js?v=20261017-2"></script>
+    <script type="module" src="./music.js?v=20261017-2"></script>
   </body>
 </html>

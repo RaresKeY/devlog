@@ -10,6 +10,8 @@ The public source of truth for the Small Loop Works devlog: a maintainable stati
 
 ```text
 site/                 GitHub Pages browser app
+site/music/index.json explicit music catalog
+site/music/<album>/   cataloged Ogg Opus tracks
 feed/index.json       newest-first post index
 feed/posts/<id>.json  one deterministic public post per file
 feed/media/<id>/      media owned by that post
@@ -40,9 +42,16 @@ Post content uses the original Georgia stack through the active `--post-content-
 
 When publishing a CSS change, bump the `styles.css` query token in `site/index.html` so existing browsers do not retain GitHub Pages' cached stylesheet.
 
+## Add music
+
+The corner player only includes tracks explicitly listed in `site/music/index.json`. It does not extract sound from feed videos or infer music from tags. Add a stereo 48 kHz Ogg Opus file under `site/music/<album>/`, then add its catalog entry with a unique ID, title, project, album, relative path, duration in seconds, `audio/ogg; codecs=opus` content type and the originating public post ID in `sourcePost`. Keep chapter boundaries intact when splitting a soundtrack. Validate and deploy Pages to publish the updated library. See [the music contract](specs/music.md) for the schema and playback behavior.
+
+The initial Beyond the Gate library contains all 12 soundtrack chapters at 192 kbps VBR. Playback is opt-in, audio downloads begin only when requested, and music pauses when a post video starts.
+
 ## Verify
 
 ```bash
+python3 -m unittest discover -s tests -v
 python3 scripts/check_public_bundle.py
 git diff --check
 ```

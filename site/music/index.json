@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "tracks": [
+    {
+      "id": "btg-01-beyond-the-gate",
+      "title": "Beyond the Gate",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/01-beyond-the-gate.opus",
+      "duration": 59.179,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-02-vocal-humms-1",
+      "title": "Vocal Humms 1",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/02-vocal-humms-1.opus",
+      "duration": 59.061,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-03-vocal-humms-2",
+      "title": "Vocal Humms 2",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/03-vocal-humms-2.opus",
+      "duration": 59.061,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-04-vocal-humms-3",
+      "title": "Vocal Humms 3",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/04-vocal-humms-3.opus",
+      "duration": 59.062,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-05-vocal-humms-4",
+      "title": "Vocal Humms 4",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/05-vocal-humms-4.opus",
+      "duration": 59.082,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-06-vocal-humms-5",
+      "title": "Vocal Humms 5",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/06-vocal-humms-5.opus",
+      "duration": 59.051,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-07-beyond-the-gate-urgent-remix",
+      "title": "Beyond the Gate: Urgent Remix",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/07-beyond-the-gate-urgent-remix.opus",
+      "duration": 59.051,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-08-urgent-drive",
+      "title": "Urgent Drive",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/08-urgent-drive.opus",
+      "duration": 59.05,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-09-beyond-the-gate-percussive-remix",
+      "title": "Beyond the Gate: Percussive Remix",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/09-beyond-the-gate-percussive-remix.opus",
+      "duration": 57.91,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-10-frantic-and-tense-remix",
+      "title": "Frantic and Tense Remix",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/10-frantic-and-tense-remix.opus",
+      "duration": 59.05,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-11-beyond-the-gate-accelerated-remix",
+      "title": "Beyond the Gate: Accelerated Remix",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/11-beyond-the-gate-accelerated-remix.opus",
+      "duration": 56.747,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    },
+    {
+      "id": "btg-12-epic-boss-battle-remix",
+      "title": "Epic Boss Battle Remix",
+      "project": "Hallowmere",
+      "album": "Beyond the Gate",
+      "path": "btg/12-epic-boss-battle-remix.opus",
+      "duration": 59.051,
+      "contentType": "audio/ogg; codecs=opus",
+      "sourcePost": "hallowmere-2026-10-17-beyond-the-gate-full-original"
+    }
+  ]
+}

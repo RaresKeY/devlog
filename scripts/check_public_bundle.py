@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import math
 import re
 import sys
 from datetime import datetime
@@ -32,6 +33,8 @@ REQUIRED_SITE_FILES = {
     "favicon.ico",
     "hero.webp",
     "index.html",
+    "music.js",
+    "music/index.json",
     "styles.css",
 }
 ALLOWED_SITE_SUFFIXES = {
@@ -39,6 +42,8 @@ ALLOWED_SITE_SUFFIXES = {
     ".html",
     ".ico",
     ".js",
+    ".json",
+    ".opus",
     ".png",
     ".webp",
 }
@@ -179,15 +184,73 @@ def relative_files(root: Path) -> set[str]:
     }
 
 
+def validate_music() -> tuple[list[str], set[str]]:
+    failures: list[str] = []
+    expected_files: set[str] = set()
+    catalog_path = SITE / "music" / "index.json"
+    try:
+        catalog = load_json(catalog_path)
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError, ValueError):
+        return ["site/music/index.json: missing or invalid catalog"], expected_files
+    if (not isinstance(catalog, dict) or set(catalog) != {"schemaVersion", "tracks"}
+            or catalog.get("schemaVersion") != 1 or not isinstance(catalog.get("tracks"), list)
+            or len(catalog["tracks"]) > 500):
+        return ["site/music/index.json: invalid catalog schema"], expected_files
+    ids: set[str] = set()
+    paths: set[str] = set()
+    keys = {"id", "title", "project", "album", "path", "duration", "contentType", "sourcePost"}
+    for index, track in enumerate(catalog["tracks"]):
+        label = f"site/music/index.json: tracks[{index}]"
+        if not isinstance(track, dict) or set(track) != keys:
+            failures.append(f"{label}: invalid track schema")
+            continue
+        track_id = track["id"]
+        if not isinstance(track_id, str) or not SLUG.fullmatch(track_id):
+            failures.append(f"{label}: invalid track ID")
+        elif track_id in ids:
+            failures.append(f"{label}: duplicate track ID")
+        else:
+            ids.add(track_id)
+        for key in ("title", "project", "album"):
+            if not isinstance(track[key], str) or not track[key].strip() or len(track[key]) > 240:
+                failures.append(f"{label}: {key} must be non-empty text of at most 240 characters")
+        duration = track["duration"]
+        if isinstance(duration, bool) or not isinstance(duration, (int, float)) or not math.isfinite(duration) or duration <= 0:
+            failures.append(f"{label}: duration must be positive finite seconds")
+        if track["contentType"] != "audio/ogg; codecs=opus":
+            failures.append(f"{label}: expected Ogg Opus content type")
+        source = track["sourcePost"]
+        if not isinstance(source, str) or not SLUG.fullmatch(source) or not (POSTS / f"{source}.json").is_file():
+            failures.append(f"{label}: sourcePost must identify an existing public post")
+        relative = track["path"]
+        if not isinstance(relative, str) or not re.fullmatch(r"[a-z0-9-]+/[a-z0-9-]+\.opus", relative):
+            failures.append(f"{label}: expected a safe album/track.opus path")
+            continue
+        if relative in paths:
+            failures.append(f"{label}: duplicate track path")
+        paths.add(relative)
+        expected_files.add(f"music/{relative}")
+        path = SITE / "music" / relative
+        if not path.is_file():
+            failures.append(f"{label}: missing Opus file")
+        elif not has_expected_signature(path):
+            failures.append(f"{label}: invalid Ogg Opus signature")
+    return failures, expected_files
+
+
 def validate_site() -> tuple[list[str], int]:
     failures: list[str] = []
     if not SITE.is_dir():
         return ["missing site/"], 0
 
+    music_failures, music_files = validate_music()
+    failures.extend(music_failures)
+    expected_files = REQUIRED_SITE_FILES | music_files
+
     actual_files = relative_files(SITE)
-    for path in sorted(REQUIRED_SITE_FILES - actual_files):
+    for path in sorted(expected_files - actual_files):
         failures.append(f"missing expected site file: {path}")
-    for path in sorted(actual_files - REQUIRED_SITE_FILES):
+    for path in sorted(actual_files - expected_files):
         failures.append(f"unexpected site file: {path}")
 
     for relative_path in sorted(actual_files):
@@ -256,7 +319,8 @@ def parse_date(value: object, label: str, failures: list[str]) -> datetime | Non
 
 
 def has_expected_signature(path: Path) -> bool:
-    data = path.read_bytes()[:16]
+    with path.open("rb") as stream:
+        data = stream.read(64)
     suffix = path.suffix.lower()
     if suffix == ".png":
         return data.startswith(b"\x89PNG\r\n\x1a\n")
@@ -268,6 +332,8 @@ def has_expected_signature(path: Path) -> bool:
         return data[4:8] == b"ftyp"
     if suffix == ".webm":
         return data.startswith(b"\x1aE\xdf\xa3")
+    if suffix == ".opus":
+        return data.startswith(b"OggS") and b"OpusHead" in data
     return False
 
 

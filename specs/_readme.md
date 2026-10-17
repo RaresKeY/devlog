@@ -11,6 +11,7 @@ Specs describe current behavior rather than work history. Each spec names its ow
 | Spec | Owning sources | Scope | Read when |
 |---|---|---|---|
 | [`deployment.md`](deployment.md) | `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/workflows/`, `README.md`, `AGENTS.md` | Static app, runtime feed, public boundary, Pages deployment, and verification | Changing the browser app, feed schema/content, deployment workflows, public boundary, or verification |
+| [`music.md`](music.md) | `site/music.js`, `site/music/`, player markup/styles, catalog verification and tests | Explicit music library, Opus assets and compact player | Adding music or changing playback, catalog rules or player behavior |
 
 ## Source Sync
 
