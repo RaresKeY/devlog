@@ -3,7 +3,7 @@
   "id": "jev-2026-10-16-in-action",
   "title": "Jev in action",
   "project": "Jev",
-  "body": "Jev in two live demos: clearing level one in Supper Guard and browsing a book catalogue from a short chat instruction.\n\nCodex plans the browser task, Jev chooses from filtered controls, and Codex verifies the result. The browser clip shows the chat, live navigation and final price and stock comparison together.",
+  "body": "Jev in two live demos: clearing level one in Supper Guard and browsing a book catalogue from a short chat instruction.\n\nCodex (Sol) plans the browser task, Jev chooses from filtered controls, and Codex verifies the result. The browser clip shows the chat, live navigation and final price and stock comparison together.",
   "status": "wip",
   "tags": [
     "devlog",
@@ -25,11 +25,11 @@
     },
     {
       "id": "jev-browser",
-      "path": "../media/jev-2026-10-16-in-action/jev-browser.mp4",
-      "caption": "From a short chat instruction to Jev browsing and the final verified comparison. Continuous live capture.",
-      "fileName": "jev-browser.mp4",
+      "path": "../media/jev-2026-10-16-in-action/jev-browser-20261017.mp4",
+      "caption": "Jev and Sol browse two books and verify prices and stock. Fresh live capture at 30 fps; thinking waits shortened.",
+      "fileName": "jev-browser-20261017.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/jev-2026-10-16-in-action/jev-browser.jpg"
+      "poster": "../media/jev-2026-10-16-in-action/jev-browser-20261017.jpg"
     }
   ]
 }
