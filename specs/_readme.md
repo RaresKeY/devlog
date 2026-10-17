@@ -12,6 +12,7 @@ Specs describe current behavior rather than work history. Each spec names its ow
 |---|---|---|---|
 | [`deployment.md`](deployment.md) | `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/workflows/`, `README.md`, `AGENTS.md` | Static app, runtime feed, public boundary, Pages deployment, and verification | Changing the browser app, feed schema/content, deployment workflows, public boundary, or verification |
 | [`music.md`](music.md) | `site/music.js`, `site/music/`, player markup/styles, catalog verification and tests | Explicit music library, Opus assets and compact player | Adding music or changing playback, catalog rules or player behavior |
+| [`showcase.md`](showcase.md) | Background builder/assets/controller, visible-video preloading and showcase tests | Gapless compiled mosaic, responsive playback, bounded cache and lifecycle | Refreshing background media or changing its delivery, motion, caching or foreground interaction |
 
 ## Source Sync
 

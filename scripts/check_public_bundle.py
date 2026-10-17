@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import json
 import math
+import hashlib
 import re
 import sys
 from datetime import datetime
@@ -35,6 +36,8 @@ REQUIRED_SITE_FILES = {
     "index.html",
     "music.js",
     "music/index.json",
+    "showcase.js",
+    "showcase/manifest.json",
     "styles.css",
 }
 ALLOWED_SITE_SUFFIXES = {
@@ -44,6 +47,7 @@ ALLOWED_SITE_SUFFIXES = {
     ".js",
     ".json",
     ".opus",
+    ".mp4",
     ".png",
     ".webp",
 }
@@ -135,8 +139,9 @@ class SiteParser(HTMLParser):
             if content:
                 self.og_urls.append(content)
 
-        for attribute in ("href", "src"):
-            reference = values.get(attribute)
+        references = [(attribute, values.get(attribute)) for attribute in ("href", "src")]
+        references.extend(("src", item.strip().split()[0]) for item in (values.get("srcset") or "").split(",") if item.strip())
+        for attribute, reference in references:
             if not reference or reference.startswith(("#", "data:")):
                 continue
             parsed = urlparse(reference)
@@ -238,6 +243,90 @@ def validate_music() -> tuple[list[str], set[str]]:
     return failures, expected_files
 
 
+def validate_showcase() -> tuple[list[str], set[str]]:
+    failures: list[str] = []
+    expected_files: set[str] = set()
+    folder = SITE / "showcase"
+    try:
+        manifest = load_json(folder / "manifest.json")
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError, ValueError):
+        return ["site/showcase/manifest.json: missing or invalid manifest"], expected_files
+    if (not isinstance(manifest, dict) or set(manifest) != {"schemaVersion", "preview", "sources", "variants"}
+            or manifest.get("schemaVersion") != 1 or manifest.get("preview") is not False
+            or not isinstance(manifest.get("sources"), list) or not 1 <= len(manifest["sources"]) <= 2000
+            or not isinstance(manifest.get("variants"), dict) or set(manifest["variants"]) != {"landscape", "portrait"}):
+        return ["site/showcase/manifest.json: invalid production manifest"], expected_files
+    identities: set[tuple[str, str]] = set()
+    for source in manifest["sources"]:
+        if (not isinstance(source, dict) or set(source) != {"postId", "fileName", "kind", "sha256"}
+                or not isinstance(source.get("postId"), str) or not SLUG.fullmatch(source["postId"])
+                or not isinstance(source.get("fileName"), str) or not SAFE_FILENAME.fullmatch(source["fileName"])
+                or source.get("kind") not in ("image", "video")
+                or not isinstance(source.get("sha256"), str) or not re.fullmatch(r"[0-9a-f]{64}", source["sha256"])):
+            failures.append("site/showcase: invalid source identity")
+            continue
+        identity = (source["postId"], source["fileName"])
+        if identity in identities:
+            failures.append("site/showcase: duplicate source identity")
+        identities.add(identity)
+        if not (MEDIA / source["postId"] / source["fileName"]).is_file():
+            failures.append("site/showcase: source must identify existing public media")
+    for name, dimensions in (("landscape", (1024, 768, 8, 128, 96)), ("portrait", (576, 1024, 6, 96, 96))):
+        variant = manifest["variants"][name]
+        width, height, columns, cell_width, cell_height = dimensions
+        if (not isinstance(variant, dict) or set(variant) != {"width", "height", "fps", "duration", "poster", "encodings", "layout"}
+                or (variant.get("width"), variant.get("height"), variant.get("fps"), variant.get("duration")) != (width, height, 12, 120)
+                or variant.get("poster") != f"{name}.webp" or not isinstance(variant.get("encodings"), list)
+                or len(variant["encodings"]) != 1):
+            failures.append(f"site/showcase/{name}: invalid variant")
+            continue
+        poster = folder / variant["poster"]
+        expected_files.add(f"showcase/{variant['poster']}")
+        if not poster.is_file() or poster.stat().st_size > 256 * 1024 or not has_expected_signature(poster):
+            failures.append(f"site/showcase/{name}: invalid poster")
+        encoding = variant["encodings"][0]
+        if (not isinstance(encoding, dict) or set(encoding) != {"codec", "path", "bytes", "sha256"}
+                or encoding.get("codec") != "h264" or encoding.get("path") != f"{name}.mp4"
+                or type(encoding.get("bytes")) is not int or not 0 < encoding["bytes"] <= 8 * 1024 * 1024
+                or not isinstance(encoding.get("sha256"), str) or not re.fullmatch(r"[0-9a-f]{64}", encoding["sha256"])):
+            failures.append(f"site/showcase/{name}: invalid bounded H.264 encoding")
+        else:
+            path = folder / encoding["path"]
+            expected_files.add(f"showcase/{encoding['path']}")
+            if (not path.is_file() or path.stat().st_size != encoding["bytes"] or not has_expected_signature(path)
+                    or hashlib.sha256(path.read_bytes()).hexdigest() != encoding["sha256"]):
+                failures.append(f"site/showcase/{name}: video identity mismatch")
+        layout = variant.get("layout")
+        if (not isinstance(layout, dict) or set(layout) != {"columns", "rows", "cellWidth", "cellHeight", "tiles"}
+                or (layout.get("columns"), layout.get("cellWidth"), layout.get("cellHeight")) != (columns, cell_width, cell_height)
+                or type(layout.get("rows")) is not int or not 1 <= layout["rows"] <= 4096
+                or not isinstance(layout.get("tiles"), list) or not 1 <= len(layout["tiles"]) <= 10000):
+            failures.append(f"site/showcase/{name}: invalid grid layout")
+            continue
+        occupied: set[tuple[int, int]] = set()
+        shown: set[int] = set()
+        for tile in layout["tiles"]:
+            if (not isinstance(tile, dict) or set(tile) != {"source", "x", "y", "width", "height"}
+                    or any(type(value) is not int for value in tile.values())
+                    or not 0 <= tile["source"] < len(manifest["sources"])
+                    or not 0 <= tile["x"] < columns or not 0 <= tile["y"] < layout["rows"]
+                    or not 1 <= tile["width"] <= 3 or not 1 <= tile["height"] <= 3
+                    or tile["x"] + tile["width"] > columns or tile["y"] + tile["height"] > layout["rows"]):
+                failures.append(f"site/showcase/{name}: invalid tile")
+                continue
+            cells = {(x, y) for y in range(tile["y"], tile["y"] + tile["height"])
+                     for x in range(tile["x"], tile["x"] + tile["width"])}
+            if occupied & cells:
+                failures.append(f"site/showcase/{name}: overlapping tiles")
+            occupied.update(cells)
+            shown.add(tile["source"])
+        if len(occupied) != columns * layout["rows"]:
+            failures.append(f"site/showcase/{name}: gaps in grid")
+        if shown != set(range(len(manifest["sources"]))):
+            failures.append(f"site/showcase/{name}: some source media never appears")
+    return failures, expected_files
+
+
 def validate_site() -> tuple[list[str], int]:
     failures: list[str] = []
     if not SITE.is_dir():
@@ -245,7 +334,9 @@ def validate_site() -> tuple[list[str], int]:
 
     music_failures, music_files = validate_music()
     failures.extend(music_failures)
-    expected_files = REQUIRED_SITE_FILES | music_files
+    showcase_failures, showcase_files = validate_showcase()
+    failures.extend(showcase_failures)
+    expected_files = REQUIRED_SITE_FILES | music_files | showcase_files
 
     actual_files = relative_files(SITE)
     for path in sorted(expected_files - actual_files):

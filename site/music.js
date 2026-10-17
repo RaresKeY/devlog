@@ -181,7 +181,7 @@ audio.addEventListener("loadedmetadata", updateProgress);
 audio.addEventListener("durationchange", updateProgress);
 audio.addEventListener("timeupdate", updateProgress);
 audio.addEventListener("play", () => {
-  document.querySelectorAll("video, audio").forEach((media) => { if (media !== audio) media.pause(); });
+  document.querySelectorAll("video:not([data-background-media]), audio").forEach((media) => { if (media !== audio) media.pause(); });
   updatePlayback();
 });
 audio.addEventListener("pause", () => {
@@ -197,7 +197,7 @@ audio.addEventListener("error", () => {
   setExpanded(true);
   updatePlayback();
 });
-document.addEventListener("play", (event) => { if (event.target !== audio) audio.pause(); }, true);
+document.addEventListener("play", (event) => { if (event.target !== audio && !event.target.hasAttribute("data-background-media")) audio.pause(); }, true);
 
 async function initialize() {
   try {

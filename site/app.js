@@ -22,6 +22,15 @@ const state = {
   mediaVersion: LOAD_TOKEN,
 };
 
+const mediaObserver = "IntersectionObserver" in window ? new IntersectionObserver((entries) => {
+  entries.forEach(({ target, isIntersecting }) => {
+    if (isIntersecting) {
+      target.preload = "metadata";
+      mediaObserver.unobserve(target);
+    }
+  });
+}, { rootMargin: "300px 0px" }) : null;
+
 const elements = {
   updates: document.querySelector("#updates"),
   notice: document.querySelector("#feed-notice"),
@@ -289,6 +298,7 @@ function filteredPosts() {
 }
 
 function renderFeed() {
+  mediaObserver?.disconnect();
   const visible = filteredPosts();
   elements.visibleCount.textContent = String(visible.length);
   elements.updates.setAttribute("aria-busy", "false");
@@ -428,7 +438,8 @@ function createMedia(post) {
       video.src = url;
       video.controls = true;
       video.playsInline = true;
-      video.preload = "metadata";
+      video.preload = mediaObserver ? "none" : "metadata";
+      mediaObserver?.observe(video);
       if (item.poster) video.poster = mediaUrl(post.id, item.poster);
       video.setAttribute("aria-label", item.caption);
       figure.append(video, makeCaption(item.caption));

@@ -12,6 +12,7 @@ The public source of truth for the Small Loop Works devlog: a maintainable stati
 site/                 GitHub Pages browser app
 site/music/index.json explicit music catalog
 site/music/<album>/   cataloged Ogg Opus tracks
+site/showcase/        compiled background loops, posters and coverage manifest
 feed/index.json       newest-first post index
 feed/posts/<id>.json  one deterministic public post per file
 feed/media/<id>/      media owned by that post
@@ -47,6 +48,12 @@ When publishing a CSS change, bump the `styles.css` query token in `site/index.h
 The corner player only includes tracks explicitly listed in `site/music/index.json`. It does not extract sound from feed videos or infer music from tags. Add a stereo 48 kHz Ogg Opus file under `site/music/<album>/`, then add its catalog entry with a unique ID, title, project, album, relative path, duration in seconds, `audio/ogg; codecs=opus` content type and the originating public post ID in `sourcePost`. Keep chapter boundaries intact when splitting a soundtrack. Validate and deploy Pages to publish the updated library. See [the music contract](specs/music.md) for the schema and playback behavior.
 
 The initial Beyond the Gate library contains all 12 soundtrack chapters at 192 kbps VBR. Playback is opt-in, audio downloads begin only when requested, and music pauses when a post video starts.
+
+## Background showcase
+
+The slowly drifting, gapless background includes a snapshot of all 108 posted image/video attachments. Each visitor downloads only one compiled silent two-minute loop, about 6.6 MB for desktop or 5.0 MB for phones, with a verified bounded persistent cache. It does not preload the original media collection. Reduced-motion and data-saving preferences use a static poster, and the header motion control can pause or explicitly enable playback. The background pauses in hidden tabs and coexists with the music player.
+
+Refresh the snapshot with `python3 scripts/build_showcase.py --output .local/showcase-next`, review both loops and the coverage manifest, replace the reviewed generated files under `site/showcase/`, bump presentation tokens, and deploy Pages. New feed-only posts retain their existing immediate publication behavior; background refresh is a separate authoring step. See [the showcase contract](specs/showcase.md).
 
 ## Verify
 
