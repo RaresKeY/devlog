@@ -169,6 +169,16 @@ export function createScene(container, variant, atlasUrl, clipUrl, activeLimit) 
     player.node.load();
     player.node.remove();
   }
+  function play(player) {
+    const assignment = player.assignment;
+    if (!assignment) return;
+    player.node.play().catch((error) => {
+      if (error.name !== "AbortError" && running && player.assignment === assignment) {
+        visible.delete(assignment);
+        release(player);
+      }
+    });
+  }
   function reconcile() {
     if (disposed || !running) return;
     for (const player of pool) if (player.assignment && !visible.has(player.assignment)) release(player);
@@ -200,7 +210,7 @@ export function createScene(container, variant, atlasUrl, clipUrl, activeLimit) 
       player.node.classList.remove("is-playing");
       slot.node.append(player.node);
       player.node.src = clipUrl(slot.clip);
-      player.node.play().catch(() => { if (player.assignment === slot) { visible.delete(slot); release(player); } });
+      play(player);
       occupied.add(slot);
     }
   }
@@ -216,8 +226,12 @@ export function createScene(container, variant, atlasUrl, clipUrl, activeLimit) 
   return {
     geometry, animation, reconcile,
     ready: Promise.all(images.map((image) => image.decode())),
-    play() { running = true; animation.play(); reconcile(); },
-    pause() { running = false; animation.pause(); pool.forEach(release); },
+    play() { running = true; animation.play(); pool.forEach(play); reconcile(); },
+    pause(releaseMedia = false) {
+      running = false;
+      animation.pause();
+      pool.forEach((player) => releaseMedia ? release(player) : player.node.pause());
+    },
     destroy() { disposed = true; running = false; observer?.disconnect(); animation.cancel(); pool.forEach(release); plane.remove(); },
   };
 }
@@ -234,10 +248,10 @@ function release() {
 
 async function refresh() {
   updateControl();
-  if (document.hidden) { abort(); scene?.pause(); return; }
-  if (!wantsMotion()) { release(); return; }
+  if (document.hidden) { abort(); scene?.pause(true); return; }
   const name = portrait.matches ? "portrait" : "landscape";
   const key = `${name}:${root.clientWidth}:${root.clientHeight}`;
+  if (!wantsMotion() && (!scene || layoutKey === key)) { abort(); scene?.pause(); return; }
   if (scene && layoutKey === key && prepared) { scene.play(); return; }
   abort();
   const current = revision;
@@ -247,16 +261,19 @@ async function refresh() {
     await loadManifest(owner.signal);
     const variant = manifest.variants[name];
     const atlas = await loadAsset(variant.atlas, owner.signal);
-    if (current !== revision || !wantsMotion() || document.hidden) return;
+    if (current !== revision || document.hidden) return;
     if (!scene || layoutKey !== key) {
+      const phase = scene ? ((scene.animation.currentTime || 0) / scene.geometry.duration) % 1 : 0;
       scene?.destroy();
       for (const [path, value] of ready) if (path !== variant.atlas.path) { URL.revokeObjectURL(value.url); ready.delete(path); }
       scene = createScene(root, variant, atlas.url, (clip) => ready.get(clip.path)?.url, name === "portrait" ? 1 : 2);
+      scene.animation.currentTime = phase * scene.geometry.duration;
       layoutKey = key;
     }
     await scene.ready;
-    if (current !== revision || !wantsMotion() || document.hidden) return;
+    if (current !== revision || document.hidden) return;
     root.classList.add("is-ready");
+    if (!wantsMotion()) { scene.pause(); return; }
     scene.play();
     // Precache only the selected, bounded set. Two transfers can be in flight.
     const queue = [...variant.clips];
