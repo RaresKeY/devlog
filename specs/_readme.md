@@ -11,7 +11,7 @@ Specs describe current behavior rather than work history. Each spec names its ow
 | Spec | Owning sources | Scope | Read when |
 |---|---|---|---|
 | [`deployment.md`](deployment.md) | `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/workflows/`, `README.md`, `AGENTS.md` | Static app, runtime feed, public boundary, Pages deployment, and verification | Changing the browser app, feed schema/content, deployment workflows, public boundary, or verification |
-| [`music.md`](music.md) | `site/music.js`, `site/media-state.js`, `site/music/`, player markup/styles, audio-stream metadata and tests | Explicit music library, resume position, silent-video coexistence and compact player | Adding music or changing playback, catalog rules or player behavior |
+| [`music.md`](music.md) | `site/music.js`, `site/audio-fader.js`, `site/media-state.js`, `site/music/`, player markup/styles, audio-stream metadata and tests | Explicit music library, resume position, fades, video interruption and compact player | Adding music or changing playback, catalog rules or player behavior |
 | [`taxonomy.md`](taxonomy.md) | Project/tag metadata, `site/projects.js`, project controls/search and regression tests | Actual project names, historical aliases and useful topic tags | Correcting backposts or changing project identity, grouping or search |
 | [`showcase.md`](showcase.md) | Background builder/assets/controller, visible-video preloading and showcase tests | Curated gapless atlas, diagonal transform, bounded preview pool/cache and lifecycle | Refreshing background media or changing its delivery, motion, caching or foreground interaction |
 

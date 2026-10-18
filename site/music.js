@@ -1,4 +1,5 @@
 import { mediaHasAudio, resumePosition } from "./media-state.js?v=20261018-1";
+import { createAudioFader } from "./audio-fader.js?v=20261018-1";
 
 const catalogUrl = new URL("./music/index.json", import.meta.url);
 const preferencesKey = "small-loop-devlog:music:v1";
@@ -25,6 +26,11 @@ let selected = 0;
 let selectionRevision = 0;
 let pendingPosition = 0;
 let lastPreferenceSave = -Infinity;
+let wantsPlayback = false;
+let resumeOwner = null;
+let pendingFadeIn = false;
+let transportRevision = 0;
+const fader = createAudioFader(audio);
 
 function currentPosition() {
   return pendingPosition ?? audio.currentTime;
@@ -103,7 +109,7 @@ if ("ResizeObserver" in window) {
 cover.addEventListener("error", () => { if (cover.src !== fallbackCover) cover.src = fallbackCover; });
 
 function updatePlayback() {
-  const playing = !audio.paused && !audio.ended && !audio.error;
+  const playing = wantsPlayback && !resumeOwner && !audio.ended && !audio.error;
   toggle.querySelector(".play-symbol").toggleAttribute("hidden", playing);
   toggle.querySelector(".pause-symbol").toggleAttribute("hidden", !playing);
   toggle.setAttribute("aria-label", `${playing ? "Pause" : "Play"} ${tracks[selected]?.title || "music"}`);
@@ -144,11 +150,15 @@ function seekTo(position) {
 }
 
 function selectTrack(index, position = 0) {
+  wantsPlayback = false;
+  resumeOwner = null;
+  pendingFadeIn = false;
+  transportRevision++;
+  fader.stop();
   selected = (index + tracks.length) % tracks.length;
   selectionRevision++;
   const track = tracks[selected];
   pendingPosition = resumePosition(position, track.duration);
-  audio.pause();
   audio.removeAttribute("src");
   audio.load();
   titleText.textContent = track.title;
@@ -170,26 +180,60 @@ function selectTrack(index, position = 0) {
   }
 }
 
-async function play() {
+function pauseMusic(interrupter = null) {
+  if (interrupter) {
+    if (!wantsPlayback) return;
+    resumeOwner = interrupter;
+  } else {
+    wantsPlayback = false;
+    resumeOwner = null;
+  }
+  transportRevision++;
+  pendingFadeIn = false;
+  fader.pause();
+  updatePlayback();
+}
+
+function fadeIn() {
+  if (pendingFadeIn && wantsPlayback && !resumeOwner && !audio.paused) {
+    pendingFadeIn = false;
+    fader.rise();
+  }
+}
+
+async function play({ automatic = false } = {}) {
+  if (!tracks.length || (automatic && (!wantsPlayback || activeOtherMedia()))) return;
   const revision = selectionRevision;
+  const request = ++transportRevision;
+  wantsPlayback = true;
+  resumeOwner = null;
+  pendingFadeIn = true;
   message.textContent = "";
   // Apply the user's choice before queued media events can arrive out of order.
-  document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])").forEach((media) => {
-    if (media !== audio && mediaHasAudio(media)) media.pause();
-  });
+  if (!automatic) {
+    document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])").forEach((media) => {
+      if (media !== audio && mediaHasAudio(media)) media.pause();
+    });
+  }
   if (!audio.getAttribute("src")) audio.src = new URL(tracks[selected].path, catalogUrl).href;
   else if (audio.error) { pendingPosition = currentPosition(); audio.load(); }
   try {
-    await audio.play();
+    const ready = fader.prepare();
+    const playback = audio.play();
+    updatePlayback();
+    await Promise.all([ready, playback]);
+    if (request === transportRevision && revision === selectionRevision) fadeIn();
   } catch (error) {
-    if (revision === selectionRevision && error.name !== "AbortError") {
-      message.textContent = "Couldn't play this track. Try again or choose another.";
-      setExpanded(true);
+    if (request === transportRevision && revision === selectionRevision && error.name !== "AbortError") {
+      pauseMusic();
+      fader.stop();
+      message.textContent = automatic ? "Press Play to resume music." : "Couldn't play this track. Try again or choose another.";
+      if (!automatic) setExpanded(true);
     }
   }
 }
 
-function moveTrack(offset, keepPlaying = !audio.paused) {
+function moveTrack(offset, keepPlaying = wantsPlayback && !resumeOwner) {
   if (!tracks.length) return;
   selectTrack(selected + offset);
   if (keepPlaying) play();
@@ -200,9 +244,9 @@ function previousTrack() {
   else moveTrack(-1);
 }
 
-function hasOtherPlayback() {
+function activeOtherMedia() {
   return [...document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])")]
-    .some((media) => media !== audio && mediaHasAudio(media) && !media.paused && !media.ended && !media.error);
+    .find((media) => media !== audio && mediaHasAudio(media) && !media.paused && !media.ended && !media.error);
 }
 
 function buildPlaylist() {
@@ -240,7 +284,10 @@ player.addEventListener("keydown", (event) => {
     expand.focus();
   }
 });
-toggle.addEventListener("click", () => { if (audio.paused || audio.ended || audio.error) play(); else audio.pause(); });
+toggle.addEventListener("click", () => {
+  if (wantsPlayback && !resumeOwner && !audio.ended && !audio.error) pauseMusic();
+  else play();
+});
 next.addEventListener("click", () => moveTrack(1));
 previous.addEventListener("click", previousTrack);
 seek.addEventListener("input", () => {
@@ -256,22 +303,35 @@ audio.addEventListener("timeupdate", () => {
 audio.addEventListener("seeked", savePreferences);
 audio.addEventListener("play", () => {
   // A video may have started after the music request but before its play event.
-  if (hasOtherPlayback()) audio.pause();
+  const other = activeOtherMedia();
+  if (other) pauseMusic(other);
+  else if (!wantsPlayback) fader.pause();
   updatePlayback();
 });
 audio.addEventListener("pause", () => {
+  if (audio.paused) {
+    if (!resumeOwner && !audio.ended) wantsPlayback = false;
+    pendingFadeIn = false;
+    fader.stop();
+  }
   if (message.textContent === "Loading track…") message.textContent = "";
   savePreferences();
   updatePlayback();
 });
 audio.addEventListener("ended", () => {
-  if (hasOtherPlayback()) updatePlayback();
+  if (!audio.ended) return;
+  if (!wantsPlayback || resumeOwner || activeOtherMedia()) updatePlayback();
   else moveTrack(1, true);
 });
 audio.addEventListener("waiting", () => { if (!audio.paused) message.textContent = "Loading track…"; });
 audio.addEventListener("canplay", () => { restorePosition(); if (message.textContent === "Loading track…") message.textContent = ""; });
-audio.addEventListener("playing", () => { message.textContent = ""; });
+audio.addEventListener("playing", () => { message.textContent = ""; fadeIn(); });
 audio.addEventListener("error", () => {
+  wantsPlayback = false;
+  resumeOwner = null;
+  pendingFadeIn = false;
+  transportRevision++;
+  fader.stop();
   message.textContent = "Couldn't load this track. Try again or choose another.";
   setExpanded(true);
   updatePlayback();
@@ -279,13 +339,29 @@ audio.addEventListener("error", () => {
 function yieldToMedia(event) {
   const media = event.target;
   if (media instanceof HTMLMediaElement && media !== audio && mediaHasAudio(media) && !media.hasAttribute("data-background-media") &&
-      !media.paused && !media.ended && !media.error) audio.pause();
+      !media.paused && !media.ended && !media.error) pauseMusic(media);
 }
 document.addEventListener("play", yieldToMedia, true);
 document.addEventListener("playing", yieldToMedia, true);
 document.addEventListener("loadedmetadata", yieldToMedia, true);
+document.addEventListener("ended", (event) => {
+  if (event.target !== resumeOwner || !wantsPlayback || !event.target.ended) return;
+  const other = activeOtherMedia();
+  if (other) { resumeOwner = other; return; }
+  resumeOwner = null;
+  if (audio.ended) moveTrack(1, true);
+  else play({ automatic: true });
+}, true);
 document.addEventListener("visibilitychange", () => { if (document.hidden) savePreferences(); });
-window.addEventListener("pagehide", savePreferences);
+window.addEventListener("pagehide", () => {
+  wantsPlayback = false;
+  resumeOwner = null;
+  pendingFadeIn = false;
+  transportRevision++;
+  fader.stop();
+  savePreferences();
+  updatePlayback();
+});
 
 async function initialize() {
   try {
@@ -302,7 +378,7 @@ async function initialize() {
     player.hidden = false;
     if ("mediaSession" in navigator) {
       const handlers = {
-        play, pause: () => audio.pause(), previoustrack: previousTrack, nexttrack: () => moveTrack(1),
+        play, pause: () => pauseMusic(), previoustrack: previousTrack, nexttrack: () => moveTrack(1),
         seekto: ({ seekTime }) => { if (Number.isFinite(audio.duration) && Number.isFinite(seekTime)) seekTo(seekTime); },
       };
       for (const [action, handler] of Object.entries(handlers)) {

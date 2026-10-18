@@ -28,6 +28,7 @@ MAX_BODY_BYTES = 100 * 1024
 REQUIRED_SITE_FILES = {
     ".nojekyll",
     "app.js",
+    "audio-fader.js",
     "apple-touch-icon.png",
     "favicon-32.png",
     "favicon-512.png",
