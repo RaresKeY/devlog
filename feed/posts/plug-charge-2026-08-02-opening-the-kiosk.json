@@ -22,7 +22,8 @@
       "path": "../media/plug-charge-2026-08-02-opening-the-kiosk/plug-and-prosper-first-connection.mp4",
       "caption": "Plug & Prosper opening gameplay, from the title screen to a successful first connection.",
       "fileName": "plug-and-prosper-first-connection.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": true
     }
   ]
 }

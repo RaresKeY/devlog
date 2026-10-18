@@ -19,7 +19,8 @@
       "caption": "Jev clears level one in Supper Guard. Live gameplay, condensed.",
       "fileName": "jev-game.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/jev-2026-10-16-in-action/jev-game.jpg"
+      "poster": "../media/jev-2026-10-16-in-action/jev-game.jpg",
+      "hasAudio": false
     },
     {
       "id": "jev-browser",
@@ -27,7 +28,8 @@
       "caption": "Jev and Sol browse two books and verify prices and stock. Fresh live capture at 30 fps; thinking waits shortened.",
       "fileName": "jev-browser-20261017.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/jev-2026-10-16-in-action/jev-browser-20261017.jpg"
+      "poster": "../media/jev-2026-10-16-in-action/jev-browser-20261017.jpg",
+      "hasAudio": false
     }
   ]
 }

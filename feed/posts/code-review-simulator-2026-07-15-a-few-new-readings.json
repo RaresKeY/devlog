@@ -19,7 +19,8 @@
       "path": "../media/code-review-simulator-2026-07-15-a-few-new-readings/gauge-hero-devlog.mp4",
       "caption": "A silent locked-camera showcase of five in-world gauges for vehicle speed, magnetic heading, analog time, fuel level, and heart rate.",
       "fileName": "gauge-hero-devlog.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }

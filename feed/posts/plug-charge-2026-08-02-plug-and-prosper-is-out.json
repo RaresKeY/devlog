@@ -22,7 +22,8 @@
       "path": "../media/plug-charge-2026-08-02-plug-and-prosper-is-out/plug-and-prosper-trailer-itch.mp4",
       "caption": "Plug & Prosper release trailer showing the plug-and-cable puzzle gameplay.",
       "fileName": "plug-and-prosper-trailer-itch.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": true
     }
   ]
 }

@@ -19,7 +19,8 @@
       "path": "../media/code-review-simulator-2026-07-12-npc-animation-loop-pass/rightslock-rigging-showcase.mp4",
       "caption": "Twelve NPC variants arranged in walk, run, shoot, and bat-hit columns for a side-by-side animation loop check.",
       "fileName": "rightslock-rigging-showcase.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }

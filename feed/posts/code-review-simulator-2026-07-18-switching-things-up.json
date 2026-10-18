@@ -19,7 +19,8 @@
       "path": "../media/code-review-simulator-2026-07-18-switching-things-up/wall-switch-variant-comparison-with-audio.mp4",
       "caption": "A ten-second in-engine comparison of center-pivot and one-sided wall-switch variants, with their shared positional clack audio.",
       "fileName": "wall-switch-variant-comparison-with-audio.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": true
     }
   ]
 }

@@ -19,7 +19,8 @@
       "path": "../media/world-state-simulator-2026-08-17-surrounded/world-state-surrounded-hold-latest-main-4x-8s-undecided-muted.mp4",
       "fileName": "world-state-surrounded-hold-latest-main-4x-8s-undecided-muted.mp4",
       "contentType": "video/mp4",
-      "caption": "8 seconds, muted, latest main; the outcome is intentionally unresolved."
+      "caption": "8 seconds, muted, latest main; the outcome is intentionally unresolved.",
+      "hasAudio": false
     }
   ]
 }

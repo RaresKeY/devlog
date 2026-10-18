@@ -20,7 +20,8 @@
       "path": "../media/world-state-simulator-2026-08-16-when-5000-formations-changed-the-architecture/world-state-small-line-column-scale-sequence-4s-6s-8s-muted.mp4",
       "fileName": "world-state-small-line-column-scale-sequence-4s-6s-8s-muted.mp4",
       "contentType": "video/mp4",
-      "caption": "Visual composition/progression evidence only: separate 2v2 (4s), 50v50 line-versus-column (6s), and 2,500v2,500 native-core (8s) Scenario Labs. This muted fixed-offline clip does not prove the benchmark or interactive frame pacing."
+      "caption": "Visual composition/progression evidence only: separate 2v2 (4s), 50v50 line-versus-column (6s), and 2,500v2,500 native-core (8s) Scenario Labs. This muted fixed-offline clip does not prove the benchmark or interactive frame pacing.",
+      "hasAudio": false
     }
   ]
 }

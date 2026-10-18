@@ -19,7 +19,8 @@
       "fileName": "beyond-the-gate-full-original.mp4",
       "contentType": "video/mp4",
       "caption": "Hallowmere: Beyond the Gate - Full Original Soundtrack",
-      "poster": "../media/hallowmere-2026-10-17-beyond-the-gate-full-original/beyond-the-gate-poster.jpg"
+      "poster": "../media/hallowmere-2026-10-17-beyond-the-gate-full-original/beyond-the-gate-poster.jpg",
+      "hasAudio": true
     }
   ]
 }

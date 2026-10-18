@@ -22,7 +22,8 @@
       "path": "../media/white-approach-2026-09-06-rope-snow-and-a-longer-climb/white-approach-climb.mp4",
       "caption": "Ten-second gameplay capture of a white-hooded climber traversing the snowy mountain in White Approach.",
       "fileName": "white-approach-climb.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }

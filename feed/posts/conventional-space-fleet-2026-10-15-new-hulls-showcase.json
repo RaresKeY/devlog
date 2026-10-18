@@ -20,7 +20,8 @@
       "caption": "Eighteen rebuilt ships in a continuous orbit. 22.5 seconds, 1080p60. Music: Void Strategy.",
       "fileName": "fleet-beat-clean.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/conventional-space-fleet-2026-10-15-new-hulls-showcase/fleet-beat-poster.jpg"
+      "poster": "../media/conventional-space-fleet-2026-10-15-new-hulls-showcase/fleet-beat-poster.jpg",
+      "hasAudio": true
     }
   ]
 }

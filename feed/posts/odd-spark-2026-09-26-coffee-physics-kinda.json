@@ -19,7 +19,8 @@
       "path": "../media/odd-spark-2026-09-26-coffee-physics-kinda/coffee-physics-center-cropped.webm",
       "caption": "The Medusa cup tipping and pouring coffee across a test surface.",
       "fileName": "coffee-physics-center-cropped.webm",
-      "contentType": "video/webm"
+      "contentType": "video/webm",
+      "hasAudio": false
     }
   ]
 }

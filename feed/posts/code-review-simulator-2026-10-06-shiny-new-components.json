@@ -20,7 +20,8 @@
       "path": "../media/code-review-simulator-2026-10-06-shiny-new-components/pc_components_devlog.mp4",
       "caption": "A tour of the new PC components and the complete assembly in Code Review Simulator.",
       "fileName": "pc_components_devlog.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }

@@ -22,7 +22,8 @@
       "path": "../media/horizon-charge-2026-08-02-a-run-to-impact/horizon-charge-high-speed-run.mp4",
       "caption": "Horizon Charge gameplay from ignition through full speed to a pylon impact at 1,686 metres.",
       "fileName": "horizon-charge-high-speed-run.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": true
     }
   ]
 }

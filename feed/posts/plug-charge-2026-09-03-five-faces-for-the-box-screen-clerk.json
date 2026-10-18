@@ -21,7 +21,8 @@
       "path": "../media/plug-charge-2026-09-03-five-faces-for-the-box-screen-clerk/box-screen-clerk-expression-cycle.mp4",
       "caption": "The Box-Screen Clerk cycles through friendly, blink, wink, surprised, and content pixel expressions on its angled mint monitor.",
       "fileName": "box-screen-clerk-expression-cycle.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }

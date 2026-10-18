@@ -20,7 +20,8 @@
       "path": "../media/odd-spark-2026-09-27-catching-the-sugar-of-mythology/catching-the-sugar-of-mythology.mp4",
       "caption": "Odd Spark gameplay: moving a cup and saucer to catch falling sugar cubes.",
       "fileName": "catching-the-sugar-of-mythology.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }

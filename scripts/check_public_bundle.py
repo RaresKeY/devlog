@@ -36,6 +36,7 @@ REQUIRED_SITE_FILES = {
     "hero.webp",
     "index.html",
     "music.js",
+    "media-state.js",
     "music/index.json",
     "projects.js",
     "showcase.js",
@@ -495,7 +496,7 @@ def validate_media_item(
         failures.append(f"{label} entry must be an object")
         return
     expected_keys = IMAGE_KEYS if kind == "image" else VIDEO_KEYS
-    optional_keys = {"caption"} if kind == "image" else {"poster"}
+    optional_keys = {"caption"} if kind == "image" else {"poster", "hasAudio"}
     if not expected_keys.issubset(item) or set(item) - expected_keys - optional_keys:
         failures.append(f"{label} keys do not match the schema: {sorted(item)}")
         return
@@ -514,6 +515,8 @@ def validate_media_item(
     if kind == "image" and "caption" in item:
         if not isinstance(item["caption"], str) or len(item["caption"]) > 240:
             failures.append(f"{label} caption must be a string of at most 240 characters")
+    if kind == "video" and "hasAudio" in item and type(item["hasAudio"]) is not bool:
+        failures.append(f"{label} hasAudio must be a boolean")
 
     if kind == "video" and "poster" in item:
         poster = item["poster"]

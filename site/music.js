@@ -1,3 +1,5 @@
+import { mediaHasAudio, resumePosition } from "./media-state.js?v=20261018-1";
+
 const catalogUrl = new URL("./music/index.json", import.meta.url);
 const preferencesKey = "small-loop-devlog:music:v1";
 const player = document.querySelector("#music-player");
@@ -21,6 +23,12 @@ const previous = document.querySelector("#music-previous");
 let tracks = [];
 let selected = 0;
 let selectionRevision = 0;
+let pendingPosition = 0;
+let lastPreferenceSave = -Infinity;
+
+function currentPosition() {
+  return pendingPosition ?? audio.currentTime;
+}
 
 function formatTime(seconds) {
   const value = Math.max(0, Math.floor(Number.isFinite(seconds) ? seconds : 0));
@@ -37,8 +45,11 @@ function readPreferences() {
 }
 
 function savePreferences() {
+  if (!tracks.length) return;
+  lastPreferenceSave = performance.now();
   try {
-    localStorage.setItem(preferencesKey, JSON.stringify({ volume: audio.volume, track: tracks[selected]?.id }));
+    const position = resumePosition(currentPosition(), Number.isFinite(audio.duration) ? audio.duration : tracks[selected].duration);
+    localStorage.setItem(preferencesKey, JSON.stringify({ volume: audio.volume, track: tracks[selected].id, position }));
   } catch {
     // Playback remains available when browser storage is disabled.
   }
@@ -103,19 +114,40 @@ function updatePlayback() {
 
 function updateProgress() {
   const length = Number.isFinite(audio.duration) ? audio.duration : tracks[selected]?.duration || 0;
-  elapsed.textContent = formatTime(audio.currentTime);
+  const position = currentPosition();
+  elapsed.textContent = formatTime(position);
   duration.textContent = formatTime(length);
   seek.max = String(length);
-  seek.value = String(Math.min(audio.currentTime, length));
-  seek.style.setProperty("--progress", `${length > 0 ? Math.min(100, audio.currentTime / length * 100) : 0}%`);
+  seek.value = String(Math.min(position, length));
+  seek.style.setProperty("--progress", `${length > 0 ? Math.min(100, position / length * 100) : 0}%`);
   seek.disabled = !Number.isFinite(audio.duration) || audio.readyState < 1;
-  seek.setAttribute("aria-valuetext", `${formatTime(audio.currentTime)} of ${formatTime(length)}`);
+  seek.setAttribute("aria-valuetext", `${formatTime(position)} of ${formatTime(length)}`);
 }
 
-function selectTrack(index) {
+function restorePosition() {
+  if (pendingPosition !== null && audio.readyState >= 1) {
+    try {
+      audio.currentTime = resumePosition(pendingPosition, audio.duration);
+      pendingPosition = null;
+    } catch { /* Retry when the media becomes ready. */ }
+  }
+  updateProgress();
+}
+
+function seekTo(position) {
+  const length = Number.isFinite(audio.duration) ? audio.duration : tracks[selected]?.duration || 0;
+  const target = Number.isFinite(position) ? Math.max(0, Math.min(position, length)) : 0;
+  if (audio.readyState >= 1) { pendingPosition = null; audio.currentTime = target; }
+  else pendingPosition = target;
+  updateProgress();
+  savePreferences();
+}
+
+function selectTrack(index, position = 0) {
   selected = (index + tracks.length) % tracks.length;
   selectionRevision++;
   const track = tracks[selected];
+  pendingPosition = resumePosition(position, track.duration);
   audio.pause();
   audio.removeAttribute("src");
   audio.load();
@@ -143,10 +175,10 @@ async function play() {
   message.textContent = "";
   // Apply the user's choice before queued media events can arrive out of order.
   document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])").forEach((media) => {
-    if (media !== audio) media.pause();
+    if (media !== audio && mediaHasAudio(media)) media.pause();
   });
   if (!audio.getAttribute("src")) audio.src = new URL(tracks[selected].path, catalogUrl).href;
-  else if (audio.error) audio.load();
+  else if (audio.error) { pendingPosition = currentPosition(); audio.load(); }
   try {
     await audio.play();
   } catch (error) {
@@ -164,13 +196,13 @@ function moveTrack(offset, keepPlaying = !audio.paused) {
 }
 
 function previousTrack() {
-  if (audio.currentTime > 3) audio.currentTime = 0;
+  if (currentPosition() > 3) seekTo(0);
   else moveTrack(-1);
 }
 
 function hasOtherPlayback() {
   return [...document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])")]
-    .some((media) => media !== audio && !media.paused && !media.ended && !media.error);
+    .some((media) => media !== audio && mediaHasAudio(media) && !media.paused && !media.ended && !media.error);
 }
 
 function buildPlaylist() {
@@ -212,12 +244,16 @@ toggle.addEventListener("click", () => { if (audio.paused || audio.ended || audi
 next.addEventListener("click", () => moveTrack(1));
 previous.addEventListener("click", previousTrack);
 seek.addEventListener("input", () => {
-  if (!seek.disabled) { audio.currentTime = Number(seek.value); updateProgress(); }
+  if (!seek.disabled) seekTo(Number(seek.value));
 });
 volume.addEventListener("input", () => { audio.volume = Number(volume.value); savePreferences(); });
-audio.addEventListener("loadedmetadata", updateProgress);
+audio.addEventListener("loadedmetadata", restorePosition);
 audio.addEventListener("durationchange", updateProgress);
-audio.addEventListener("timeupdate", updateProgress);
+audio.addEventListener("timeupdate", () => {
+  updateProgress();
+  if (!audio.paused && performance.now() - lastPreferenceSave >= 5000) savePreferences();
+});
+audio.addEventListener("seeked", savePreferences);
 audio.addEventListener("play", () => {
   // A video may have started after the music request but before its play event.
   if (hasOtherPlayback()) audio.pause();
@@ -225,6 +261,7 @@ audio.addEventListener("play", () => {
 });
 audio.addEventListener("pause", () => {
   if (message.textContent === "Loading track…") message.textContent = "";
+  savePreferences();
   updatePlayback();
 });
 audio.addEventListener("ended", () => {
@@ -232,7 +269,7 @@ audio.addEventListener("ended", () => {
   else moveTrack(1, true);
 });
 audio.addEventListener("waiting", () => { if (!audio.paused) message.textContent = "Loading track…"; });
-audio.addEventListener("canplay", () => { if (message.textContent === "Loading track…") message.textContent = ""; });
+audio.addEventListener("canplay", () => { restorePosition(); if (message.textContent === "Loading track…") message.textContent = ""; });
 audio.addEventListener("playing", () => { message.textContent = ""; });
 audio.addEventListener("error", () => {
   message.textContent = "Couldn't load this track. Try again or choose another.";
@@ -241,11 +278,14 @@ audio.addEventListener("error", () => {
 });
 function yieldToMedia(event) {
   const media = event.target;
-  if (media instanceof HTMLMediaElement && media !== audio && !media.hasAttribute("data-background-media") &&
+  if (media instanceof HTMLMediaElement && media !== audio && mediaHasAudio(media) && !media.hasAttribute("data-background-media") &&
       !media.paused && !media.ended && !media.error) audio.pause();
 }
 document.addEventListener("play", yieldToMedia, true);
 document.addEventListener("playing", yieldToMedia, true);
+document.addEventListener("loadedmetadata", yieldToMedia, true);
+document.addEventListener("visibilitychange", () => { if (document.hidden) savePreferences(); });
+window.addEventListener("pagehide", savePreferences);
 
 async function initialize() {
   try {
@@ -257,12 +297,13 @@ async function initialize() {
     audio.volume = typeof preferences.volume === "number" && preferences.volume >= 0 && preferences.volume <= 1 ? preferences.volume : 0.6;
     volume.value = String(audio.volume);
     buildPlaylist();
-    selectTrack(Math.max(0, tracks.findIndex((track) => track.id === preferences.track)));
+    const savedIndex = tracks.findIndex((track) => track.id === preferences.track);
+    selectTrack(Math.max(0, savedIndex), savedIndex >= 0 ? preferences.position : 0);
     player.hidden = false;
     if ("mediaSession" in navigator) {
       const handlers = {
         play, pause: () => audio.pause(), previoustrack: previousTrack, nexttrack: () => moveTrack(1),
-        seekto: ({ seekTime }) => { if (Number.isFinite(audio.duration) && Number.isFinite(seekTime)) audio.currentTime = Math.max(0, Math.min(seekTime, audio.duration)); },
+        seekto: ({ seekTime }) => { if (Number.isFinite(audio.duration) && Number.isFinite(seekTime)) seekTo(seekTime); },
       };
       for (const [action, handler] of Object.entries(handlers)) {
         try { navigator.mediaSession.setActionHandler(action, handler); } catch { /* Some browsers support fewer media actions. */ }

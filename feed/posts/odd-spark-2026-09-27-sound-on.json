@@ -19,7 +19,8 @@
       "path": "../media/odd-spark-2026-09-27-sound-on/sound_on_spark_compat.mp4",
       "caption": "Odd Spark gameplay with sound: catching sugar cubes while coffee spills from the cup.",
       "fileName": "sound_on_spark_compat.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": true
     }
   ]
 }

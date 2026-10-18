@@ -124,6 +124,9 @@ function validateMedia(item, postId, kind) {
   if (kind === "video" && typeof item.caption !== "string") {
     throw new Error(`Missing video caption in ${postId}`);
   }
+  if (kind === "video" && "hasAudio" in item && typeof item.hasAudio !== "boolean") {
+    throw new Error(`Invalid video audio metadata in ${postId}`);
+  }
 }
 
 function validatePost(post, summary = null) {
@@ -426,6 +429,7 @@ function createMedia(post) {
       if (caption.trim()) figure.append(makeCaption(caption));
     } else {
       const video = document.createElement("video");
+      if (typeof item.hasAudio === "boolean") video.dataset.hasAudio = String(item.hasAudio);
       video.src = url;
       video.controls = true;
       video.playsInline = true;

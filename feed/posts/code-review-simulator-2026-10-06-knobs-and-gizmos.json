@@ -19,7 +19,8 @@
       "path": "../media/code-review-simulator-2026-10-06-knobs-and-gizmos/compact_broll.mp4",
       "caption": "Knobs and Gizmos",
       "fileName": "compact_broll.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }

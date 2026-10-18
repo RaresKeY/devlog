@@ -18,7 +18,8 @@
       "path": "../media/odd-spark-2026-09-27-progress-on-coffee-physics/progress-on-coffee-physics.mp4",
       "caption": "Odd Spark gameplay showing the cup tipping and spilling coffee while catching sugar cubes.",
       "fileName": "progress-on-coffee-physics.mp4",
-      "contentType": "video/mp4"
+      "contentType": "video/mp4",
+      "hasAudio": false
     }
   ]
 }
