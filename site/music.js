@@ -141,6 +141,10 @@ function selectTrack(index) {
 async function play() {
   const revision = selectionRevision;
   message.textContent = "";
+  // Apply the user's choice before queued media events can arrive out of order.
+  document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])").forEach((media) => {
+    if (media !== audio) media.pause();
+  });
   if (!audio.getAttribute("src")) audio.src = new URL(tracks[selected].path, catalogUrl).href;
   else if (audio.error) audio.load();
   try {
@@ -162,6 +166,11 @@ function moveTrack(offset, keepPlaying = !audio.paused) {
 function previousTrack() {
   if (audio.currentTime > 3) audio.currentTime = 0;
   else moveTrack(-1);
+}
+
+function hasOtherPlayback() {
+  return [...document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])")]
+    .some((media) => media !== audio && !media.paused && !media.ended && !media.error);
 }
 
 function buildPlaylist() {
@@ -210,14 +219,18 @@ audio.addEventListener("loadedmetadata", updateProgress);
 audio.addEventListener("durationchange", updateProgress);
 audio.addEventListener("timeupdate", updateProgress);
 audio.addEventListener("play", () => {
-  document.querySelectorAll("video:not([data-background-media]), audio").forEach((media) => { if (media !== audio) media.pause(); });
+  // A video may have started after the music request but before its play event.
+  if (hasOtherPlayback()) audio.pause();
   updatePlayback();
 });
 audio.addEventListener("pause", () => {
   if (message.textContent === "Loading track…") message.textContent = "";
   updatePlayback();
 });
-audio.addEventListener("ended", () => moveTrack(1, true));
+audio.addEventListener("ended", () => {
+  if (hasOtherPlayback()) updatePlayback();
+  else moveTrack(1, true);
+});
 audio.addEventListener("waiting", () => { if (!audio.paused) message.textContent = "Loading track…"; });
 audio.addEventListener("canplay", () => { if (message.textContent === "Loading track…") message.textContent = ""; });
 audio.addEventListener("playing", () => { message.textContent = ""; });
@@ -226,7 +239,13 @@ audio.addEventListener("error", () => {
   setExpanded(true);
   updatePlayback();
 });
-document.addEventListener("play", (event) => { if (event.target !== audio && !event.target.hasAttribute("data-background-media")) audio.pause(); }, true);
+function yieldToMedia(event) {
+  const media = event.target;
+  if (media instanceof HTMLMediaElement && media !== audio && !media.hasAttribute("data-background-media") &&
+      !media.paused && !media.ended && !media.error) audio.pause();
+}
+document.addEventListener("play", yieldToMedia, true);
+document.addEventListener("playing", yieldToMedia, true);
 
 async function initialize() {
   try {
