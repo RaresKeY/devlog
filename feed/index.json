@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "texture-budget-lab-2026-10-18-scarecrow-4k-1k",
+      "path": "posts/texture-budget-lab-2026-10-18-scarecrow-4k-1k.json",
+      "title": "4K and 1K",
+      "project": "Texture Budget Lab",
+      "status": "wip",
+      "createdAt": "2026-10-18T12:10:17Z"
+    },
+    {
       "id": "fleet-2026-10-18-battle",
       "path": "posts/fleet-2026-10-18-battle.json",
       "title": "Fleet battle",

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "texture-budget-lab-2026-10-18-scarecrow-4k-1k",
+  "title": "4K and 1K",
+  "project": "Texture Budget Lab",
+  "body": "The same scarecrow with 4K and 1K texture maps, under the same moving light. Both use 7,636 triangles.",
+  "status": "wip",
+  "tags": [
+    "Godot",
+    "3D assets",
+    "textures"
+  ],
+  "createdAt": "2026-10-18T12:10:17Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "scarecrow-4k",
+      "path": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-4k.mp4",
+      "caption": "4K",
+      "fileName": "scarecrow-4k.mp4",
+      "contentType": "video/mp4",
+      "poster": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-4k-poster.png"
+    },
+    {
+      "id": "scarecrow-1k",
+      "path": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-1k.mp4",
+      "caption": "1K",
+      "fileName": "scarecrow-1k.mp4",
+      "contentType": "video/mp4",
+      "poster": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-1k-poster.png"
+    }
+  ]
+}
