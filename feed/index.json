@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-10-18-battle",
+      "path": "posts/fleet-2026-10-18-battle.json",
+      "title": "Fleet battle",
+      "project": "Conventional Space Fleet",
+      "status": "wip",
+      "createdAt": "2026-10-18T07:19:39Z"
+    },
+    {
       "id": "hallowmere-2026-10-17-beyond-the-gate-full-original",
       "path": "posts/hallowmere-2026-10-17-beyond-the-gate-full-original.json",
       "title": "Music: Beyond the Gate - Full Original",

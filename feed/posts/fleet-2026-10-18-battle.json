@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-18-battle",
+  "title": "Fleet battle",
+  "project": "Conventional Space Fleet",
+  "body": "A fleet battle in Godot. Carrier launches, fighters, turrets, missiles and shields.\n\nMusic: Void Strategy.",
+  "status": "wip",
+  "tags": [
+    "Godot",
+    "spacecraft",
+    "combat"
+  ],
+  "createdAt": "2026-10-18T07:19:39Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "first-contact",
+      "path": "../media/fleet-2026-10-18-battle/first-contact.mp4",
+      "caption": "Fleet battle",
+      "fileName": "first-contact.mp4",
+      "contentType": "video/mp4",
+      "poster": "../media/fleet-2026-10-18-battle/poster.png"
+    }
+  ]
+}
