@@ -34,8 +34,8 @@ function updateControl() {
   toggle.title = active ? "Pause background" : "Play background";
   toggle.setAttribute("aria-label", toggle.title);
   toggle.setAttribute("aria-pressed", String(active));
-  toggle.querySelector(".showcase-pause").hidden = !active;
-  toggle.querySelector(".showcase-play").hidden = active;
+  toggle.querySelector(".showcase-pause").toggleAttribute("hidden", !active);
+  toggle.querySelector(".showcase-play").toggleAttribute("hidden", active);
 }
 
 function abort() {

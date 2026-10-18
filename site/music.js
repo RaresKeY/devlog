@@ -92,9 +92,9 @@ if ("ResizeObserver" in window) {
 cover.addEventListener("error", () => { if (cover.src !== fallbackCover) cover.src = fallbackCover; });
 
 function updatePlayback() {
-  const playing = !audio.paused && !audio.ended;
-  toggle.querySelector(".play-symbol").hidden = playing;
-  toggle.querySelector(".pause-symbol").hidden = !playing;
+  const playing = !audio.paused && !audio.ended && !audio.error;
+  toggle.querySelector(".play-symbol").toggleAttribute("hidden", playing);
+  toggle.querySelector(".pause-symbol").toggleAttribute("hidden", !playing);
   toggle.setAttribute("aria-label", `${playing ? "Pause" : "Play"} ${tracks[selected]?.title || "music"}`);
   toggle.title = playing ? "Pause music" : "Play music";
   player.classList.toggle("is-playing", playing);
@@ -199,7 +199,7 @@ player.addEventListener("keydown", (event) => {
     expand.focus();
   }
 });
-toggle.addEventListener("click", () => { if (audio.paused) play(); else audio.pause(); });
+toggle.addEventListener("click", () => { if (audio.paused || audio.ended || audio.error) play(); else audio.pause(); });
 next.addEventListener("click", () => moveTrack(1));
 previous.addEventListener("click", previousTrack);
 seek.addEventListener("input", () => {
