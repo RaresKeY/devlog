@@ -12,3 +12,7 @@ export function mediaHasAudio(media) {
   // Older posts and browsers without track inspection retain the audio handoff.
   return true;
 }
+
+export function mediaIsAudible(media) {
+  return !media.muted && media.volume !== 0 && mediaHasAudio(media);
+}

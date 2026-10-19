@@ -22,7 +22,8 @@
       "path": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/original-vs-rebuilt.mp4",
       "contentType": "video/mp4",
       "caption": "Original C++ and rebuilt C++. Wind, cave, grid.",
-      "poster": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/original-vs-rebuilt.jpg"
+      "poster": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/original-vs-rebuilt.jpg",
+      "hasAudio": false
     },
     {
       "id": "gdscript-fallback",
@@ -30,7 +31,8 @@
       "path": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/gdscript-fallback.mp4",
       "contentType": "video/mp4",
       "caption": "Original C++ and the GDScript fallback. Wind, cave, grid.",
-      "poster": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/gdscript-fallback.jpg"
+      "poster": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/gdscript-fallback.jpg",
+      "hasAudio": false
     }
   ]
 }

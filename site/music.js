@@ -1,4 +1,4 @@
-import { mediaHasAudio, resumePosition } from "./media-state.js?v=20261018-1";
+import { mediaIsAudible, resumePosition } from "./media-state.js?v=20261019-1";
 import { createAudioFader } from "./audio-fader.js?v=20261018-1";
 
 const catalogUrl = new URL("./music/index.json", import.meta.url);
@@ -212,7 +212,7 @@ async function play({ automatic = false } = {}) {
   // Apply the user's choice before queued media events can arrive out of order.
   if (!automatic) {
     document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])").forEach((media) => {
-      if (media !== audio && mediaHasAudio(media)) media.pause();
+      if (media !== audio && mediaIsAudible(media)) media.pause();
     });
   }
   if (!audio.getAttribute("src")) audio.src = new URL(tracks[selected].path, catalogUrl).href;
@@ -246,7 +246,7 @@ function previousTrack() {
 
 function activeOtherMedia() {
   return [...document.querySelectorAll("video:not([data-background-media]), audio:not([data-background-media])")]
-    .find((media) => media !== audio && mediaHasAudio(media) && !media.paused && !media.ended && !media.error);
+    .find((media) => media !== audio && mediaIsAudible(media) && !media.paused && !media.ended && !media.error);
 }
 
 function buildPlaylist() {
@@ -338,12 +338,13 @@ audio.addEventListener("error", () => {
 });
 function yieldToMedia(event) {
   const media = event.target;
-  if (media instanceof HTMLMediaElement && media !== audio && mediaHasAudio(media) && !media.hasAttribute("data-background-media") &&
+  if (media instanceof HTMLMediaElement && media !== audio && mediaIsAudible(media) && !media.hasAttribute("data-background-media") &&
       !media.paused && !media.ended && !media.error) pauseMusic(media);
 }
 document.addEventListener("play", yieldToMedia, true);
 document.addEventListener("playing", yieldToMedia, true);
 document.addEventListener("loadedmetadata", yieldToMedia, true);
+document.addEventListener("volumechange", yieldToMedia, true);
 document.addEventListener("ended", (event) => {
   if (event.target !== resumeOwner || !wantsPlayback || !event.target.ended) return;
   const other = activeOtherMedia();

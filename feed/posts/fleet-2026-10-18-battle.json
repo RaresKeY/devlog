@@ -20,7 +20,8 @@
       "caption": "Fleet battle",
       "fileName": "first-contact.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/fleet-2026-10-18-battle/poster.png"
+      "poster": "../media/fleet-2026-10-18-battle/poster.png",
+      "hasAudio": true
     }
   ]
 }

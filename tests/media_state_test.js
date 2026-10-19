@@ -1,4 +1,4 @@
-import { mediaHasAudio, resumePosition } from "../site/media-state.js";
+import { mediaHasAudio, mediaIsAudible, resumePosition } from "../site/media-state.js";
 
 function assert(value) { if (!value) throw new Error("Unexpected media state"); }
 
@@ -29,4 +29,26 @@ Deno.test("legacy videos use native track metadata when available after loading"
 
 Deno.test("foreground audio elements retain the exclusive audio handoff", () => {
   assert(mediaHasAudio({ tagName: "AUDIO", dataset: { hasAudio: "false" } }));
+});
+
+Deno.test("only audible media takes over music, including when mute or volume changes", () => {
+  for (const tagName of ["VIDEO", "AUDIO"]) {
+    const media = { tagName, dataset: { hasAudio: "true" }, muted: true, volume: 1 };
+    assert(!mediaIsAudible(media));
+    media.muted = false;
+    assert(mediaIsAudible(media));
+    media.volume = 0;
+    assert(!mediaIsAudible(media));
+    media.volume = 0.5;
+    assert(mediaIsAudible(media));
+  }
+});
+
+Deno.test("silent video streams never take over music regardless of volume", () => {
+  for (const muted of [false, true]) {
+    for (const volume of [0, 0.5, 1]) {
+      assert(!mediaIsAudible({ tagName: "VIDEO", dataset: { hasAudio: "false" }, muted, volume }));
+    }
+  }
+  assert(!mediaIsAudible({ tagName: "VIDEO", dataset: {}, readyState: 1, audioTracks: { length: 0 }, muted: false, volume: 1 }));
 });

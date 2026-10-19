@@ -20,7 +20,8 @@
       "caption": "4K",
       "fileName": "scarecrow-4k.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-4k-poster.png"
+      "poster": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-4k-poster.png",
+      "hasAudio": false
     },
     {
       "id": "scarecrow-1k",
@@ -28,7 +29,8 @@
       "caption": "1K",
       "fileName": "scarecrow-1k.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-1k-poster.png"
+      "poster": "../media/texture-budget-lab-2026-10-18-scarecrow-4k-1k/scarecrow-1k-poster.png",
+      "hasAudio": false
     }
   ]
 }
