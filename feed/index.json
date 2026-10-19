@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "coop-side-scroller-2026-10-19-coop-networking",
+      "path": "posts/coop-side-scroller-2026-10-19-coop-networking.json",
+      "title": "Co-op across two networks",
+      "project": "Co-op Side Scroller",
+      "status": "wip",
+      "createdAt": "2026-10-19T17:34:05Z"
+    },
+    {
       "id": "white-approach-2026-10-19-decompiling-my-cloth-solver",
       "path": "posts/white-approach-2026-10-19-decompiling-my-cloth-solver.json",
       "title": "Decompiling my own cloth solver",

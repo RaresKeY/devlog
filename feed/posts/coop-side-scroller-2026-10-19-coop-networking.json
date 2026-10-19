@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "coop-side-scroller-2026-10-19-coop-networking",
+  "title": "Co-op across two networks",
+  "project": "Co-op Side Scroller",
+  "body": "I moved the co-op simulation into a portable C++ core, with Godot native and browser adapters. Private lobbies now handle Create/Join and signaling, with TURN carrying the browser connection.\n\nTwo players connected from my workstation and Runpod on separate networks. Movement replicated both ways, and guest attacks reduced the shared dummy HP from 12 to 9. Sampled ICE RTT was 218–228 ms on that forced-relay route.\n\nThe native/Wasm comparison matched all 35,200 message bytes over 600 ticks. The local network lab also supports 0/50/100/200 ms of added delay each way.\n\nThis verifies one Chromium relay route. Reconnect, prediction and interpolation are still to do.",
+  "status": "wip",
+  "tags": [
+    "C++",
+    "Godot",
+    "co-op",
+    "networking",
+    "WebRTC"
+  ],
+  "createdAt": "2026-10-19T17:34:05Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "network-test",
+      "fileName": "coop-networking.mp4",
+      "path": "../media/coop-side-scroller-2026-10-19-coop-networking/coop-networking.mp4",
+      "contentType": "video/mp4",
+      "caption": "Host and guest views with live key highlights and scripted movement. Two local browsers through TURN; the post reports the earlier two-network test.",
+      "poster": "../media/coop-side-scroller-2026-10-19-coop-networking/coop-networking.jpg"
+    }
+  ]
+}
