@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-19-small-helpers-rebuilt",
+  "title": "Small Helpers",
+  "project": "conventional-space-fleet",
+  "body": "Wisp, Mote and Spark from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-19T10:00:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-19-small-helpers-rebuilt/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Wisp, Mote and Spark, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-wisp",
+      "path": "../media/fleet-2026-10-19-small-helpers-rebuilt/02-wisp.png",
+      "fileName": "02-wisp.png",
+      "contentType": "image/png",
+      "alt": "Wisp, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-mote",
+      "path": "../media/fleet-2026-10-19-small-helpers-rebuilt/03-mote.png",
+      "fileName": "03-mote.png",
+      "contentType": "image/png",
+      "alt": "Mote, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-spark",
+      "path": "../media/fleet-2026-10-19-small-helpers-rebuilt/04-spark.png",
+      "fileName": "04-spark.png",
+      "contentType": "image/png",
+      "alt": "Spark, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
