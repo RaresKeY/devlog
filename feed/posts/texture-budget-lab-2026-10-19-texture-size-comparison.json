@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "texture-budget-lab-2026-10-19-texture-size-comparison",
+  "title": "Texture size comparison",
+  "project": "Texture Budget Lab",
+  "body": "Comparing 4K, 2K, 1K and 512 texture maps on the angel and scarecrow, with original and repacked UVs. Geometry stays the same, with normal maps and AO enabled.\n\nThe 1K original-UV versions add 2.94 MiB and 3.08 MiB to the Godot package, down from 23.20 MiB and 27.67 MiB at 4K. The exterior row repeats packed because no separate enclosed geometry was safe to remove.",
+  "status": "wip",
+  "tags": [
+    "Godot",
+    "textures",
+    "3D assets"
+  ],
+  "createdAt": "2026-10-19T10:30:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "angel-comparison",
+      "path": "../media/texture-budget-lab-2026-10-19-texture-size-comparison/angel-contact-sheet.png",
+      "fileName": "angel-contact-sheet.png",
+      "contentType": "image/png",
+      "alt": "Angel comparison: original, packed and exterior UV rows at 4096, 2048, 1024 and 512 texture resolution, with each variant's added Godot PCK size in MiB.",
+      "caption": "Angel"
+    },
+    {
+      "id": "scarecrow-comparison",
+      "path": "../media/texture-budget-lab-2026-10-19-texture-size-comparison/scarecrow-contact-sheet.png",
+      "fileName": "scarecrow-contact-sheet.png",
+      "contentType": "image/png",
+      "alt": "Scarecrow comparison: original, packed and exterior UV rows at 4096, 2048, 1024 and 512 texture resolution, with each variant's added Godot PCK size in MiB.",
+      "caption": "Scarecrow"
+    }
+  ],
+  "videos": []
+}

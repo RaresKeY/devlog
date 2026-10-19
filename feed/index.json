@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "texture-budget-lab-2026-10-19-texture-size-comparison",
+      "path": "posts/texture-budget-lab-2026-10-19-texture-size-comparison.json",
+      "title": "Texture size comparison",
+      "project": "Texture Budget Lab",
+      "status": "wip",
+      "createdAt": "2026-10-19T10:30:00Z"
+    },
+    {
       "id": "fleet-2026-10-19-small-helpers-rebuilt",
       "path": "posts/fleet-2026-10-19-small-helpers-rebuilt.json",
       "title": "Small Helpers",
