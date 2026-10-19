@@ -549,6 +549,31 @@ a {
   letter-spacing: normal;
 }
 
+.update-body pre {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 1.2em 0;
+  padding: 1.1em 1.2em;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #202a30;
+  color: #edf0e9;
+  line-height: 1.6;
+  tab-size: 4;
+}
+
+.update-body pre code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  white-space: pre;
+}
+
+.update-body pre:focus-visible {
+  outline: 3px solid var(--post-content-link-highlight);
+  outline-offset: 3px;
+}
+
 .media-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

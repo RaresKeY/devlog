@@ -482,6 +482,7 @@ function renderMarkdown(markdown) {
   const lines = markdown.replace(/\r\n?/g, "\n").split("\n");
   let paragraph = [];
   let list = null;
+  let fencedCode = null;
 
   const flushParagraph = () => {
     if (paragraph.length === 0) return;
@@ -496,6 +497,27 @@ function renderMarkdown(markdown) {
 
   lines.forEach((rawLine) => {
     const line = rawLine.trim();
+    if (fencedCode) {
+      if (/^```\s*$/.test(line)) {
+        fencedCode = null;
+      } else {
+        fencedCode.textContent += `${rawLine}\n`;
+      }
+      return;
+    }
+    const fence = line.match(/^```([a-zA-Z0-9_+-]*)\s*$/);
+    if (fence) {
+      flushParagraph();
+      clearList();
+      const pre = document.createElement("pre");
+      fencedCode = document.createElement("code");
+      if (fence[1]) fencedCode.dataset.language = fence[1];
+      pre.tabIndex = 0;
+      pre.setAttribute("aria-label", fence[1] ? `${fence[1]} code` : "Code");
+      pre.append(fencedCode);
+      root.append(pre);
+      return;
+    }
     if (!line) {
       flushParagraph();
       clearList();
