@@ -118,7 +118,7 @@ FORBIDDEN_DOC_CLAIMS = {
 SLUG = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 SAFE_FILENAME = re.compile(r"^[A-Za-z0-9._-]+$")
 BODY_MEDIA_REFERENCE = re.compile(r"\]\((\.\./media/[^)]+)\)")
-SOURCE_REVISION = re.compile(r"(?<![0-9A-Fa-f])[0-9a-f]{7,40}(?![0-9A-Fa-f])")
+SOURCE_REVISION = re.compile(r"(?<![0-9A-Fa-f])(?<!0[xX])[0-9a-f]{7,40}(?![0-9A-Fa-f])")
 
 
 class SiteParser(HTMLParser):
