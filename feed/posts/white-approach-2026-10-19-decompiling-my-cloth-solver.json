@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "white-approach-2026-10-19-decompiling-my-cloth-solver",
+  "title": "Decompiling my own cloth solver",
+  "project": "White Approach",
+  "body": "I used [REA](https://github.com/morluto/rea) with Ghidra to decompile my own C++ cloth solver from White Approach, then rebuilt it as a separate Godot extension and ran both versions side by side.\n\nThe first video compares the original release library with the rebuilt C++. Wind, cave, then the particle grid. The second shows the original C++ beside the existing GDScript fallback. Both clips use the real solvers with matching inputs.\n\n## What came back\n\nThe stripped Linux library still gave us enough to recover the cloth update: a 25 × 13 grid, two substeps, three distance-constraint passes per substep, and 13 points fixed to the pole. Outside, stronger gusts push and twist the flag. In caves, gravity leads and a small breeze keeps it moving. The torn edge comes from predefined missing geometry, not simulated tearing.\n\nREA connects the agent to the analysis tools. Ghidra produced the pseudocode and instruction listing used for this reconstruction. It recovered useful behavior, but turning that output into working C++ still required restoring types, Godot bindings and floating-point details.\n\nThis was assisted reconstruction. The original source had already been read during verification, and the existing Godot SDK and flag presentation were reused. I rebuilt the solver, not the whole game, and this was not a blind recovery test.\n\n## Original C++\n\nThese are actual excerpts from the implementations. The original constraint step reads directly as a distance correction:\n\n```cpp\nconst Vector3 delta = p[link.b] - p[link.a];\nconst double length = delta.length();\nconst Vector3 correction = delta * ((length - link.rest) / (length > 0.001 ? length : 0.001)) * link.stiffness;\n```\n\nThe fixed-edge test in that source is simply:\n\n```cpp\nif (link.a % COLS == 0) p[link.b] -= correction;\n```\n\n## Raw decompiler output\n\nThe same region comes back with temporary names, packed accesses and a compiler-transformed divisibility test:\n\n```c\nfVar20 = SQRT(fVar22 * fVar22 + fVar24 * fVar24 + fVar21 * fVar21);\nfVar18 = fVar20;\nif (fVar20 <= 0.001) {\n  fVar18 = 0.001;\n}\nfVar18 = (fVar20 - (float)piVar12[2]) / fVar18;\n```\n\n```c\nif (*piVar12 * -0x3d70a3d7 + 0x51eb851U < 0xa3d70a3) {\n```\n\nThat multiplication is how this compiled binary tests the pinned column. It is not a new cloth algorithm. The decompiler also unrolled the pole assignments and obscured a precision boundary in the constraint calculation.\n\n## Rebuilt C++\n\nThe reconstruction restores vector components and explicit types. The instruction listing showed that the distance is calculated as a float, widened to double for the ratio, then rounded back to float:\n\n```cpp\nconst float dx = b.x - a.x, dy = b.y - a.y, dz = b.z - a.z;\nconst float measured = std::sqrt((dx * dx + dy * dy) + dz * dz);\n// CVTSS2SD / MAXSD / SUBSD / DIVSD / CVTSD2SS at\n// 0x17e778..0x17e791. Raw C-like text obscures precision.\nconst double wide = double(measured);\nconst float ratio = float((wide - double(record.distance)) /\n                          (wide > 0.001 ? wide : 0.001));\nconst float cx = (ratio * dx) * record.strength;\nconst float cy = (ratio * dy) * record.strength;\nconst float cz = (ratio * dz) * record.strength;\n```\n\nKeeping those rounding steps mattered for matching the executable. The rebuilt solver keeps the same forces, update order, constraints and fixed edge.\n\n## GDScript fallback\n\nThe fallback expresses the same distance constraint in GDScript:\n\n```gdscript\nvar delta := particles[b]-particles[a]\nvar length := delta.length()\nvar correction := delta*((length-link.z)/maxf(length,0.001))*link.w\nif a%COLS==0:\n    particles[b] -= correction\nelif b%COLS==0:\n    particles[a] += correction\nelse:\n    particles[a] += correction*0.5\n    particles[b] -= correction*0.5\n```\n\nThe game picks one backend at setup. If the native class is unavailable, GDScript owns the simulation. The normal presentation solves at 30 Hz and interpolates between states at 60 Hz. These showcase clips use that same presentation cadence.\n\n## CPU timings\n\nOriginal release versus rebuilt release, measured on this Linux workstation with an Intel Core i7-6700K and Godot 4.7:\n\n- Original C++: **0.1366 ms per update**.\n- Decompiled and rebuilt C++: **0.1385 ms per update**.\n- **5,400 measured updates per version**, with 120 warmup updates before each case. Outdoor and cave cases used three wind phases across three repeats, alternating call order.\n- Every measured step compared all 325 particle positions outside the timed region. Maximum measured drift: **0.0 px**. Selected invalid-input and snapshot-ownership checks also matched.\n\nThe rebuild took about 1.4% longer in this run. Shared workstation load was not controlled, so that small difference does not establish a performance change.\n\nThe separate native-versus-fallback run measured **0.148 ms for native C++** and **2.481 ms for GDScript**, about **16.8× less solver time** for native across 5,400 updates each. That run used the current Linux debug extension, not the release library above, and checked particle positions every 30 updates with zero sampled drift. It is a separate comparison, not a three-way ranking under identical build conditions.\n\nThese timings cover the advance call, returned snapshot and redraw request. Rendering, capture and comparison checks are outside the timed region. They are solver-call timings, not whole-game FPS or Web/mobile results. Both versions do the same work: roughly two particle passes and six constraint passes per update. Rebuilding the recovered code preserved the algorithm and its cost.",
+  "status": "wip",
+  "tags": [
+    "C++",
+    "Godot",
+    "reverse engineering",
+    "cloth simulation",
+    "performance"
+  ],
+  "createdAt": "2026-10-19T14:19:21Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "original-vs-rebuilt",
+      "fileName": "original-vs-rebuilt.mp4",
+      "path": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/original-vs-rebuilt.mp4",
+      "contentType": "video/mp4",
+      "caption": "Original C++ and rebuilt C++. Wind, cave, grid.",
+      "poster": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/original-vs-rebuilt.jpg"
+    },
+    {
+      "id": "gdscript-fallback",
+      "fileName": "gdscript-fallback.mp4",
+      "path": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/gdscript-fallback.mp4",
+      "contentType": "video/mp4",
+      "caption": "Original C++ and the GDScript fallback. Wind, cave, grid.",
+      "poster": "../media/white-approach-2026-10-19-decompiling-my-cloth-solver/gdscript-fallback.jpg"
+    }
+  ]
+}

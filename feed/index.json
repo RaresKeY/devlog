@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "white-approach-2026-10-19-decompiling-my-cloth-solver",
+      "path": "posts/white-approach-2026-10-19-decompiling-my-cloth-solver.json",
+      "title": "Decompiling my own cloth solver",
+      "project": "White Approach",
+      "status": "wip",
+      "createdAt": "2026-10-19T14:19:21Z"
+    },
+    {
       "id": "texture-budget-lab-2026-10-19-texture-size-comparison",
       "path": "posts/texture-budget-lab-2026-10-19-texture-size-comparison.json",
       "title": "Texture size comparison",
