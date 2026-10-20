@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "trellis-post-2026-10-20-baked-angel-showcase",
+  "title": "Baked detail, fewer triangles",
+  "project": "3D Art",
+  "body": "A quick look at the mesh cleanup and bake: low poly, high detail, then the baked result.\n\nThe high model has 1,917,976 triangles. The baked model keeps the low mesh at 5,818, with fine surface detail carried by the normal map. The wireframe reveal shows the geometry underneath.",
+  "status": "wip",
+  "tags": [
+    "devlog",
+    "3D art",
+    "TRELLIS",
+    "mesh cleanup",
+    "normal baking"
+  ],
+  "createdAt": "2026-10-20T11:20:51.796538Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "angel-comparison",
+      "path": "../media/trellis-post-2026-10-20-baked-angel-showcase/angel-showcase.mp4",
+      "caption": "Low poly, high detail and baked detail. 5,818 triangles in the baked model. Silent, 1080p60.",
+      "fileName": "angel-showcase.mp4",
+      "contentType": "video/mp4",
+      "poster": "../media/trellis-post-2026-10-20-baked-angel-showcase/angel-showcase.jpg"
+    }
+  ]
+}
