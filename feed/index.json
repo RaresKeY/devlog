@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "halloween-game-2026-10-20-assets",
+      "path": "posts/halloween-game-2026-10-20-assets.json",
+      "title": "Assets for a Halloween game",
+      "project": "Halloween game",
+      "status": "build",
+      "createdAt": "2026-10-20T07:59:00Z"
+    },
+    {
       "id": "coop-side-scroller-2026-10-19-coop-networking",
       "path": "posts/coop-side-scroller-2026-10-19-coop-networking.json",
       "title": "Co-op across two networks",

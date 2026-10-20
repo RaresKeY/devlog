@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "halloween-game-2026-10-20-assets",
+  "title": "Assets for a Halloween game",
+  "project": "Halloween game",
+  "body": "A collection of assets for a Halloween game.",
+  "status": "build",
+  "tags": [
+    "gamedev",
+    "halloween",
+    "3d-assets"
+  ],
+  "createdAt": "2026-10-20T07:59:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "halloween-assets",
+      "path": "../media/halloween-game-2026-10-20-assets/halloween-assets-contact-sheet.png",
+      "fileName": "halloween-assets-contact-sheet.png",
+      "contentType": "image/png",
+      "alt": "Contact sheet of 37 Halloween game props, including gravestones, iron fencing, a pumpkin, a scarecrow, a skull, a lantern and tools, with triangle counts.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
