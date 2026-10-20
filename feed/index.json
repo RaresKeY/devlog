@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-10-20-workshop-crew-rebuilt",
+      "path": "posts/fleet-2026-10-20-workshop-crew-rebuilt.json",
+      "title": "Workshop Crew",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-10-20T10:00:00Z"
+    },
+    {
       "id": "halloween-game-2026-10-20-assets",
       "path": "posts/halloween-game-2026-10-20-assets.json",
       "title": "Assets for a Halloween game",

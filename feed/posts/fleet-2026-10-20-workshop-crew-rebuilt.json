@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-20-workshop-crew-rebuilt",
+  "title": "Workshop Crew",
+  "project": "conventional-space-fleet",
+  "body": "Tinker, Porter and Steward from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-20T10:00:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-20-workshop-crew-rebuilt/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Tinker, Porter and Steward, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-tinker",
+      "path": "../media/fleet-2026-10-20-workshop-crew-rebuilt/02-tinker.png",
+      "fileName": "02-tinker.png",
+      "contentType": "image/png",
+      "alt": "Tinker, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-porter",
+      "path": "../media/fleet-2026-10-20-workshop-crew-rebuilt/03-porter.png",
+      "fileName": "03-porter.png",
+      "contentType": "image/png",
+      "alt": "Porter, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-steward",
+      "path": "../media/fleet-2026-10-20-workshop-crew-rebuilt/04-steward.png",
+      "fileName": "04-steward.png",
+      "contentType": "image/png",
+      "alt": "Steward, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
