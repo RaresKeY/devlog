@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-21-quick-response-rebuilt",
+  "title": "Quick Response",
+  "project": "conventional-space-fleet",
+  "body": "Needle, Dart and Flash from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-21T10:00:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-21-quick-response-rebuilt/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Needle, Dart and Flash, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-needle",
+      "path": "../media/fleet-2026-10-21-quick-response-rebuilt/02-needle.png",
+      "fileName": "02-needle.png",
+      "contentType": "image/png",
+      "alt": "Needle, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-dart",
+      "path": "../media/fleet-2026-10-21-quick-response-rebuilt/03-dart.png",
+      "fileName": "03-dart.png",
+      "contentType": "image/png",
+      "alt": "Dart, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-flash",
+      "path": "../media/fleet-2026-10-21-quick-response-rebuilt/04-flash.png",
+      "fileName": "04-flash.png",
+      "contentType": "image/png",
+      "alt": "Flash, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
