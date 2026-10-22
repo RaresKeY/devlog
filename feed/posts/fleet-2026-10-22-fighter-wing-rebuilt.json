@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-22-fighter-wing-rebuilt",
+  "title": "Fighter Wing",
+  "project": "conventional-space-fleet",
+  "body": "Kestrel, Merlin and Shrike from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-22T10:00:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-22-fighter-wing-rebuilt/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Kestrel, Merlin and Shrike, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-kestrel",
+      "path": "../media/fleet-2026-10-22-fighter-wing-rebuilt/02-kestrel.png",
+      "fileName": "02-kestrel.png",
+      "contentType": "image/png",
+      "alt": "Kestrel, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-merlin",
+      "path": "../media/fleet-2026-10-22-fighter-wing-rebuilt/03-merlin.png",
+      "fileName": "03-merlin.png",
+      "contentType": "image/png",
+      "alt": "Merlin, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-shrike",
+      "path": "../media/fleet-2026-10-22-fighter-wing-rebuilt/04-shrike.png",
+      "fileName": "04-shrike.png",
+      "contentType": "image/png",
+      "alt": "Shrike, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

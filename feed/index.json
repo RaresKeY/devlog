@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-10-22-fighter-wing-rebuilt",
+      "path": "posts/fleet-2026-10-22-fighter-wing-rebuilt.json",
+      "title": "Fighter Wing",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-10-22T10:00:00Z"
+    },
+    {
       "id": "fleet-2026-10-21-quick-response-rebuilt",
       "path": "posts/fleet-2026-10-21-quick-response-rebuilt.json",
       "title": "Quick Response",
