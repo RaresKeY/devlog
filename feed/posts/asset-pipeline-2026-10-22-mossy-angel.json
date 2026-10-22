@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "asset-pipeline-2026-10-22-mossy-angel",
+  "title": "Mossy Angel",
+  "project": "3D Asset Pipeline",
+  "body": "A custom pipeline for turning high-poly 3D assets into lighter game assets: reducing mesh complexity, baking fine surface detail onto the simplified models, and authoring materials with layers of wear, dirt, moss, and weathering.",
+  "status": "build",
+  "tags": [
+    "3d-art",
+    "game-assets",
+    "materials"
+  ],
+  "createdAt": "2026-10-22T14:33:18Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "video-1",
+      "path": "../media/asset-pipeline-2026-10-22-mossy-angel/angel-moss-showcase.mp4",
+      "fileName": "angel-moss-showcase.mp4",
+      "contentType": "video/mp4",
+      "caption": "Mossy Angel"
+    }
+  ],
+  "ctaLabel": "Watch on YouTube",
+  "ctaUrl": "https://youtu.be/hyhidCVKSpQ"
+}

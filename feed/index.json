@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "asset-pipeline-2026-10-22-mossy-angel",
+      "path": "posts/asset-pipeline-2026-10-22-mossy-angel.json",
+      "title": "Mossy Angel",
+      "project": "3D Asset Pipeline",
+      "status": "build",
+      "createdAt": "2026-10-22T14:33:18Z"
+    },
+    {
       "id": "fleet-2026-10-22-fighter-wing-rebuilt",
       "path": "posts/fleet-2026-10-22-fighter-wing-rebuilt.json",
       "title": "Fighter Wing",
