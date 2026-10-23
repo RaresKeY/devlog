@@ -215,6 +215,7 @@ async function loadFeed() {
     elements.notice.textContent = "";
     populateControls();
     renderFeed();
+    revealLinkedPost();
   } catch (liveError) {
     try {
       const snapshot = readSnapshot();
@@ -228,6 +229,7 @@ async function loadFeed() {
       elements.notice.textContent = `Live GitHub feed unavailable. Showing the last complete copy saved ${savedDate}.`;
       populateControls();
       renderFeed();
+      revealLinkedPost();
     } catch {
       showFailure(liveError);
     }
@@ -320,6 +322,7 @@ function renderFeed() {
 function createCard(post) {
   const article = document.createElement("article");
   article.className = "update-card";
+  article.id = `update-${post.id}`;
 
   const header = document.createElement("header");
   header.className = "update-header";
@@ -379,9 +382,64 @@ function createCard(post) {
     cta.textContent = `${post.ctaLabel} ↗`;
     aside.append(cta);
   }
+  aside.append(createPermalink(post));
   footer.append(aside);
   article.append(footer);
   return article;
+}
+
+function createPermalink(post) {
+  const url = new URL(window.location.href);
+  url.search = "";
+  url.hash = `update-${post.id}`;
+  const link = document.createElement("a");
+  link.className = "post-permalink";
+  link.href = url.href;
+  link.title = "Copy link to this post";
+  link.setAttribute("aria-label", `Copy link to ${post.title}`);
+
+  const icon = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  icon.setAttribute("viewBox", "0 0 24 24");
+  icon.setAttribute("aria-hidden", "true");
+  const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+  path.setAttribute("d", "M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71");
+  icon.append(path);
+  link.append(icon);
+
+  link.addEventListener("click", async (event) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (!navigator.clipboard?.writeText) return;
+    event.preventDefault();
+    try {
+      await navigator.clipboard.writeText(link.href);
+      link.title = "Link copied";
+      link.setAttribute("aria-label", `Link copied to ${post.title}`);
+    } catch {
+      // Keep the real link usable when browser clipboard access is denied.
+      window.location.assign(link.href);
+    }
+  });
+  const resetLabel = () => {
+    link.title = "Copy link to this post";
+    link.setAttribute("aria-label", `Copy link to ${post.title}`);
+  };
+  link.addEventListener("mouseleave", resetLabel);
+  link.addEventListener("blur", resetLabel);
+  return link;
+}
+
+function revealLinkedPost() {
+  const post = state.posts.find((post) => window.location.hash === `#update-${post.id}`);
+  if (!post) return;
+  if (!filteredPosts().includes(post)) {
+    state.status = "all";
+    state.project = "all";
+    state.query = "";
+    elements.search.value = "";
+    elements.project.value = "all";
+    renderFeed();
+  }
+  document.getElementById(`update-${post.id}`)?.scrollIntoView({ block: "start", behavior: "instant" });
 }
 
 function readMinutes(body) {
@@ -626,5 +684,6 @@ elements.lightbox.querySelector(".lightbox-close").addEventListener("click", clo
 elements.lightbox.addEventListener("click", (event) => {
   if (event.target === elements.lightbox) closeLightbox();
 });
+window.addEventListener("hashchange", revealLinkedPost);
 
 loadFeed();

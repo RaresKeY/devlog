@@ -426,6 +426,7 @@ a {
 
 .update-card {
   overflow: hidden;
+  scroll-margin-top: 24px;
   border: 1px solid var(--line);
   border-radius: 12px;
   background: var(--paper);
@@ -697,6 +698,7 @@ a {
 
 .update-links {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   flex: 0 0 auto;
   gap: 14px;
@@ -707,6 +709,31 @@ a {
 .update-links a {
   color: var(--coral-dark);
   text-decoration: none;
+}
+
+.update-links .post-permalink {
+  display: inline-grid;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 4px;
+  color: var(--muted);
+}
+
+.post-permalink:hover,
+.post-permalink:focus-visible {
+  background: var(--paper-deep);
+}
+
+.post-permalink svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .status {
@@ -1290,6 +1317,12 @@ a {
 
   .update-footer {
     display: flex;
+  }
+
+  .update-links {
+    align-self: flex-end;
+    justify-content: flex-end;
+    max-width: 100%;
   }
 
   .site-footer {
