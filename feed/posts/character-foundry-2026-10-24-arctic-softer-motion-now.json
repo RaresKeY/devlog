@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "character-foundry-2026-10-24-arctic-softer-motion-now",
+  "title": "Arctic little guy, softer motion",
+  "project": "Character Foundry",
+  "body": "Softer walk and run animations for the Arctic little guy, with the SOMA source and skeleton overlay for comparison.",
+  "status": "wip",
+  "tags": [
+    "character-animation",
+    "rigging",
+    "SOMA"
+  ],
+  "createdAt": "2026-10-24T14:29:58Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "arctic-soft-arms",
+      "path": "../media/character-foundry-2026-10-24-arctic-softer-motion-now/arctic-softer-motion.mp4",
+      "fileName": "arctic-softer-motion.mp4",
+      "contentType": "video/mp4",
+      "caption": "Walk and run, 1080p60.",
+      "poster": "../media/character-foundry-2026-10-24-arctic-softer-motion-now/arctic-softer-motion-poster.png"
+    }
+  ]
+}

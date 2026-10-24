@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "character-foundry-2026-10-24-arctic-softer-motion-now",
+      "path": "posts/character-foundry-2026-10-24-arctic-softer-motion-now.json",
+      "title": "Arctic little guy, softer motion",
+      "project": "Character Foundry",
+      "status": "wip",
+      "createdAt": "2026-10-24T14:29:58Z"
+    },
+    {
       "id": "character-foundry-2026-10-24-arctic-animations-now",
       "path": "posts/character-foundry-2026-10-24-arctic-animations-now.json",
       "title": "Arctic little guy, moving better",
