@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "character-foundry-2026-10-24-arctic-animations-now",
+  "title": "Arctic little guy, moving better",
+  "project": "Character Foundry",
+  "body": "Redid the Arctic little guy's animations with the updated rig and 200-step Kimodo takes. The arms bend more naturally now, and the mittens follow the forearms without the stiff wrist rotation.\n\nA few picks from the set: wave, walk, run and celebrate. Rendered at 60 fps in Asset Showcase Studio, with a steady camera and the generated travel and height motion preserved.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "character-animation",
+    "rigging",
+    "Kimodo"
+  ],
+  "createdAt": "2026-10-24T01:51:47Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "arctic-showcase",
+      "path": "../media/character-foundry-2026-10-24-arctic-animations-now/arctic-animations.mp4",
+      "fileName": "arctic-animations.mp4",
+      "contentType": "video/mp4",
+      "caption": "Arctic Wanderer: wave, walk, run and celebrate. Silent, 1080p60.",
+      "poster": "../media/character-foundry-2026-10-24-arctic-animations-now/arctic-animations-poster.png"
+    }
+  ]
+}
