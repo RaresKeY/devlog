@@ -345,14 +345,19 @@ document.addEventListener("play", yieldToMedia, true);
 document.addEventListener("playing", yieldToMedia, true);
 document.addEventListener("loadedmetadata", yieldToMedia, true);
 document.addEventListener("volumechange", yieldToMedia, true);
-document.addEventListener("ended", (event) => {
-  if (event.target !== resumeOwner || !wantsPlayback || !event.target.ended) return;
+function resumeAfterMedia(event) {
+  const media = event.target;
+  if (media !== resumeOwner || !wantsPlayback || (!media.paused && !media.ended && mediaIsAudible(media))) return;
   const other = activeOtherMedia();
   if (other) { resumeOwner = other; return; }
   resumeOwner = null;
   if (audio.ended) moveTrack(1, true);
   else play({ automatic: true });
-}, true);
+}
+document.addEventListener("pause", resumeAfterMedia, true);
+document.addEventListener("ended", resumeAfterMedia, true);
+document.addEventListener("loadedmetadata", resumeAfterMedia, true);
+document.addEventListener("volumechange", resumeAfterMedia, true);
 document.addEventListener("visibilitychange", () => { if (document.hidden) savePreferences(); });
 window.addEventListener("pagehide", () => {
   wantsPlayback = false;

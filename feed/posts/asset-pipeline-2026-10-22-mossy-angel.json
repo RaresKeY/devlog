@@ -19,7 +19,8 @@
       "path": "../media/asset-pipeline-2026-10-22-mossy-angel/angel-moss-showcase.mp4",
       "fileName": "angel-moss-showcase.mp4",
       "contentType": "video/mp4",
-      "caption": "Mossy Angel"
+      "caption": "Mossy Angel",
+      "hasAudio": false
     }
   ],
   "ctaLabel": "Watch on YouTube",

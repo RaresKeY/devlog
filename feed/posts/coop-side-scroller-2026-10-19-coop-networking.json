@@ -22,7 +22,8 @@
       "path": "../media/coop-side-scroller-2026-10-19-coop-networking/coop-networking.mp4",
       "contentType": "video/mp4",
       "caption": "Host and guest views with live key highlights and scripted movement. Two local browsers through TURN; the post reports the earlier two-network test.",
-      "poster": "../media/coop-side-scroller-2026-10-19-coop-networking/coop-networking.jpg"
+      "poster": "../media/coop-side-scroller-2026-10-19-coop-networking/coop-networking.jpg",
+      "hasAudio": false
     }
   ]
 }

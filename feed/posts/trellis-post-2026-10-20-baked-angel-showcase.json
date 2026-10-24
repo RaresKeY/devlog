@@ -22,7 +22,8 @@
       "caption": "Low poly, high detail and baked detail. 5,818 triangles in the baked model. Silent, 1080p60.",
       "fileName": "angel-showcase.mp4",
       "contentType": "video/mp4",
-      "poster": "../media/trellis-post-2026-10-20-baked-angel-showcase/angel-showcase.jpg"
+      "poster": "../media/trellis-post-2026-10-20-baked-angel-showcase/angel-showcase.jpg",
+      "hasAudio": false
     }
   ]
 }

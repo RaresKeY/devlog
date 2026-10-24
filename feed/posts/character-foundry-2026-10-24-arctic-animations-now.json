@@ -21,7 +21,8 @@
       "fileName": "arctic-animations.mp4",
       "contentType": "video/mp4",
       "caption": "Arctic Wanderer: wave, walk, run and celebrate. Silent, 1080p60.",
-      "poster": "../media/character-foundry-2026-10-24-arctic-animations-now/arctic-animations-poster.png"
+      "poster": "../media/character-foundry-2026-10-24-arctic-animations-now/arctic-animations-poster.png",
+      "hasAudio": false
     }
   ]
 }

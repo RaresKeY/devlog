@@ -26,8 +26,9 @@ The Pages app fetches `feed/index.json` and each indexed post from this reposito
 
 1. Add `feed/posts/<id>.json` and any files in `feed/media/<id>/`.
 2. Add the matching metadata entry to `feed/index.json` in newest-first order.
-3. Run the verifier and review the diff.
-4. Push the JSON/media commit. No Pages artifact deployment is needed.
+3. For new or replaced videos, run `python3 scripts/update_video_audio.py --write` to record whether they contain audio, so silent clips leave music playing.
+4. Run the verifier and review the diff.
+5. Push the JSON/media commit. No Pages artifact deployment is needed.
 
 Posts support up to five images and two videos. For four images and no videos, put the lead image first in `images`: it appears full-width above the other three square thumbnails, including on phones. Five images and no videos form two square images across the top and three square images below, in declared order, without cropping. That arrangement also stays in two rows on phones. Captions and click-to-enlarge remain available. One-to-three-image and mixed-media galleries retain their existing layouts. This uses the existing post schema.
 
