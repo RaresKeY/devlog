@@ -20,7 +20,8 @@
       "fileName": "arctic-softer-motion.mp4",
       "contentType": "video/mp4",
       "caption": "Walk and run, 1080p60.",
-      "poster": "../media/character-foundry-2026-10-24-arctic-softer-motion-now/arctic-softer-motion-poster.png"
+      "poster": "../media/character-foundry-2026-10-24-arctic-softer-motion-now/arctic-softer-motion-poster.png",
+      "hasAudio": false
     }
   ]
 }

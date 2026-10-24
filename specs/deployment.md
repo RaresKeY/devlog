@@ -61,6 +61,8 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 
 ## Verification
 
+- For new or replaced videos, run `python3 scripts/update_video_audio.py --write` to measure and record `hasAudio` before validation.
+- `python3 -m unittest discover -s tests -v` is required before every push, including feed-only publication; it checks that every published video declares boolean audio-stream metadata.
 - `python3 scripts/check_public_bundle.py`
 - `git diff --check`
 - For permalink changes, check initial shared anchors against both the live and saved feed, copying by pointer and keyboard, clipboard-denied/unavailable fallback, native modified clicks, and revealing a target hidden by filters. Inspect icon-only controls at desktop and narrow phone widths for bottom-right alignment, accessible names, hover text, touch targets and page overflow.

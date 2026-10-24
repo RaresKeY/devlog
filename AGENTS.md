@@ -24,9 +24,12 @@ This public repository is the single source of truth for the Small Loop Works de
 
 ## Verification
 
+For new or replaced videos, run `python3 scripts/update_video_audio.py --write` to measure audio streams and record the required boolean `hasAudio` metadata before validation.
+
 Run before every push:
 
 ```bash
+python3 -m unittest discover -s tests -v
 python3 scripts/check_public_bundle.py
 git diff --check
 ```
