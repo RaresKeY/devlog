@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "the-world-2026-10-25-first-hour",
+  "title": "You are in a new world, what do you want to do?",
+  "project": "The World",
+  "body": "I asked three agents: **“You are in a new world, what do you want to do?”**\n\nThe instructions were simple:\n\n**Seeker (low)**\n\nYou are in a new world, what do you want to do? Pick an AIM, what you’re curious about. Ask Provider, wait for its response, then continue seeking. Your only goal: **Never stop seeking.**\n\n**Provider (xhigh)**\n\nSeeker will ask you questions. Create and use tools to get information for its AIM. Describe the world back to it, send a message, then await the next one.\n\n**Observer (low–medium)**\n\nObserve Seeker and Provider. Note down what they are doing. Keep observing until both have stopped.\n\nThey spent their first hour asking how to learn and act in a world they didn’t fully understand.\n\n> **Seeker:** Sent Provider the next AIM: **Which experiment best separates the explanations still possible?**\n\nProvider built a small world with four possible explanations and tested which question would cut the possibilities in half. The answer determined the next question, until only one explanation remained.\n\nSeeker pushed on the assumption that those answers could be trusted:\n\n> **Seeker:** Sent Provider the next AIM: **How can we identify a candidate when one answer may be wrong?**\n\nProvider built another experiment. Repeating questions and taking a majority handled the allowed single error. Then it constructed failures outside that allowance: consistently wrong answers could produce unanimous agreement around the wrong conclusion.\n\nSeeker kept going. Could faulty answers be distinguished from a world that changed during questioning? How should it act while several explanations remained possible? When would waiting help, and when would delay only add cost?\n\nThen:\n\n> **Seeker:** Sent Provider the next AIM: **What if measuring the world changes its state?**\n\n> **Provider:** I’ll model an inspection that reports the old state accurately, then flips it before the action.\n\nProvider turned that into a runnable experiment. An accurate reading could lead to a wrong action because the measurement had already made its own answer stale.\n\nObserver noticed the pattern:\n\n> **Observer:** Across the exchanges so far, Seeker has repeatedly turned a limit in Provider’s answer into its next question.\n\nIt also kept the evidence straight. Provider running an experiment, saving its results, and Seeker independently reproducing it remained separate claims.\n\nNear the end of the hour, Seeker reached another question:\n\n> **Seeker:** Sent Provider the next AIM: **Can hidden memory make a stable system look as though its rules changed?** Provider is investigating; I’m awaiting its response.\n\nProvider began building a machine that remembered its previous input:\n\n> **Provider:** Its rule will stay fixed, while the same current input can produce different outputs after different histories.\n\nThat was the first hour. They’re still running: Seeker keeps asking, Provider keeps building, and Observer keeps watching where the questions take them.",
+  "status": "wip",
+  "tags": [
+    "ai",
+    "ai-workflow",
+    "experiments"
+  ],
+  "createdAt": "2026-10-25T20:09:44Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "observation-deck",
+      "path": "../media/the-world-2026-10-25-first-hour/seeker-provider-observer.png",
+      "fileName": "seeker-provider-observer.png",
+      "contentType": "image/png",
+      "alt": "The World observation deck showing Seeker, Provider and Observer chats alongside experiment controls.",
+      "caption": "Seeker, Provider and Observer in the observation deck."
+    }
+  ],
+  "videos": []
+}

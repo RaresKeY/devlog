@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "the-world-2026-10-25-first-hour",
+      "path": "posts/the-world-2026-10-25-first-hour.json",
+      "title": "You are in a new world, what do you want to do?",
+      "project": "The World",
+      "status": "wip",
+      "createdAt": "2026-10-25T20:09:44Z"
+    },
+    {
       "id": "character-foundry-2026-10-24-arctic-softer-motion-now",
       "path": "posts/character-foundry-2026-10-24-arctic-softer-motion-now.json",
       "title": "Arctic little guy, softer motion",
