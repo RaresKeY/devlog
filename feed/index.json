@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-10-23-air-superiority-rebuilt-shift5",
+      "path": "posts/fleet-2026-10-23-air-superiority-rebuilt-shift5.json",
+      "title": "Air Superiority",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-10-28T12:00:00+01:00"
+    },
+    {
       "id": "the-world-2026-10-25-first-hour",
       "path": "posts/the-world-2026-10-25-first-hour.json",
       "title": "You are in a new world, what do you want to do?",

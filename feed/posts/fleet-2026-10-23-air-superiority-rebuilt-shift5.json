@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-23-air-superiority-rebuilt-shift5",
+  "title": "Air Superiority",
+  "project": "conventional-space-fleet",
+  "body": "Petrel, Goshawk and Phoenix from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-28T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-23-air-superiority-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Petrel, Goshawk and Phoenix, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-petrel",
+      "path": "../media/fleet-2026-10-23-air-superiority-rebuilt-shift5/02-petrel.png",
+      "fileName": "02-petrel.png",
+      "contentType": "image/png",
+      "alt": "Petrel, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-goshawk",
+      "path": "../media/fleet-2026-10-23-air-superiority-rebuilt-shift5/03-goshawk.png",
+      "fileName": "03-goshawk.png",
+      "contentType": "image/png",
+      "alt": "Goshawk, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-phoenix",
+      "path": "../media/fleet-2026-10-23-air-superiority-rebuilt-shift5/04-phoenix.png",
+      "fileName": "04-phoenix.png",
+      "contentType": "image/png",
+      "alt": "Phoenix, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
