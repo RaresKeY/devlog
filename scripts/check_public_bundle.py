@@ -497,7 +497,7 @@ def validate_media_item(
         failures.append(f"{label} entry must be an object")
         return
     expected_keys = IMAGE_KEYS if kind == "image" else VIDEO_KEYS
-    optional_keys = {"caption"} if kind == "image" else {"poster", "hasAudio"}
+    optional_keys = {"caption"} if kind == "image" else {"poster", "hasAudio", "loop"}
     if not expected_keys.issubset(item) or set(item) - expected_keys - optional_keys:
         failures.append(f"{label} keys do not match the schema: {sorted(item)}")
         return
@@ -518,6 +518,8 @@ def validate_media_item(
             failures.append(f"{label} caption must be a string of at most 240 characters")
     if kind == "video" and "hasAudio" in item and type(item["hasAudio"]) is not bool:
         failures.append(f"{label} hasAudio must be a boolean")
+    if kind == "video" and "loop" in item and type(item["loop"]) is not bool:
+        failures.append(f"{label} loop must be a boolean")
 
     if kind == "video" and "poster" in item:
         poster = item["poster"]

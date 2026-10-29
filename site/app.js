@@ -127,6 +127,9 @@ function validateMedia(item, postId, kind) {
   if (kind === "video" && "hasAudio" in item && typeof item.hasAudio !== "boolean") {
     throw new Error(`Invalid video audio metadata in ${postId}`);
   }
+  if (kind === "video" && "loop" in item && typeof item.loop !== "boolean") {
+    throw new Error(`Invalid video loop metadata in ${postId}`);
+  }
 }
 
 function validatePost(post, summary = null) {
@@ -491,6 +494,7 @@ function createMedia(post) {
       video.src = url;
       video.controls = true;
       video.playsInline = true;
+      video.loop = item.loop === true;
       video.preload = mediaObserver ? "none" : "metadata";
       mediaObserver?.observe(video);
       if (item.poster) video.poster = mediaUrl(post.id, item.poster);

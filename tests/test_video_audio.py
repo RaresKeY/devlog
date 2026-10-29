@@ -29,7 +29,17 @@ class VideoAudioTests(unittest.TestCase):
             with self.subTest(value=value):
                 self.assertTrue(any("hasAudio must be a boolean" in error for error in self.validate(value)))
 
-    def validate(self, value):
+    def test_optional_loop_flag_accepts_booleans_and_legacy_omission(self):
+        for value in (True, False, "omitted"):
+            self.assertEqual(self.validate(value, "loop"), [])
+
+    def test_rejects_ambiguous_loop_flags(self):
+        for value in (None, 0, 1, "false", [], {}):
+            with self.subTest(value=value):
+                self.assertTrue(any("loop must be a boolean" in error
+                                    for error in self.validate(value, "loop")))
+
+    def validate(self, value, field="hasAudio"):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             (root / "sample").mkdir()
@@ -37,7 +47,7 @@ class VideoAudioTests(unittest.TestCase):
             item = {"id": "clip", "path": "../media/sample/clip.mp4", "fileName": "clip.mp4",
                     "caption": "Clip", "contentType": "video/mp4"}
             if value != "omitted":
-                item["hasAudio"] = value
+                item[field] = value
             failures = []
             with patch.object(verifier, "MEDIA", root):
                 verifier.validate_media_item(item, "sample", "video", set(), failures)

@@ -20,7 +20,9 @@
       "fileName": "bench-exploded.mp4",
       "contentType": "video/mp4",
       "caption": "The 32 CAD parts separate, rotate, and reassemble.",
-      "poster": "../media/cad-pro-debian-2026-10-29-astra-6-pro-cad/bench-poster.jpg"
+      "poster": "../media/cad-pro-debian-2026-10-29-astra-6-pro-cad/bench-poster.jpg",
+      "hasAudio": false,
+      "loop": true
     }
   ]
 }
