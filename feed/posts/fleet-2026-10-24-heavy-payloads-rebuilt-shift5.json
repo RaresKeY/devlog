@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-24-heavy-payloads-rebuilt-shift5",
+  "title": "Heavy Payloads",
+  "project": "conventional-space-fleet",
+  "body": "Anvil, Maul and Hammer from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-29T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-24-heavy-payloads-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Anvil, Maul and Hammer, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-anvil",
+      "path": "../media/fleet-2026-10-24-heavy-payloads-rebuilt-shift5/02-anvil.png",
+      "fileName": "02-anvil.png",
+      "contentType": "image/png",
+      "alt": "Anvil, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-maul",
+      "path": "../media/fleet-2026-10-24-heavy-payloads-rebuilt-shift5/03-maul.png",
+      "fileName": "03-maul.png",
+      "contentType": "image/png",
+      "alt": "Maul, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-hammer",
+      "path": "../media/fleet-2026-10-24-heavy-payloads-rebuilt-shift5/04-hammer.png",
+      "fileName": "04-hammer.png",
+      "contentType": "image/png",
+      "alt": "Hammer, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
