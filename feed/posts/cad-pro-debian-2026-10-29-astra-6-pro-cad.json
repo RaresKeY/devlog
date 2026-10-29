@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "cad-pro-debian-2026-10-29-astra-6-pro-cad",
+  "title": "Astra 6 Pro CAD",
+  "project": "CAD Pro Debian",
+  "body": "I used Astra 6 Pro to build an ornate bench from an image reference. The result includes a CAD assembly with 32 separate parts, an editable Blender scene, and a textured GLB.\n\nThis video uses the CAD parts. They separate, rotate, and reassemble over 20 seconds.\n\nThe dimensions and hidden construction are inferred from the reference.",
+  "status": "milestone",
+  "visibility": "public",
+  "createdAt": "2026-10-29T02:02:39Z",
+  "tags": [
+    "3d-art",
+    "ai-workflow",
+    "animation"
+  ],
+  "images": [],
+  "videos": [
+    {
+      "id": "bench-exploded",
+      "path": "../media/cad-pro-debian-2026-10-29-astra-6-pro-cad/bench-exploded.mp4",
+      "fileName": "bench-exploded.mp4",
+      "contentType": "video/mp4",
+      "caption": "The 32 CAD parts separate, rotate, and reassemble.",
+      "poster": "../media/cad-pro-debian-2026-10-29-astra-6-pro-cad/bench-poster.jpg"
+    }
+  ]
+}
