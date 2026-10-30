@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-10-25-strike-force-rebuilt-shift5",
+      "path": "posts/fleet-2026-10-25-strike-force-rebuilt-shift5.json",
+      "title": "Strike Force",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-10-30T12:00:00+01:00"
+    },
+    {
       "id": "fleet-2026-10-24-heavy-payloads-rebuilt-shift5",
       "path": "posts/fleet-2026-10-24-heavy-payloads-rebuilt-shift5.json",
       "title": "Heavy Payloads",

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-25-strike-force-rebuilt-shift5",
+  "title": "Strike Force",
+  "project": "conventional-space-fleet",
+  "body": "Sledge, Razor and Onslaught from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-30T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-25-strike-force-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Sledge, Razor and Onslaught, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-sledge",
+      "path": "../media/fleet-2026-10-25-strike-force-rebuilt-shift5/02-sledge.png",
+      "fileName": "02-sledge.png",
+      "contentType": "image/png",
+      "alt": "Sledge, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-razor",
+      "path": "../media/fleet-2026-10-25-strike-force-rebuilt-shift5/03-razor.png",
+      "fileName": "03-razor.png",
+      "contentType": "image/png",
+      "alt": "Razor, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-onslaught",
+      "path": "../media/fleet-2026-10-25-strike-force-rebuilt-shift5/04-onslaught.png",
+      "fileName": "04-onslaught.png",
+      "contentType": "image/png",
+      "alt": "Onslaught, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
