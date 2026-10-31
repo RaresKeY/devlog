@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-26-people-movers-rebuilt-shift5",
+  "title": "People Movers",
+  "project": "conventional-space-fleet",
+  "body": "Wayfarer, Swift and Nomad from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-10-31T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-26-people-movers-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Wayfarer, Swift and Nomad, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-wayfarer",
+      "path": "../media/fleet-2026-10-26-people-movers-rebuilt-shift5/02-wayfarer.png",
+      "fileName": "02-wayfarer.png",
+      "contentType": "image/png",
+      "alt": "Wayfarer, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-swift",
+      "path": "../media/fleet-2026-10-26-people-movers-rebuilt-shift5/03-swift.png",
+      "fileName": "03-swift.png",
+      "contentType": "image/png",
+      "alt": "Swift, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-nomad",
+      "path": "../media/fleet-2026-10-26-people-movers-rebuilt-shift5/04-nomad.png",
+      "fileName": "04-nomad.png",
+      "contentType": "image/png",
+      "alt": "Nomad, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
