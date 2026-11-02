@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-28-patrol-ships-rebuilt-shift5",
+  "title": "Patrol Ships",
+  "project": "conventional-space-fleet",
+  "body": "Picket, Sentinel and Watchman from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-02T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-28-patrol-ships-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Picket, Sentinel and Watchman, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-picket",
+      "path": "../media/fleet-2026-10-28-patrol-ships-rebuilt-shift5/02-picket.png",
+      "fileName": "02-picket.png",
+      "contentType": "image/png",
+      "alt": "Picket, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-sentinel",
+      "path": "../media/fleet-2026-10-28-patrol-ships-rebuilt-shift5/03-sentinel.png",
+      "fileName": "03-sentinel.png",
+      "contentType": "image/png",
+      "alt": "Sentinel, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-watchman",
+      "path": "../media/fleet-2026-10-28-patrol-ships-rebuilt-shift5/04-watchman.png",
+      "fileName": "04-watchman.png",
+      "contentType": "image/png",
+      "alt": "Watchman, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
