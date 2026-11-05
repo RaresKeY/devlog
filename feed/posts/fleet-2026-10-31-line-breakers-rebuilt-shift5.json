@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-10-31-line-breakers-rebuilt-shift5",
+  "title": "Line Breakers",
+  "project": "conventional-space-fleet",
+  "body": "Halberd, Glaive and Reaver from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-05T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-10-31-line-breakers-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Halberd, Glaive and Reaver, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-halberd",
+      "path": "../media/fleet-2026-10-31-line-breakers-rebuilt-shift5/02-halberd.png",
+      "fileName": "02-halberd.png",
+      "contentType": "image/png",
+      "alt": "Halberd, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-glaive",
+      "path": "../media/fleet-2026-10-31-line-breakers-rebuilt-shift5/03-glaive.png",
+      "fileName": "03-glaive.png",
+      "contentType": "image/png",
+      "alt": "Glaive, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-reaver",
+      "path": "../media/fleet-2026-10-31-line-breakers-rebuilt-shift5/04-reaver.png",
+      "fileName": "04-reaver.png",
+      "contentType": "image/png",
+      "alt": "Reaver, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

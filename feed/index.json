@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-10-31-line-breakers-rebuilt-shift5",
+      "path": "posts/fleet-2026-10-31-line-breakers-rebuilt-shift5.json",
+      "title": "Line Breakers",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-11-05T12:00:00+01:00"
+    },
+    {
       "id": "fleet-2026-10-29-defensive-line-rebuilt-shift5",
       "path": "posts/fleet-2026-10-29-defensive-line-rebuilt-shift5.json",
       "title": "Defensive Line",
