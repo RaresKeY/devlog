@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-11-01-heavy-armor-rebuilt-shift5",
+      "path": "posts/fleet-2026-11-01-heavy-armor-rebuilt-shift5.json",
+      "title": "Heavy Armor",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-11-06T12:00:00+01:00"
+    },
+    {
       "id": "fleet-2026-10-31-line-breakers-rebuilt-shift5",
       "path": "posts/fleet-2026-10-31-line-breakers-rebuilt-shift5.json",
       "title": "Line Breakers",
