@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-11-02-fortified-hulls-rebuilt-shift5",
+  "title": "Fortified Hulls",
+  "project": "conventional-space-fleet",
+  "body": "Fortress, Monarch and Regent from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-07T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-11-02-fortified-hulls-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Fortress, Monarch and Regent, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-fortress",
+      "path": "../media/fleet-2026-11-02-fortified-hulls-rebuilt-shift5/02-fortress.png",
+      "fileName": "02-fortress.png",
+      "contentType": "image/png",
+      "alt": "Fortress, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-monarch",
+      "path": "../media/fleet-2026-11-02-fortified-hulls-rebuilt-shift5/03-monarch.png",
+      "fileName": "03-monarch.png",
+      "contentType": "image/png",
+      "alt": "Monarch, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-regent",
+      "path": "../media/fleet-2026-11-02-fortified-hulls-rebuilt-shift5/04-regent.png",
+      "fileName": "04-regent.png",
+      "contentType": "image/png",
+      "alt": "Regent, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
