@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-11-03-command-ships-rebuilt-shift5",
+      "path": "posts/fleet-2026-11-03-command-ships-rebuilt-shift5.json",
+      "title": "Command Ships",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-11-08T12:00:00+01:00"
+    },
+    {
       "id": "fleet-2026-11-02-fortified-hulls-rebuilt-shift5",
       "path": "posts/fleet-2026-11-02-fortified-hulls-rebuilt-shift5.json",
       "title": "Fortified Hulls",
