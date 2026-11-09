@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-11-04-carrier-group-rebuilt-shift5",
+  "title": "Carrier Group",
+  "project": "conventional-space-fleet",
+  "body": "Ark, Haven and Sanctuary from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-09T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-11-04-carrier-group-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Ark, Haven and Sanctuary, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-ark",
+      "path": "../media/fleet-2026-11-04-carrier-group-rebuilt-shift5/02-ark.png",
+      "fileName": "02-ark.png",
+      "contentType": "image/png",
+      "alt": "Ark, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-haven",
+      "path": "../media/fleet-2026-11-04-carrier-group-rebuilt-shift5/03-haven.png",
+      "fileName": "03-haven.png",
+      "contentType": "image/png",
+      "alt": "Haven, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-sanctuary",
+      "path": "../media/fleet-2026-11-04-carrier-group-rebuilt-shift5/04-sanctuary.png",
+      "fileName": "04-sanctuary.png",
+      "contentType": "image/png",
+      "alt": "Sanctuary, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
