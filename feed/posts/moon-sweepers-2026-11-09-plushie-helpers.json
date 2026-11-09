@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-sweepers-2026-11-09-plushie-helpers",
+  "title": "Plushie helpers",
+  "project": "Moon Sweepers",
+  "body": "Little guys helping sweep in Moon Sweepers. Still WIP, single-player for now.",
+  "status": "wip",
+  "tags": [
+    "gameplay",
+    "prototyping"
+  ],
+  "createdAt": "2026-11-09T18:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-squishy-plushie",
+      "path": "../media/moon-sweepers-2026-11-09-plushie-helpers/01-squishy-plushie.png",
+      "fileName": "01-squishy-plushie.png",
+      "contentType": "image/png",
+      "alt": "A cream astronaut plushie with a dark face, smiling cyan eyes and orange suit details.",
+      "caption": ""
+    },
+    {
+      "id": "06-helper-sweeping",
+      "path": "../media/moon-sweepers-2026-11-09-plushie-helpers/06-helper-sweeping.png",
+      "fileName": "06-helper-sweeping.png",
+      "contentType": "image/png",
+      "alt": "A small astronaut plush leans over a green brush on dusty lunar ground, illuminated by the player light.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

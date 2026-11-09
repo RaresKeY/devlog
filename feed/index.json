@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "moon-sweepers-2026-11-09-plushie-helpers",
+      "path": "posts/moon-sweepers-2026-11-09-plushie-helpers.json",
+      "title": "Plushie helpers",
+      "project": "Moon Sweepers",
+      "status": "wip",
+      "createdAt": "2026-11-09T18:00:00+01:00"
+    },
+    {
       "id": "fleet-2026-11-04-carrier-group-rebuilt-shift5",
       "path": "posts/fleet-2026-11-04-carrier-group-rebuilt-shift5.json",
       "title": "Carrier Group",
