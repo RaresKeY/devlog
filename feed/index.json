@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "moon-sweepers-2026-11-10-plush",
+      "path": "posts/moon-sweepers-2026-11-10-plush.json",
+      "title": "Plush",
+      "project": "Moon Sweepers",
+      "status": "wip",
+      "createdAt": "2026-11-10T18:30:00+01:00"
+    },
+    {
       "id": "moon-sweepers-2026-11-09-slime-friends",
       "path": "posts/moon-sweepers-2026-11-09-slime-friends.json",
       "title": "Slime Friends",

@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-sweepers-2026-11-10-plush",
+  "title": "Plush",
+  "project": "Moon Sweepers",
+  "body": "Squeeze it. Throw it.",
+  "tags": [
+    "interaction",
+    "physics"
+  ],
+  "status": "wip",
+  "createdAt": "2026-11-10T18:30:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "plush-squeeze",
+      "path": "../media/moon-sweepers-2026-11-10-plush/plush-squeeze.png",
+      "fileName": "plush-squeeze.png",
+      "contentType": "image/png",
+      "alt": "A smiling astronaut plush held in front of the player inside the Moon Sweepers station.",
+      "caption": ""
+    },
+    {
+      "id": "plush-thrown",
+      "path": "../media/moon-sweepers-2026-11-10-plush/plush-thrown.png",
+      "fileName": "plush-thrown.png",
+      "contentType": "image/png",
+      "alt": "The astronaut plush tumbling upside down through the station after being thrown.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
