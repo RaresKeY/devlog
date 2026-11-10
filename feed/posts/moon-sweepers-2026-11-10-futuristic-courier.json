@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-sweepers-2026-11-10-futuristic-courier",
+  "title": "Futuristic Courier joins the garage",
+  "project": "Moon Sweepers Mods",
+  "body": "I added the Futuristic Courier as a separate $1,750 garage vehicle, keeping its original textures while cleaning up the window corners, roof edge and hinges. It now has front and rear lights and cyan hover visuals. It drives on the ground in game; the hovering and playful hops in the Asset Showcase videos are presentation animation.\n\nIn private game checks, purchase, boarding, driving, saving and reloading passed. I also gave the Power Pole its own store image and a steel, graphite, amber and ceramic placed model; its store art and native placement passed.",
+  "tags": [
+    "3d-art",
+    "effects",
+    "gameplay"
+  ],
+  "status": "wip",
+  "createdAt": "2026-11-10T00:20:00Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "courier-hover",
+      "path": "../media/moon-sweepers-2026-11-10-futuristic-courier/Futuristic-Courier-Hover-Showcase.mp4",
+      "fileName": "Futuristic-Courier-Hover-Showcase.mp4",
+      "contentType": "video/mp4",
+      "hasAudio": false,
+      "loop": true,
+      "caption": "Original-textured Futuristic Courier with aligned cyan hover effects. Asset Showcase presentation.",
+      "poster": "../media/moon-sweepers-2026-11-10-futuristic-courier/courier-hover-poster.jpg"
+    },
+    {
+      "id": "courier-giddy-up",
+      "path": "../media/moon-sweepers-2026-11-10-futuristic-courier/Futuristic-Courier-Giddy-Up.mp4",
+      "fileName": "Futuristic-Courier-Giddy-Up.mp4",
+      "contentType": "video/mp4",
+      "hasAudio": false,
+      "loop": true,
+      "caption": "Giddy up: two playful hops and a short forward surge. Presentation animation.",
+      "poster": "../media/moon-sweepers-2026-11-10-futuristic-courier/courier-giddy-up-poster.jpg"
+    }
+  ]
+}
