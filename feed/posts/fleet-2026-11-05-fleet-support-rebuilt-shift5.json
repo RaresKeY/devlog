@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-11-05-fleet-support-rebuilt-shift5",
+  "title": "Fleet Support",
+  "project": "conventional-space-fleet",
+  "body": "Elysium, Avalon and Oceanus from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-10T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-11-05-fleet-support-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Elysium, Avalon and Oceanus, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-elysium",
+      "path": "../media/fleet-2026-11-05-fleet-support-rebuilt-shift5/02-elysium.png",
+      "fileName": "02-elysium.png",
+      "contentType": "image/png",
+      "alt": "Elysium, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-avalon",
+      "path": "../media/fleet-2026-11-05-fleet-support-rebuilt-shift5/03-avalon.png",
+      "fileName": "03-avalon.png",
+      "contentType": "image/png",
+      "alt": "Avalon, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-oceanus",
+      "path": "../media/fleet-2026-11-05-fleet-support-rebuilt-shift5/04-oceanus.png",
+      "fileName": "04-oceanus.png",
+      "contentType": "image/png",
+      "alt": "Oceanus, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

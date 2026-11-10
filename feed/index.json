@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-11-05-fleet-support-rebuilt-shift5",
+      "path": "posts/fleet-2026-11-05-fleet-support-rebuilt-shift5.json",
+      "title": "Fleet Support",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-11-10T12:00:00+01:00"
+    },
+    {
       "id": "moon-sweepers-2026-11-10-courier-hover-showcase",
       "path": "posts/moon-sweepers-2026-11-10-courier-hover-showcase.json",
       "title": "Courier hover showcase",
