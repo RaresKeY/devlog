@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-sweepers-2026-11-09-slime-friends",
+  "title": "Slime Friends",
+  "project": "Moon Sweepers",
+  "body": "Five Slime Friends variants and a little shop to buy them. Still WIP.\n\nSlime model and animations: [Zero](https://fran-zerogame.itch.io/slimelab-full-color-3d-slime-asset-bundle) ([CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)), adapted for the mod. Shop computer: [Kenney](https://kenney.nl/assets/space-station-kit) (CC0).",
+  "status": "wip",
+  "tags": [
+    "gameplay",
+    "interaction"
+  ],
+  "createdAt": "2026-11-10T18:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "02-slime-shop",
+      "path": "../media/moon-sweepers-2026-11-09-slime-friends/02-slime-shop.png",
+      "fileName": "02-slime-shop.png",
+      "contentType": "image/png",
+      "alt": "A blue slime sleeps in a clear specimen tube beside a price screen and red BUY button in Moon Sweepers.",
+      "caption": ""
+    }
+  ],
+  "videos": [
+    {
+      "id": "03-slime-variants",
+      "path": "../media/moon-sweepers-2026-11-09-slime-friends/03-slime-variants.mp4",
+      "fileName": "03-slime-variants.mp4",
+      "contentType": "video/mp4",
+      "caption": "Five slime variants, asset preview.",
+      "hasAudio": false,
+      "poster": "../media/moon-sweepers-2026-11-09-slime-friends/slime-variants-poster.png"
+    }
+  ]
+}
