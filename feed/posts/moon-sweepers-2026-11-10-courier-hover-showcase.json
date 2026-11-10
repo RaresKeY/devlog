@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-sweepers-2026-11-10-courier-hover-showcase",
+  "title": "Courier hover showcase",
+  "project": "Moon Sweepers",
+  "body": "A short showcase of the Futuristic Courier with hover effects.",
+  "tags": [],
+  "status": "wip",
+  "createdAt": "2026-11-10T08:47:31+00:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "courier-hover",
+      "path": "../media/moon-sweepers-2026-11-10-courier-hover-showcase/Futuristic-Courier-Hover-Showcase.mp4",
+      "fileName": "Futuristic-Courier-Hover-Showcase.mp4",
+      "contentType": "video/mp4",
+      "caption": "Futuristic Courier showcase render.",
+      "hasAudio": false,
+      "poster": "../media/moon-sweepers-2026-11-10-courier-hover-showcase/courier-poster.jpg"
+    }
+  ]
+}
