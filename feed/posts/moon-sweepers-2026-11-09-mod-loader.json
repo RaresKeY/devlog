@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-sweepers-2026-11-09-mod-loader",
+  "title": "Moon Sweepers mod loader",
+  "project": "Moon Sweepers",
+  "body": "A little mod loader to keep the Moon Sweepers mods together. Still WIP, no download links yet.",
+  "status": "wip",
+  "tags": [
+    "tooling",
+    "ui"
+  ],
+  "createdAt": "2026-11-11T18:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "04-mod-loader",
+      "path": "../media/moon-sweepers-2026-11-09-mod-loader/04-mod-loader.png",
+      "fileName": "04-mod-loader.png",
+      "contentType": "image/png",
+      "alt": "The Moon Sweepers mod loader displays selectable cards for Electricity Lines, Little Helpers, vehicle controls and other local mods.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
