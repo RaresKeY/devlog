@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-11-06-cargo-routes-rebuilt-shift5",
+      "path": "posts/fleet-2026-11-06-cargo-routes-rebuilt-shift5.json",
+      "title": "Cargo Routes",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-11-11T12:00:00+01:00"
+    },
+    {
       "id": "moon-sweepers-2026-11-10-plush",
       "path": "posts/moon-sweepers-2026-11-10-plush.json",
       "title": "Plush",

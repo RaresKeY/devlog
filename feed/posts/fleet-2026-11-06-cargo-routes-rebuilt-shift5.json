@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-11-06-cargo-routes-rebuilt-shift5",
+  "title": "Cargo Routes",
+  "project": "conventional-space-fleet",
+  "body": "Parcel, Hauler and Ox from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-11T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-11-06-cargo-routes-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Parcel, Hauler and Ox, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-parcel",
+      "path": "../media/fleet-2026-11-06-cargo-routes-rebuilt-shift5/02-parcel.png",
+      "fileName": "02-parcel.png",
+      "contentType": "image/png",
+      "alt": "Parcel, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-hauler",
+      "path": "../media/fleet-2026-11-06-cargo-routes-rebuilt-shift5/03-hauler.png",
+      "fileName": "03-hauler.png",
+      "contentType": "image/png",
+      "alt": "Hauler, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-ox",
+      "path": "../media/fleet-2026-11-06-cargo-routes-rebuilt-shift5/04-ox.png",
+      "fileName": "04-ox.png",
+      "contentType": "image/png",
+      "alt": "Ox, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
