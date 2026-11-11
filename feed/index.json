@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "moon-sweepers-2026-11-11-models",
+      "path": "posts/moon-sweepers-2026-11-11-models.json",
+      "title": "Moon Sweepers models",
+      "project": "Moon Sweepers",
+      "status": "wip",
+      "createdAt": "2026-11-11T18:30:00+01:00"
+    },
+    {
       "id": "moon-sweepers-2026-11-09-mod-loader",
       "path": "posts/moon-sweepers-2026-11-09-mod-loader.json",
       "title": "Moon Sweepers mod loader",

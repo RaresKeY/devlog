@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "moon-sweepers-2026-11-11-models",
+  "title": "Moon Sweepers models",
+  "project": "Moon Sweepers",
+  "body": "A few Moon Sweepers models I'm working on: the plushie, Flag Finder and a power pole. Still WIP.",
+  "tags": [
+    "3d-art"
+  ],
+  "status": "wip",
+  "createdAt": "2026-11-11T18:30:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "plushie-wireframe",
+      "path": "../media/moon-sweepers-2026-11-11-models/plushie-wireframe.png",
+      "fileName": "plushie-wireframe.png",
+      "contentType": "image/png",
+      "alt": "Astronaut plushie model with cyan eyes, orange trim and a visible wireframe overlay.",
+      "caption": ""
+    },
+    {
+      "id": "plushie-textured",
+      "path": "../media/moon-sweepers-2026-11-11-models/plushie-textured.png",
+      "fileName": "plushie-textured.png",
+      "contentType": "image/png",
+      "alt": "Textured astronaut plushie model with a fabric finish, cyan eyes and orange trim.",
+      "caption": ""
+    },
+    {
+      "id": "flag-finder",
+      "path": "../media/moon-sweepers-2026-11-11-models/flag-finder.png",
+      "fileName": "flag-finder.png",
+      "contentType": "image/png",
+      "alt": "Handheld Flag Finder model with a circular radar display and orange button.",
+      "caption": ""
+    },
+    {
+      "id": "power-pole",
+      "path": "../media/moon-sweepers-2026-11-11-models/power-pole.png",
+      "fileName": "power-pole.png",
+      "contentType": "image/png",
+      "alt": "Power pole model with a white shaft, orange trim, dark crossbar and two insulators.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
