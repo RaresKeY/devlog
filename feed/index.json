@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-11-07-bulk-freight-rebuilt-shift5",
+      "path": "posts/fleet-2026-11-07-bulk-freight-rebuilt-shift5.json",
+      "title": "Bulk Freight",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-11-12T12:00:00+01:00"
+    },
+    {
       "id": "moon-sweepers-2026-11-11-models",
       "path": "posts/moon-sweepers-2026-11-11-models.json",
       "title": "Moon Sweepers models",

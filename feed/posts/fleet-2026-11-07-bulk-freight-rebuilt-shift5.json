@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-11-07-bulk-freight-rebuilt-shift5",
+  "title": "Bulk Freight",
+  "project": "conventional-space-fleet",
+  "body": "Caravel, Galleon and Mule from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-12T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-11-07-bulk-freight-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Caravel, Galleon and Mule, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-caravel",
+      "path": "../media/fleet-2026-11-07-bulk-freight-rebuilt-shift5/02-caravel.png",
+      "fileName": "02-caravel.png",
+      "contentType": "image/png",
+      "alt": "Caravel, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-galleon",
+      "path": "../media/fleet-2026-11-07-bulk-freight-rebuilt-shift5/03-galleon.png",
+      "fileName": "03-galleon.png",
+      "contentType": "image/png",
+      "alt": "Galleon, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-mule",
+      "path": "../media/fleet-2026-11-07-bulk-freight-rebuilt-shift5/04-mule.png",
+      "fileName": "04-mule.png",
+      "contentType": "image/png",
+      "alt": "Mule, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
