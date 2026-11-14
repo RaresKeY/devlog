@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "fleet-2026-11-09-deep-extraction-rebuilt-shift5",
+      "path": "posts/fleet-2026-11-09-deep-extraction-rebuilt-shift5.json",
+      "title": "Deep Extraction",
+      "project": "conventional-space-fleet",
+      "status": "wip",
+      "createdAt": "2026-11-14T12:00:00+01:00"
+    },
+    {
       "id": "fleet-2026-11-08-mining-crew-rebuilt-shift5",
       "path": "posts/fleet-2026-11-08-mining-crew-rebuilt-shift5.json",
       "title": "Mining Crew",
