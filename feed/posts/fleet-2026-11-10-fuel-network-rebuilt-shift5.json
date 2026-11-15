@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-11-10-fuel-network-rebuilt-shift5",
+  "title": "Fuel Network",
+  "project": "conventional-space-fleet",
+  "body": "Reservoir, Aqueduct and Meridian from the rebuilt Conventional Space Fleet.\n\nStatic models shown at normalized display sizes.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-15T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-ships",
+      "path": "../media/fleet-2026-11-10-fuel-network-rebuilt-shift5/01-ships.png",
+      "fileName": "01-ships.png",
+      "contentType": "image/png",
+      "alt": "Reservoir, Aqueduct and Meridian, rebuilt static ship models shown together at normalized display sizes.",
+      "caption": ""
+    },
+    {
+      "id": "02-reservoir",
+      "path": "../media/fleet-2026-11-10-fuel-network-rebuilt-shift5/02-reservoir.png",
+      "fileName": "02-reservoir.png",
+      "contentType": "image/png",
+      "alt": "Reservoir, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-aqueduct",
+      "path": "../media/fleet-2026-11-10-fuel-network-rebuilt-shift5/03-aqueduct.png",
+      "fileName": "03-aqueduct.png",
+      "contentType": "image/png",
+      "alt": "Aqueduct, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-meridian",
+      "path": "../media/fleet-2026-11-10-fuel-network-rebuilt-shift5/04-meridian.png",
+      "fileName": "04-meridian.png",
+      "contentType": "image/png",
+      "alt": "Meridian, individual three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
