@@ -3,7 +3,7 @@
   "id": "cad-pro-debian-2026-11-16-gemini-hydrogen-cad",
   "title": "Gemini Hydrogen CAD",
   "project": "CAD Pro Debian",
-  "body": "I used Gemini 4 Hydrogen (XHigh) to rebuild the ornate timber and cast-iron bench from the same image reference I used with Astra 6 Pro. It produced editable, parameterized source, a STEP assembly with 51 separate parts, and a GLB.\n\nThe same source also generates a 25% wider bench. The slats get longer while keeping their cross-sections, the frames keep their proportions, and the assembly adds a second intermediate support.\n\nThe video rotates the earlier Astra bench, then reveals Hydrogen with a diagonal wipe. The old bench has textures; Hydrogen’s GLB has four basic materials without baked textures. Dimensions and hidden construction are inferred from the reference.\n\n[Earlier Astra 6 Pro bench](https://rareskey.github.io/devlog/#update-cad-pro-debian-2026-10-29-astra-6-pro-cad).",
+  "body": "I used Gemini 4 Hydrogen (XHigh) to rebuild the ornate timber and cast-iron bench from the same image reference I used with Astra 6 Pro. It produced editable, parameterized source, a STEP assembly with 51 separate parts, and a GLB.\n\nThe same source also generates a 25% wider bench. The slats get longer while keeping their cross-sections, the frames keep their proportions, and the assembly adds a second intermediate support.\n\nThe video is a silent 20-second rotating exploded assembly of the 51 saved Hydrogen CAD parts, separating and reassembling in the same presentation style as the earlier Astra video. It shows only Hydrogen, using the four basic materials already exported without baked textures. Dimensions and hidden construction are inferred from the reference.\n\n[Earlier Astra 6 Pro bench](https://rareskey.github.io/devlog/#update-cad-pro-debian-2026-10-29-astra-6-pro-cad).",
   "tags": [
     "ai-workflow",
     "3d-art",
@@ -20,7 +20,7 @@
       "path": "../media/cad-pro-debian-2026-11-16-gemini-hydrogen-cad/hydrogen-bench-comparison.mp4",
       "fileName": "hydrogen-bench-comparison.mp4",
       "contentType": "video/mp4",
-      "caption": "Astra 6 Pro bench, followed by Gemini 4 Hydrogen (XHigh), with a diagonal wipe. Original exported materials.",
+      "caption": "The 51 Hydrogen CAD parts separate, rotate, and reassemble over 20 seconds.",
       "poster": "../media/cad-pro-debian-2026-11-16-gemini-hydrogen-cad/bench-comparison-poster.jpg",
       "hasAudio": false,
       "loop": true
