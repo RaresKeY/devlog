@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "fleet-2026-11-11-cistern-rebuilt-shift5",
+  "title": "Cistern",
+  "project": "conventional-space-fleet",
+  "body": "A closer look at Cistern from the rebuilt Conventional Space Fleet, shown from four angles.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "gamedev",
+    "spaceships"
+  ],
+  "createdAt": "2026-11-16T12:00:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "01-hero",
+      "path": "../media/fleet-2026-11-11-cistern-rebuilt-shift5/01-hero.png",
+      "fileName": "01-hero.png",
+      "contentType": "image/png",
+      "alt": "Cistern, three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "02-opposite",
+      "path": "../media/fleet-2026-11-11-cistern-rebuilt-shift5/02-opposite.png",
+      "fileName": "02-opposite.png",
+      "contentType": "image/png",
+      "alt": "Cistern, opposite three-quarter view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "03-side",
+      "path": "../media/fleet-2026-11-11-cistern-rebuilt-shift5/03-side.png",
+      "fileName": "03-side.png",
+      "contentType": "image/png",
+      "alt": "Cistern, side view of the rebuilt static ship model.",
+      "caption": ""
+    },
+    {
+      "id": "04-overhead",
+      "path": "../media/fleet-2026-11-11-cistern-rebuilt-shift5/04-overhead.png",
+      "fileName": "04-overhead.png",
+      "contentType": "image/png",
+      "alt": "Cistern, overhead view of the rebuilt static ship model.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
