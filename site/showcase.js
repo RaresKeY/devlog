@@ -2,7 +2,7 @@ import { fitPlane, validateManifest } from "./showcase-layout.js?v=20261018-2";
 
 const root = document.querySelector("#showcase-background");
 const toggle = document.querySelector("#showcase-toggle");
-const manifestUrl = new URL("./showcase/manifest.json?v=20261018-2", import.meta.url);
+const manifestUrl = new URL("./showcase/manifest.json?v=20261116-1", import.meta.url);
 const cacheName = "small-loop-devlog:showcase:v2";
 const preferenceKey = "small-loop-devlog:showcase-paused:v1";
 const descriptorKey = "small-loop-devlog:showcase-descriptor:v2";
