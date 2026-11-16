@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "cad-pro-debian-2026-11-16-gemini-hydrogen-cad",
+      "path": "posts/cad-pro-debian-2026-11-16-gemini-hydrogen-cad.json",
+      "title": "Gemini Hydrogen CAD",
+      "project": "CAD Pro Debian",
+      "status": "build",
+      "createdAt": "2026-11-16T16:05:14Z"
+    },
+    {
       "id": "fleet-2026-11-11-cistern-rebuilt-shift5",
       "path": "posts/fleet-2026-11-11-cistern-rebuilt-shift5.json",
       "title": "Cistern",
