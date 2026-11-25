@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "2026-11-25-worn-office-chair-casters",
+      "path": "posts/2026-11-25-worn-office-chair-casters.json",
+      "title": "Ten wheels on one office chair",
+      "project": "Worn Office Chair",
+      "status": "wip",
+      "createdAt": "2026-11-25T17:02:48Z"
+    },
+    {
       "id": "code-review-simulator-2026-11-25-filming-field-service-07",
       "path": "posts/code-review-simulator-2026-11-25-filming-field-service-07.json",
       "title": "Filming Field Service 07",

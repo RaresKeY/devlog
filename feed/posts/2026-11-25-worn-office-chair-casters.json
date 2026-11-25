@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "2026-11-25-worn-office-chair-casters",
+  "title": "Ten wheels on one office chair",
+  "project": "Worn Office Chair",
+  "body": "The five casters now swivel, and each pair of wheels can roll at different speeds through a turn. I separated them from the original fused Meshy chair mesh, then used the same wheels for the second finish.\n\nIn the Godot lab, I can walk up and push any of four chairs. Each finish has a plain rolling version and one with a short spring at every caster. A rolling sound cut from an Omni chair clip follows wheel speed and goes quiet when the chair stops.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "godot",
+    "physics",
+    "audio"
+  ],
+  "createdAt": "2026-11-25T17:02:48Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "01-front-studio",
+      "path": "../media/2026-11-25-worn-office-chair-casters/01-front-studio.mp4",
+      "fileName": "01-front-studio.mp4",
+      "contentType": "video/mp4",
+      "caption": "The new finish on the spring chair. From the front you can see the casters swivel as it changes direction.",
+      "poster": "../media/2026-11-25-worn-office-chair-casters/01-front-studio.jpg",
+      "hasAudio": true,
+      "loop": false
+    },
+    {
+      "id": "02-suspension-comparison",
+      "path": "../media/2026-11-25-worn-office-chair-casters/02-suspension-comparison.mp4",
+      "fileName": "02-suspension-comparison.mp4",
+      "contentType": "video/mp4",
+      "caption": "The same push on the original finish, with rigid casters on the left and short springs on the right. The lower views follow one caster.",
+      "poster": "../media/2026-11-25-worn-office-chair-casters/02-suspension-comparison.jpg",
+      "hasAudio": true,
+      "loop": false
+    },
+    {
+      "id": "03-two-finishes",
+      "path": "../media/2026-11-25-worn-office-chair-casters/03-two-finishes.mp4",
+      "fileName": "03-two-finishes.mp4",
+      "contentType": "video/mp4",
+      "caption": "Both finishes follow the same movement as the camera drops from the worn upholstery to the shared wheels.",
+      "poster": "../media/2026-11-25-worn-office-chair-casters/03-two-finishes.jpg",
+      "hasAudio": true,
+      "loop": false
+    },
+    {
+      "id": "04-physics-lab",
+      "path": "../media/2026-11-25-worn-office-chair-casters/04-physics-lab.mp4",
+      "fileName": "04-physics-lab.mp4",
+      "contentType": "video/mp4",
+      "caption": "A first-person test in Godot. I walk up to the spring chair and push it across the room.",
+      "poster": "../media/2026-11-25-worn-office-chair-casters/04-physics-lab.jpg",
+      "hasAudio": true,
+      "loop": false
+    }
+  ]
+}
