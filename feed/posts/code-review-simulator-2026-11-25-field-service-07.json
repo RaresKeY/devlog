@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-25-field-service-07",
+  "title": "Field Service 07",
+  "project": "Code Review Simulator",
+  "body": "I fitted a tool chest behind the cab and added steps beneath the doors. The lid clears the cab guard when it opens.",
+  "status": "wip",
+  "tags": [
+    "3d-art"
+  ],
+  "createdAt": "2026-11-25T02:31:09Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "pickup",
+      "path": "../media/code-review-simulator-2026-11-25-field-service-07/pickup.png",
+      "fileName": "pickup.png",
+      "contentType": "image/png",
+      "alt": "Blue and ivory fleet pickup seen from the front, with gold side stripes and steps below the cab.",
+      "caption": ""
+    },
+    {
+      "id": "tool-chest",
+      "path": "../media/code-review-simulator-2026-11-25-field-service-07/tool-chest.png",
+      "fileName": "tool-chest.png",
+      "contentType": "image/png",
+      "alt": "Close view of the tool chest spanning the bed rails behind the cab, with two recessed latches.",
+      "caption": ""
+    },
+    {
+      "id": "open-panels",
+      "path": "../media/code-review-simulator-2026-11-25-field-service-07/open-panels.png",
+      "fileName": "open-panels.png",
+      "contentType": "image/png",
+      "alt": "Rear view of the pickup with the doors open, the tailgate down and the tool chest lid raised.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

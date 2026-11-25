@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-25-field-service-07",
+      "path": "posts/code-review-simulator-2026-11-25-field-service-07.json",
+      "title": "Field Service 07",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-25T02:31:09Z"
+    },
+    {
       "id": "cad-pro-debian-2026-11-16-gemini-hydrogen-cad",
       "path": "posts/cad-pro-debian-2026-11-16-gemini-hydrogen-cad.json",
       "title": "Gemini Hydrogen CAD",
