@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-25-harbor-motor-works",
+  "title": "Laying out Harbor Motor Works",
+  "project": "Code Review Simulator",
+  "body": "Backing the pickup out of the original bay at Harbor Motor Works put its tail straight into traffic on Harbor Parkway. I moved the shop back onto the flatter part of the lot. From the east driveway you can now pull past a truck at the pumps, loop behind the canopy and leave by the west driveway. The two parking spaces face the shop’s side door.\n\nI build these roadside sites in place. At Harbor Motor Works the ground rises about two metres toward the pumps. The tool reads the edge of the existing road and the slope of the surrounding ground. I lay out the driveways, parking spaces and curbs against those heights, and the tool builds both the pavement you see and the surface the tires run on.\n\nThe pickup swung wider behind the canopy than it did on my sketch. Giving it another 2.5 metres there made the turn work with a truck parked at the pumps.",
+  "status": "wip",
+  "tags": [
+    "environments",
+    "tooling"
+  ],
+  "createdAt": "2026-11-25T22:45:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "forecourt",
+      "path": "../media/code-review-simulator-2026-11-25-harbor-motor-works/harbor-motor-works.png",
+      "fileName": "harbor-motor-works.png",
+      "contentType": "image/png",
+      "alt": "View from Harbor Parkway across the planted island, with one blue pickup under the pump canopy and another parked beside the Harbor Motor Works garage.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
