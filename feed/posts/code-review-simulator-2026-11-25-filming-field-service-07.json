@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-25-filming-field-service-07",
+  "title": "Filming Field Service 07",
+  "project": "Code Review Simulator",
+  "body": "I tracked the pickup as it rolled into place, then moved in for a closer look at the tool chest.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "animation"
+  ],
+  "createdAt": "2026-11-25T03:02:53Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "pickup-film",
+      "path": "../media/code-review-simulator-2026-11-25-filming-field-service-07/field-service-07.mp4",
+      "fileName": "field-service-07.mp4",
+      "contentType": "video/mp4",
+      "caption": "Field Service 07 in the studio.",
+      "poster": "../media/code-review-simulator-2026-11-25-filming-field-service-07/field-service-07-poster.jpg",
+      "hasAudio": false,
+      "loop": false
+    }
+  ]
+}
