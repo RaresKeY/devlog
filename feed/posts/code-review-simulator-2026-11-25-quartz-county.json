@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-25-quartz-county",
+  "title": "Quartz County",
+  "project": "Code Review Simulator",
+  "body": "In Code Review Simulator, you can drive straight out of Quartz City and follow the county roads past farms and forests to the coast.",
+  "status": "wip",
+  "tags": [
+    "environments",
+    "gameplay"
+  ],
+  "createdAt": "2026-11-25T18:55:07Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "quartz-county",
+      "path": "../media/code-review-simulator-2026-11-25-quartz-county/quartz-county.png",
+      "fileName": "quartz-county.png",
+      "contentType": "image/png",
+      "alt": "Four aerial views of Quartz County show the full road network, Quartz City, a forest junction beneath the mountains, and the Patchport lighthouse with wind turbines along the coast.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-25-quartz-county",
+      "path": "posts/code-review-simulator-2026-11-25-quartz-county.json",
+      "title": "Quartz County",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-25T18:55:07Z"
+    },
+    {
       "id": "code-review-simulator-2026-11-25-city-streets-and-redrock-canyon",
       "path": "posts/code-review-simulator-2026-11-25-city-streets-and-redrock-canyon.json",
       "title": "City streets and Redrock Canyon",
