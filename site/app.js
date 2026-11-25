@@ -151,7 +151,7 @@ function validatePost(post, summary = null) {
   ) {
     throw new Error(`Incomplete public post ${post.id || "unknown"}`);
   }
-  if (post.images.length > 5 || post.videos.length > 2) {
+  if (post.images.length > 5 || post.videos.length > 4) {
     throw new Error(`Too many media items in ${post.id}`);
   }
   post.images.forEach((item) => validateMedia(item, post.id, "image"));

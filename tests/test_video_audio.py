@@ -39,6 +39,32 @@ class VideoAudioTests(unittest.TestCase):
                 self.assertTrue(any("loop must be a boolean" in error
                                     for error in self.validate(value, "loop")))
 
+    def test_four_videos_validate_in_order_and_five_are_rejected(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            media = root / "media" / "sample"
+            media.mkdir(parents=True)
+            summary = {"id": "sample", "title": "Sample", "project": "Test", "status": "wip",
+                       "createdAt": "2026-11-25T00:00:00Z"}
+            post = dict(summary, schemaVersion=1, visibility="public", tags=["audio"],
+                        images=[], videos=[], body="A four-video test.")
+            path = root / "sample.json"
+            for i in range(5):
+                name = f"clip-{i}.mp4"
+                (media / name).write_bytes(bytes(4) + b"ftypisom" + bytes(20))
+                post["videos"].append({"id": f"clip-{i}", "fileName": name, "contentType": "video/mp4",
+                                       "path": f"../media/sample/{name}", "caption": name, "hasAudio": True})
+                if i < 3:
+                    continue
+                path.write_text(json.dumps(post))
+                failures = []
+                with patch.object(verifier, "ROOT", root), patch.object(verifier, "MEDIA", media.parent):
+                    verifier.validate_post(path, summary, set(), failures)
+                if i == 3:
+                    self.assertEqual(failures, [])
+                else:
+                    self.assertTrue(any("at most 4" in failure for failure in failures))
+
     def validate(self, value, field="hasAudio"):
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)

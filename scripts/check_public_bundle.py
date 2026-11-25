@@ -625,8 +625,8 @@ def validate_post(
     if not isinstance(images, list) or len(images) > 5:
         failures.append(f"{relative}: images must be an array of at most 5 entries")
         images = []
-    if not isinstance(videos, list) or len(videos) > 2:
-        failures.append(f"{relative}: videos must be an array of at most 2 entries")
+    if not isinstance(videos, list) or len(videos) > 4:
+        failures.append(f"{relative}: videos must be an array of at most 4 entries")
         videos = []
     for item in images:
         validate_media_item(item, post_id, "image", expected_media, failures)

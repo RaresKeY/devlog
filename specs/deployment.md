@@ -17,7 +17,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - The repository and its complete Git history are public.
 - The canonical post order and summary metadata live in `feed/index.json`.
 - Each `feed/posts/<id>.json` is a complete schema-versioned public post. Its ID and summary fields must match the index.
-- Posts accept up to five images and two videos. Existing schema-v1 posts remain valid. Optional `ctaLabel` and `ctaUrl` provide a footer link, including an immutable public link to an earlier combined image; linked historical media does not become another gallery image or an orphan file in the current feed.
+- Posts accept up to five images and four videos. Existing schema-v1 posts remain valid. Optional `ctaLabel` and `ctaUrl` provide a footer link, including an immutable public link to an earlier combined image; linked historical media does not become another gallery image or an orphan file in the current feed.
 - Post media lives at `feed/media/<id>/<filename>` and is referenced as `../media/<id>/<filename>` from the post JSON.
 - `site/` contains only the HTML, CSS, JavaScript, local presentation assets, icons, explicitly cataloged Opus music, the curated showcase, and `.nojekyll` needed by Pages. The [music contract](music.md) owns the music catalog and player; the [showcase contract](showcase.md) owns background composition, cache and lifecycle.
 - Private history, drafts, credentials, local paths, build caches, scheduler state, and publisher or cloud configuration are forbidden.
@@ -57,7 +57,7 @@ This spec owns `site/`, `feed/`, `scripts/check_public_bundle.py`, `.github/work
 - GitHub Pages uses Actions mode and publishes only `site/` through the `github-pages` environment.
 - `.github/workflows/deploy-pages.yml` runs for `site/**`, the verifier, or its own workflow changes, plus manual dispatch. It validates before uploading the Pages artifact.
 - `.github/workflows/validate-feed.yml` runs for `feed/**` pushes and pull requests. A feed-only commit does not trigger the Pages workflow.
-- Deploy and verify new gallery code and versioned assets before publishing feed content that depends on a higher image limit. Publish the post/media update separately after the deployed client accepts it, so the runtime feed remains valid throughout rollout.
+- Deploy and verify new gallery code and versioned assets before publishing feed content that depends on a higher media count. Publish the post/media update separately after the deployed client accepts it, so the runtime feed remains valid throughout rollout.
 - Checkout actions do not persist credentials. Validation has `contents: read`; deployment alone receives `pages: write` and `id-token: write`.
 
 ## Verification
