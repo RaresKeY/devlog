@@ -20,6 +20,14 @@
       "createdAt": "2026-11-25T02:31:09Z"
     },
     {
+      "path": "posts/conventional-space-fleet-models.json",
+      "id": "conventional-space-fleet-models",
+      "title": "Space Fleet Models",
+      "project": "Conventional Space Fleet",
+      "status": "wip",
+      "createdAt": "2026-11-16T16:05:15Z"
+    },
+    {
       "id": "cad-pro-debian-2026-11-16-gemini-hydrogen-cad",
       "path": "posts/cad-pro-debian-2026-11-16-gemini-hydrogen-cad.json",
       "title": "Gemini Hydrogen CAD",
@@ -34,38 +42,6 @@
       "project": "conventional-space-fleet",
       "status": "wip",
       "createdAt": "2026-11-16T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-10-fuel-network-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-10-fuel-network-rebuilt-shift5.json",
-      "title": "Fuel Network",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-15T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-09-deep-extraction-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-09-deep-extraction-rebuilt-shift5.json",
-      "title": "Deep Extraction",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-14T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-08-mining-crew-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-08-mining-crew-rebuilt-shift5.json",
-      "title": "Mining Crew",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-13T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-07-bulk-freight-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-07-bulk-freight-rebuilt-shift5.json",
-      "title": "Bulk Freight",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-12T12:00:00+01:00"
     },
     {
       "id": "moon-sweepers-2026-11-11-models",
@@ -84,14 +60,6 @@
       "createdAt": "2026-11-11T18:00:00+01:00"
     },
     {
-      "id": "fleet-2026-11-06-cargo-routes-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-06-cargo-routes-rebuilt-shift5.json",
-      "title": "Cargo Routes",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-11T12:00:00+01:00"
-    },
-    {
       "id": "moon-sweepers-2026-11-10-plush",
       "path": "posts/moon-sweepers-2026-11-10-plush.json",
       "title": "Plush",
@@ -106,14 +74,6 @@
       "project": "Moon Sweepers",
       "status": "wip",
       "createdAt": "2026-11-10T18:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-05-fleet-support-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-05-fleet-support-rebuilt-shift5.json",
-      "title": "Fleet Support",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-10T12:00:00+01:00"
     },
     {
       "id": "moon-sweepers-2026-11-10-courier-hover-showcase",
@@ -140,108 +100,12 @@
       "createdAt": "2026-11-09T18:00:00+01:00"
     },
     {
-      "id": "fleet-2026-11-04-carrier-group-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-04-carrier-group-rebuilt-shift5.json",
-      "title": "Carrier Group",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-09T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-03-command-ships-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-03-command-ships-rebuilt-shift5.json",
-      "title": "Command Ships",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-08T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-02-fortified-hulls-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-02-fortified-hulls-rebuilt-shift5.json",
-      "title": "Fortified Hulls",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-07T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-11-01-heavy-armor-rebuilt-shift5",
-      "path": "posts/fleet-2026-11-01-heavy-armor-rebuilt-shift5.json",
-      "title": "Heavy Armor",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-06T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-10-31-line-breakers-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-31-line-breakers-rebuilt-shift5.json",
-      "title": "Line Breakers",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-05T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-10-29-defensive-line-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-29-defensive-line-rebuilt-shift5.json",
-      "title": "Defensive Line",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-03T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-10-28-patrol-ships-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-28-patrol-ships-rebuilt-shift5.json",
-      "title": "Patrol Ships",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-02T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-10-27-long-haul-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-27-long-haul-rebuilt-shift5.json",
-      "title": "Long Haul",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-11-01T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-10-26-people-movers-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-26-people-movers-rebuilt-shift5.json",
-      "title": "People Movers",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-31T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-10-25-strike-force-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-25-strike-force-rebuilt-shift5.json",
-      "title": "Strike Force",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-30T12:00:00+01:00"
-    },
-    {
-      "id": "fleet-2026-10-24-heavy-payloads-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-24-heavy-payloads-rebuilt-shift5.json",
-      "title": "Heavy Payloads",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-29T12:00:00+01:00"
-    },
-    {
       "id": "cad-pro-debian-2026-10-29-astra-6-pro-cad",
       "path": "posts/cad-pro-debian-2026-10-29-astra-6-pro-cad.json",
       "title": "Astra 6 Pro CAD",
       "project": "CAD Pro Debian",
       "status": "milestone",
       "createdAt": "2026-10-29T02:02:39Z"
-    },
-    {
-      "id": "fleet-2026-10-23-air-superiority-rebuilt-shift5",
-      "path": "posts/fleet-2026-10-23-air-superiority-rebuilt-shift5.json",
-      "title": "Air Superiority",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-28T12:00:00+01:00"
     },
     {
       "id": "the-world-2026-10-25-first-hour",
@@ -276,36 +140,12 @@
       "createdAt": "2026-10-22T14:33:18Z"
     },
     {
-      "id": "fleet-2026-10-22-fighter-wing-rebuilt",
-      "path": "posts/fleet-2026-10-22-fighter-wing-rebuilt.json",
-      "title": "Fighter Wing",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-22T10:00:00Z"
-    },
-    {
-      "id": "fleet-2026-10-21-quick-response-rebuilt",
-      "path": "posts/fleet-2026-10-21-quick-response-rebuilt.json",
-      "title": "Quick Response",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-21T10:00:00Z"
-    },
-    {
       "id": "trellis-post-2026-10-20-baked-angel-showcase",
       "path": "posts/trellis-post-2026-10-20-baked-angel-showcase.json",
       "title": "Baked detail, fewer triangles",
       "project": "3D Art",
       "status": "wip",
       "createdAt": "2026-10-20T11:20:51.796538Z"
-    },
-    {
-      "id": "fleet-2026-10-20-workshop-crew-rebuilt",
-      "path": "posts/fleet-2026-10-20-workshop-crew-rebuilt.json",
-      "title": "Workshop Crew",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-20T10:00:00Z"
     },
     {
       "id": "halloween-game-2026-10-20-assets",
@@ -338,14 +178,6 @@
       "project": "Texture Budget Lab",
       "status": "wip",
       "createdAt": "2026-10-19T10:30:00Z"
-    },
-    {
-      "id": "fleet-2026-10-19-small-helpers-rebuilt",
-      "path": "posts/fleet-2026-10-19-small-helpers-rebuilt.json",
-      "title": "Small Helpers",
-      "project": "conventional-space-fleet",
-      "status": "wip",
-      "createdAt": "2026-10-19T10:00:00Z"
     },
     {
       "id": "texture-budget-lab-2026-10-18-scarecrow-4k-1k",

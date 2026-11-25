@@ -56,14 +56,20 @@ def inventory(root: Path) -> list[Source]:
     seen = set()
     for item in selection["sources"]:
         post_id, filename, kind = (item[key] for key in ("postId", "fileName", "kind"))
-        if (post_id not in indexed or kind not in {"image", "video"} or
-                not re.fullmatch(r"[A-Za-z0-9._-]+", filename) or (post_id, filename) in seen):
-            raise ValueError("Selection must identify unique indexed media")
+        if (not re.fullmatch(r"[a-z0-9][a-z0-9-]*", post_id) or kind not in {"image", "video"} or
+                not re.fullmatch(r"[A-Za-z0-9._-]+", filename) or filename in {".", ".."} or
+                (post_id, filename) in seen):
+            raise ValueError("Selection must identify unique public media")
         seen.add((post_id, filename))
-        post = json.loads((root / "feed/posts" / f"{post_id}.json").read_text())
-        if filename not in {media["fileName"] for media in post[kind + "s"]}:
-            raise ValueError("Selected attachment is not declared by its post")
-        path = root / "feed/media" / post_id / filename
+        if post_id in indexed:
+            post = json.loads((root / "feed/posts" / f"{post_id}.json").read_text())
+            if filename not in {media["fileName"] for media in post[kind + "s"]}:
+                raise ValueError("Selected attachment is not declared by its post")
+            path = root / "feed/media" / post_id / filename
+        else:
+            path = root / "scripts/showcase_sources" / post_id / filename
+            if kind != "image" or not path.is_file():
+                raise ValueError("Selection requires an indexed post or a retained showcase image")
         start = item.get("start", 0)
         if isinstance(start, bool) or not isinstance(start, (int, float)) or not math.isfinite(start) or start < 0:
             raise ValueError("Clip start must be finite nonnegative seconds")

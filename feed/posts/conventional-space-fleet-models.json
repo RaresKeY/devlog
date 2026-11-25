@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "conventional-space-fleet-models",
+  "title": "Space Fleet Models",
+  "project": "Conventional Space Fleet",
+  "body": "Conventional Space Fleet is a collection of 3D spaceship models for games. These four images show 66 ships, from cargo haulers and mining ships to passenger ships, tankers, fighters and carriers. Each group is labeled with the ship names.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "spacecraft"
+  ],
+  "createdAt": "2026-11-16T16:05:15Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "work-ships",
+      "path": "../media/conventional-space-fleet-models/work-ships.webp",
+      "fileName": "work-ships.webp",
+      "contentType": "image/webp",
+      "alt": "Work ships. 3D renders of Wisp, Mote, Spark, Tinker, Porter, Steward, Parcel, Hauler, Ox, Caravel, Galleon, Mule, Beetle, Auger, Dredger, Excavator, Behemoth and Prospector.",
+      "caption": "Cargo, mining and repair (18 ships)"
+    },
+    {
+      "id": "travel-and-support",
+      "path": "../media/conventional-space-fleet-models/travel-and-support.webp",
+      "fileName": "travel-and-support.webp",
+      "contentType": "image/webp",
+      "alt": "Travel and support ships. 3D renders of Wayfarer, Swift, Nomad, Courier, Pilgrim, Caravan, Reservoir, Aqueduct, Meridian, Elysium, Avalon, Oceanus, Ark, Haven and Sanctuary.",
+      "caption": "Passenger ships, tankers and fleet support (15 ships)"
+    },
+    {
+      "id": "fighters-and-patrol",
+      "path": "../media/conventional-space-fleet-models/fighters-and-patrol.webp",
+      "fileName": "fighters-and-patrol.webp",
+      "contentType": "image/webp",
+      "alt": "Fighters and patrol ships. 3D renders of Needle, Dart, Flash, Kestrel, Merlin, Shrike, Petrel, Goshawk, Phoenix, Picket, Sentinel, Watchman, Bulwark, Lancer, Rapier, Sledge, Razor and Onslaught.",
+      "caption": "Fighters, patrol ships and escorts (18 ships)"
+    },
+    {
+      "id": "heavy-and-command",
+      "path": "../media/conventional-space-fleet-models/heavy-and-command.webp",
+      "fileName": "heavy-and-command.webp",
+      "contentType": "image/webp",
+      "alt": "Heavy and command ships. 3D renders of Anvil, Maul, Hammer, Halberd, Glaive, Reaver, Bastion, Rampart, Redoubt, Fortress, Monarch, Regent, Sovereign, Imperator and Leviathan.",
+      "caption": "Heavy ships and fleet command (15 ships)"
+    }
+  ],
+  "videos": []
+}

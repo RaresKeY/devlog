@@ -6,19 +6,19 @@ Implemented. A curated, gapless mosaic uses 32 public attachments, 16 still imag
 
 ## Source Sync
 
-This spec owns `scripts/build_showcase.py`, `scripts/showcase_selection.json`, `site/showcase/`, `site/showcase.js`, `site/showcase-layout.js`, background/control markup and styles in `site/index.html` and `site/styles.css`, decorative-media exclusions in `site/music.js`, visible-video preloading in `site/app.js`, showcase verification in `scripts/check_public_bundle.py`, `tests/test_showcase.py`, and `tests/showcase_test.js`.
+This spec owns `scripts/build_showcase.py`, `scripts/showcase_selection.json`, `scripts/showcase_sources/`, `site/showcase/`, `site/showcase.js`, `site/showcase-layout.js`, background/control markup and styles in `site/index.html` and `site/styles.css`, decorative-media exclusions in `site/music.js`, visible-video preloading in `site/app.js`, showcase verification in `scripts/check_public_bundle.py`, `tests/test_showcase.py`, and `tests/showcase_test.js`.
 
 ## Behavior
 
 ### Authored composition
 
-- The selection file names only indexed public posts and declared image/video attachments, with optional video start times. It is an explicit authoring selection rather than an automatic mirror of every attachment. Original feed files remain unchanged and available in their posts.
+- The selection file identifies declared image/video attachments of indexed public posts, with optional video start times. When a selected still's post is retired, its exact source image can move to `scripts/showcase_sources/<post-id>/<filename>`. The verifier checks the retained file against the snapshot's SHA-256. These source images are available to the builder and stay outside the Pages artifact.
 - Deterministic aspect-aware rectangle packing produces varied tile sizes. Every grid cell has exactly one owner and every selected source appears in both orientations. Padding repeats existing sources. Images fill their tile. A one-second cyclic crossfade makes each six-second video preview repeatable.
 - Each orientation has one WebP image atlas, a static poster, and 16 separate small H.264 previews. Landscape uses six 128 by 96 cells per row; portrait uses four 96 by 96 cells. Each clip is encoded at its largest owned tile size. H.264 Main level 3.1, YUV 4:2:0, CRF 29, a two-second keyframe interval, MP4 fast start, and no audio provide broadly supported native playback without shipping multiple codec renditions.
 - The browser rotates an oversized plane by minus eight degrees and repeats whole boards. Inverse-rotated viewport bounds plus a guard prevent exposed corners. A linear Web Animations transform moves the rail at 12 CSS pixels per second, or nine at viewport widths up to 640 pixels. Advancing one whole board wraps exactly. There is no production JavaScript frame loop or per-frame layout calculation.
 - Only visible preview tiles can acquire a native video player. A reusable pool permits two active players for landscape and one for portrait. IntersectionObserver controls assignment and release. Other tiles retain their atlas still. Players start at the rail's current six-second phase and fade in over 180 ms. No IntersectionObserver support leaves the moving image atlas usable without preview decoding.
 - Schema-v2 `manifest.json` records source identities/hashes, complete cell ownership, asset sizes/hashes, dimensions and preview timing. Public validation rejects comparison builds, unsafe paths, incorrect ownership, altered assets, omitted previews/sources, grid gaps/overlaps and budget violations. Limits are 32 sources, 16 video previews per orientation, 512 KiB per atlas, 256 KiB per clip or poster, 3 MiB per orientation and 6 MiB combined. These are encoded byte limits, not total decoded browser/GPU memory limits.
-- This is an authored snapshot. Feed-only posts remain immediately readable through the normal feed route. Refreshing the background requires an explicit selection/build/review and Pages release. Later source-byte updates do not invalidate an existing snapshot; rebuild when removing or replacing showcased media.
+- This is an authored snapshot. Feed-only posts remain immediately readable through the normal feed route. Refreshing the background requires an explicit selection/build/review and Pages release. A snapshot can retain earlier source bytes after a feed update. When retiring a selected post, preserve the selected still exactly or rebuild with an updated selection.
 
 ### Browser lifecycle and cache
 

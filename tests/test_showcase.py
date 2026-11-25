@@ -47,6 +47,7 @@ class ShowcaseManifestTests(unittest.TestCase):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)
         root = Path(temporary.name)
+        self.root = root
         self.site = root / "site"
         self.media = root / "feed/media"
         folder = self.site / "showcase"
@@ -73,7 +74,8 @@ class ShowcaseManifestTests(unittest.TestCase):
                     "bytes": video.stat().st_size, "sha256": hashlib.sha256(video.read_bytes()).hexdigest()}],
                 "layout": {"columns": columns, "rows": 2, "cellWidth": cell_width, "cellHeight": 96,
                     "tiles": [{"source": x % 2, "x": x, "y": y, "width": 1, "height": 1} for y in range(2) for x in range(columns)]}}
-        for name, value in (("SITE", self.site), ("MEDIA", self.media)):
+        for name, value in (("ROOT", root), ("SITE", self.site), ("MEDIA", self.media),
+                            ("POSTS", root / "feed/posts")):
             replacement = patch.object(verifier, name, value)
             replacement.start()
             self.addCleanup(replacement.stop)
@@ -134,6 +136,17 @@ class ShowcaseManifestTests(unittest.TestCase):
     def test_snapshot_does_not_block_later_source_byte_updates(self):
         (self.media / "sample/image.png").write_bytes(b"a later publicly reviewed replacement")
         self.assertEqual(self.validate()[0], [])
+
+    def test_retained_still_must_match_manifest_after_its_post_is_removed(self):
+        retained = self.root / "scripts/showcase_sources/sample/image.png"
+        retained.parent.mkdir(parents=True)
+        data = b"\x89PNG\r\n\x1a\n" + b"retained image"
+        retained.write_bytes(data)
+        (self.media / "sample/image.png").unlink()
+        self.manifest["sources"][0]["sha256"] = hashlib.sha256(data).hexdigest()
+        self.assertEqual(self.validate()[0], [])
+        retained.write_bytes(data + b"changed")
+        self.assertTrue(any("retained source image" in item for item in self.validate()[0]))
 
     def test_rejects_missing_or_duplicate_source_identity(self):
         self.manifest["sources"][0]["fileName"] = "missing.png"

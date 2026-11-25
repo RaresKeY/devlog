@@ -287,8 +287,20 @@ def validate_showcase() -> tuple[list[str], set[str]]:
             failures.append("site/showcase: duplicate source identity")
         identities.add(identity)
         kinds.append(source["kind"])
-        if not (MEDIA / source["postId"] / source["fileName"]).is_file():
+        post_id, filename = identity
+        if (MEDIA / post_id / filename).is_file():
+            continue
+        retained_root = ROOT / "scripts/showcase_sources"
+        retained = retained_root / post_id / filename
+        if (source["kind"] != "image" or (POSTS / f"{post_id}.json").exists()
+                or not retained.is_file()):
             failures.append("site/showcase: source media is missing")
+        elif (retained_root.is_symlink() or retained.parent.is_symlink() or retained.is_symlink()
+                or retained.suffix.lower() not in {".png", ".jpg", ".jpeg", ".webp"}
+                or not 0 < retained.stat().st_size <= MAX_FILE_BYTES
+                or not has_expected_signature(retained)
+                or hashlib.sha256(retained.read_bytes()).hexdigest() != source["sha256"]):
+            failures.append("site/showcase: retained source image does not match its manifest")
 
     total_bytes = 0
     for name, variant in manifest["variants"].items():
