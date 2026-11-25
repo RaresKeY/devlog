@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-25-city-streets-and-redrock-canyon",
+  "title": "City streets and Redrock Canyon",
+  "project": "Code Review Simulator",
+  "body": "The fleet pickup drives on city asphalt and the gravel road at Redrock Canyon. You can hear the tires go from a steady hum on pavement to a rougher sound on gravel.",
+  "status": "wip",
+  "tags": [
+    "audio",
+    "gameplay"
+  ],
+  "createdAt": "2026-11-25T18:53:06Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "city-streets-and-redrock-canyon",
+      "path": "../media/code-review-simulator-2026-11-25-city-streets-and-redrock-canyon/city-streets-and-redrock-canyon.mp4",
+      "fileName": "city-streets-and-redrock-canyon.mp4",
+      "contentType": "video/mp4",
+      "caption": "17 seconds of gameplay with engine and tire sounds.",
+      "hasAudio": true,
+      "poster": "../media/code-review-simulator-2026-11-25-city-streets-and-redrock-canyon/city-streets-and-redrock-canyon-poster.jpg"
+    }
+  ]
+}

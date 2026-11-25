@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-25-city-streets-and-redrock-canyon",
+      "path": "posts/code-review-simulator-2026-11-25-city-streets-and-redrock-canyon.json",
+      "title": "City streets and Redrock Canyon",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-25T18:53:06Z"
+    },
+    {
       "id": "2026-11-25-worn-office-chair-casters",
       "path": "posts/2026-11-25-worn-office-chair-casters.json",
       "title": "Ten wheels on one office chair",
