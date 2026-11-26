@@ -7,7 +7,7 @@
     "gameplay",
     "physics"
   ],
-  "body": "You can walk up to the pickup, climb into the cab and take it through Quartz City with three loose cartons in the bed. The wheel camera shows the front suspension working over the bump course. For the last run, I took a different line over a ridge in Quartz County, leaving room around the boulders and following the truck through the landing.\n\nI also fixed a save issue where a frozen carton in the bed could stop the pickup. The carton now wakes up where it was saved and rides as loose cargo.",
+  "body": "The pickup starts at speed and skids around a corner in Quartz City. The wheel camera shows the suspension over a bump, then the rear view shows the loose cartons jolt as the truck crosses a ramp. In Quartz County, the truck revs in the air off a ridge. A low front camera catches the jump, then a wider shot follows the rollover.\n\nI fixed the cargo crossing into the cab on hard impacts. Cartons that were frozen in older saves also wake up where they were saved.",
   "status": "wip",
   "createdAt": "2026-11-26T16:02:38+01:00",
   "visibility": "public",
@@ -18,7 +18,7 @@
       "path": "../media/code-review-simulator-2026-11-26-drivable-pickup/truck-player-run.mp4",
       "fileName": "truck-player-run.mp4",
       "contentType": "video/mp4",
-      "caption": "A drive through Quartz City, a close view of the suspension course, and a ridge jump and landing in Quartz County.",
+      "caption": "A fast city skid, a close look at the suspension and loose cargo, and a ridge jump with an airborne rev and rollover.",
       "poster": "../media/code-review-simulator-2026-11-26-drivable-pickup/truck-player-run.jpg",
       "hasAudio": true,
       "loop": false
