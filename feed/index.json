@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-26-harbor-motor-works-fittings",
+      "path": "posts/code-review-simulator-2026-11-26-harbor-motor-works-fittings.json",
+      "title": "Fitting the pickup at Harbor Motor Works",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-26T14:30:00Z"
+    },
+    {
       "id": "code-review-simulator-2026-11-26-laurel-crescent-traffic",
       "path": "posts/code-review-simulator-2026-11-26-laurel-crescent-traffic.json",
       "title": "Traffic on Laurel Crescent",

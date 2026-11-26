@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-26-harbor-motor-works-fittings",
+  "title": "Fitting the pickup at Harbor Motor Works",
+  "project": "Code Review Simulator",
+  "tags": [
+    "gameplay",
+    "interaction",
+    "godot"
+  ],
+  "body": "Each fitting at Harbor Motor Works gets its own inspection angle. I can preview the paint, wheels, cab steps and cargo bed, and watch the pickup settle onto its suspension after each change. Install applies the setup and hands control back to the driver.\n\nI recorded this in the garage lab with the same truck and fitting controls used in the game. The clip shows oxide red paint, bronze wheels, service treads and a canvas canopy. The shop is on Harbor Parkway, just east of Quartz City.",
+  "status": "wip",
+  "createdAt": "2026-11-26T14:30:00Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "garage-fittings",
+      "fileName": "harbor-motor-works.mp4",
+      "path": "../media/code-review-simulator-2026-11-26-harbor-motor-works-fittings/harbor-motor-works.mp4",
+      "contentType": "video/mp4",
+      "hasAudio": true,
+      "caption": "Previewing and installing four pickup fittings in the garage lab.",
+      "poster": "../media/code-review-simulator-2026-11-26-harbor-motor-works-fittings/harbor-motor-works.jpg"
+    }
+  ]
+}
