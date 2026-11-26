@@ -1,0 +1,25 @@
+{
+  "title": "Afternoon on the cottage street",
+  "project": "Code Review Simulator",
+  "body": "In the Cottage Daylight lab, we can hold the camera still and switch the afternoon light and street surfaces on separately. This render uses both. Sun catches the top of the linden and the shutters cast long shadows across the plaster. Along the curb, tufts of grass break up the edge of the paving.",
+  "tags": [
+    "godot",
+    "environments"
+  ],
+  "schemaVersion": 1,
+  "id": "2026-11-26-cottage-daylight",
+  "status": "wip",
+  "visibility": "public",
+  "createdAt": "2026-11-26T01:02:07Z",
+  "images": [
+    {
+      "id": "afternoon",
+      "path": "../media/2026-11-26-cottage-daylight/afternoon.png",
+      "fileName": "afternoon.png",
+      "contentType": "image/png",
+      "alt": "A sunlit linden beside a residential street, with green shutters casting shadows across the cottage walls.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
