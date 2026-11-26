@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "2026-11-26-golden-city-cab",
+      "path": "posts/2026-11-26-golden-city-cab.json",
+      "title": "Opening up Golden City Cab 07",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-26T00:02:07Z"
+    },
+    {
       "id": "code-review-simulator-2026-11-25-harbor-motor-works",
       "path": "posts/code-review-simulator-2026-11-25-harbor-motor-works.json",
       "title": "Laying out Harbor Motor Works",

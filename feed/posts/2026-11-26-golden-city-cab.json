@@ -1,0 +1,49 @@
+{
+  "title": "Opening up Golden City Cab 07",
+  "project": "Code Review Simulator",
+  "body": "Each of Golden City Cab 07’s four doors swings on its own hinge. The front doors carry the mirrors with them, and the checker stripe lines up across the seams when the doors close. Under the hood is the engine. Around back, the trunk opens onto a lined luggage compartment.",
+  "tags": [
+    "3d-art",
+    "rigging"
+  ],
+  "schemaVersion": 1,
+  "id": "2026-11-26-golden-city-cab",
+  "status": "wip",
+  "visibility": "public",
+  "createdAt": "2026-11-26T00:02:07Z",
+  "images": [
+    {
+      "id": "cab-open",
+      "path": "../media/2026-11-26-golden-city-cab/cab-open.jpg",
+      "fileName": "cab-open.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The yellow cab with its hood, trunk and front door open.",
+      "caption": ""
+    },
+    {
+      "id": "cab-front",
+      "path": "../media/2026-11-26-golden-city-cab/cab-front.jpg",
+      "fileName": "cab-front.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Front view with all panels closed and the checker stripe aligned across the doors.",
+      "caption": ""
+    },
+    {
+      "id": "cab-cabin",
+      "path": "../media/2026-11-26-golden-city-cab/cab-cabin.jpg",
+      "fileName": "cab-cabin.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Steering wheel and two brown front seats, with the rear bench behind them.",
+      "caption": ""
+    },
+    {
+      "id": "cab-rear",
+      "path": "../media/2026-11-26-golden-city-cab/cab-rear.jpg",
+      "fileName": "cab-rear.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Rear three-quarter view of the cab with its trunk closed.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
