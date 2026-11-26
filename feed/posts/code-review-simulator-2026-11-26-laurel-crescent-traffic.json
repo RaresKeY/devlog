@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-26-laurel-crescent-traffic",
+  "title": "Traffic on Laurel Crescent",
+  "project": "Code Review Simulator",
+  "body": "A bakery worker backs out of a parking space on Laurel Crescent in Quartz City. The driver turns through the shopping court, crosses the sidewalk at the driveway, and joins street traffic using the same car physics as the other drivers.",
+  "status": "wip",
+  "tags": [
+    "simulation",
+    "physics",
+    "gameplay"
+  ],
+  "createdAt": "2026-11-26T12:35:20Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "bakery-departure",
+      "path": "../media/code-review-simulator-2026-11-26-laurel-crescent-traffic/bakery-departure.mp4",
+      "fileName": "bakery-departure.mp4",
+      "contentType": "video/mp4",
+      "caption": "The bakery departure at 2× speed.",
+      "hasAudio": false,
+      "poster": "../media/code-review-simulator-2026-11-26-laurel-crescent-traffic/bakery-departure-poster.jpg"
+    }
+  ]
+}

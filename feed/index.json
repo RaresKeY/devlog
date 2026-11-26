@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-26-laurel-crescent-traffic",
+      "path": "posts/code-review-simulator-2026-11-26-laurel-crescent-traffic.json",
+      "title": "Traffic on Laurel Crescent",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-26T12:35:20Z"
+    },
+    {
       "id": "2026-11-26-cottage-daylight",
       "path": "posts/2026-11-26-cottage-daylight.json",
       "title": "Afternoon on the cottage street",
