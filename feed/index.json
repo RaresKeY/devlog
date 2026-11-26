@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-26-drivable-pickup",
+      "path": "posts/code-review-simulator-2026-11-26-drivable-pickup.json",
+      "title": "I added a drivable pickup",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-26T16:02:38+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-26-harbor-motor-works-fittings",
       "path": "posts/code-review-simulator-2026-11-26-harbor-motor-works-fittings.json",
       "title": "Fitting the pickup at Harbor Motor Works",

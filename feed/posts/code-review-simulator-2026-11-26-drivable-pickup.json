@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-26-drivable-pickup",
+  "title": "I added a drivable pickup",
+  "project": "Code Review Simulator",
+  "tags": [
+    "gameplay",
+    "physics"
+  ],
+  "body": "You can walk up to the pickup, climb into the cab and take it through Quartz City with three loose cartons in the bed. The wheel camera shows the front suspension working over the bump course. For the last run, I took a different line over a ridge in Quartz County, leaving room around the boulders and following the truck through the landing.\n\nI also fixed a save issue where a frozen carton in the bed could stop the pickup. The carton now wakes up where it was saved and rides as loose cargo.",
+  "status": "wip",
+  "createdAt": "2026-11-26T16:02:38+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "truck-player-run",
+      "path": "../media/code-review-simulator-2026-11-26-drivable-pickup/truck-player-run.mp4",
+      "fileName": "truck-player-run.mp4",
+      "contentType": "video/mp4",
+      "caption": "A drive through Quartz City, a close view of the suspension course, and a ridge jump and landing in Quartz County.",
+      "poster": "../media/code-review-simulator-2026-11-26-drivable-pickup/truck-player-run.jpg",
+      "hasAudio": true,
+      "loop": false
+    }
+  ]
+}
