@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "hallowmere-2026-11-26-chapel-counterweights",
+  "title": "The chapel bell’s counterweights",
+  "project": "Hallowmere",
+  "body": "Each handwheel turns a winding drum, and its rope runs over a pulley to the iron eye on a stone counterweight. The stretch just above the eye used to disappear as the weight dropped. I fixed it on both sides, so you can follow each rope while the balance dial tips between the weights.",
+  "status": "wip",
+  "tags": [
+    "animation",
+    "puzzle"
+  ],
+  "createdAt": "2026-11-26T18:14:45Z",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "chapel-bell-cycle",
+      "path": "../media/hallowmere-2026-11-26-chapel-counterweights/chapel-bell-counterweights.mp4",
+      "fileName": "chapel-bell-counterweights.mp4",
+      "contentType": "video/mp4",
+      "caption": "One complete cycle of the chapel bell mechanism, with both stone counterweights in view.",
+      "poster": "../media/hallowmere-2026-11-26-chapel-counterweights/chapel-bell-counterweights.jpg",
+      "hasAudio": false,
+      "loop": true
+    }
+  ]
+}

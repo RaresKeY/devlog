@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "hallowmere-2026-11-26-chapel-counterweights",
+      "path": "posts/hallowmere-2026-11-26-chapel-counterweights.json",
+      "title": "The chapel bell’s counterweights",
+      "project": "Hallowmere",
+      "status": "wip",
+      "createdAt": "2026-11-26T18:14:45Z"
+    },
+    {
       "id": "code-review-simulator-2026-11-26-drivable-pickup",
       "path": "posts/code-review-simulator-2026-11-26-drivable-pickup.json",
       "title": "I added a drivable pickup",
