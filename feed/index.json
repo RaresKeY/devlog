@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-27-inside-beacon-fuel",
+      "path": "posts/code-review-simulator-2026-11-27-inside-beacon-fuel.json",
+      "title": "Inside Beacon Fuel",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-27T20:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-27-three-county-roundabouts",
       "path": "posts/code-review-simulator-2026-11-27-three-county-roundabouts.json",
       "title": "Three county roundabouts",

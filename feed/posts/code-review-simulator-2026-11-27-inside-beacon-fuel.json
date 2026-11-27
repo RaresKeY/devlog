@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-inside-beacon-fuel",
+  "title": "Inside Beacon Fuel",
+  "project": "Code Review Simulator",
+  "body": "Beacon Fuel now has a roadside County Mart storefront with shelves, coolers and a checkout counter, plus an express kiosk on the western route. At the pumps, players can take the nozzle on foot and refill the pickup.",
+  "status": "wip",
+  "tags": [
+    "environments",
+    "gameplay",
+    "interaction"
+  ],
+  "createdAt": "2026-11-27T20:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "beacon-fuel-county-mart",
+      "path": "../media/code-review-simulator-2026-11-27-inside-beacon-fuel/beacon-fuel-county-mart.jpg",
+      "fileName": "beacon-fuel-county-mart.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Glass storefront of the full County Mart with stock shelves and a counter visible through the entrance.",
+      "caption": ""
+    },
+    {
+      "id": "county-mart-shelves-and-coolers",
+      "path": "../media/code-review-simulator-2026-11-27-inside-beacon-fuel/county-mart-shelves-and-coolers.jpg",
+      "fileName": "county-mart-shelves-and-coolers.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Stocked shelves, glass-door coolers and tiled floor inside the full store.",
+      "caption": ""
+    },
+    {
+      "id": "beacon-fuel-express-kiosk",
+      "path": "../media/code-review-simulator-2026-11-27-inside-beacon-fuel/beacon-fuel-express-kiosk.jpg",
+      "fileName": "beacon-fuel-express-kiosk.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Compact express kiosk with two registers behind its wide front window.",
+      "caption": ""
+    },
+    {
+      "id": "beacon-fuel-dispenser",
+      "path": "../media/code-review-simulator-2026-11-27-inside-beacon-fuel/beacon-fuel-dispenser.jpg",
+      "fileName": "beacon-fuel-dispenser.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Red fuel dispenser, meter and hose under the station canopy.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
