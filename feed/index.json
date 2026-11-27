@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-27-valley-farms-and-orchards",
+      "path": "posts/code-review-simulator-2026-11-27-valley-farms-and-orchards.json",
+      "title": "Silos, hayfields and apple orchards",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-27T17:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-27-patchport-working-docks",
       "path": "posts/code-review-simulator-2026-11-27-patchport-working-docks.json",
       "title": "Patchport’s working docks",

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-valley-farms-and-orchards",
+  "title": "Silos, hayfields and apple orchards",
+  "project": "Code Review Simulator",
+  "body": "Merge Fields has twin grain silos joined by an overhead catwalk, with a steel water tower beside the road. Farmland now sits on broad, flat valley floors with mown rows and round hay bales. Orchard Creek Valley has rows of apple trees, a ladder and harvest crates.",
+  "status": "wip",
+  "tags": [
+    "environments"
+  ],
+  "createdAt": "2026-11-27T17:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "merge-fields-grain-silos",
+      "path": "../media/code-review-simulator-2026-11-27-valley-farms-and-orchards/merge-fields-grain-silos.jpg",
+      "fileName": "merge-fields-grain-silos.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Twin corrugated grain silos next to a red barn, joined by a metal catwalk.",
+      "caption": ""
+    },
+    {
+      "id": "merge-fields-water-tower",
+      "path": "../media/code-review-simulator-2026-11-27-valley-farms-and-orchards/merge-fields-water-tower.jpg",
+      "fileName": "merge-fields-water-tower.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Steel water tower on a braced frame beside a road and a red farm building.",
+      "caption": ""
+    },
+    {
+      "id": "valley-hayfield",
+      "path": "../media/code-review-simulator-2026-11-27-valley-farms-and-orchards/valley-hayfield.jpg",
+      "fileName": "valley-hayfield.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Rows of cut hay with round bales across a fenced valley field.",
+      "caption": ""
+    },
+    {
+      "id": "orchard-creek-apple-trees",
+      "path": "../media/code-review-simulator-2026-11-27-valley-farms-and-orchards/orchard-creek-apple-trees.jpg",
+      "fileName": "orchard-creek-apple-trees.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Rows of apple trees with a ladder and stacked harvest crates in the foreground.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
