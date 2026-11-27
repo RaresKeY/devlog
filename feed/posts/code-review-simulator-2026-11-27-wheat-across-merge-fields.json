@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-wheat-across-merge-fields",
+  "title": "Wheat across Merge Fields",
+  "project": "Code Review Simulator",
+  "body": "Quartz County now has wheat on seven grain parcels. Nearby stalks bend in the wind with their roots anchored in the soil. Simpler static clumps take over in the middle distance. Farther out, a static canopy follows the ground so the fields keep their shape across the valley.\n\nThe lab clip approaches Merge Fields from the road, holds at wheat height so you can see the sway, then pulls back to show the same fields at a distance. The playable county uses the same three levels of detail.",
+  "status": "wip",
+  "tags": [
+    "environments",
+    "animation",
+    "performance",
+    "godot"
+  ],
+  "createdAt": "2026-11-27T23:50:00+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "wheat-lab-approach-to-distant-lod",
+      "path": "../media/code-review-simulator-2026-11-27-wheat-across-merge-fields/wheat-lab-approach-to-distant-lod.mp4",
+      "fileName": "wheat-lab-approach-to-distant-lod.mp4",
+      "contentType": "video/mp4",
+      "caption": "Approach from the road, a stationary close-up of the sway, and the distant wheat across Merge Fields.",
+      "poster": "../media/code-review-simulator-2026-11-27-wheat-across-merge-fields/merge-fields-gate.png",
+      "hasAudio": false
+    }
+  ]
+}
