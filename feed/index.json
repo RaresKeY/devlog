@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-wooden-front-doors",
+      "path": "posts/code-review-simulator-2026-11-28-wooden-front-doors.json",
+      "title": "Carved wood, iron straps and painted panels",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T00:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-27-wheat-across-merge-fields",
       "path": "posts/code-review-simulator-2026-11-27-wheat-across-merge-fields.json",
       "title": "Wheat across Merge Fields",
