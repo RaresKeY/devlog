@@ -52,9 +52,9 @@ The initial Beyond the Gate library contains all 12 soundtrack chapters at 192 k
 
 ## Background showcase
 
-The slowly drifting, gapless background includes a snapshot of all 108 posted image/video attachments. Each visitor downloads only one compiled silent two-minute loop, about 6.6 MB for desktop or 5.0 MB for phones, with a verified bounded persistent cache. It does not preload the original media collection. Reduced-motion and data-saving preferences use a static poster, and the header motion control can pause or explicitly enable playback. The background pauses in hidden tabs and coexists with the music player.
+The slowly drifting, gapless background uses 31 selected attachments. The site downloads an image atlas and small silent previews for the current orientation and verifies them before playback. Reduced-motion and data-saving preferences use a static poster. The header motion control can pause or explicitly enable playback. The background pauses in hidden tabs and coexists with the music player.
 
-Refresh the snapshot with `python3 scripts/build_showcase.py --output .local/showcase-next`, review both loops and the coverage manifest, replace the reviewed generated files under `site/showcase/`, bump presentation tokens, and deploy Pages. New feed-only posts retain their existing immediate publication behavior; background refresh is a separate authoring step. See [the showcase contract](specs/showcase.md).
+Refresh the snapshot with `python3 scripts/build_showcase.py --output .local/showcase-next`. Review both orientations and the coverage manifest, replace the reviewed generated files under `site/showcase/`, bump presentation tokens, and deploy Pages. New feed-only posts still appear immediately. See [the showcase contract](specs/showcase.md).
 
 ## Verify
 
