@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-branchwood-lookout-and-log-yard",
+  "title": "Branchwood’s lookout and log yard",
+  "project": "Code Review Simulator",
+  "body": "Branchwood now has a timber fire lookout with switchback stairs and a footpath to its base. Down by the road, a gravel entrance leads into the new log yard.",
+  "status": "wip",
+  "tags": [
+    "environments"
+  ],
+  "createdAt": "2026-11-27T18:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "branchwood-fire-lookout",
+      "path": "../media/code-review-simulator-2026-11-27-branchwood-lookout-and-log-yard/branchwood-fire-lookout.jpg",
+      "fileName": "branchwood-fire-lookout.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Timber fire lookout on tall braced legs with switchback stairs.",
+      "caption": ""
+    },
+    {
+      "id": "branchwood-lookout-path",
+      "path": "../media/code-review-simulator-2026-11-27-branchwood-lookout-and-log-yard/branchwood-lookout-path.jpg",
+      "fileName": "branchwood-lookout-path.jpg",
+      "contentType": "image/jpeg",
+      "alt": "View from Branchwood across the road toward the path and lookout tower.",
+      "caption": ""
+    },
+    {
+      "id": "branchwood-log-yard",
+      "path": "../media/code-review-simulator-2026-11-27-branchwood-lookout-and-log-yard/branchwood-log-yard.jpg",
+      "fileName": "branchwood-log-yard.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Timber stacked in bays in the gravel log yard beside the houses.",
+      "caption": ""
+    },
+    {
+      "id": "branchwood-timber-stacks",
+      "path": "../media/code-review-simulator-2026-11-27-branchwood-lookout-and-log-yard/branchwood-timber-stacks.jpg",
+      "fileName": "branchwood-timber-stacks.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Cut ends of stacked logs on both sides of an aisle in the timber yard.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

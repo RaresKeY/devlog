@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-27-branchwood-lookout-and-log-yard",
+      "path": "posts/code-review-simulator-2026-11-27-branchwood-lookout-and-log-yard.json",
+      "title": "Branchwood’s lookout and log yard",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-27T18:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-27-valley-farms-and-orchards",
       "path": "posts/code-review-simulator-2026-11-27-valley-farms-and-orchards.json",
       "title": "Silos, hayfields and apple orchards",
