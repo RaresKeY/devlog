@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-pickup-bodywork-under-impact",
+  "title": "What bends when the pickup hits",
+  "project": "Code Review Simulator",
+  "body": "An off-centre hit now bends the pickup’s grille where it’s struck. A harder hit can knock the grille or either bumper loose. The driver’s door can take a dent and still open.",
+  "status": "wip",
+  "tags": [
+    "physics",
+    "simulation"
+  ],
+  "createdAt": "2026-11-27T22:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "pickup-grille-detached",
+      "path": "../media/code-review-simulator-2026-11-27-pickup-bodywork-under-impact/pickup-grille-detached.png",
+      "fileName": "pickup-grille-detached.png",
+      "contentType": "image/png",
+      "alt": "Blue pickup with an open grille recess and the detached grille on the ground.",
+      "caption": ""
+    },
+    {
+      "id": "pickup-off-center-grille-dent",
+      "path": "../media/code-review-simulator-2026-11-27-pickup-bodywork-under-impact/pickup-off-center-grille-dent.png",
+      "fileName": "pickup-off-center-grille-dent.png",
+      "contentType": "image/png",
+      "alt": "An off-centre dent bends the pickup grille slats near the badge.",
+      "caption": ""
+    },
+    {
+      "id": "pickup-door-dent",
+      "path": "../media/code-review-simulator-2026-11-27-pickup-bodywork-under-impact/pickup-door-dent.png",
+      "fileName": "pickup-door-dent.png",
+      "contentType": "image/png",
+      "alt": "The driver’s door is open with a broad dent in its blue outer panel.",
+      "caption": ""
+    },
+    {
+      "id": "pickup-rear-bumper-detached",
+      "path": "../media/code-review-simulator-2026-11-27-pickup-bodywork-under-impact/pickup-rear-bumper-detached.png",
+      "fileName": "pickup-rear-bumper-detached.png",
+      "contentType": "image/png",
+      "alt": "The bent rear bumper has separated from the pickup below its closed tailgate.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

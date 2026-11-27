@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-27-pickup-bodywork-under-impact",
+      "path": "posts/code-review-simulator-2026-11-27-pickup-bodywork-under-impact.json",
+      "title": "What bends when the pickup hits",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-27T22:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-27-testing-traffic-at-a-busy-junction",
       "path": "posts/code-review-simulator-2026-11-27-testing-traffic-at-a-busy-junction.json",
       "title": "Testing traffic at a busy junction",
