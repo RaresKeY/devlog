@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-three-county-roundabouts",
+  "title": "Three county roundabouts",
+  "project": "Code Review Simulator",
+  "body": "North Fork, South Cross and Copper Flats now have roundabouts. County traffic follows a one-way lane around each island, with chevrons marking the turn and a paved apron giving longer vehicles room.",
+  "status": "wip",
+  "tags": [
+    "environments"
+  ],
+  "createdAt": "2026-11-27T19:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "north-fork-roundabout",
+      "path": "../media/code-review-simulator-2026-11-27-three-county-roundabouts/north-fork-roundabout.jpg",
+      "fileName": "north-fork-roundabout.jpg",
+      "contentType": "image/jpeg",
+      "alt": "A cream car passes the landscaped island at the North Fork roundabout.",
+      "caption": ""
+    },
+    {
+      "id": "south-cross-roundabout",
+      "path": "../media/code-review-simulator-2026-11-27-three-county-roundabouts/south-cross-roundabout.jpg",
+      "fileName": "south-cross-roundabout.jpg",
+      "contentType": "image/jpeg",
+      "alt": "South Cross roundabout seen from above with hayfields beyond it.",
+      "caption": ""
+    },
+    {
+      "id": "copper-flats-roundabout",
+      "path": "../media/code-review-simulator-2026-11-27-three-county-roundabouts/copper-flats-roundabout.jpg",
+      "fileName": "copper-flats-roundabout.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The planted island at the Copper Flats roundabout amid dry, open terrain.",
+      "caption": ""
+    },
+    {
+      "id": "north-fork-approach-roads",
+      "path": "../media/code-review-simulator-2026-11-27-three-county-roundabouts/north-fork-approach-roads.jpg",
+      "fileName": "north-fork-approach-roads.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Higher view of the North Fork roundabout and its three approach roads.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
