@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-patchport-working-docks",
+  "title": "Patchport’s working docks",
+  "project": "Code Review Simulator",
+  "body": "At Patchport, the loading yard now has crane rails and a graded entrance from the road. The yellow gantry crane stands above a reinforced quay with three cross-braced timber piers.",
+  "status": "wip",
+  "tags": [
+    "environments",
+    "worldbuilding"
+  ],
+  "createdAt": "2026-11-27T16:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "patchport-gantry-crane",
+      "path": "../media/code-review-simulator-2026-11-27-patchport-working-docks/patchport-gantry-crane.jpg",
+      "fileName": "patchport-gantry-crane.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Yellow container crane above the loading yard and timber piers at Patchport.",
+      "caption": ""
+    },
+    {
+      "id": "patchport-quay-and-piers",
+      "path": "../media/code-review-simulator-2026-11-27-patchport-working-docks/patchport-quay-and-piers.jpg",
+      "fileName": "patchport-quay-and-piers.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Cross-braced timber piers meet a concrete quay fitted with ladders and fenders.",
+      "caption": ""
+    },
+    {
+      "id": "patchport-road-approach",
+      "path": "../media/code-review-simulator-2026-11-27-patchport-working-docks/patchport-road-approach.jpg",
+      "fileName": "patchport-road-approach.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Road into Patchport with hotels to the left and the warehouse and crane to the right.",
+      "caption": ""
+    },
+    {
+      "id": "patchport-waterfront",
+      "path": "../media/code-review-simulator-2026-11-27-patchport-working-docks/patchport-waterfront.jpg",
+      "fileName": "patchport-waterfront.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Aerial view of the town roads, warehouses and working waterfront at Patchport.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

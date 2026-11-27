@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-27-patchport-working-docks",
+      "path": "posts/code-review-simulator-2026-11-27-patchport-working-docks.json",
+      "title": "Patchport’s working docks",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-27T16:50:00+01:00"
+    },
+    {
       "id": "hallowmere-2026-11-26-chapel-counterweights",
       "path": "posts/hallowmere-2026-11-26-chapel-counterweights.json",
       "title": "The chapel bell’s counterweights",
