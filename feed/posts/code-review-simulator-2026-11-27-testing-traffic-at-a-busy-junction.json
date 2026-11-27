@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-27-testing-traffic-at-a-busy-junction",
+  "title": "Testing traffic at a busy junction",
+  "project": "Code Review Simulator",
+  "body": "In the Traffic lab, cars wait at the junction until both the crossing and their exit lane are clear. I ran the city routes with 48 cars for 30 simulated minutes and recorded zero overlaps.",
+  "status": "wip",
+  "tags": [
+    "simulation"
+  ],
+  "createdAt": "2026-11-27T21:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "quartz-city-junction-approach",
+      "path": "../media/code-review-simulator-2026-11-27-testing-traffic-at-a-busy-junction/quartz-city-junction-approach.png",
+      "fileName": "quartz-city-junction-approach.png",
+      "contentType": "image/png",
+      "alt": "In the Traffic lab, cars approach a four-way junction from two Quartz City streets.",
+      "caption": ""
+    },
+    {
+      "id": "quartz-city-patrol-crossing",
+      "path": "../media/code-review-simulator-2026-11-27-testing-traffic-at-a-busy-junction/quartz-city-patrol-crossing.png",
+      "fileName": "quartz-city-patrol-crossing.png",
+      "contentType": "image/png",
+      "alt": "A patrol car clears the intersection as a yellow cab approaches from the left.",
+      "caption": ""
+    },
+    {
+      "id": "quartz-city-cab-turning",
+      "path": "../media/code-review-simulator-2026-11-27-testing-traffic-at-a-busy-junction/quartz-city-cab-turning.png",
+      "fileName": "quartz-city-cab-turning.png",
+      "contentType": "image/png",
+      "alt": "The yellow cab starts its turn while cars remain queued on the far approach.",
+      "caption": ""
+    },
+    {
+      "id": "quartz-city-cab-clearing",
+      "path": "../media/code-review-simulator-2026-11-27-testing-traffic-at-a-busy-junction/quartz-city-cab-clearing.png",
+      "fileName": "quartz-city-cab-clearing.png",
+      "contentType": "image/png",
+      "alt": "The yellow cab finishes its turn onto the far street as another cab approaches the crossing.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
