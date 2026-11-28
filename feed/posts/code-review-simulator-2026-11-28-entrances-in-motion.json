@@ -1,0 +1,61 @@
+{
+  "title": "Doors and dock hardware in motion",
+  "project": "Code Review Simulator",
+  "body": "The thumb latch on the carved townhouse door releases just before the leaf swings. Each carriage door has its own latch and pull. In the workshop, the glazed sections turn onto overhead tracks.\n\nWe fitted two reserve assemblies to the warehouse and depot for this recording. A wall button sends the cold-store panel left along its rail. At the dock, the door clears before the deck lifts and its lip folds out. The clicks, rolling sounds and stops come from four Omni Flow recordings.",
+  "tags": [
+    "hardware",
+    "interaction",
+    "animation",
+    "audio"
+  ],
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-entrances-in-motion",
+  "createdAt": "2026-11-28T13:50:00+01:00",
+  "visibility": "public",
+  "status": "wip",
+  "images": [
+    {
+      "id": "townhouse-carved",
+      "fileName": "townhouse_carved.png",
+      "contentType": "image/png",
+      "alt": "The carved townhouse door beginning to swing clear of its cream frame.",
+      "caption": "Townhouse thumb latch",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/townhouse_carved.png"
+    },
+    {
+      "id": "garage-carriage",
+      "fileName": "garage_carriage.png",
+      "contentType": "image/png",
+      "alt": "A timber carriage leaf stands open while the other leaf remains closed in the workshop demonstration.",
+      "caption": "Independent carriage leaves",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/garage_carriage.png"
+    },
+    {
+      "id": "cold-store",
+      "fileName": "cold_store.png",
+      "contentType": "image/png",
+      "alt": "The insulated door has moved left along its rail in the warehouse demonstration.",
+      "caption": "Cold-store wall release",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/cold_store.png"
+    },
+    {
+      "id": "dock-leveler",
+      "fileName": "dock_leveler.png",
+      "contentType": "image/png",
+      "alt": "The overhead opening is clear and the deck and its hinged lip are raised in the depot demonstration.",
+      "caption": "Dock deck and folding lip",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/dock_leveler.png"
+    }
+  ],
+  "videos": [
+    {
+      "id": "doors-in-motion",
+      "fileName": "doors-in-motion.mp4",
+      "contentType": "video/mp4",
+      "caption": "Five entrances operated in Godot, with the in-game spatial sound effects.",
+      "hasAudio": true,
+      "loop": false,
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/doors-in-motion.mp4"
+    }
+  ]
+}
