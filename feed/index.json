@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-quartz-mart-walk",
+      "path": "posts/code-review-simulator-2026-11-28-quartz-mart-walk.json",
+      "title": "Walking past Quartz Mart",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T08:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-patchport-freight-crossing",
       "path": "posts/code-review-simulator-2026-11-28-patchport-freight-crossing.json",
       "title": "Container crossing from Patchport to Eastmere",

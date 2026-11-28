@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-quartz-mart-walk",
+  "title": "Walking past Quartz Mart",
+  "project": "Code Review Simulator",
+  "body": "The suited pedestrian outside Quartz Mart used to hold his right arm up as he walked. Now it swings forward with his left foot as he passes the vending machine.",
+  "status": "wip",
+  "tags": [
+    "animation"
+  ],
+  "createdAt": "2026-11-28T08:50:00+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "quartz-mart-walk",
+      "fileName": "quartz-mart-walk.mp4",
+      "path": "../media/code-review-simulator-2026-11-28-quartz-mart-walk/quartz-mart-walk.mp4",
+      "contentType": "video/mp4",
+      "caption": "A street-level view of the walk past Quartz Mart.",
+      "poster": "../media/code-review-simulator-2026-11-28-quartz-mart-walk/quartz-mart-walk.jpg",
+      "hasAudio": false
+    }
+  ]
+}
