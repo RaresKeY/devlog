@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-quartz-county-routines",
+      "path": "posts/code-review-simulator-2026-11-28-quartz-county-routines.json",
+      "title": "Where People Stop in Quartz County",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T10:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-three-runways-and-a-sea-route",
       "path": "posts/code-review-simulator-2026-11-28-three-runways-and-a-sea-route.json",
       "title": "Three Runways and a Sea Route",

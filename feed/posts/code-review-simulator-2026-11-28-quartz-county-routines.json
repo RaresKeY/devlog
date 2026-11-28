@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-quartz-county-routines",
+  "title": "Where People Stop in Quartz County",
+  "project": "Code Review Simulator",
+  "body": "I’ve been animating the stops along the routes I laid out in Quartz County. At the freight terminal the dock worker checks a manifest, signals a stop and handles a crate. The worker also turns up at Eastmere and at the receiving area at Quartz Mart.\n\nThe older community host visits the café, Quartz Commons and Quartz Mart, with pauses to read or greet someone along the way. I’ve also laid out twenty pedestrian routines for the office crowd in Quartz City. Four models share the corrected walk cycle, with each arm swinging opposite its foot.",
+  "status": "wip",
+  "tags": [
+    "animation",
+    "worldbuilding"
+  ],
+  "createdAt": "2026-11-28T10:50:00+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "quartz-civic-routines",
+      "fileName": "quartz-civic-routines.mp4",
+      "path": "../media/code-review-simulator-2026-11-28-quartz-county-routines/quartz-civic-routines.mp4",
+      "contentType": "video/mp4",
+      "caption": "A dock worker signals, a community host pauses in Quartz Commons and a clerk works the receiving area.",
+      "poster": "../media/code-review-simulator-2026-11-28-quartz-county-routines/quartz-civic-routines.jpg",
+      "hasAudio": false
+    }
+  ]
+}
