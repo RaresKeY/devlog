@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-q180-interior",
+  "title": "A More Detailed Cockpit for the Q-180",
+  "project": "Code Review Simulator",
+  "body": "The Quartz County Q-180 utility aircraft now has a more detailed two-seat cockpit. The panel has a classic six-pack of flight instruments, separate engine gauges, an annunciator strip and an illuminated avionics stack. Matching yokes, rudder pedals and a central throttle quadrant fill out the cabin.\n\nThe in-engine showcase starts inside the open cabin, then moves through the pilot-side doorway and across the instrument panel, then ends with a staged flight view from the pilot seat over Quartz County. The throttle and flap controls move and the panel shows the changes. During a gentle bank, the yokes and attitude indicator move too.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "animation"
+  ],
+  "createdAt": "2026-11-28T14:50:00+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "q180-cockpit",
+      "fileName": "q180-cockpit.mp4",
+      "path": "../media/code-review-simulator-2026-11-28-q180-interior/q180-cockpit.mp4",
+      "contentType": "video/mp4",
+      "hasAudio": true,
+      "caption": "A look through the open cabin, across the instrument panel and out from the pilot’s seat.",
+      "poster": "../media/code-review-simulator-2026-11-28-q180-interior/q180-cockpit.jpg"
+    }
+  ]
+}

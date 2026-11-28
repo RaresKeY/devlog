@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-q180-interior",
+      "path": "posts/code-review-simulator-2026-11-28-q180-interior.json",
+      "title": "A More Detailed Cockpit for the Q-180",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T14:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-entrances-in-motion",
       "path": "posts/code-review-simulator-2026-11-28-entrances-in-motion.json",
       "title": "Doors of Quartz County",
