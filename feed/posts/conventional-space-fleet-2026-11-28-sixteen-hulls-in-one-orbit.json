@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "conventional-space-fleet-2026-11-28-sixteen-hulls-in-one-orbit",
+  "title": "Sixteen Hulls in One Orbit",
+  "project": "Conventional Space Fleet",
+  "body": "I rebuilt the shelved eight-ship reel around all 16 hulls in Conventional Space Fleet 2.2. I sized each ship to fit the same frame as the camera makes one continuous orbit. The hulls change on accents in Void Strategy, and I hold on Leviathan at the end.\n\nI built Dart, Phoenix, Courier, Bulwark, Trident, Caravel, Fortress and Ark in OpenCASCADE. Caravel has six detachable cargo modules. Ark has twin exposed flight decks and hangar doors that open. All 16 hulls have working articulated parts and three levels of detail in the Fleet Lab.",
+  "status": "wip",
+  "tags": [
+    "spacecraft",
+    "3d-art",
+    "animation"
+  ],
+  "createdAt": "2026-11-28T12:50:00+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "fleet-v22-16-beat-clean",
+      "fileName": "fleet-v22-16-beat-clean.mp4",
+      "path": "../media/conventional-space-fleet-2026-11-28-sixteen-hulls-in-one-orbit/fleet-v22-16-beat-clean.mp4",
+      "contentType": "video/mp4",
+      "caption": "Sixteen Fleet 2.2 hulls in a single camera orbit, cut to Void Strategy.",
+      "poster": "../media/conventional-space-fleet-2026-11-28-sixteen-hulls-in-one-orbit/fleet-v22-16-beat-poster.jpg",
+      "hasAudio": true
+    }
+  ]
+}

@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "conventional-space-fleet-2026-11-28-sixteen-hulls-in-one-orbit",
+      "path": "posts/conventional-space-fleet-2026-11-28-sixteen-hulls-in-one-orbit.json",
+      "title": "Sixteen Hulls in One Orbit",
+      "project": "Conventional Space Fleet",
+      "status": "wip",
+      "createdAt": "2026-11-28T12:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-loose-cargo",
       "path": "posts/code-review-simulator-2026-11-28-loose-cargo.json",
       "title": "Loose Cargo in the Pickup",
