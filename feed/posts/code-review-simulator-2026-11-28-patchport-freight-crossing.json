@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-patchport-freight-crossing",
+  "title": "Container crossing from Patchport to Eastmere",
+  "project": "Code Review Simulator",
+  "body": "At Patchport the gantry lowers its spreader onto a blue container, lifts it over the rail and sets it into a hatch. Our 44-metre feeder carries it across Quartz Sound. At Eastmere the second crane picks the blue box up again and lowers it onto the quay.",
+  "status": "wip",
+  "tags": [
+    "gameplay",
+    "simulation"
+  ],
+  "createdAt": "2026-11-28T07:50:00+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "patchport-to-eastmere",
+      "fileName": "patchport-to-eastmere.mp4",
+      "path": "../media/code-review-simulator-2026-11-28-patchport-freight-crossing/patchport-to-eastmere.mp4",
+      "contentType": "video/mp4",
+      "caption": "Follow the blue container from the Patchport crane, across Quartz Sound and onto the quay at Eastmere.",
+      "poster": "../media/code-review-simulator-2026-11-28-patchport-freight-crossing/patchport-to-eastmere.jpg",
+      "hasAudio": true
+    }
+  ]
+}

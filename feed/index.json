@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-patchport-freight-crossing",
+      "path": "posts/code-review-simulator-2026-11-28-patchport-freight-crossing.json",
+      "title": "Container crossing from Patchport to Eastmere",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T07:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-q180-flight-to-eastmere",
       "path": "posts/code-review-simulator-2026-11-28-q180-flight-to-eastmere.json",
       "title": "Flying the Q-180 from South Bay to Eastmere",
