@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-three-runways-and-a-sea-route",
+  "title": "Three Runways and a Sea Route",
+  "project": "Code Review Simulator",
+  "body": "I’ve extended the playable map north through Highwall Pass into Alder Reach. To the east, I can cross the Cedar Passage Bridge to Gullstone Island or sail from Patchport to Eastmere. South Bay, Alder Reach and Eastmere all have working runways.\n\nAt either port I can order the crane to move a numbered container between the yard and the ship. The freighter waits for the crane, sails on my order and can resume a saved crossing. I’d like to put those crossings on an automatic schedule next.",
+  "status": "wip",
+  "tags": [
+    "environments",
+    "gameplay",
+    "simulation"
+  ],
+  "createdAt": "2026-11-28T09:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "regional-chart",
+      "fileName": "regional-chart.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-three-runways-and-a-sea-route/regional-chart.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Quartz County’s chart showing the northern expansion, three airfields and the sea lane to Eastmere.",
+      "caption": ""
+    },
+    {
+      "id": "highwall-pass",
+      "fileName": "highwall-pass.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-three-runways-and-a-sea-route/highwall-pass.jpg",
+      "contentType": "image/jpeg",
+      "alt": "A paved road climbs through Highwall Pass between steep rock faces.",
+      "caption": ""
+    },
+    {
+      "id": "cedar-passage",
+      "fileName": "cedar-passage.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-three-runways-and-a-sea-route/cedar-passage.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Cedar Passage Bridge crosses Quartz Sound toward Gullstone Island.",
+      "caption": ""
+    },
+    {
+      "id": "chase-in-flight",
+      "fileName": "chase-in-flight.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-three-runways-and-a-sea-route/chase-in-flight.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The Q-180 flies out over Quartz Sound with Cedar Passage Bridge below.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}
