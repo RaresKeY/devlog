@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-loose-cargo",
+  "title": "Loose Cargo in the Pickup",
+  "project": "Code Review Simulator",
+  "body": "A VHS cassette, a wrapped ream of copy paper, a bar of soap and a steel billet are four of the twelve props I’m testing in the physics lab. Each has its own collider and mass, and loose cargo can spill out of the pickup.\n\nIn the payload lab I’m loading loose 200 kg blocks onto the production pickup. Weight at the rear makes it sag. If I put more weight on one side, that side sits lower. I measure how much each wheel compresses compared with the empty truck. I’m working toward trips where I can box up ordinary items, load them into the pickup and deliver them for cash.",
+  "status": "wip",
+  "tags": [
+    "physics",
+    "simulation",
+    "gameplay"
+  ],
+  "createdAt": "2026-11-28T11:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "cad_drop_props",
+      "fileName": "cad_drop_props.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-loose-cargo/cad_drop_props.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Twelve physical props including a VHS cassette, a wrapped ream of copy paper, soap, a matchbox and a steel billet.",
+      "caption": ""
+    },
+    {
+      "id": "fleet_pickup_brake_cargo",
+      "fileName": "fleet_pickup_brake_cargo.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-loose-cargo/fleet_pickup_brake_cargo.jpg",
+      "contentType": "image/jpeg",
+      "alt": "Loose cartons in the open pickup bed during a braking test with suspension telemetry visible.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

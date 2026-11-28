@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-loose-cargo",
+      "path": "posts/code-review-simulator-2026-11-28-loose-cargo.json",
+      "title": "Loose Cargo in the Pickup",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T11:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-quartz-county-routines",
       "path": "posts/code-review-simulator-2026-11-28-quartz-county-routines.json",
       "title": "Where People Stop in Quartz County",
