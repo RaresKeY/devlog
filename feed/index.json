@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-q180-flight-to-eastmere",
+      "path": "posts/code-review-simulator-2026-11-28-q180-flight-to-eastmere.json",
+      "title": "Flying the Q-180 from South Bay to Eastmere",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T06:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-workshop-and-loading-bays",
       "path": "posts/code-review-simulator-2026-11-28-workshop-and-loading-bays.json",
       "title": "Workshop doors and loading bays",

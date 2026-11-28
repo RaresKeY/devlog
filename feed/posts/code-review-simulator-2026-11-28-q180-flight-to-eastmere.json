@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-q180-flight-to-eastmere",
+  "title": "Flying the Q-180 from South Bay to Eastmere",
+  "project": "Code Review Simulator",
+  "body": "We flew the Q-180 from South Bay to Eastmere. The new cut follows the takeoff from runway level, then shows the Q-180 banking over Quartz Sound with the bridge in the background. We touched down on Eastmere runway 36 at 82 km/h and rolled 65 metres to a stop.",
+  "status": "wip",
+  "tags": [
+    "gameplay",
+    "simulation"
+  ],
+  "createdAt": "2026-11-28T06:50:00+01:00",
+  "visibility": "public",
+  "images": [],
+  "videos": [
+    {
+      "id": "south-bay-to-eastmere",
+      "fileName": "south-bay-to-eastmere.mp4",
+      "path": "../media/code-review-simulator-2026-11-28-q180-flight-to-eastmere/south-bay-to-eastmere.mp4",
+      "contentType": "video/mp4",
+      "caption": "The Q-180 takes off at South Bay, banks over Quartz Sound and lands on runway 36 at Eastmere.",
+      "poster": "../media/code-review-simulator-2026-11-28-q180-flight-to-eastmere/south-bay-to-eastmere.jpg",
+      "hasAudio": true
+    }
+  ]
+}
