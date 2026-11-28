@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-vehicle-mass-and-pedestrian-contacts",
+      "path": "posts/code-review-simulator-2026-11-28-vehicle-mass-and-pedestrian-contacts.json",
+      "title": "Weighty Cars, Bumps and Ragdolls",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T17:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-field-phones",
       "path": "posts/code-review-simulator-2026-11-28-field-phones.json",
       "title": "Q1 and Phone 2.0 Side by Side",

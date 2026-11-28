@@ -1,0 +1,26 @@
+{
+  "title": "Weighty Cars, Bumps and Ragdolls",
+  "project": "Code Review Simulator",
+  "body": "I gave cars distinct physical masses, so lighter cars get pushed around more in a bump. The lab comparison shows two 980 kg chassis colliding, followed by a matched collision between a 980 kg stock car and a 1,760 kg prepared car. Suspension and tires are tuned to each vehicle's weight.\n\nIn play, a light vehicle hit can cause a directional stumble. Harder contact can continue into a ragdoll that takes on the vehicle's motion and contact direction. The final shot shows the harder contact in town.",
+  "tags": [
+    "physics",
+    "gameplay"
+  ],
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-vehicle-mass-and-pedestrian-contacts",
+  "status": "wip",
+  "visibility": "public",
+  "createdAt": "2026-11-28T17:50:00+01:00",
+  "images": [],
+  "videos": [
+    {
+      "id": "vehicle-contacts",
+      "fileName": "vehicle-contacts.mp4",
+      "contentType": "video/mp4",
+      "path": "../media/code-review-simulator-2026-11-28-vehicle-mass-and-pedestrian-contacts/vehicle-contacts.mp4",
+      "caption": "The damage lab compares equal and unequal vehicle weights before a pickup contact in Quartz City.",
+      "poster": "../media/code-review-simulator-2026-11-28-vehicle-mass-and-pedestrian-contacts/vehicle-contacts.jpg",
+      "hasAudio": false
+    }
+  ]
+}
