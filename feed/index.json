@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-porches-and-shared-entrances",
+      "path": "posts/code-review-simulator-2026-11-28-porches-and-shared-entrances.json",
+      "title": "Porches and shared entrances",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T01:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-wooden-front-doors",
       "path": "posts/code-review-simulator-2026-11-28-wooden-front-doors.json",
       "title": "Carved wood, iron straps and painted panels",

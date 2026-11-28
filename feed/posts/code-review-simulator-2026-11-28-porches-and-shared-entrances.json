@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-porches-and-shared-entrances",
+  "title": "Porches and shared entrances",
+  "project": "Code Review Simulator",
+  "body": "At Cream Corner Apartments, an intercom sits beside the glazed lobby doors under the canopy. A few streets over, the bungalow gets daylight through a row of small panes in its front door. We fitted separate street entrances to the two halves of Gable Duplex and used the same steel walk-up door at Lantern Flats.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "environments",
+    "godot"
+  ],
+  "createdAt": "2026-11-28T01:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "cream-corner",
+      "path": "../media/code-review-simulator-2026-11-28-porches-and-shared-entrances/cream-corner.png",
+      "fileName": "cream-corner.png",
+      "contentType": "image/png",
+      "alt": "Glazed double lobby doors and an intercom beneath the apartment canopy.",
+      "caption": "Cream Corner Apartments"
+    },
+    {
+      "id": "porch-bungalow",
+      "path": "../media/code-review-simulator-2026-11-28-porches-and-shared-entrances/porch-bungalow.png",
+      "fileName": "porch-bungalow.png",
+      "contentType": "image/png",
+      "alt": "A Craftsman door with an upper window beneath the bungalow porch.",
+      "caption": "Porch Bungalow"
+    },
+    {
+      "id": "gable-duplex",
+      "path": "../media/code-review-simulator-2026-11-28-porches-and-shared-entrances/gable-duplex.png",
+      "fileName": "gable-duplex.png",
+      "contentType": "image/png",
+      "alt": "One of the paired walk-up entries in the duplex frontage.",
+      "caption": "Gable Duplex"
+    },
+    {
+      "id": "lantern-flats",
+      "path": "../media/code-review-simulator-2026-11-28-porches-and-shared-entrances/lantern-flats.png",
+      "fileName": "lantern-flats.png",
+      "contentType": "image/png",
+      "alt": "An enamel walk-up door in the Lantern Flats facade.",
+      "caption": "Lantern Flats"
+    }
+  ],
+  "videos": []
+}
