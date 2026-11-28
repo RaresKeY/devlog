@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-workshop-and-loading-bays",
+  "title": "Workshop doors and loading bays",
+  "project": "Code Review Simulator",
+  "body": "The repair workshop has rows of windows in its overhead doors. At the parcel hub, a dark rubber shelter wraps around the loading door and yellow strips mark its edges. The harbor warehouse has room for cargo doors that slide sideways along a track. Quartz Mart fits a metal roller shutter into its narrower receiving bay.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "environments",
+    "godot"
+  ],
+  "createdAt": "2026-11-28T05:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "repair-bay",
+      "path": "../media/code-review-simulator-2026-11-28-workshop-and-loading-bays/repair-bay.png",
+      "fileName": "repair-bay.png",
+      "contentType": "image/png",
+      "alt": "Glazed overhead sections in one of the workshop service bays.",
+      "caption": "Repair Workshop"
+    },
+    {
+      "id": "parcel-dock",
+      "path": "../media/code-review-simulator-2026-11-28-workshop-and-loading-bays/parcel-dock.png",
+      "fileName": "parcel-dock.png",
+      "contentType": "image/png",
+      "alt": "Sectional dock door inside a dark shelter with yellow guides.",
+      "caption": "Parcel Hub"
+    },
+    {
+      "id": "harbor-cargo",
+      "path": "../media/code-review-simulator-2026-11-28-workshop-and-loading-bays/harbor-cargo.png",
+      "fileName": "harbor-cargo.png",
+      "contentType": "image/png",
+      "alt": "Paired sliding cargo doors on the harbor warehouse.",
+      "caption": "Harbor Warehouse"
+    },
+    {
+      "id": "mart-receiving",
+      "path": "../media/code-review-simulator-2026-11-28-workshop-and-loading-bays/mart-receiving.png",
+      "fileName": "mart-receiving.png",
+      "contentType": "image/png",
+      "alt": "Metal roller shutter at the back of Quartz Mart.",
+      "caption": "Quartz Mart receiving"
+    }
+  ],
+  "videos": []
+}
