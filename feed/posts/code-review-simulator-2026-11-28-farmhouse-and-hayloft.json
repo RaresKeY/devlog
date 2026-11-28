@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-farmhouse-and-hayloft",
+  "title": "Barn sliders and farmhouse Dutch doors",
+  "project": "Code Review Simulator",
+  "body": "Red Barn has two openings for two different jobs. The braced ground doors hang from a long black rail. Look up the gable and there’s a smaller pair of hinged hayloft doors. The two farmhouses use a split Dutch door, with a horizontal rail where the upper and lower leaves meet.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "environments",
+    "godot"
+  ],
+  "createdAt": "2026-11-28T04:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "red-barn",
+      "path": "../media/code-review-simulator-2026-11-28-farmhouse-and-hayloft/red-barn.png",
+      "fileName": "red-barn.png",
+      "contentType": "image/png",
+      "alt": "Braced red sliding doors under a black track on the barn.",
+      "caption": "Red Barn"
+    },
+    {
+      "id": "hayloft",
+      "path": "../media/code-review-simulator-2026-11-28-farmhouse-and-hayloft/hayloft.png",
+      "fileName": "hayloft.png",
+      "contentType": "image/png",
+      "alt": "Paired timber doors in the upper barn opening.",
+      "caption": "Red Barn hayloft"
+    },
+    {
+      "id": "farmhouse",
+      "path": "../media/code-review-simulator-2026-11-28-farmhouse-and-hayloft/farmhouse.png",
+      "fileName": "farmhouse.png",
+      "contentType": "image/png",
+      "alt": "A split Dutch door in the farmhouse frontage.",
+      "caption": "Farmhouse"
+    },
+    {
+      "id": "county-farmhouse",
+      "path": "../media/code-review-simulator-2026-11-28-farmhouse-and-hayloft/county-farmhouse.png",
+      "fileName": "county-farmhouse.png",
+      "contentType": "image/png",
+      "alt": "The entry and porch of the Quartz County farmhouse.",
+      "caption": "County Farmhouse"
+    }
+  ],
+  "videos": []
+}

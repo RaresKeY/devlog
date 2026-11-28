@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-farmhouse-and-hayloft",
+      "path": "posts/code-review-simulator-2026-11-28-farmhouse-and-hayloft.json",
+      "title": "Barn sliders and farmhouse Dutch doors",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T04:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-doors-to-public-buildings",
       "path": "posts/code-review-simulator-2026-11-28-doors-to-public-buildings.json",
       "title": "Oak at the archive, bronze at the hotel",
