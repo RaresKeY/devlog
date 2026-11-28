@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-field-phones",
+  "title": "Q1 and Phone 2.0 Side by Side",
+  "project": "Code Review Simulator",
+  "body": "New saves in Quartz County start with the Q1. It has a thick green shell, a brass-trimmed rocker, and two cracks across the glass. The side-by-side preview shows its two-column launcher next to Phone 2.0’s coastal wallpaper, large clock, and rounded app icons.\n\nYou can trade in the Q1 for free at Quartz Mart. Your messages, map pins, and orders carry over.",
+  "status": "wip",
+  "tags": [
+    "ui",
+    "gameplay"
+  ],
+  "createdAt": "2026-11-28T15:50:00Z",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "q1-and-phone-2",
+      "path": "../media/code-review-simulator-2026-11-28-field-phones/q1-and-phone-2.png",
+      "fileName": "q1-and-phone-2.png",
+      "contentType": "image/png",
+      "alt": "Side-by-side in-game comparison. The green Q1 on the left has cracked glass and square app tiles. Phone 2.0 on the right has a large clock and rounded icons over coastal wallpaper.",
+      "caption": ""
+    }
+  ],
+  "videos": []
+}

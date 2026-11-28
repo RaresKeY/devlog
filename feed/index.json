@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-field-phones",
+      "path": "posts/code-review-simulator-2026-11-28-field-phones.json",
+      "title": "Q1 and Phone 2.0 Side by Side",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T15:50:00Z"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-q180-interior",
       "path": "posts/code-review-simulator-2026-11-28-q180-interior.json",
       "title": "A More Detailed Cockpit for the Q-180",
