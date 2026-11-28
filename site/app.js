@@ -151,7 +151,12 @@ function validatePost(post, summary = null) {
   ) {
     throw new Error(`Incomplete public post ${post.id || "unknown"}`);
   }
-  if (post.images.length > 5 || post.videos.length > 4) {
+  if ("featuredVideo" in post && (typeof post.featuredVideo !== "boolean" ||
+      (post.featuredVideo && post.videos.length !== 1))) {
+    throw new Error(`Invalid featured video layout in ${post.id}`);
+  }
+  const imageLimit = post.featuredVideo ? 6 : 5;
+  if (post.images.length > imageLimit || post.videos.length > 4) {
     throw new Error(`Too many media items in ${post.id}`);
   }
   post.images.forEach((item) => validateMedia(item, post.id, "image"));
@@ -455,18 +460,18 @@ function readMinutes(body) {
 }
 
 function createMedia(post) {
-  const items = [
-    ...post.images.map((item) => ({ ...item, kind: "image" })),
-    ...post.videos.map((item) => ({ ...item, kind: "video" })),
-  ];
+  const images = post.images.map((item) => ({ ...item, kind: "image" }));
+  const videos = post.videos.map((item) => ({ ...item, kind: "video" }));
+  const items = post.featuredVideo ? [...videos, ...images] : [...images, ...videos];
   if (items.length === 0) return null;
 
   const gallery = document.createElement("div");
   gallery.className = `media-gallery count-${Math.min(items.length, 4)}`;
-  if (post.images.length === 4 && post.videos.length === 0) {
+  if (post.featuredVideo) {
+    gallery.classList.add("featured-video");
+  } else if (images.length === 4 && videos.length === 0) {
     gallery.classList.add("featured-four");
-  }
-  if (post.images.length === 5 && post.videos.length === 0) {
+  } else if (images.length === 5 && videos.length === 0) {
     gallery.classList.add("lineup-five");
   }
   gallery.setAttribute("aria-label", "Update media");

@@ -74,7 +74,7 @@ REQUIRED_POST_KEYS = {
     "images",
     "videos",
 }
-OPTIONAL_POST_KEYS = {"updatedAt", "ctaLabel", "ctaUrl"}
+OPTIONAL_POST_KEYS = {"updatedAt", "ctaLabel", "ctaUrl", "featuredVideo"}
 IMAGE_KEYS = {"id", "path", "alt", "fileName", "contentType"}
 VIDEO_KEYS = {"id", "path", "caption", "fileName", "contentType"}
 MIME_BY_SUFFIX = {
@@ -622,8 +622,14 @@ def validate_post(
 
     images = post.get("images")
     videos = post.get("videos")
-    if not isinstance(images, list) or len(images) > 5:
-        failures.append(f"{relative}: images must be an array of at most 5 entries")
+    featured_video = post.get("featuredVideo", False)
+    if type(featured_video) is not bool:
+        failures.append(f"{relative}: featuredVideo must be a boolean")
+    if featured_video is True and (not isinstance(videos, list) or len(videos) != 1):
+        failures.append(f"{relative}: featuredVideo requires exactly one video")
+    image_limit = 6 if featured_video is True else 5
+    if not isinstance(images, list) or len(images) > image_limit:
+        failures.append(f"{relative}: images must be an array of at most {image_limit} entries")
         images = []
     if not isinstance(videos, list) or len(videos) > 4:
         failures.append(f"{relative}: videos must be an array of at most 4 entries")
