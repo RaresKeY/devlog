@@ -14,7 +14,56 @@
   "createdAt": "2026-11-28T13:50:00+01:00",
   "visibility": "public",
   "status": "wip",
-  "images": [],
+  "images": [
+    {
+      "id": "alpine-lodge",
+      "fileName": "alpine-lodge.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/alpine-lodge.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The Alpine Lodge door is partly open, showing its dark iron strap hinges and barred window.",
+      "caption": ""
+    },
+    {
+      "id": "farmhouse-dutch-door",
+      "fileName": "farmhouse-dutch-door.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/farmhouse-dutch-door.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The upper leaf of the teal farmhouse Dutch door swings ahead of the lower leaf.",
+      "caption": ""
+    },
+    {
+      "id": "quartz-hotel",
+      "fileName": "quartz-hotel.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/quartz-hotel.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The Quartz Hotel double doors have dark bronze trim and geometric glazing beneath the hotel sign.",
+      "caption": ""
+    },
+    {
+      "id": "orbit-clinic",
+      "fileName": "orbit-clinic.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/orbit-clinic.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The striped glass leaves at Orbit Clinic slide apart beneath the green canopy.",
+      "caption": ""
+    },
+    {
+      "id": "red-barn-sliders",
+      "fileName": "red-barn-sliders.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/red-barn-sliders.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The braced Red Barn doors slide apart along the black track above the opening.",
+      "caption": ""
+    },
+    {
+      "id": "loading-dock-leveler",
+      "fileName": "loading-dock-leveler.jpg",
+      "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/loading-dock-leveler.jpg",
+      "contentType": "image/jpeg",
+      "alt": "The cream overhead door begins to lift above the loading dock deck and yellow safety posts.",
+      "caption": ""
+    }
+  ],
   "videos": [
     {
       "id": "doors-in-motion",
@@ -26,5 +75,6 @@
       "path": "../media/code-review-simulator-2026-11-28-entrances-in-motion/doors-in-motion.mp4",
       "poster": "../media/code-review-simulator-2026-11-28-entrances-in-motion/doors-in-motion.jpg"
     }
-  ]
+  ],
+  "featuredVideo": true
 }
