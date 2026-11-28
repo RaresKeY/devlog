@@ -4,6 +4,14 @@
   "branch": "main",
   "posts": [
     {
+      "id": "code-review-simulator-2026-11-28-doors-to-public-buildings",
+      "path": "posts/code-review-simulator-2026-11-28-doors-to-public-buildings.json",
+      "title": "Oak at the archive, bronze at the hotel",
+      "project": "Code Review Simulator",
+      "status": "wip",
+      "createdAt": "2026-11-28T03:50:00+01:00"
+    },
+    {
       "id": "code-review-simulator-2026-11-28-street-level-shopfronts",
       "path": "posts/code-review-simulator-2026-11-28-street-level-shopfronts.json",
       "title": "One glass door, four storefronts",

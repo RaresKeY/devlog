@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "code-review-simulator-2026-11-28-doors-to-public-buildings",
+  "title": "Oak at the archive, bronze at the hotel",
+  "project": "Code Review Simulator",
+  "body": "The County Government Archive has paneled oak double doors, with rows of recessed panels on each leaf. Quartz Hotel picks up the geometric pattern of its entrance in bronze. At Orbit Clinic a stripe runs across the sliding glass leaves, and Mergeforge Office has a pair of framed glass doors.",
+  "status": "wip",
+  "tags": [
+    "3d-art",
+    "environments",
+    "godot"
+  ],
+  "createdAt": "2026-11-28T03:50:00+01:00",
+  "visibility": "public",
+  "images": [
+    {
+      "id": "county-archive",
+      "path": "../media/code-review-simulator-2026-11-28-doors-to-public-buildings/county-archive.png",
+      "fileName": "county-archive.png",
+      "contentType": "image/png",
+      "alt": "Paneled oak double doors set into the archive facade.",
+      "caption": "County Government Archive"
+    },
+    {
+      "id": "quartz-hotel",
+      "path": "../media/code-review-simulator-2026-11-28-doors-to-public-buildings/quartz-hotel.png",
+      "fileName": "quartz-hotel.png",
+      "contentType": "image/png",
+      "alt": "Decorative bronze-trimmed entrance to Quartz Hotel.",
+      "caption": "Quartz Hotel"
+    },
+    {
+      "id": "orbit-clinic",
+      "path": "../media/code-review-simulator-2026-11-28-doors-to-public-buildings/orbit-clinic.png",
+      "fileName": "orbit-clinic.png",
+      "contentType": "image/png",
+      "alt": "Paired glass sliding doors with a visibility stripe at the clinic.",
+      "caption": "Orbit Clinic"
+    },
+    {
+      "id": "mergeforge-office",
+      "path": "../media/code-review-simulator-2026-11-28-doors-to-public-buildings/mergeforge-office.png",
+      "fileName": "mergeforge-office.png",
+      "contentType": "image/png",
+      "alt": "Glazed double entrance in the office frontage.",
+      "caption": "Mergeforge Office"
+    }
+  ],
+  "videos": []
+}
